@@ -17,6 +17,11 @@ export const components = {
 	menu: {
 		component: Icons.MdMenu,
 		value: iconname.ICON_MENU
+	},
+
+	search: {
+		component: Icons.MdSearch,
+		value: iconname.ICON_SEARCH
 	}
 }
 
