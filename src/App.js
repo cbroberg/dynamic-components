@@ -15,10 +15,10 @@ class App extends Component {
 						<CopyToClipboard text={icon[1].value}><CopyButton>{icon[1].value}</CopyButton></CopyToClipboard>
 					</div>
 					<div>
-						<Icon key={index} icon={icon[1].value} size={50}  />
+						<Icon key={index} icon={icon[1].value} size={75}  />
 					</div>
 					<div>
-						<CopyToClipboard text={`<Icon icon={${icon[1].value}}/>`}><CopyButton>{`<Icon icon={${icon[1].value}}/>`}</CopyButton></CopyToClipboard>
+						<CopyToClipboard text={`<Icon icon={${icon[1].value}}/>`}><CopyButton>Click to copy code</CopyButton></CopyToClipboard>
 					</div>
 				</DisplayIcon>
 			)
