@@ -4,32 +4,48 @@ import * as iconname from 'components/iconnames'
 
 
 export const components = {
-	cloud_download: {
-		component: Icons.MdCloudDownload,
-		value: iconname.ICON_CLOUD_DOWNLOAD
-	},
-
-	cloud_upload: {
-		component: Icons.MdCloudUpload,
-		value: iconname.ICON_CLOUD_UPLOAD
+	search: {
+		value: iconname.ICON_SEARCH,
+		component: Icons.MdSearch,
+		action: 'Search'
 	},
 
 	menu: {
+		value: iconname.ICON_MENU,
 		component: Icons.MdMenu,
-		value: iconname.ICON_MENU
+		action: 'Menu'
 	},
 
-	search: {
-		component: Icons.MdSearch,
-		value: iconname.ICON_SEARCH
-	}
+	chat: {
+		value: iconname.ICON_MESSAGES,
+		component: Icons.MdChat,
+		action: 'Messages'
+		
+	},
+	assignment_turned_in: {
+		value: iconname.ICON_ASSIGNMENT_TURNED_IN,
+		component: Icons.MdAssignmentTurnedIn,
+		action: 'Reports'
+	},
+
+	cloud_download: {
+		value: iconname.ICON_CLOUD_DOWNLOAD,
+		component: Icons.MdCloudDownload,
+		action: 'Download'
+	},
+
+	cloud_upload: {
+		value: iconname.ICON_CLOUD_UPLOAD,
+		component: Icons.MdCloudUpload,
+		action: 'Upload'
+	},	
 }
 
 class Icon extends Component {	
 
 	render() {
 		const IconComponent = components[this.props.icon || 'menu'].component
-		return <IconComponent size={this.props.size || 50} color={'#EA228F'} style={{ paddingRight: '16px' }} />
+		return <IconComponent size={this.props.size || 50} color={'#3B97D3'} style={{ paddingRight: '16px' }} />
 	}
 }
 
