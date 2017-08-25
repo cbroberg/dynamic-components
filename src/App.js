@@ -35,22 +35,3 @@ class App extends Component {
 }
 
 export default App
-
-	
-/*
-
-text={`<Icon icon={${icon[1].value}} />`}
-
-
-
-		return comps.map((icon, index) => {
-			return (
-				<Icon key={index} icon={icon} size={75} />
-				// <div>
-				// 	{components[i].value}
-				// </div
-			)
-		})
-	}
-
-*/
