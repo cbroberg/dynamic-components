@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import Icon, { components } from 'components/Icon'
 // import * as iconname from 'components/iconnames'
-import { DisplayIcon, CopyButton } from 'components/Styles'
+import { DisplayIcon, CopyButton, Container } from 'components/Styles'
 
 
 class App extends Component {
@@ -12,13 +12,13 @@ class App extends Component {
 			return (
 				<DisplayIcon key={index}>
 					<div>
-						<CopyToClipboard text={icon[1].value}><CopyButton>{icon[1].value}</CopyButton></CopyToClipboard>
+						<CopyToClipboard text={icon[1].name}><CopyButton color={'#fff'}>{icon[1].action}</CopyButton></CopyToClipboard>
 					</div>
 					<div>
-						<Icon key={index} icon={icon[1].value} size={75}  />
+						<Icon key={index} icon={icon[1].name} size={75}  />
 					</div>
 					<div>
-						<CopyToClipboard text={`<Icon icon={${icon[1].value}}/>`}><CopyButton>Click to copy code</CopyButton></CopyToClipboard>
+						<CopyToClipboard text={`<Icon icon={${icon[1].name}}/>`}><CopyButton color={'#81C1EA'}>Click to copy code</CopyButton></CopyToClipboard>
 					</div>
 				</DisplayIcon>
 			)
@@ -27,8 +27,10 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
-				{this.renderIcons()}
+			<div>	
+				<Container>			
+					{this.renderIcons()}
+				</Container>
 			</div>
 		)
 	}
