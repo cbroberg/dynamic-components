@@ -85,6 +85,7 @@ export const Loader = styled.div`
 	width: ${({ size }) => loaderSizes[size]};
 	height: ${({ size }) => loaderSizes[size]};
 	animation: ${rotate360} 1s linear infinite;
+	
 	&:hover {
         animation: ${rotate360} 3s linear infinite;
     }

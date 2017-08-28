@@ -45,7 +45,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
+			<div>				
 				<Card>
 					<CardImage src={require(`assets/avatar.png`)} alt="Avatar" />
 					<CardContainer>
@@ -95,7 +95,7 @@ class App extends Component {
 				<div>
 					<Loader size="xs" />
 					<Loader size="small" />
-					<Loader size="medium" />
+					<Loader />
 					<Loader size="large" />
 					<Loader size="xl" />
 
@@ -103,7 +103,7 @@ class App extends Component {
 						<LogoImg src={logo} alt="Logo" />
 					</SpinLogo>
 
-					{/* {this.renderIcons()} */}
+					{this.renderIcons()}
 				</div>
 			</div>
 		)
