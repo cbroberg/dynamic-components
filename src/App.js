@@ -6,7 +6,7 @@ import CopyToast from 'components/ToastStyles'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import copy from 'copy-to-clipboard'
 
-import Icon, { components } from 'components/Icon'
+import Icon, { icons } from 'components/Icon'
 import { DisplayIcon, CopyButton, Loader, LogoImg, SpinLogo } from 'components/Styles'
 import logo from 'assets/logo_spin.png'
 
@@ -25,7 +25,7 @@ class App extends Component {
 	}
 
 	renderIcons() {
-		return Object.entries(components).map((icon, index) => {
+		return Object.entries(icons).map((icon, index) => {
 			let codeToCopy = `<Icon icon={'${icon[1].name}'}/>`
 			return (
 				<DisplayIcon key={index}>
@@ -67,6 +67,13 @@ class App extends Component {
 						<CardContent>Product Development</CardContent>
 					</CardContainer>
 				</Card>
+				<Card onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')}>
+					<CardImage src={require(`assets/mettebugge.png`)} alt="Avatar" />
+					<CardContainer>
+						<CardHeader>Mette Bugge</CardHeader>
+						<CardContent>The Girlfriend</CardContent>
+					</CardContainer>
+				</Card>				
 				<Card>
 					<CardIcon onClick={(e) => this.copyToClipboard(e, `<Icon icon={'cloud_download'}/>`)}>
 						<Icon icon={'cloud_download'} size={150} />
