@@ -7,43 +7,51 @@ export const components = {
 	search: {
 		name: iconname.ICON_SEARCH,
 		component: Icons.MdSearch,
-		action: 'Search'
+		action: 'Search',
+		usage: 'Use for search bars and search fields',
+		tags: ['search', 'actions']
 	},
 
 	menu: {
 		name: iconname.ICON_MENU,
 		component: Icons.MdMenu,
-		action: 'Menu'
+		action: 'Menu',
+		usage: 'Use for search bars and search fields'
 	},
 
 	chat: {
 		name: iconname.ICON_MESSAGES,
 		component: Icons.MdChat,
-		action: 'Messages'		
+		action: 'Messages',
+		usage: 'Use for search bars and search fields'
 	},
 
 	help: {
 		name: iconname.ICON_HELP,
 		component: Icons.MdHelp,
-		action: 'Help'
+		action: 'Help',
+		usage: 'Use for search bars and search fields'
 	},
 	
 	assignment_turned_in: {
 		name: iconname.ICON_ASSIGNMENT_TURNED_IN,
 		component: Icons.MdAssignmentTurnedIn,
-		action: 'Reports'
+		action: 'Reports',
+		usage: 'Use for search bars and search fields'
 	},
 
 	cloud_download: {
 		name: iconname.ICON_CLOUD_DOWNLOAD,
 		component: Icons.MdCloudDownload,
-		action: 'Download'
+		action: 'Download',
+		usage: 'Use for downloading data and assets'
 	},
 
 	cloud_upload: {
 		name: iconname.ICON_CLOUD_UPLOAD,
 		component: Icons.MdCloudUpload,
-		action: 'Upload'
+		action: 'Upload',
+		usage: 'Use for uploading files and assets'
 	},	
 }
 
@@ -51,7 +59,7 @@ class Icon extends Component {
 
 	render() {
 		const IconComponent = components[this.props.icon || 'menu'].component
-		return <IconComponent size={this.props.size || 50} color={'#3B97D3'} style={{ paddingRight: '16px' }} />
+		return <IconComponent size={this.props.size || 50} color={'#3B97D3'} />
 	}
 }
 

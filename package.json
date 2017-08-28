@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "copy-to-clipboard": "^3.0.8",
     "polished": "^1.4.1",
     "react": "^15.6.1",
     "react-copy-to-clipboard": "^5.0.0",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
     "react-scripts": "1.0.10",
+    "react-toastify": "^2.0.0-rc.3",
     "styled-components": "^2.1.2"
   },
   "scripts": {

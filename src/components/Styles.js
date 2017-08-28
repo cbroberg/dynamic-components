@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import * as colors from 'components/colors'
 import { getColor } from 'components/colors'
 import { transparentize, darken } from 'polished'
@@ -57,24 +57,55 @@ export const CopyButton = styled.button`
     }
 `
 
-export const Loader = styled.div`
-&.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+const rotate360 = keyframes`
+	from {
+		transform: rotate(0deg);
+	}
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+	to {
+		transform: rotate(360deg);
+	}
 `
+
+const loaderSizes = {
+	xs: '20px',
+	small: '50px',
+	medium: '80px',
+	large: '120px',
+	xl: '250px'
+}
+
+
+export const Loader = styled.div`
+	display: inline-block;
+	border: 16px solid #E3E5E5;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: ${({ size }) => loaderSizes[size]};
+	height: ${({ size }) => loaderSizes[size]};
+	animation: ${rotate360} 1s linear infinite;
+	&:hover {
+        animation: ${rotate360} 3s linear infinite;
+    }
+`
+
+Loader.defaultProps = {
+	size: loaderSizes['medium'] /* '80px' */
+}
+
+
+export const SpinLogo = styled.div`
+	display: inline-block;
+	margin: 0px 30px 0px 30px;
+	animation: ${rotate360} ${props => props.time || '1s'} linear infinite;
+	&:hover {
+        animation: ${rotate360} 3s linear infinite;
+    }
+`
+export const LogoImg = styled.img`
+`
+
+/*
+
+*/
