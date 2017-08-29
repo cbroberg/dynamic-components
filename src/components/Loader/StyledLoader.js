@@ -22,8 +22,8 @@ export const SpinLogo = styled.div`
 
 const sizes = {
 	xxs: {
-		diameter: '14px',
-		border: '3px'
+		diameter: '13px',
+		border: '2px'
 	},
 	xs: {
 		diameter: '20px',
@@ -59,7 +59,8 @@ const velocities = {
 }
 
 export const StyledLoader = styled.div`
-	display: inline-block;
+	/* display: inline-block; */
+	float: left;
 	border: ${({ size }) => sizes[size].border} solid #E3E5E5;
 	border-radius: 50%;
 	border-top: ${({ size }) => sizes[size].border} solid #3498db;

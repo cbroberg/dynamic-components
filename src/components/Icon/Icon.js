@@ -38,7 +38,7 @@ export const icons = {
 		name: 'search',
 		component: Icons.MdSearch,
 		action: 'Search',
-		usage: 'Use for search bars and search fields',
+		usage: 'Use for search fields',
 		description: '',
 		tags: ['search', 'actions']
 	},
@@ -52,20 +52,11 @@ export const icons = {
 		tags: ['actions', 'menu']
 	},
 
-	chat: {
-		name: 'chat',
-		component: Icons.MdChat,
-		action: 'Messages',
-		usage: 'Use for launching the messaging system',
-		description: '',
-		tags: ['actions', 'menu', 'messaging']
-	},
-
 	help: {
 		name: 'help',
 		component: Icons.MdHelp,
 		action: 'Help',
-		usage: 'Use for launching the help system',
+		usage: 'Use for launching the help system and support',
 		description: '',
 		tags: ['actions']
 	},
@@ -74,18 +65,199 @@ export const icons = {
 		name: 'bug_report',
 		component: Icons.MdBugReport,
 		action: 'Bug Report',
-		usage: 'Use for bug reports',
+		usage: 'Use for reporting bugs',
 		description: '',
 		tags: ['actions']
+	},
+	
+	assignment: {
+		name: 'assignment',
+		component: Icons.MdAssignment,
+		action: 'Forms',
+		usage: 'Use for forms menu',
+		description: '',
+		tags: ['actions', 'forms', 'menu']
 	},
 
 	assignment_turned_in: {
 		name: 'assignment_turned_in',
 		component: Icons.MdAssignmentTurnedIn,
 		action: 'Reports',
-		usage: 'Use for Reports (registrations)',
+		usage: 'Use for listing reports',
 		description: '',
-		tags: ['menu', 'tabs']
+		tags: ['menu', 'tabs', 'reports']
+	},
+	
+	info: {
+		name: 'info',
+		component: Icons.MdInfo,
+		action: 'Info',
+		usage: 'Use for displaying information',
+		description: '',
+		tags: ['actions', 'info']
+	},
+
+	dashboard: {
+		name: 'dashboard',
+		component: Icons.MdDashboard,
+		action: 'Dashboard',
+		usage: 'Use for launching the dashboard',
+		description: '',
+		tags: ['actions']
+	},
+
+	home: {
+		name: 'home',
+		component: Icons.MdHome,
+		action: 'Home',
+		usage: 'Use for launching the homepage',
+		description: '',
+		tags: ['actions']
+	},
+
+	settings: {
+		name: 'settings',
+		component: Icons.MdSettings,
+		action: 'Settings',
+		usage: 'Use for displaying settings',
+		description: '',
+		tags: ['actions']
+	},
+
+	input: {
+		name: 'input',
+		component: Icons.MdInput,
+		action: 'Input',
+		usage: 'Use for field input',
+		description: '',
+		tags: ['actions', 'fields']
+	},
+
+	timeline: {
+		name: 'timeline',
+		component: Icons.MdTimeline,
+		action: 'Timeline',
+		usage: 'Use for workflow',
+		description: '',
+		tags: ['actions']
+	},
+
+	code: {
+		name: 'code',
+		component: Icons.MdCode,
+		action: 'Code',
+		usage: 'Use for workflow automation scripts',
+		description: '',
+		tags: ['actions', 'tabs']
+	},
+
+	opacity: {
+		name: 'opacity',
+		component: Icons.MdOpacity,
+		action: 'Opacity',
+		usage: 'Use for design settings',
+		description: '',
+		tags: ['actions']
+	},
+
+
+	people: {
+		name: 'people',
+		component: Icons.MdPeople,
+		action: 'View organisation',
+		usage: 'Use for displaying the organisation network',
+		description: '',
+		tags: ['actions']
+	},
+
+	group_add: {
+		name: 'group_add',
+		component: Icons.MdGroupAdd,
+		action: 'Add group',
+		usage: 'Use for adding a group',
+		description: '',
+		tags: ['actions']
+	},
+
+	person: {
+		name: 'person',
+		component: Icons.MdPerson,
+		action: 'Person',
+		usage: 'Use for viewing profile information/account',
+		description: '',
+		tags: ['actions']
+	},
+
+	person_add: {
+		name: 'person_add',
+		component: Icons.MdPersonAdd,
+		action: 'Add person',
+		usage: 'Use for adding a person or a connection',
+		description: '',
+		tags: ['actions']
+	},
+
+	mail_outline: {
+		name: 'mail_outline',
+		component: Icons.MdMailOutline,
+		action: 'Mail outline',
+		usage: 'Use for sending e-mail or e-mail settings',
+		description: '',
+		tags: ['actions']
+	},
+
+	settings_cell: {
+		name: 'settings_cell',
+		component: Icons.MdSettingsCell,
+		action: 'Settings cell',
+		usage: 'Use for smartphone settings',
+		description: '',
+		tags: ['actions']
+	},
+
+	extension: {
+		name: 'extension',
+		component: Icons.MdExtension,
+		action: 'Extension',
+		usage: 'Use for app modules or extensions',
+		description: '',
+		tags: ['actions']
+	},
+
+	arrow_drop_down: {
+		name: 'arrow_drop_down',
+		component: Icons.MdArrowDropDown,
+		action: 'Arrow drop down',
+		usage: 'Use for dropdown (alternative)',
+		description: '',
+		tags: ['actions']
+	},
+
+	arrow_drop_up: {
+		name: 'arrow_drop_up',
+		component: Icons.MdArrowDropUp,
+		action: 'Arrow drop up',
+		usage: 'Use for closing dropdown (alternative)',
+		description: '',
+		tags: ['actions']
+	},
+
+	copyright: {
+		name: 'copyright',
+		component: Icons.MdCopyright,
+		action: 'Copyright',
+		usage: 'Use for copyright',
+		description: '',
+		tags: ['actions']
+	},
+
+	cloud: {
+		name: 'cloud',
+		component: Icons.MdCloud,
+		action: 'Cloud',
+		usage: 'Use for viewing cloud storage',
+		description: '',
+		tags: ['actions']
 	},
 
 	cloud_download: {
@@ -106,193 +278,11 @@ export const icons = {
 		tags: ['actions']
 	},
 
-	//completion
-
-	info: {
-		name: 'info',
-		component: Icons.MdInfo,
-		action: 'Info',
-		usage: 'Use for displaying information',
-		description: '',
-		tags: ['actions']
-	},
-
-	dashboard: {
-		name: 'dashboard',
-		component: Icons.MdDashboard,
-		action: 'Dashboard',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	home: {
-		name: 'home',
-		component: Icons.MdHome,
-		action: 'Home',
-		usage: 'Use for displaying the front page',
-		description: '',
-		tags: ['actions']
-	},
-
-	settings: {
-		name: 'settings',
-		component: Icons.MdSettings,
-		action: 'Settings',
-		usage: 'Use for displaying information',
-		description: '',
-		tags: ['actions']
-	},
-
-	input: {
-		name: 'input',
-		component: Icons.MdInput,
-		action: 'Input',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	timeline: {
-		name: 'timeline',
-		component: Icons.MdTimeline,
-		action: 'Timeline',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	code: {
-		name: 'code',
-		component: Icons.MdCode,
-		action: 'Code',
-		usage: 'Use for scripts in ODEUM Report',
-		description: '',
-		tags: ['actions', 'tabs']
-	},
-
-	opacity: {
-		name: 'opacity',
-		component: Icons.MdOpacity,
-		action: 'Opacity',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	assignment: {
-		name: 'assignment',
-		component: Icons.MdAssignment,
-		action: 'Assignment',
-		usage: 'Use for showing assignments',
-		description: '',
-		tags: ['actions']
-	},
-
-	people: {
-		name: 'people',
-		component: Icons.MdPeople,
-		action: 'View organisation',
-		usage: 'Use for displaying the organisation network',
-		description: '',
-		tags: ['actions']
-	},
-
-	group_add: {
-		name: 'group_add',
-		component: Icons.MdGroupAdd,
-		action: 'Add group',
-		usage: 'Use for adding a person to a group',
-		description: '',
-		tags: ['actions']
-	},
-
-	person: {
-		name: 'person',
-		component: Icons.MdPerson,
-		action: 'Person',
-		usage: 'Use for viewing information',
-		description: '',
-		tags: ['actions']
-	},
-
-	person_add: {
-		name: 'person_add',
-		component: Icons.MdPersonAdd,
-		action: 'Add person',
-		usage: 'Use for add person/connection',
-		description: '',
-		tags: ['actions']
-	},
-
-	mail_outline: {
-		name: 'mail_outline',
-		component: Icons.MdMailOutline,
-		action: 'Mail outline',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	settings_cell: {
-		name: 'settings_cell',
-		component: Icons.MdSettingsCell,
-		action: 'Settings cell',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	extension: {
-		name: 'extension',
-		component: Icons.MdExtension,
-		action: 'Extension',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	arrow_drop_down: {
-		name: 'arrow_drop_down',
-		component: Icons.MdArrowDropDown,
-		action: 'Arrow drop down',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	arrow_drop_up: {
-		name: 'arrow_drop_up',
-		component: Icons.MdArrowDropUp,
-		action: 'Arrow drop up',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	copyright: {
-		name: 'copyright',
-		component: Icons.MdCopyright,
-		action: 'Copyright',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
-	cloud: {
-		name: 'cloud',
-		component: Icons.MdCloud,
-		action: 'Cloud',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
 	language: {
 		name: 'language',
 		component: Icons.MdLanguage,
 		action: 'Language select',
-		usage: 'Use for displaying the page in a selected language',
+		usage: 'Use for language selection',
 		description: '',
 		tags: ['actions']
 	},
@@ -310,7 +300,7 @@ export const icons = {
 		name: 'mode_edit',
 		component: Icons.MdModeEdit,
 		action: 'Mode edit',
-		usage: 'Use for ',
+		usage: 'Use for edit field/data/asset',
 		description: '',
 		tags: ['actions']
 	},
@@ -319,7 +309,7 @@ export const icons = {
 		name: 'place',
 		component: Icons.MdPlace,
 		action: 'Place view',
-		usage: 'Use for viewing location ',
+		usage: 'Use for map view and position/location',
 		description: '',
 		tags: ['actions']
 	},
@@ -328,7 +318,7 @@ export const icons = {
 		name: 'phone',
 		component: Icons.MdPhone,
 		action: 'Phone',
-		usage: 'Use for ',
+		usage: 'Use for calling or user profile phone details',
 		description: '',
 		tags: ['actions']
 	},
@@ -337,7 +327,7 @@ export const icons = {
 		name: 'visibility',
 		component: Icons.MdVisibility,
 		action: 'Visibility',
-		usage: 'Use for ',
+		usage: 'Use for allow viewing or selecting fields for a list',
 		description: '',
 		tags: ['actions']
 	},
@@ -346,7 +336,7 @@ export const icons = {
 		name: 'visibility_off',
 		component: Icons.MdVisibilityOff,
 		action: 'Visibility off',
-		usage: 'Use for turning off the visibility',
+		usage: 'Use for disallow viewing',
 		description: '',
 		tags: ['actions']
 	},
@@ -355,7 +345,7 @@ export const icons = {
 		name: 'account_box',
 		component: Icons.MdAccountBox,
 		action: 'Account box',
-		usage: 'Use for displaying the account box information',
+		usage: 'Use for account information',
 		description: '',
 		tags: ['actions']
 	},
@@ -364,7 +354,7 @@ export const icons = {
 		name: 'insert_drive_file',
 		component: Icons.MdInsertDriveFile,
 		action: 'Insert drive file',
-		usage: 'Use for ',
+		usage: 'Use for managing storage',
 		description: '',
 		tags: ['actions']
 	},
@@ -373,34 +363,34 @@ export const icons = {
 		name: 'view_headline',
 		component: Icons.MdViewHeadline,
 		action: 'View headline',
-		usage: 'Use for ',
+		usage: 'Use for list view (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'views']
 	},
 
 	view_module: {
 		name: 'view_module',
 		component: Icons.MdViewModule,
 		action: 'View module',
-		usage: 'Use for ',
+		usage: 'Use for selecting card (grid) view',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'views']
 	},
 
 	view_list: {
 		name: 'view_list',
 		component: Icons.MdViewList,
 		action: 'View list',
-		usage: 'Use for ',
+		usage: 'Use for list view',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'views']
 	},
 
 	share: {
 		name: 'share',
 		component: Icons.MdShare,
 		action: 'Share',
-		usage: 'Use for distributing content',
+		usage: 'Use for sharing data or assets',
 		description: '',
 		tags: ['actions']
 	},
@@ -409,7 +399,7 @@ export const icons = {
 		name: 'favorite',
 		component: Icons.MdFavorite,
 		action: 'Favorite',
-		usage: 'Use for ',
+		usage: 'Use for favourites or rating field type',
 		description: '',
 		tags: ['actions']
 	},
@@ -418,7 +408,7 @@ export const icons = {
 		name: 'favorite_border',
 		component: Icons.MdFavoriteBorder,
 		action: 'Favorite border',
-		usage: 'Use for ',
+		usage: 'Use for before and after favourite and rating',
 		description: '',
 		tags: ['actions']
 	},
@@ -427,7 +417,7 @@ export const icons = {
 		name: 'label',
 		component: Icons.MdLabel,
 		action: 'Label',
-		usage: 'Use for ',
+		usage: 'Use for tags',
 		description: '',
 		tags: ['actions']
 	},
@@ -436,7 +426,7 @@ export const icons = {
 		name: 'label_outline',
 		component: Icons.MdLabelOutline,
 		action: 'Label outline',
-		usage: 'Use for ',
+		usage: 'Use for tags',
 		description: '',
 		tags: ['actions']
 	},
@@ -445,7 +435,7 @@ export const icons = {
 		name: 'star',
 		component: Icons.MdStar,
 		action: 'Star',
-		usage: 'Use for ',
+		usage: 'Use for favourites or rating field type',
 		description: '',
 		tags: ['actions']
 	},
@@ -454,7 +444,7 @@ export const icons = {
 		name: 'star_border',
 		component: Icons.MdStarBorder,
 		action: 'Star border',
-		usage: 'Use for ',
+		usage: 'Use for before and after favourite and rating',
 		description: '',
 		tags: ['actions']
 	},
@@ -463,7 +453,7 @@ export const icons = {
 		name: 'stars',
 		component: Icons.MdStars,
 		action: 'Stars',
-		usage: 'Use for ',
+		usage: 'Use for rating',
 		description: '',
 		tags: ['actions']
 	},
@@ -472,7 +462,7 @@ export const icons = {
 		name: 'today',
 		component: Icons.MdToday,
 		action: 'Today',
-		usage: 'Use for ',
+		usage: 'Use for selecting today in a calendar view',
 		description: '',
 		tags: ['actions']
 	},
@@ -481,7 +471,7 @@ export const icons = {
 		name: 'play_circle_filled',
 		component: Icons.MdPlayCircleFilled,
 		action: 'Play circle filled',
-		usage: 'Use for ',
+		usage: 'Use for publishing a form or a page',
 		description: '',
 		tags: ['actions']
 	},
@@ -490,7 +480,7 @@ export const icons = {
 		name: 'play_circle_outline',
 		component: Icons.MdPlayCircleOutline,
 		action: 'Play circle outline',
-		usage: 'Use for ',
+		usage: 'Use for publishing a form or a page (alternative)',
 		description: '',
 		tags: ['actions']
 	},
@@ -499,7 +489,7 @@ export const icons = {
 		name: 'skip_next',
 		component: Icons.MdSkipNext,
 		action: 'Skip next',
-		usage: 'Use for ',
+		usage: 'Use for navigating to the end',
 		description: '',
 		tags: ['actions']
 	},
@@ -508,7 +498,7 @@ export const icons = {
 		name: 'skip_previous',
 		component: Icons.MdSkipPrevious,
 		action: 'Skip previous',
-		usage: 'Use for ',
+		usage: 'Use for navigating to the begining',
 		description: '',
 		tags: ['actions']
 	},
@@ -517,7 +507,7 @@ export const icons = {
 		name: 'pie_chart',
 		component: Icons.MdPieChart,
 		action: 'Pie chart',
-		usage: 'Use for ',
+		usage: 'Use for charts (dashboards)',
 		description: '',
 		tags: ['actions']
 	},
@@ -526,7 +516,7 @@ export const icons = {
 		name: 'pie_chart_outlined',
 		component: Icons.MdPieChartOutlined,
 		action: 'Pie chart outlined',
-		usage: 'Use for ',
+		usage: 'Use for charts (dashboards)',
 		description: '',
 		tags: ['actions']
 	},
@@ -535,16 +525,16 @@ export const icons = {
 		name: 'show_chart',
 		component: Icons.MdShowChart,
 		action: 'Show chart',
-		usage: 'Use for ',
+		usage: 'Use for setting up workflow or line chart',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'workflow', 'tabs']
 	},
 
 	insert_chart: {
 		name: 'insert_chart',
 		component: Icons.MdInsertChart,
 		action: 'Insert chart',
-		usage: 'Use for ',
+		usage: 'Use for charts (dashboards)',
 		description: '',
 		tags: ['actions']
 	},
@@ -553,7 +543,7 @@ export const icons = {
 		name: 'equalizer',
 		component: Icons.MdEqualizer,
 		action: 'Equalizer',
-		usage: 'Use for ',
+		usage: 'Use for charts (dashboards)',
 		description: '',
 		tags: ['actions']
 	},
@@ -562,7 +552,7 @@ export const icons = {
 		name: 'web_asset',
 		component: Icons.MdWebAsset,
 		action: 'Web asset',
-		usage: 'Use for ',
+		usage: 'Use for setting screen size',
 		description: '',
 		tags: ['actions']
 	},
@@ -571,7 +561,7 @@ export const icons = {
 		name: 'web',
 		component: Icons.MdWeb,
 		action: 'Web',
-		usage: 'Use for ',
+		usage: 'Use for web layout settings',
 		description: '',
 		tags: ['actions']
 	},
@@ -580,7 +570,7 @@ export const icons = {
 		name: 'tablet_mac',
 		component: Icons.MdTabletMac,
 		action: 'Tablet Mac',
-		usage: 'Use for ',
+		usage: 'Use for tablet viewport',
 		description: '',
 		tags: ['actions']
 	},
@@ -589,7 +579,7 @@ export const icons = {
 		name: 'laptop_mac',
 		component: Icons.MdLaptopMac,
 		action: 'Laptop Mac',
-		usage: 'Use for ',
+		usage: 'Use for laptop viewport',
 		description: '',
 		tags: ['actions']
 	},
@@ -598,7 +588,7 @@ export const icons = {
 		name: 'desktop_mac',
 		component: Icons.MdDesktopMac,
 		action: 'Desktop Mac',
-		usage: 'Use for ',
+		usage: 'Use for desktop viewport',
 		description: '',
 		tags: ['actions']
 	},
@@ -607,7 +597,7 @@ export const icons = {
 		name: 'phone_iphone',
 		component: Icons.MdPhoneIphone,
 		action: 'Phone iphone',
-		usage: 'Use for ',
+		usage: 'UUse for smartphone viewport',
 		description: '',
 		tags: ['actions']
 	},
@@ -616,7 +606,7 @@ export const icons = {
 		name: 'photo_camera',
 		component: Icons.MdPhotoCamera,
 		action: 'Photo camera',
-		usage: 'Use for ',
+		usage: 'Use for taking a picture or uploading a picture',
 		description: '',
 		tags: ['actions']
 	},
@@ -625,7 +615,7 @@ export const icons = {
 		name: 'short_text',
 		component: Icons.MdShortText,
 		action: 'Short text',
-		usage: 'Use for ',
+		usage: 'Short text paragraph',
 		description: '',
 		tags: ['actions']
 	},
@@ -634,7 +624,7 @@ export const icons = {
 		name: 'event',
 		component: Icons.MdEvent,
 		action: 'Event',
-		usage: 'Use for ',
+		usage: 'Use for selecting or viewing events/dates',
 		description: '',
 		tags: ['actions']
 	},
@@ -643,7 +633,7 @@ export const icons = {
 		name: 'list',
 		component: Icons.MdList,
 		action: 'List',
-		usage: 'Use for ',
+		usage: 'Use for list view (alternative)',
 		description: '',
 		tags: ['actions']
 	},
@@ -652,7 +642,7 @@ export const icons = {
 		name: 'work',
 		component: Icons.MdWork,
 		action: 'Work',
-		usage: 'Use for ',
+		usage: 'Use for business relations or connections',
 		description: '',
 		tags: ['actions']
 	},
@@ -661,7 +651,7 @@ export const icons = {
 		name: 'access_time',
 		component: Icons.MdAccessTime,
 		action: 'Access time',
-		usage: 'Use for ',
+		usage: 'Use for selecting or setting the time',
 		description: '',
 		tags: ['actions']
 	},
@@ -670,7 +660,7 @@ export const icons = {
 		name: 'mic',
 		component: Icons.MdMic,
 		action: 'Mic',
-		usage: 'Use for ',
+		usage: 'Use for recording sound',
 		description: '',
 		tags: ['actions']
 	},
@@ -679,7 +669,7 @@ export const icons = {
 		name: 'videocam',
 		component: Icons.MdVideocam,
 		action: 'Videocam',
-		usage: 'Use for ',
+		usage: 'Use for recording video',
 		description: '',
 		tags: ['actions']
 	},
@@ -688,7 +678,7 @@ export const icons = {
 		name: 'call',
 		component: Icons.MdCall,
 		action: 'Call',
-		usage: 'Use for ',
+		usage: 'Use for phone call',
 		description: '',
 		tags: ['actions']
 	},
@@ -697,16 +687,16 @@ export const icons = {
 		name: 'message',
 		component: Icons.MdMessage,
 		action: 'Message',
-		usage: 'Use for ',
+		usage: 'Use for messaging system',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'menu', 'messages']
 	},
 
 	filter_list: {
 		name: 'filter_list',
 		component: Icons.MdFilterList,
 		action: 'Filter list',
-		usage: 'Use for ',
+		usage: 'Use for filtering views',
 		description: '',
 		tags: ['actions']
 	},
@@ -715,7 +705,7 @@ export const icons = {
 		name: 'attach_file',
 		component: Icons.MdAttachFile,
 		action: 'Attach file',
-		usage: 'Use for ',
+		usage: 'Use for file attachments',
 		description: '',
 		tags: ['actions']
 	},
@@ -724,7 +714,7 @@ export const icons = {
 		name: 'directions',
 		component: Icons.MdDirections,
 		action: 'Directions',
-		usage: 'Use for ',
+		usage: 'Use for directions',
 		description: '',
 		tags: ['actions']
 	},
@@ -733,7 +723,7 @@ export const icons = {
 		name: 'mood',
 		component: Icons.MdMood,
 		action: 'Mood',
-		usage: 'Use for ',
+		usage: 'Use for happy situations',
 		description: '',
 		tags: ['actions']
 	},
@@ -742,7 +732,7 @@ export const icons = {
 		name: 'check_box',
 		component: Icons.MdCheckBox,
 		action: 'Check box',
-		usage: 'Use for ',
+		usage: 'Use for check boxes',
 		description: '',
 		tags: ['actions']
 	},
@@ -751,7 +741,7 @@ export const icons = {
 		name: 'radio_button_checked',
 		component: Icons.MdRadioButtonChecked,
 		action: 'Radio button check',
-		usage: 'Use for ',
+		usage: 'Use for creating new report and radio buttons',
 		description: '',
 		tags: ['actions']
 	},
@@ -760,7 +750,7 @@ export const icons = {
 		name: 'grid_on',
 		component: Icons.MdGridOn,
 		action: 'Grid on',
-		usage: 'Use for ',
+		usage: 'Use for grid view (alternative)',
 		description: '',
 		tags: ['actions']
 	},
@@ -769,7 +759,7 @@ export const icons = {
 		name: 'layers',
 		component: Icons.MdLayers,
 		action: 'Layers',
-		usage: 'Use for ',
+		usage: 'Use for layers (design)',
 		description: '',
 		tags: ['actions']
 	},
@@ -778,7 +768,7 @@ export const icons = {
 		name: 'sync',
 		component: Icons.MdSync,
 		action: 'Sync',
-		usage: 'Use for synchronizing',
+		usage: 'Use for initiate synchronization',
 		description: '',
 		tags: ['actions']
 	},
@@ -787,7 +777,7 @@ export const icons = {
 		name: 'sync_disabled',
 		component: Icons.MdSyncDisabled,
 		action: 'Sync disabled',
-		usage: 'Use for ',
+		usage: 'Use for disabling synchronization',
 		description: '',
 		tags: ['actions']
 	},
@@ -796,7 +786,7 @@ export const icons = {
 		name: 'sync_problem',
 		component: Icons.MdSyncProblem,
 		action: 'Sync problem',
-		usage: 'Use for displaying synchronization issue',
+		usage: 'Use for displaying problems with synchronization',
 		description: '',
 		tags: ['actions']
 	},
@@ -805,7 +795,7 @@ export const icons = {
 		name: 'lock_outline',
 		component: Icons.MdLockOutline,
 		action: 'Lock outline',
-		usage: 'Use for ',
+		usage: 'Use for login state logged in',
 		description: '',
 		tags: ['actions']
 	},
@@ -814,7 +804,7 @@ export const icons = {
 		name: 'lock_open',
 		component: Icons.MdLockOpen,
 		action: 'Lock open',
-		usage: 'Use for ',
+		usage: 'Use for login state logged out',
 		description: '',
 		tags: ['actions']
 	},
@@ -823,7 +813,7 @@ export const icons = {
 		name: 'close',
 		component: Icons.MdClose,
 		action: 'Close',
-		usage: 'Use for ',
+		usage: 'Use for close',
 		description: '',
 		tags: ['actions']
 	},
@@ -832,7 +822,7 @@ export const icons = {
 		name: 'apps',
 		component: Icons.MdApps,
 		action: 'Apps',
-		usage: 'Use for ',
+		usage: 'Use for access to other apps (app market)',
 		description: '',
 		tags: ['actions']
 	},
@@ -841,7 +831,7 @@ export const icons = {
 		name: 'keyboard_arrow_down',
 		component: Icons.MdKeyboardArrowDown,
 		action: 'Keyboard arrow down',
-		usage: 'Use for ',
+		usage: 'Use for dropdown menu',
 		description: '',
 		tags: ['actions']
 	},
@@ -850,7 +840,7 @@ export const icons = {
 		name: 'keyboard_arrow_up',
 		component: Icons.MdKeyboardArrowUp,
 		action: 'Keyboard arrow up',
-		usage: 'Use for ',
+		usage: 'Use to close dropdown menu',
 		description: '',
 		tags: ['actions']
 	},
@@ -859,7 +849,7 @@ export const icons = {
 		name: 'keyboard_arrow_left',
 		component: Icons.MdKeyboardArrowLeft,
 		action: 'Keyboard arrow left',
-		usage: 'Use for ',
+		usage: 'Use for page pagination to previous',
 		description: '',
 		tags: ['actions']
 	},
@@ -868,7 +858,7 @@ export const icons = {
 		name: 'keyboard_arrow_right',
 		component: Icons.MdKeyboardArrowRight,
 		action: 'Keyboard arrow right',
-		usage: 'Use for ',
+		usage: 'Use for page pagination to next',
 		description: '',
 		tags: ['actions']
 	},
@@ -877,7 +867,7 @@ export const icons = {
 		name: 'refresh',
 		component: Icons.MdRefresh,
 		action: 'Refresh',
-		usage: 'Use for ',
+		usage: 'Use for refreshing a view',
 		description: '',
 		tags: ['actions']
 	},
@@ -886,7 +876,7 @@ export const icons = {
 		name: 'check_circle',
 		component: Icons.MdCheckCircle,
 		action: 'Check circle',
-		usage: 'Use for ',
+		usage: 'Use for check or okay in modal views',
 		description: '',
 		tags: ['actions']
 	},
@@ -895,7 +885,7 @@ export const icons = {
 		name: 'check',
 		component: Icons.MdCheck,
 		action: 'Check',
-		usage: 'Use for ',
+		usage: 'Use for check or okay in modal views (alternative)',
 		description: '',
 		tags: ['actions']
 	},
@@ -904,7 +894,7 @@ export const icons = {
 		name: 'cancel',
 		component: Icons.MdCancel,
 		action: 'Cancel',
-		usage: 'Use for ',
+		usage: 'Use for cancelling or closing a view or a task',
 		description: '',
 		tags: ['actions']
 	},
@@ -913,7 +903,7 @@ export const icons = {
 		name: 'add_circle',
 		component: Icons.MdAddCircle,
 		action: 'Add circle',
-		usage: 'Use for ',
+		usage: 'Use for adding new stuff (anything)',
 		description: '',
 		tags: ['actions']
 	},
@@ -922,7 +912,7 @@ export const icons = {
 		name: 'add_circle_outline',
 		component: Icons.MdAddCircleOutline,
 		action: 'Add circle outline',
-		usage: 'Use for ',
+		usage: 'Use for adding new stuff (alternative)',
 		description: '',
 		tags: ['actions']
 	},
@@ -931,7 +921,7 @@ export const icons = {
 		name: 'delete',
 		component: Icons.MdDelete,
 		action: 'Delete',
-		usage: 'Use for ',
+		usage: 'Use for deleting data',
 		description: '',
 		tags: ['actions']
 	},
@@ -939,53 +929,54 @@ export const icons = {
 	delete_forever: {
 		name: 'delete_forever',
 		component: Icons.MdDeleteForever,
-		action: 'Delete forever/permanently',
-		usage: 'Use for ',
+		action: 'Delete permanently',
+		usage: 'Use for deleting data permanently (empty trash)',
 		description: '',
 		tags: ['actions']
 	},
 
-	content_copy: {
-		name: 'content_copy',
-		component: Icons.MdContentCopy,
-		action: 'Content copy',
-		usage: 'Use for ',
-		description: '',
-		tags: ['actions']
-	},
-
+	
 	notifications: {
 		name: 'notifications',
 		component: Icons.MdNotifications,
 		action: 'Notifications',
-		usage: 'Use for ',
+		usage: 'Use for notifications',
 		description: '',
 		tags: ['actions']
 	},
-
+	
 	notifications_active: {
 		name: 'notifications_active',
 		component: Icons.MdNotificationsActive,
 		action: 'Notifications active',
-		usage: 'Use for ',
+		usage: 'Use for new notification',
 		description: '',
 		tags: ['actions']
 	},
-
+	
 	notifications_none: {
 		name: 'notifications_none',
 		component: Icons.MdNotificationsNone,
 		action: 'Notifications none',
-		usage: 'Use for ',
+		usage: 'Use for no notifications',
 		description: '',
 		tags: ['actions']
 	},
-
+	
 	notifications_off: {
 		name: 'notifications_off',
 		component: Icons.MdNotificationsOff,
 		action: 'Notifications off',
-		usage: 'Use for turning off notifications',
+		usage: 'Use for notifications disabled (silence mode)',
+		description: '',
+		tags: ['actions']
+	},
+	
+	content_copy: {
+		name: 'content_copy',
+		component: Icons.MdContentCopy,
+		action: 'Content copy',
+		usage: 'Use for copying data/content',
 		description: '',
 		tags: ['actions']
 	},

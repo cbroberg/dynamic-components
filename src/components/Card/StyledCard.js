@@ -5,9 +5,9 @@ export const StyledCard = styled.div`
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.2s;
 	width: 200px;
-	/* min-height: 280px; */
-    margin-right: 8px;
-    margin-bottom: 8px;
+	min-height: 280px;
+    margin-right: 9px;
+    margin-bottom: 9px;
 	border-radius: 5px;
 	background: #ECF0F1;
 	&:hover {
