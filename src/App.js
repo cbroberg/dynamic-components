@@ -1,16 +1,11 @@
 import React, { Component } from 'react'
-
 import { toast } from 'react-toastify'
-// import 'react-toastify/dist/ReactToastify.min.css'
-
 import copy from 'copy-to-clipboard'
-
 import { Divider, StyledToast } from 'components/Styles'
-import { StyledLoader } from 'components/Loader/StyledLoader'
-// import logo from 'assets/logo_spin.png'
-
+import Loader from 'components/Loader/Loader'
 import Card from 'components/Card/Card'
-import { icons } from './components/Icon/Icon'
+import IconCard from 'components/IconCard/IconCard'
+import { icons } from 'components/Icon/Icon'
 
 const cardImages = []
 cardImages.push(require('assets/avatar_female.png'))
@@ -25,21 +20,20 @@ class App extends Component {
 	copyToClipboard(e, text) {
 		e.preventDefault()
 		copy(text)
-		this.notify(`${text} ... has been copyied to the clipboard`)
+		this.notify(`"${text}" ... has been copyied to the clipboard`)
 	}
 
 	renderIcons() {
 		return Object.entries(icons).map((icon, index) => {
-			return (
-				<div>
-					<Card
-						key={index}
-						icon={icon[1].name}
-						header={icon[1].action}
-						content={icon[1].usage}
-						onClick={(e) => this.copyToClipboard(e, icon[1].name)}
-					/>
-				</div>
+			return (			
+				<IconCard
+					key={index}
+					icon={icon[1].name}
+					header={icon[1].action}
+					content={icon[1].usage}
+					tags={icon[1].tags}
+					onClick={(e) => this.copyToClipboard(e, icon[1].name)}
+				/>
 			)
 		})
 	}
@@ -53,7 +47,7 @@ class App extends Component {
 						alt='Avatar' 
 						header='Jane Doe' 
 						content='JavaScript Developer' 
-						onClick={(e) => this.copyToClipboard(e, 'Meet Jane Doe')} 
+						onClick={(e) => this.copyToClipboard(e, 'Jane Doe')} 
 					/>
 
 					<Card 
@@ -61,7 +55,7 @@ class App extends Component {
 						alt='Avatar' 
 						header='John Doe' 
 						content='PHP Developer' 
-						onClick={(e) => this.copyToClipboard(e, 'Meet John Doe')} 
+						onClick={(e) => this.copyToClipboard(e, 'John Doe')} 
 					/>
 					
 					<Card 
@@ -69,7 +63,7 @@ class App extends Component {
 						alt='Christian Broberg' 
 						header='Christian Broberg' 
 						content='Product Development' 
-						onClick={(e) => this.copyToClipboard(e, 'That is one handsome guy')} 
+						onClick={(e) => this.copyToClipboard(e, 'Christian Broberg')} 
 					/>
 					
 					<Card 
@@ -77,7 +71,7 @@ class App extends Component {
 						alt='Mette Bugge' 
 						header='Mette Bugge' 
 						content='The Girlfriend' 
-						onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')} 
+						onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')} 
 					/>
 
 					<Card />
@@ -88,12 +82,12 @@ class App extends Component {
 				</Divider>
 				
 				<Divider>									
-					<StyledLoader size='xxs' velocity='fast' />
-					<StyledLoader size='xs' velocity='superfast' />
-					<StyledLoader size='small' />
-					<StyledLoader velocity='medium' />
-					<StyledLoader size='large' />
-					<StyledLoader size='xl' velocity='slow' />
+					<Loader size='xxs' velocity='fast' />
+					<Loader size='xs' velocity='superfast' />
+					<Loader size='small' />
+					<Loader velocity='medium' />
+					<Loader size='large' />
+					<Loader size='xl' velocity='slow' />
 				</Divider>
 				<div>
 					<StyledToast
