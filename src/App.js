@@ -1,25 +1,22 @@
 import React, { Component } from 'react'
 
 import { toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.min.css'
-import CopyToast from 'components/ToastStyles'
+// import 'react-toastify/dist/ReactToastify.min.css'
 
-import CopyToClipboard from 'react-copy-to-clipboard'
 import copy from 'copy-to-clipboard'
 
-import Icon, { icons } from 'components/Icon/Icon'
-import { DisplayIcon, CopyButton, Divider } from 'components/Styles'
+import { Divider, StyledToast } from 'components/Styles'
 import { StyledLoader } from 'components/Loader/StyledLoader'
 // import logo from 'assets/logo_spin.png'
 
 import Card from 'components/Card/Card'
+import { icons } from './components/Icon/Icon'
 
 const cardImages = []
 cardImages.push(require('assets/avatar_female.png'))
 cardImages.push(require('assets/avatar_male.png'))
 cardImages.push(require('assets/christian.png'))
 cardImages.push(require('assets/mette.png'))
-
 
 class App extends Component {
 
@@ -33,7 +30,6 @@ class App extends Component {
 
 	renderIcons() {
 		return Object.entries(icons).map((icon, index) => {
-			let codeToCopy = `<Icon icon={'${icon[1].name}'}/>`
 			return (
 				<div>
 					<Card
@@ -43,18 +39,6 @@ class App extends Component {
 						content={icon[1].usage}
 						onClick={(e) => this.copyToClipboard(e, icon[1].name)}
 					/>
-
-					<DisplayIcon key={index}>
-						<div>
-							<CopyToClipboard text={icon[1].name}><CopyButton color={'#fff'}>{icon[1].action}</CopyButton></CopyToClipboard>
-						</div>
-						<div>
-							<Icon key={index} icon={icon[1].name} size={75} />
-						</div>
-						<div>
-							<CopyToClipboard text={codeToCopy}><CopyButton color={'#81C1EA'}>Click to copy code</CopyButton></CopyToClipboard>
-						</div>
-					</DisplayIcon>
 				</div>
 			)
 		})
@@ -112,7 +96,7 @@ class App extends Component {
 					<StyledLoader size='xl' velocity='slow' />
 				</Divider>
 				<div>
-					<CopyToast
+					<StyledToast
 						position='top-right'
 						type='default'
 						autoClose={3000}
