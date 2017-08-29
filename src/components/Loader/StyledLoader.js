@@ -21,26 +21,50 @@ export const SpinLogo = styled.div`
 `
 
 const sizes = {
-	xs: '20px',
-	small: '50px',
-	medium: '80px',
-	large: '120px',
-	xl: '250px'
+	xxs: {
+		diameter: '14px',
+		border: '3px'
+	},
+	xs: {
+		diameter: '20px',
+		border: '5px'
+	},
+	small: {
+		diameter: '50px',
+		border: '10px'
+
+	},
+	medium: {
+		diameter: '80px',
+		border: '12px'
+
+	},
+	large: {
+		diameter: '120px',
+		border: '16px'
+
+	},
+	xl: {
+		diameter: '250px',
+		border: '22px'
+
+	}
 }
 
 const velocities = {
 	slow: '3s',
 	medium: '2s',
-	fast: '1s'
+	fast: '1s',
+	superfast: '0.5s'
 }
 
 export const StyledLoader = styled.div`
 	display: inline-block;
-	border: 16px solid #E3E5E5;
+	border: ${({ size }) => sizes[size].border} solid #E3E5E5;
 	border-radius: 50%;
-	border-top: 16px solid #3498db;
- 	width: ${({ size }) => sizes[size]};
-	height: ${({ size }) => sizes[size]};
+	border-top: ${({ size }) => sizes[size].border} solid #3498db;
+ 	width: ${({ size }) => sizes[size].diameter};
+	height: ${({ size }) => sizes[size].diameter};
 	animation: ${rotate360} ${({ velocity }) => velocities[velocity]} linear infinite;
 `
 
