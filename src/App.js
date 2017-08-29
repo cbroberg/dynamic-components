@@ -86,7 +86,7 @@ class App extends Component {
 						onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')} 
 					/>
 
-					<Card onClick={(e) => this.copyToClipboard(e, 'Testing default props')}/>
+					<Card />
 
 					<Card
 						icon={'cloud_download'}
@@ -94,6 +94,7 @@ class App extends Component {
 						content='Use for downloading data and assets'
 						onClick={(e) => this.copyToClipboard(e, 'cloud_download')}
 					/>
+					
 				</div>
 
 				<div>
