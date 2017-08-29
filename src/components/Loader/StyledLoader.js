@@ -12,21 +12,13 @@ const rotate360 = keyframes`
 	}
 `
 
-export const SpinLogo = styled.div`
-	display: inline-block;
-	animation: ${rotate360} ${props => props.time || '1s'} linear infinite;
-	&:hover {
-        animation: ${rotate360} 3s linear infinite;
-    }
-`
-
 const sizes = {
 	xxs: {
 		diameter: '13px',
 		border: '2px'
 	},
 	xs: {
-		diameter: '20px',
+		diameter: '25px',
 		border: '5px'
 	},
 	small: {
@@ -45,8 +37,8 @@ const sizes = {
 
 	},
 	xl: {
-		diameter: '250px',
-		border: '22px'
+		diameter: '200px',
+		border: '20px'
 
 	}
 }
@@ -59,11 +51,10 @@ const velocities = {
 }
 
 export const StyledLoader = styled.div`
-	/* display: inline-block; */
 	float: left;
 	border: ${({ size }) => sizes[size].border} solid #E3E5E5;
 	border-radius: 50%;
-	border-top: ${({ size }) => sizes[size].border} solid #3498db;
+	border-top: ${({ size }) => sizes[size].border} solid #3B97D3;
  	width: ${({ size }) => sizes[size].diameter};
 	height: ${({ size }) => sizes[size].diameter};
 	animation: ${rotate360} ${({ velocity }) => velocities[velocity]} linear infinite;
