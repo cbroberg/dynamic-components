@@ -503,4 +503,31 @@ export const icons = {
 		description: '',
 		tags: ['actions']
 	},
+
+	skip_previous: {
+		name: 'skip_previous',
+		component: Icons.MdSkipPrevious,
+		action: 'Skip previous',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	pie_chart: {
+		name: 'pie_chart',
+		component: Icons.MdPieChart,
+		action: 'Pie chart',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	dashboard: {
+		name: 'dashboard',
+		component: Icons.MdDashboard,
+		action: 'Dashboard',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
 }
