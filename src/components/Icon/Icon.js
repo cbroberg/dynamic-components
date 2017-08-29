@@ -736,5 +736,257 @@ export const icons = {
 		usage: 'Use for ',
 		description: '',
 		tags: ['actions']
-	},+
+	},
+
+	check_box: {
+		name: 'check_box',
+		component: Icons.MdCheckBox,
+		action: 'Check box',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	radio_button_checked: {
+		name: 'radio_button_checked',
+		component: Icons.MdRadioButtonChecked,
+		action: 'Radio button check',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	grid_on: {
+		name: 'grid_on',
+		component: Icons.MdGridOn,
+		action: 'Grid on',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	layers: {
+		name: 'layers',
+		component: Icons.MdLayers,
+		action: 'Layers',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	sync: {
+		name: 'sync',
+		component: Icons.MdSync,
+		action: 'Sync',
+		usage: 'Use for synchronizing',
+		description: '',
+		tags: ['actions']
+	},
+
+	sync_disabled: {
+		name: 'sync_disabled',
+		component: Icons.MdSyncDisabled,
+		action: 'Sync disabled',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	sync_problem: {
+		name: 'sync_problem',
+		component: Icons.MdSyncProblem,
+		action: 'Sync problem',
+		usage: 'Use for displaying synchronization issue',
+		description: '',
+		tags: ['actions']
+	},
+
+	lock_outline: {
+		name: 'lock_outline',
+		component: Icons.MdLockOutline,
+		action: 'Lock outline',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	lock_open: {
+		name: 'lock_open',
+		component: Icons.MdLockOpen,
+		action: 'Lock open',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	close: {
+		name: 'close',
+		component: Icons.MdClose,
+		action: 'Close',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	apps: {
+		name: 'apps',
+		component: Icons.MdApps,
+		action: 'Apps',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	keyboard_arrow_down: {
+		name: 'keyboard_arrow_down',
+		component: Icons.MdKeyboardArrowDown,
+		action: 'Keyboard arrow down',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	keyboard_arrow_up: {
+		name: 'keyboard_arrow_up',
+		component: Icons.MdKeyboardArrowUp,
+		action: 'Keyboard arrow up',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	keyboard_arrow_left: {
+		name: 'keyboard_arrow_left',
+		component: Icons.MdKeyboardArrowLeft,
+		action: 'Keyboard arrow left',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+	
+	keyboard_arrow_right: {
+		name: 'keyboard_arrow_right',
+		component: Icons.MdKeyboardArrowRight,
+		action: 'Keyboard arrow right',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	refresh: {
+		name: 'refresh',
+		component: Icons.MdRefresh,
+		action: 'Refresh',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	check_circle: {
+		name: 'check_circle',
+		component: Icons.MdCheckCircle,
+		action: 'Check circle',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	check: {
+		name: 'check',
+		component: Icons.MdCheck,
+		action: 'Check',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	cancel: {
+		name: 'cancel',
+		component: Icons.MdCancel,
+		action: 'Cancel',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	add_circle: {
+		name: 'add_circle',
+		component: Icons.MdAddCircle,
+		action: 'Add circle',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	add_circle_outline: {
+		name: 'add_circle_outline',
+		component: Icons.MdAddCircleOutline,
+		action: 'Add circle outline',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	delete: {
+		name: 'delete',
+		component: Icons.MdDelete,
+		action: 'Delete',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	delete_forever: {
+		name: 'delete_forever',
+		component: Icons.MdDeleteForever,
+		action: 'Delete forever/permanently',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	content_copy: {
+		name: 'content_copy',
+		component: Icons.MdContentCopy,
+		action: 'Content copy',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	notifications: {
+		name: 'notifications',
+		component: Icons.MdNotifications,
+		action: 'Notifications',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	notifications_active: {
+		name: 'notifications_active',
+		component: Icons.MdNotificationsActive,
+		action: 'Notifications active',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	notifications_none: {
+		name: 'notifications_none',
+		component: Icons.MdNotificationsNone,
+		action: 'Notifications none',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	notifications_off: {
+		name: 'notifications_off',
+		component: Icons.MdNotificationsOff,
+		action: 'Notifications off',
+		usage: 'Use for turning off notifications',
+		description: '',
+		tags: ['actions']
+	},
 }
