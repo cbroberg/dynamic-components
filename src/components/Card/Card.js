@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { StyledCard, StyledCardImage, StyledCardContainer, StyledCardHeader, StyledCardContent, StyledCardIcon } from 'components/Card/StyledCard'
 import Icon from 'components/Icon/Icon'
 
@@ -52,6 +53,13 @@ class Card extends Component {
 				</div>
 			)}
 	}
+}
+
+Card.propTypes = {
+	image: PropTypes.string,
+	alt: PropTypes.string,
+	header: PropTypes.string,
+	content: PropTypes.string
 }
 
 Card.defaultProps = {
