@@ -1,19 +1,14 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import * as colors from 'components/colors'
 import { getColor } from 'components/colors'
 import { transparentize, darken } from 'polished'
 
-export const Container = styled.div`
-  margin: 0 auto;
-  width: 100%;
-
-  @media screen and (min-width: 360px) {
-    max-width: 400px;
-  }
-
-  @media screen and (min-width: 800px) {
-    max-width: 800px;
-  }
+export const Divider = styled.div`
+    /* padding: 4rem 4rem 4rem 4rem; */
+    width: 100%;
+    /* width: 20px; */
+    height: 20px;
+    margin: 5px;
 `
 
 export const DisplayIcon = styled.div`
@@ -57,56 +52,5 @@ export const CopyButton = styled.button`
     }
 `
 
-
-const rotate360 = keyframes`
-	from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-`
-
-const loaderSizes = {
-	xs: '20px',
-	small: '50px',
-	medium: '80px',
-	large: '120px',
-	xl: '250px'
-}
-
-
-export const Loader = styled.div`
-	display: inline-block;
-	border: 16px solid #E3E5E5;
-	border-radius: 50%;
-	border-top: 16px solid #3498db;
-	width: ${({ size }) => loaderSizes[size]};
-	height: ${({ size }) => loaderSizes[size]};
-	animation: ${rotate360} 1s linear infinite;
-	
-	&:hover {
-        animation: ${rotate360} 3s linear infinite;
-    }
-`
-
-Loader.defaultProps = {
-	size: loaderSizes['medium'] /* '80px' */
-}
-
-
-export const SpinLogo = styled.div`
-	display: inline-block;
-	margin: 0px 30px 0px 30px;
-	animation: ${rotate360} ${props => props.time || '1s'} linear infinite;
-	&:hover {
-        animation: ${rotate360} 3s linear infinite;
-    }
-`
 export const LogoImg = styled.img`
 `
-
-/*
-
-*/

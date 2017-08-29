@@ -6,12 +6,22 @@ import CopyToast from 'components/ToastStyles'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import copy from 'copy-to-clipboard'
 
-import Icon, { icons } from 'components/Icon'
-import { DisplayIcon, CopyButton, Loader, LogoImg, SpinLogo } from 'components/Styles'
+import Icon, { icons } from 'components/Icon/Icon'
+import { DisplayIcon, CopyButton, LogoImg } from 'components/Styles'
+import { StyledLoader, SpinLogo } from 'components/Loader/StyledLoader'
 import logo from 'assets/logo_spin.png'
 
-import { Card, CardImage, CardContainer, CardHeader, CardContent, CardIcon } from 'components/Cardstyles'
+import Card from 'components/Card/Card'
 
+const cardImages = []
+cardImages.push(require('assets/avatar_female.png'))
+cardImages.push(require('assets/avatar_male.png'))
+cardImages.push(require('assets/christian.png'))
+cardImages.push(require('assets/mette.png'))
+
+// const loadImages = () => {
+
+// }
 
 class App extends Component {
 
@@ -45,65 +55,67 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>				
-				<Card>
-					<CardImage src={require(`assets/avatar.png`)} alt="Avatar" />
-					<CardContainer>
-						<CardHeader>Jane Doe</CardHeader>
-						<CardContent>JavaScript Developer</CardContent>
-					</CardContainer>
-				</Card>
-				<Card>
-					<CardImage src={require(`assets/avatar2.png`)} alt="Avatar" />
-					<CardContainer>
-						<CardHeader>John Doe</CardHeader>
-						<CardContent>PHP Developer</CardContent>
-					</CardContainer>
-				</Card>
-				<Card onClick={(e) => this.copyToClipboard(e, 'That is one handsome guy :)')}>
-					<CardImage src={require(`assets/dubai.png`)} alt="Avatar" />
-					<CardContainer>
-						<CardHeader>Christian Broberg</CardHeader>
-						<CardContent>Product Development</CardContent>
-					</CardContainer>
-				</Card>
-				<Card onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')}>
-					<CardImage src={require(`assets/mettebugge.png`)} alt="Avatar" />
-					<CardContainer>
-						<CardHeader>Mette Bugge</CardHeader>
-						<CardContent>The Girlfriend</CardContent>
-					</CardContainer>
-				</Card>				
-				<Card>
-					<CardIcon onClick={(e) => this.copyToClipboard(e, `<Icon icon={'cloud_download'}/>`)}>
-						<Icon icon={'cloud_download'} size={150} />
-					</CardIcon>
-					<CardContainer>
-						<CardHeader>Download</CardHeader>
-						<CardContent>Use for downloading data and assets</CardContent>
-					</CardContainer>
-				</Card>
+			<div>
+				<Card 
+					image={cardImages[0]} 
+					alternate='Avatar' 
+					header='Jane Doe' 
+					content='JavaScript Developer' 
+				/>
+
+				<Card 
+					image={cardImages[1]} 
+					alternate='Avatar' 
+					header='John Doe' 
+					content='PHP Developer' 
+				/>
+				
+				<Card 
+					image={cardImages[2]} 
+					alternate='Christian Broberg' 
+					header='Christian Broberg' 
+					content='Product Development' 
+					onClick={(e) => this.copyToClipboard(e, 'That is one handsome guy')} 
+				/>
+				
+				<Card 
+					image={cardImages[3]} 
+					alternate='Mette Bugge' 
+					header='Mette Bugge' 
+					content='The Girlfriend' 
+					onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')} 
+				/>
+				
+				<Card 
+					icon={'cloud_download'} 
+					header='Download' 
+					content='Use for downloading data and assets' 
+					onClick={(e) => this.copyToClipboard(e, `<Icon icon={'cloud_download'}/>`)} 
+				/>
+
 				<CopyToast
 					position="top-right"
 					type="default"
-					autoClose={9000}
+					autoClose={3000}
 					hideProgressBar={true}
 					newestOnTop={false}
 					closeOnClick
 					pauseOnHover
 				/>
-				<div>
-					<Loader size="xs" />
-					<Loader size="small" />
-					<Loader />
-					<Loader size="large" />
-					<Loader size="xl" />
 
-					<SpinLogo time="3s">
+				<div>
+					<StyledLoader size="xs" />
+					<StyledLoader size="small" />
+					<StyledLoader />
+					<StyledLoader size="large" />
+					<StyledLoader size="xl"/>
+
+					<SpinLogo time="5s">
 						<LogoImg src={logo} alt="Logo" />
 					</SpinLogo>
 
-					{this.renderIcons()}
+					{/* {this.renderIcons()} */}
+
 				</div>
 			</div>
 		)
