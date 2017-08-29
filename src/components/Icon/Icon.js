@@ -1,15 +1,25 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as Icons from 'react-icons/lib/md'
+import { ICON_DEFAULT_COLOR, ICON_ACTIVE_COLOR } from 'theme/colors'
 
+class Icon extends Component {
 
-class Icon extends Component {	
+	setColor(active) {
+		if (active === true) {
+			return (ICON_ACTIVE_COLOR)
+		} else {
+			return (this.defaultProps.color)
+		}
+	}
 
 	render() {
 		const IconComponent = icons[this.props.icon].component
-		return <IconComponent size={this.props.size} color={this.props.color}/>
+		return <IconComponent size={this.props.size} color={this.props.color} style={this.props.style} />
 	}
 }
+
+// size = { size || this.defaultProps.size } color= { this.setColor(this.props.active) || this.defaultProps.color } style= { this.props.style || this.defaultProps.style }
 
 export default Icon
 
@@ -27,7 +37,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
 	icon: 'menu',
 	size: 50,
-	color: '#3B97D3',
+	color: ICON_DEFAULT_COLOR,
 	active: false,
 	style: {}
 }
@@ -69,7 +79,7 @@ export const icons = {
 		description: '',
 		tags: ['actions']
 	},
-	
+
 	assignment: {
 		name: 'assignment',
 		component: Icons.MdAssignment,
@@ -87,7 +97,7 @@ export const icons = {
 		description: '',
 		tags: ['menu', 'tabs', 'reports']
 	},
-	
+
 	info: {
 		name: 'info',
 		component: Icons.MdInfo,
@@ -331,7 +341,7 @@ export const icons = {
 		description: '',
 		tags: ['actions']
 	},
-	
+
 	visibility_off: {
 		name: 'visibility_off',
 		component: Icons.MdVisibilityOff,
@@ -475,7 +485,7 @@ export const icons = {
 		description: '',
 		tags: ['actions']
 	},
-	
+
 	play_circle_outline: {
 		name: 'play_circle_outline',
 		component: Icons.MdPlayCircleOutline,
@@ -853,7 +863,7 @@ export const icons = {
 		description: '',
 		tags: ['actions']
 	},
-	
+
 	keyboard_arrow_right: {
 		name: 'keyboard_arrow_right',
 		component: Icons.MdKeyboardArrowRight,
@@ -935,7 +945,7 @@ export const icons = {
 		tags: ['actions']
 	},
 
-	
+
 	notifications: {
 		name: 'notifications',
 		component: Icons.MdNotifications,
@@ -944,7 +954,7 @@ export const icons = {
 		description: '',
 		tags: ['actions', 'notifications']
 	},
-	
+
 	notifications_active: {
 		name: 'notifications_active',
 		component: Icons.MdNotificationsActive,
@@ -953,7 +963,7 @@ export const icons = {
 		description: '',
 		tags: ['actions', 'notifications']
 	},
-	
+
 	notifications_none: {
 		name: 'notifications_none',
 		component: Icons.MdNotificationsNone,
@@ -962,7 +972,7 @@ export const icons = {
 		description: '',
 		tags: ['actions', 'notifications']
 	},
-	
+
 	notifications_off: {
 		name: 'notifications_off',
 		component: Icons.MdNotificationsOff,
@@ -971,7 +981,7 @@ export const icons = {
 		description: '',
 		tags: ['actions']
 	},
-	
+
 	content_copy: {
 		name: 'content_copy',
 		component: Icons.MdContentCopy,
