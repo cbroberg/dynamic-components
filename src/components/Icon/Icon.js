@@ -70,6 +70,15 @@ export const icons = {
 		tags: ['actions']
 	},
 
+	bug_report: {
+		name: 'bug_report',
+		component: Icons.MdBugReport,
+		action: 'Bug Report',
+		usage: 'Use for bug reports',
+		description: '',
+		tags: ['actions']
+	},
+
 	assignment_turned_in: {
 		name: 'assignment_turned_in',
 		component: Icons.MdAssignmentTurnedIn,
