@@ -5,11 +5,11 @@ import Icon from 'components/Icon/Icon'
 class Card extends Component {
 
 	renderCard() {
-		const { image, alternate, header, content } = this.props
+		const { image, alt, header, content } = this.props
 		return (
 			<div>
 				<StyledCard onClick={this.props.onClick}>
-					<StyledCardImage src={image} alt={alternate} />
+					<StyledCardImage src={image} alt={alt} />
 					<StyledCardContainer>
 						<StyledCardHeader>{header}</StyledCardHeader>
 						<StyledCardContent>{content}</StyledCardContent>
@@ -55,11 +55,10 @@ class Card extends Component {
 }
 
 Card.defaultProps = {
-	image: 'assets/avatar.png',
-	alternate: '',
-	header: '',
-	content: '',
-	icon: '',
+	image: require('assets/avatar_female.png'),
+	alt: 'This is alternative text',
+	header: 'Your header goes here',
+	content: 'Your content goes here ...'
 }
 
 export default Card

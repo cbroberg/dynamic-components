@@ -3,7 +3,7 @@
 // Component names use MdSettings where settings have a caps initial letter
 
 // Framework icons
-export const ICON_SEARCH = 'search'
+export const ICON_SEARCH = 'search' // 
 export const ICON_MENU = 'menu'
 export const ICON_MESSAGES = 'chat'
 export const ICON_HELP = 'help'
@@ -21,7 +21,7 @@ export const ICON_OPACITY = 'opacity' // Design
 export const ICON_ASSIGNMENT = 'assignment' // Forms
 export const ICON_ASSIGNMENT_TURNED_IN = 'assignment_turned_in' // Reports
 export const ICON_PEOPLE = 'people' // Organisation
-export const ICON_GROUP_ADD = 'group_add' // 
+export const ICON_GROUP_ADD = 'group_add'
 export const ICON_PERSON = 'person'
 export const ICON_PERSON_ADD = 'person_add'
 export const ICON_MAIL_OUTLINE = 'mail_outline'
@@ -34,16 +34,17 @@ export const ICON_CLOUD = 'cloud'
 export const ICON_CLOUD_DOWNLOAD = 'cloud_download'
 export const ICON_CLOUD_UPLOAD = 'cloud_upload'
 export const ICON_LANGUAGE = 'language'
-export const ICON_DATE_RANGE = 'date_range'
+export const ICON_DATE_RANGE = 'date_range' // Date view and date range selector/field
 export const ICON_MODE_EDIT = 'mode_edit'
-export const ICON_PLACE = 'place'
+export const ICON_PLACE = 'place' // Map view and location
 export const ICON_PHONE = 'phone'
 export const ICON_VISIBILITY = 'visibility'
 export const ICON_VISIBILITY_OFF = 'visibility_off'
 export const ICON_ACCOUNT_BOX = 'account_box'
 export const ICON_INSERT_DRIVE_FILE = 'insert_drive_file'
 export const ICON_VIEW_HEADLINE = 'view_headline'
-export const ICON_VIEW_MODULE = 'view_module'
+export const ICON_VIEW_MODULE = 'view_module' // Card view
+export const ICON_VIEW_LIST = 'view_list' // List view
 export const ICON_SHARE = 'share'
 export const ICON_FAVORITE = 'favorite'
 export const ICON_FAVORITE_BORDER = 'favorite_border'
@@ -122,11 +123,3 @@ export const ICON_NOTIFICATIONS_OFF = 'notifications_off'
 export const ICON_TAB_GENERAL = 'general'
 export const ICON_TAB_FIELDS = 'fields'
 export const ICON_TAB_USERS = 'users'
-
-export const iconArr = [
-	{
-		name: ICON_SEARCH,
-		value: '#2C3E50'
-	}
-]
-

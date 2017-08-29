@@ -13,7 +13,7 @@ export const icons = {
 	},
 
 	menu: {
-		name: iconname.ICON_MENU,
+		name: 'menu',
 		component: Icons.MdMenu,
 		action: 'Menu',
 		usage: 'Use for menu open/close',

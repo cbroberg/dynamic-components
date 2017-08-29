@@ -20,13 +20,18 @@ export const SpinLogo = styled.div`
     }
 `
 
-
 const sizes = {
 	xs: '20px',
 	small: '50px',
 	medium: '80px',
 	large: '120px',
 	xl: '250px'
+}
+
+const velocities = {
+	slow: '3s',
+	medium: '2s',
+	fast: '1s'
 }
 
 export const StyledLoader = styled.div`
@@ -36,16 +41,15 @@ export const StyledLoader = styled.div`
 	border-top: 16px solid #3498db;
  	width: ${({ size }) => sizes[size]};
 	height: ${({ size }) => sizes[size]};
-	animation: ${rotate360} 1s linear infinite;
-	&:hover {
-        animation: ${rotate360} 3s linear infinite;
-    }
+	animation: ${rotate360} ${({ velocity }) => velocities[velocity]} linear infinite;
 `
 
 StyledLoader.propTypes = {
-	size: PropTypes.string.isRequired
+	size: PropTypes.string.isRequired,
+	velocity: PropTypes.string
 }
 
 StyledLoader.defaultProps = {
-	size: 'medium'
+	size: 'medium',
+	velocity: 'fast'
 }

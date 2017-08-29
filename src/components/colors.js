@@ -104,8 +104,6 @@ export const GRAPHQL_PINK = '#E33CAA'
 export const BLACK = '#000'
 
 
-// https://color.adobe.com/
-
 export const colorArr = [
 	{
 		name: 'HEADER',

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 import CopyToast from 'components/ToastStyles'
@@ -19,9 +20,6 @@ cardImages.push(require('assets/avatar_male.png'))
 cardImages.push(require('assets/christian.png'))
 cardImages.push(require('assets/mette.png'))
 
-// const loadImages = () => {
-
-// }
 
 class App extends Component {
 
@@ -30,8 +28,7 @@ class App extends Component {
 	copyToClipboard(e, text) {
 		e.preventDefault()
 		copy(text)
-		this.notify(`${text} has been copyied to the clipboard ...`)
-		// toast.success('The card data has been copyied to the clipboard')
+		this.notify(`${text} ... has been copyied to the clipboard`)
 	}
 
 	renderIcons() {
@@ -56,66 +53,73 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Card 
-					image={cardImages[0]} 
-					alternate='Avatar' 
-					header='Jane Doe' 
-					content='JavaScript Developer' 
-				/>
+				<div>
+					<Card 
+						image={cardImages[0]} 
+						alt='Avatar' 
+						header='Jane Doe' 
+						content='JavaScript Developer' 
+						onClick={(e) => this.copyToClipboard(e, 'Meet Jane Doe')} 
+					/>
 
-				<Card 
-					image={cardImages[1]} 
-					alternate='Avatar' 
-					header='John Doe' 
-					content='PHP Developer' 
-				/>
-				
-				<Card 
-					image={cardImages[2]} 
-					alternate='Christian Broberg' 
-					header='Christian Broberg' 
-					content='Product Development' 
-					onClick={(e) => this.copyToClipboard(e, 'That is one handsome guy')} 
-				/>
-				
-				<Card 
-					image={cardImages[3]} 
-					alternate='Mette Bugge' 
-					header='Mette Bugge' 
-					content='The Girlfriend' 
-					onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')} 
-				/>
-				
-				<Card 
-					icon={'cloud_download'} 
-					header='Download' 
-					content='Use for downloading data and assets' 
-					onClick={(e) => this.copyToClipboard(e, `<Icon icon={'cloud_download'}/>`)} 
-				/>
+					<Card 
+						image={cardImages[1]} 
+						alt='Avatar' 
+						header='John Doe' 
+						content='PHP Developer' 
+						onClick={(e) => this.copyToClipboard(e, 'Meet John Doe')} 
+					/>
+					
+					<Card 
+						image={cardImages[2]} 
+						alt='Christian Broberg' 
+						header='Christian Broberg' 
+						content='Product Development' 
+						onClick={(e) => this.copyToClipboard(e, 'That is one handsome guy')} 
+					/>
+					
+					<Card 
+						image={cardImages[3]} 
+						alt='Mette Bugge' 
+						header='Mette Bugge' 
+						content='The Girlfriend' 
+						onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')} 
+					/>
 
-				<CopyToast
-					position="top-right"
-					type="default"
-					autoClose={3000}
-					hideProgressBar={true}
-					newestOnTop={false}
-					closeOnClick
-					pauseOnHover
-				/>
+					<Card onClick={(e) => this.copyToClipboard(e, 'Testing default props')}/>
+
+					<Card
+						icon={'cloud_download'}
+						header='Download'
+						content='Use for downloading data and assets'
+						onClick={(e) => this.copyToClipboard(e, `<Icon icon={'cloud_download'}/>`)}
+					/>
+				</div>
 
 				<div>
-					<StyledLoader size="xs" />
-					<StyledLoader size="small" />
-					<StyledLoader />
-					<StyledLoader size="large" />
-					<StyledLoader size="xl"/>
+					<StyledLoader size='xl' velocity='slow' />
+					<StyledLoader size='large' />
+					<StyledLoader velocity='medium' />
+					<StyledLoader size='small' />
+					<StyledLoader size='xs' velocity='slow' />
 
-					<SpinLogo time="5s">
-						<LogoImg src={logo} alt="Logo" />
+					<SpinLogo time='5s'>
+						<LogoImg src={logo} alt='Logo' />
 					</SpinLogo>
 
 					{/* {this.renderIcons()} */}
 
+				</div>
+				<div>
+					<CopyToast
+						position='top-right'
+						type='default'
+						autoClose={3000}
+						hideProgressBar={true}
+						newestOnTop={false}
+						closeOnClick
+						pauseOnHover
+					/>
 				</div>
 			</div>
 		)
