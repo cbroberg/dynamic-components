@@ -92,7 +92,7 @@ class App extends Component {
 						icon={'cloud_download'}
 						header='Download'
 						content='Use for downloading data and assets'
-						onClick={(e) => this.copyToClipboard(e, `<Icon icon={'cloud_download'}/>`)}
+						onClick={(e) => this.copyToClipboard(e, 'cloud_download')}
 					/>
 				</div>
 

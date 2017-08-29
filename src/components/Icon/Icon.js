@@ -1,6 +1,36 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import * as Icons from 'react-icons/lib/md'
-import * as iconname from './iconnames'
+
+
+class Icon extends Component {	
+
+	render() {
+		const IconComponent = icons[this.props.icon].component
+		return <IconComponent size={this.props.size} color={this.props.color}/>
+	}
+}
+
+export default Icon
+
+Icon.propTypes = {
+	icon: PropTypes.string.isRequired,
+	size: PropTypes.number,
+	color: PropTypes.string,
+	active: PropTypes.bool,
+	style: PropTypes.shape({
+		verticalAlign: PropTypes.string,
+		paddingRight: PropTypes.string
+	})
+}
+
+Icon.defaultProps = {
+	icon: 'menu',
+	size: 50,
+	color: '#3B97D3',
+	active: false,
+	style: {}
+}
 
 
 export const icons = {
@@ -9,6 +39,7 @@ export const icons = {
 		component: Icons.MdSearch,
 		action: 'Search',
 		usage: 'Use for search bars and search fields',
+		description: '',
 		tags: ['search', 'actions']
 	},
 
@@ -17,57 +48,52 @@ export const icons = {
 		component: Icons.MdMenu,
 		action: 'Menu',
 		usage: 'Use for menu open/close',
+		description: '',
 		tags: ['actions', 'menu']
 	},
 
 	chat: {
-		name: iconname.ICON_MESSAGES,
+		name: 'chat',
 		component: Icons.MdChat,
 		action: 'Messages',
 		usage: 'Use for launching the messaging system',
+		description: '',
 		tags: ['actions', 'menu', 'messaging']
 	},
 
 	help: {
-		name: iconname.ICON_HELP,
+		name: 'help',
 		component: Icons.MdHelp,
 		action: 'Help',
 		usage: 'Use for launching the help system',
+		description: '',
 		tags: ['actions']
 	},
-	
+
 	assignment_turned_in: {
-		name: iconname.ICON_ASSIGNMENT_TURNED_IN,
+		name: 'assignment_turned_in',
 		component: Icons.MdAssignmentTurnedIn,
 		action: 'Reports',
 		usage: 'Use for Reports (registrations)',
+		description: '',
 		tags: ['menu', 'tabs']
 	},
 
 	cloud_download: {
-		name: iconname.ICON_CLOUD_DOWNLOAD,
+		name: 'cloud_download',
 		component: Icons.MdCloudDownload,
 		action: 'Download',
 		usage: 'Use for downloading data and assets',
+		description: '',
 		tags: ['actions']
 	},
 
 	cloud_upload: {
-		name: iconname.ICON_CLOUD_UPLOAD,
+		name: 'cloud_upload',
 		component: Icons.MdCloudUpload,
 		action: 'Upload',
 		usage: 'Use for uploading files and assets',
+		description: '',
 		tags: ['actions']
-	},	
+	},
 }
-
-class Icon extends Component {	
-
-	render() {
-		const IconComponent = icons[this.props.icon || 'menu'].component
-		return <IconComponent size={this.props.size || 50} color={'#3B97D3'} />
-	}
-}
-
-export default Icon
-
