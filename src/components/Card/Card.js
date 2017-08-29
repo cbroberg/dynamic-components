@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledCard, StyledCardImage, StyledCardContainer, StyledCardHeader, StyledCardContent, StyledCardIcon } from 'components/Card/StyledCard'
-import Icon from 'components/Icon/Icon'
+import { StyledCard, StyledCardImage, StyledCardContainer, StyledCardHeader, StyledCardContent } from 'components/Card/StyledCard'
 
 class Card extends Component {
 
@@ -18,40 +17,14 @@ class Card extends Component {
 				</StyledCard>
 			</div>
 		)
-
-	}
-
-	renderIconCard() {
-		const { icon, header, content } = this.props
-		return (
-			<div>
-				<StyledCard>
-					<StyledCardIcon onClick={this.props.onClick}>
-						<Icon icon={icon} size={150} />
-					</StyledCardIcon>
-					<StyledCardContainer>
-						<StyledCardHeader>{header}</StyledCardHeader>
-						<StyledCardContent>{content}</StyledCardContent>
-					</StyledCardContainer>
-				</StyledCard>
-			</div>
-		)
-
 	}
 
 	render() {
-		if (this.props.icon) {
-			return (
+		return (
 			<div>
-				{this.renderIconCard()}
+				{this.renderCard()}
 			</div>
-			) 
-		} else { 
-			return (
-				<div>
-					{this.renderCard()}
-				</div>
-			)}
+		)
 	}
 }
 
