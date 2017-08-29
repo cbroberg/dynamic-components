@@ -942,7 +942,7 @@ export const icons = {
 		action: 'Notifications',
 		usage: 'Use for notifications',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 	
 	notifications_active: {
@@ -951,7 +951,7 @@ export const icons = {
 		action: 'Notifications active',
 		usage: 'Use for new notification',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 	
 	notifications_none: {
@@ -960,7 +960,7 @@ export const icons = {
 		action: 'Notifications none',
 		usage: 'Use for no notifications',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 	
 	notifications_off: {
@@ -978,6 +978,6 @@ export const icons = {
 		action: 'Content copy',
 		usage: 'Use for copying data/content',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 }
