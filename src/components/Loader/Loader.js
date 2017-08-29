@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
+import StyledLoader from 'components/Loader/StyledLoader'
 
-class Loader extends Component {
-	render() {
-		return (
-			<div>
-				
-			</div>
-		)
-	}
-}
+
+const Loader = (props) => (
+	<StyledLoader size={props.size} velocity={props.velocity}  />
+)
 
 export default Loader
 
