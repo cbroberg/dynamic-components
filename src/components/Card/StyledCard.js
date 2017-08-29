@@ -6,7 +6,7 @@ export const StyledCard = styled.div`
 	transition: 0.2s;
 	width: 200px;
 	min-height: 280px;
-    margin-right: 9px;
+	margin-right: 9px;
     margin-bottom: 9px;
 	border-radius: 5px;
 	background: #ECF0F1;
@@ -36,7 +36,3 @@ export const StyledCardContent = styled.p`
     font-size: 14px;
 `
 
-export const StyledCardIcon = styled.div`
-	text-align: center;
-	width: 100%;
-`
