@@ -949,7 +949,7 @@ export const icons = {
 		name: 'content_copy',
 		component: Icons.MdContentCopy,
 		action: 'Content copy',
-		usage: 'Use for ',
+		usage: 'Use for copying content',
 		description: '',
 		tags: ['actions']
 	},
@@ -958,27 +958,27 @@ export const icons = {
 		name: 'notifications',
 		component: Icons.MdNotifications,
 		action: 'Notifications',
-		usage: 'Use for ',
+		usage: 'Use for displaying notifications',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 
 	notifications_active: {
 		name: 'notifications_active',
 		component: Icons.MdNotificationsActive,
 		action: 'Notifications active',
-		usage: 'Use for ',
+		usage: 'Use for turning on the notifications',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 
 	notifications_none: {
 		name: 'notifications_none',
 		component: Icons.MdNotificationsNone,
 		action: 'Notifications none',
-		usage: 'Use for ',
+		usage: 'Used when there are no new notifications',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 
 	notifications_off: {
@@ -987,6 +987,6 @@ export const icons = {
 		action: 'Notifications off',
 		usage: 'Use for turning off notifications',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'notifications']
 	},
 }
