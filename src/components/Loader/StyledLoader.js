@@ -50,7 +50,7 @@ const velocities = {
 	superfast: '0.5s'
 }
 
-export const StyledLoader = styled.div`
+const StyledLoader = styled.div`
 	float: left;
 	border: ${({ size }) => sizes[size].border} solid #E3E5E5;
 	border-radius: 50%;
@@ -69,3 +69,5 @@ StyledLoader.defaultProps = {
 	size: 'medium',
 	velocity: 'fast'
 }
+
+export default StyledLoader
