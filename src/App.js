@@ -8,9 +8,9 @@ import CopyToClipboard from 'react-copy-to-clipboard'
 import copy from 'copy-to-clipboard'
 
 import Icon, { icons } from 'components/Icon/Icon'
-import { DisplayIcon, CopyButton, LogoImg } from 'components/Styles'
-import { StyledLoader, SpinLogo } from 'components/Loader/StyledLoader'
-import logo from 'assets/logo_spin.png'
+import { DisplayIcon, CopyButton, /* LogoImg */ } from 'components/Styles'
+import { StyledLoader, /* SpinLogo */ } from 'components/Loader/StyledLoader'
+// import logo from 'assets/logo_spin.png'
 
 import Card from 'components/Card/Card'
 
@@ -86,7 +86,7 @@ class App extends Component {
 						onClick={(e) => this.copyToClipboard(e, 'This is the girlfriend')} 
 					/>
 
-					<Card onClick={(e) => this.copyToClipboard(e, 'Testing default props')}/>
+					<Card />
 
 					<Card
 						icon={'cloud_download'}
@@ -94,19 +94,21 @@ class App extends Component {
 						content='Use for downloading data and assets'
 						onClick={(e) => this.copyToClipboard(e, 'cloud_download')}
 					/>
+					
 				</div>
 
-				<div>
+				<div>					
 					<StyledLoader size='xl' velocity='slow' />
 					<StyledLoader size='large' />
 					<StyledLoader velocity='medium' />
 					<StyledLoader size='small' />
-					<StyledLoader size='xs' velocity='slow' />
+					<StyledLoader size='xs' velocity='fast' />
+					<StyledLoader size='xxs' velocity='superfast' />
 
-					<SpinLogo time='5s'>
+	{/* 				<SpinLogo time='5s'>
 						<LogoImg src={logo} alt='Logo' />
 					</SpinLogo>
-
+ */}
 					{/* {this.renderIcons()} */}
 
 				</div>
