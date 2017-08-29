@@ -522,12 +522,219 @@ export const icons = {
 		tags: ['actions']
 	},
 
-	dashboard: {
-		name: 'dashboard',
-		component: Icons.MdDashboard,
-		action: 'Dashboard',
+	pie_chart_outlined: {
+		name: 'pie_chart_outlined',
+		component: Icons.MdPieChartOutlined,
+		action: 'Pie chart outlined',
 		usage: 'Use for ',
 		description: '',
 		tags: ['actions']
 	},
+
+	show_chart: {
+		name: 'show_chart',
+		component: Icons.MdShowChart,
+		action: 'Show chart',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	insert_chart: {
+		name: 'insert_chart',
+		component: Icons.MdInsertChart,
+		action: 'Insert chart',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	equalizer: {
+		name: 'equalizer',
+		component: Icons.MdEqualizer,
+		action: 'Equalizer',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	web_asset: {
+		name: 'web_asset',
+		component: Icons.MdWebAsset,
+		action: 'Web asset',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	web: {
+		name: 'web',
+		component: Icons.MdWeb,
+		action: 'Web',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	tablet_mac: {
+		name: 'tablet_mac',
+		component: Icons.MdTabletMac,
+		action: 'Tablet Mac',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	laptop_mac: {
+		name: 'laptop_mac',
+		component: Icons.MdLaptopMac,
+		action: 'Laptop Mac',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	desktop_mac: {
+		name: 'desktop_mac',
+		component: Icons.MdDesktopMac,
+		action: 'Desktop Mac',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	phone_iphone: {
+		name: 'phone_iphone',
+		component: Icons.MdPhoneIphone,
+		action: 'Phone iphone',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	photo_camera: {
+		name: 'photo_camera',
+		component: Icons.MdPhotoCamera,
+		action: 'Photo camera',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	short_text: {
+		name: 'short_text',
+		component: Icons.MdShortText,
+		action: 'Short text',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	event: {
+		name: 'event',
+		component: Icons.MdEvent,
+		action: 'Event',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	list: {
+		name: 'list',
+		component: Icons.MdList,
+		action: 'List',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	work: {
+		name: 'work',
+		component: Icons.MdWork,
+		action: 'Work',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	access_time: {
+		name: 'access_time',
+		component: Icons.MdAccessTime,
+		action: 'Access time',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	mic: {
+		name: 'mic',
+		component: Icons.MdMic,
+		action: 'Mic',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	videocam: {
+		name: 'videocam',
+		component: Icons.MdVideocam,
+		action: 'Videocam',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	call: {
+		name: 'call',
+		component: Icons.MdCall,
+		action: 'Call',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	message: {
+		name: 'message',
+		component: Icons.MdMessage,
+		action: 'Message',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	filter_list: {
+		name: 'filter_list',
+		component: Icons.MdFilterList,
+		action: 'Filter list',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	attach_file: {
+		name: 'attach_file',
+		component: Icons.MdAttachFile,
+		action: 'Attach file',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	directions: {
+		name: 'directions',
+		component: Icons.MdDirections,
+		action: 'Directions',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},
+
+	mood: {
+		name: 'mood',
+		component: Icons.MdMood,
+		action: 'Mood',
+		usage: 'Use for ',
+		description: '',
+		tags: ['actions']
+	},+
 }
