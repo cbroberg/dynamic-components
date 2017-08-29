@@ -8,8 +8,8 @@ import CopyToClipboard from 'react-copy-to-clipboard'
 import copy from 'copy-to-clipboard'
 
 import Icon, { icons } from 'components/Icon/Icon'
-import { DisplayIcon, CopyButton, /* LogoImg */ } from 'components/Styles'
-import { StyledLoader, /* SpinLogo */ } from 'components/Loader/StyledLoader'
+import { DisplayIcon, CopyButton, Divider } from 'components/Styles'
+import { StyledLoader } from 'components/Loader/StyledLoader'
 // import logo from 'assets/logo_spin.png'
 
 import Card from 'components/Card/Card'
@@ -35,17 +35,27 @@ class App extends Component {
 		return Object.entries(icons).map((icon, index) => {
 			let codeToCopy = `<Icon icon={'${icon[1].name}'}/>`
 			return (
-				<DisplayIcon key={index}>
-					<div>
-						<CopyToClipboard text={icon[1].name}><CopyButton color={'#fff'}>{icon[1].action}</CopyButton></CopyToClipboard>
-					</div>
-					<div>
-						<Icon key={index} icon={icon[1].name} size={75} />
-					</div>
-					<div>
-						<CopyToClipboard text={codeToCopy}><CopyButton color={'#81C1EA'}>Click to copy code</CopyButton></CopyToClipboard>
-					</div>
-				</DisplayIcon>
+				<div>
+					<Card
+						key={index}
+						icon={icon[1].name}
+						header={icon[1].action}
+						content={icon[1].usage}
+						onClick={(e) => this.copyToClipboard(e, icon[1].name)}
+					/>
+
+					<DisplayIcon key={index}>
+						<div>
+							<CopyToClipboard text={icon[1].name}><CopyButton color={'#fff'}>{icon[1].action}</CopyButton></CopyToClipboard>
+						</div>
+						<div>
+							<Icon key={index} icon={icon[1].name} size={75} />
+						</div>
+						<div>
+							<CopyToClipboard text={codeToCopy}><CopyButton color={'#81C1EA'}>Click to copy code</CopyButton></CopyToClipboard>
+						</div>
+					</DisplayIcon>
+				</div>
 			)
 		})
 	}
@@ -53,7 +63,7 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<div>
+				<Divider>
 					<Card 
 						image={cardImages[0]} 
 						alt='Avatar' 
@@ -87,31 +97,20 @@ class App extends Component {
 					/>
 
 					<Card />
+				</Divider>
 
-					<Card
-						icon={'cloud_download'}
-						header='Download'
-						content='Use for downloading data and assets'
-						onClick={(e) => this.copyToClipboard(e, 'cloud_download')}
-					/>
-					
-				</div>
-
-				<div>					
-					<StyledLoader size='xl' velocity='slow' />
-					<StyledLoader size='large' />
-					<StyledLoader velocity='medium' />
+				<Divider>
+					{this.renderIcons()}
+				</Divider>
+				
+				<Divider>									
+					<StyledLoader size='xxs' velocity='fast' />
+					<StyledLoader size='xs' velocity='superfast' />
 					<StyledLoader size='small' />
-					<StyledLoader size='xs' velocity='fast' />
-					<StyledLoader size='xxs' velocity='superfast' />
-
-	{/* 				<SpinLogo time='5s'>
-						<LogoImg src={logo} alt='Logo' />
-					</SpinLogo>
- */}
-					{/* {this.renderIcons()} */}
-
-				</div>
+					<StyledLoader velocity='medium' />
+					<StyledLoader size='large' />
+					<StyledLoader size='xl' velocity='slow' />
+				</Divider>
 				<div>
 					<CopyToast
 						position='top-right'
