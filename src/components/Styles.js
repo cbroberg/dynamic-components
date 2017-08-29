@@ -4,11 +4,7 @@ import { getColor } from 'components/colors'
 import { transparentize, darken } from 'polished'
 
 export const Divider = styled.div`
-    /* padding: 4rem 4rem 4rem 4rem; */
-    width: 100%;
-    /* width: 20px; */
-    height: 20px;
-    margin: 5px;
+    clear: both;
 `
 
 export const DisplayIcon = styled.div`
