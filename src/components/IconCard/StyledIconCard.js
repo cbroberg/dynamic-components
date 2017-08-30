@@ -14,12 +14,6 @@ export const StyledIconCard = styled.div`
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
 `
-export const StyledIconCardIcon = styled.div`
-	text-align: center;
-	width: 100%;
-	padding-top: 15px;
-	cursor: pointer;
-`
 
 export const StyledIconCardContainer = styled.div`
 	padding: 2px 16px;
@@ -35,4 +29,11 @@ export const StyledIconCardContent = styled.p`
 	font-family: 'Source Sans Pro';
 	font-size: 14px;
 	color: #3B97D3;
+`
+
+export const StyledIconCardIcon = styled.div`
+	text-align: center;
+	width: 100%;
+	padding-top: 15px;
+	cursor: pointer;
 `
