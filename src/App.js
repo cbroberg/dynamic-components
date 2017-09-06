@@ -6,7 +6,7 @@ import Loader from 'components/Loader/Loader'
 import Card from 'components/Card/Card'
 import IconCard from 'components/IconCard/IconCard'
 import ColorCard from 'components/ColorCard/ColorCard'
-import { colorArr } from 'theme/colors'
+import { colors } from 'theme/colors'
 
 import { icons } from 'components/Icon/Icon'
 
@@ -45,54 +45,52 @@ class App extends Component {
 		return (
 			<div>
 				<Divider>
-					<Card 
-						image={cardImages[0]} 
-						alt='Avatar' 
-						header='Jane Doe' 
-						content='JavaScript Developer' 
-						onClick={(e) => this.copyToClipboard(e, 'Jane Doe')} 
-					/>
-
-					<Card 
-						image={cardImages[1]} 
-						alt='Avatar' 
-						header='John Doe' 
-						content='PHP Developer' 
-						onClick={(e) => this.copyToClipboard(e, 'John Doe')} 
-					/>
-					
-					<Card 
-						image={cardImages[2]} 
-						alt='Christian Broberg' 
-						header='Christian Broberg' 
-						content='Product Development' 
-						onClick={(e) => this.copyToClipboard(e, 'Christian Broberg')} 
-					/>
-					
-					<Card 
-						image={cardImages[3]} 
-						alt='Mette Bugge' 
-						header='Mette Bugge' 
-						content='The Girlfriend' 
-						onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')} 
-					/>
-
-					<Card />
-
-				</Divider>
-				
-				<Divider>
-					{colorArr.map((color, index) => (
+					{colors.map((color, index) => (
 						<ColorCard color={color.value} name={color.name} onClick={(e) => this.copyToClipboard(e, color.name + ': ' + color.value)} key={index} />
 					))}
-
-					{/* <ColorCard onClick={(e) => this.copyToClipboard(e, colorArr[2].name)} /> */}
 				</Divider>
 				
 				<Divider>
 					{this.renderIcons()}
 				</Divider>
-				
+
+				<Divider>
+					<Card
+						image={cardImages[0]}
+						alt='Avatar'
+						header='Jane Doe'
+						content='JavaScript Developer'
+						onClick={(e) => this.copyToClipboard(e, 'Jane Doe')}
+					/>
+
+					<Card
+						image={cardImages[1]}
+						alt='Avatar'
+						header='John Doe'
+						content='PHP Developer'
+						onClick={(e) => this.copyToClipboard(e, 'John Doe')}
+					/>
+
+					<Card
+						image={cardImages[2]}
+						alt='Christian Broberg'
+						header='Christian Broberg'
+						content='Product Development'
+						onClick={(e) => this.copyToClipboard(e, 'Christian Broberg')}
+					/>
+
+					<Card
+						image={cardImages[3]}
+						alt='Mette Bugge'
+						header='Mette Bugge'
+						content='The Girlfriend'
+						onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')}
+					/>
+
+					<Card />
+				</Divider>
+
+
 				<Divider>
 					<Loader size='xxxs' velocity='fast' />
 					<Loader size='xxs' velocity='fast' />
@@ -102,6 +100,7 @@ class App extends Component {
 					<Loader size='large' />
 					<Loader size='xl' velocity='slow' />
 				</Divider>
+
 				<div>
 					<StyledToast
 						position='top-right'

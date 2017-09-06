@@ -3,7 +3,7 @@
 import _ from 'lodash'
 
 export function getColor(colorName) {
-	var colorFinder = _.find(colorArr, function (color) {
+	var colorFinder = _.find(colors, function (color) {
 		return color.name === colorName
 	})
 	return colorFinder.value
@@ -104,7 +104,7 @@ export const GRAPHQL_PINK = '#E33CAA'
 export const BLACK = '#000'
 
 
-export const colorArr = [
+export const colors = [
 	{
 		name: 'HEADER',
 		value: '#2C3E50'

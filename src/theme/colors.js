@@ -3,7 +3,7 @@
 import _ from 'lodash'
 
 export function getColor(colorName) {
-	var colorFinder = _.find(colorArr, function (color) {
+	var colorFinder = _.find(colors, function (color) {
 		return color.name === colorName
 	})
 	return colorFinder.value
@@ -109,7 +109,7 @@ export const MODAL_HEADER_TITLE = '#fff'
 
 // https://color.adobe.com/
 
-export const colorArr = [
+export const colors = [
 	{
 		name: 'HEADER',
 		value: '#2C3E50'
