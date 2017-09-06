@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { BUTTON_DEFAULT } from 'theme/colors'
 
 
-
 export const StyledColorCard = styled.div`
 	float: left;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

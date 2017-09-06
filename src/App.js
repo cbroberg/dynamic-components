@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import { toast } from 'react-toastify'
 import copy from 'copy-to-clipboard'
-import { Divider, StyledToast } from 'components/Styles'
+import { Divider, StyledToast } from 'AppStyles'
 import Loader from 'components/Loader/Loader'
 import Card from 'components/Card/Card'
+import Tag from 'components/Tag/Tag'
+
 import IconCard from 'components/IconCard/IconCard'
+import { icons } from 'components/Icon/Icon'
+
 import ColorCard from 'components/ColorCard/ColorCard'
 import { colors } from 'theme/colors'
 
-import { icons } from 'components/Icon/Icon'
+
 
 const cardImages = []
 cardImages.push(require('assets/avatar_female.png'))
@@ -48,10 +52,17 @@ class App extends Component {
 					{colors.map((color, index) => (
 						<ColorCard color={color.value} name={color.name} onClick={(e) => this.copyToClipboard(e, color.name + ': ' + color.value)} key={index} />
 					))}
+					<ColorCard />
 				</Divider>
 				
 				<Divider>
 					{this.renderIcons()}
+				</Divider>
+
+				<Divider>
+					{colors.map((color, index) => (
+						<Tag color={color.value} label={color.name} onClick={(e) => this.copyToClipboard(e, color.name)} key={index} />
+					))}
 				</Divider>
 
 				<Divider>
@@ -90,7 +101,6 @@ class App extends Component {
 					<Card />
 				</Divider>
 
-
 				<Divider>
 					<Loader size='xxxs' velocity='fast' />
 					<Loader size='xxs' velocity='fast' />
@@ -100,18 +110,17 @@ class App extends Component {
 					<Loader size='large' />
 					<Loader size='xl' velocity='slow' />
 				</Divider>
-
-				<div>
-					<StyledToast
-						position='top-right'
-						type='default'
-						autoClose={3000}
-						hideProgressBar={true}
-						newestOnTop={false}
-						closeOnClick
-						pauseOnHover
-					/>
-				</div>
+				
+				<StyledToast
+					position='top-right'
+					type='default'
+					autoClose={3000}
+					hideProgressBar={true}
+					newestOnTop={false}
+					closeOnClick
+					pauseOnHover
+				/>
+				
 			</div>
 		)
 	}

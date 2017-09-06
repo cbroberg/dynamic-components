@@ -1,9 +1,25 @@
-import React from 'react'
-import StyledTag from 'components/Tags/TagStyles'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { StyledTag } from 'components/Tag/TagStyles'
 
 
-const Tag = (props) => (
-	<StyledTag tag={props.size} velocity={props.velocity} />
-)
+class Tag extends Component {
+	render() {
+		const { color, label } = this.props
+		return (
+			<StyledTag color={color} onClick={this.props.onClick}>{label}</StyledTag>
+		)
+	}
+}
+
+Tag.propTypes = {
+	color: PropTypes.string,
+	label: PropTypes.string
+}
+
+Tag.defaultProps = {
+	color: '#F8BB31',
+	label: 'Default Tag Label'
+}
 
 export default Tag

@@ -1,12 +1,11 @@
 import styled from 'styled-components'
+import { BUTTON_DEFAULT } from 'theme/colors'
 
-export const StyledIconCardTagList = styled.a`
 
-`
-export const StyledIconCardTagListItem = styled.a`
+export const StyledTag = styled.a`
 	text-align: left;
 	font-family: 'Source Sans Pro';
-	font-size: 14px;
+	font-size: 13px;
 
 	background: #eee;
 	border-radius: 3px 0 0 3px;
@@ -21,21 +20,35 @@ export const StyledIconCardTagListItem = styled.a`
 	-webkit-transition: color 0.2s;
 	
 	&::before {
-	background: #fff;
-	border-radius: 10px;
-	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-	content: '';
-	height: 6px;
-	left: 10px;
-	position: absolute;
-	width: 6px;
-	top: 10px;
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+		content: '';
+		height: 6px;
+		left: 10px;
+		position: absolute;
+		width: 6px;
+		top: 10px;
+	}
+
+	&::after {
+		background: #fff;
+		border-bottom: 13px solid transparent;
+		border-left: 10px solid #eee;
+		border-top: 13px solid transparent;
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 
 	&:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    	background-color: ${props => props.color || BUTTON_DEFAULT};
+		color: white;
+		cursor: pointer;
 	}
+	
 	&:hover::after {
-		border-left-color: crimson; 
-}
+		border-left-color: ${props => props.color || BUTTON_DEFAULT};
+	}
 `

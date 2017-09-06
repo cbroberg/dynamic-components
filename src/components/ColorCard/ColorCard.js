@@ -25,8 +25,8 @@ ColorCard.propTypes = {
 }
 
 ColorCard.defaultProps = {
-	color: '#F8BB31', // colorArr.value '#3B97D3'
-	name: 'BUTTON_DEFAULT' // colorArr.name
+	color: '#3B97D3',
+	name: 'BUTTON_DEFAULT'
 }
 
 
