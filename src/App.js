@@ -5,6 +5,9 @@ import { Divider, StyledToast } from 'components/Styles'
 import Loader from 'components/Loader/Loader'
 import Card from 'components/Card/Card'
 import IconCard from 'components/IconCard/IconCard'
+import ColorCard from 'components/ColorCard/ColorCard'
+import { colorArr } from 'theme/colors'
+
 import { icons } from 'components/Icon/Icon'
 
 const cardImages = []
@@ -75,8 +78,17 @@ class App extends Component {
 					/>
 
 					<Card />
-				</Divider>
 
+				</Divider>
+				
+				<Divider>
+					{colorArr.map((color, index) => (
+						<ColorCard color={color.value} name={color.name} onClick={(e) => this.copyToClipboard(e, color.name + ': ' + color.value)} key={index} />
+					))}
+
+					{/* <ColorCard onClick={(e) => this.copyToClipboard(e, colorArr[2].name)} /> */}
+				</Divider>
+				
 				<Divider>
 					{this.renderIcons()}
 				</Divider>
