@@ -25,7 +25,7 @@ class App extends Component {
 	notify = (message) => toast.success(message)
 
 	copyToClipboard(e, text) {
-		e.preventDefault()
+		// e.preventDefault()
 		copy(text)
 		this.notify(`"${text}" ... has been copyied to the clipboard`)
 	}
@@ -61,7 +61,13 @@ class App extends Component {
 
 				<Divider>
 					{colors.map((color, index) => (
-						<Tag color={color.value} label={color.name} onClick={(e) => this.copyToClipboard(e, color.name)} key={index} />
+						<Tag 
+							color={color.value} 
+							label={color.name} 
+							url="http://odeumcode.com" 
+							open={true} 
+							onClick={(e) => this.copyToClipboard(e, color.name)} 
+							key={index} />
 					))}
 				</Divider>
 

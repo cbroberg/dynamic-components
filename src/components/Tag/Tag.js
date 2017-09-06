@@ -4,22 +4,36 @@ import { StyledTag } from 'components/Tag/TagStyles'
 
 
 class Tag extends Component {
+
+	handleOpen(open) {
+		if (open)
+			return '_new'
+	}
+
 	render() {
-		const { color, label } = this.props
+		const { color, label, url, open } = this.props
 		return (
-			<StyledTag color={color} onClick={this.props.onClick}>{label}</StyledTag>
+			<StyledTag 
+				color={color} 
+				href={url} 
+				target={this.handleOpen(open)}
+				onClick={this.props.onClick}>{label}</StyledTag>
 		)
 	}
 }
 
 Tag.propTypes = {
 	color: PropTypes.string,
-	label: PropTypes.string
+	label: PropTypes.string,
+	url: PropTypes.string,
+	open: PropTypes.bool
 }
 
 Tag.defaultProps = {
 	color: '#F8BB31',
-	label: 'Default Tag Label'
+	label: 'Default Tag Label',
+	url: '',
+	open: false
 }
 
 export default Tag

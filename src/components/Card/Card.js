@@ -37,9 +37,9 @@ Card.propTypes = {
 
 Card.defaultProps = {
 	image: require('assets/avatar_female.png'),
-	alt: 'This is alternative text',
-	header: 'Your header goes here',
-	content: 'Your content goes here ...'
+	alt: 'Alt defaultProps',
+	header: 'Header defaultProps',
+	content: 'Content defaultProps ...'
 }
 
 export default Card
