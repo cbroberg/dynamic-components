@@ -13,6 +13,10 @@ const rotate360 = keyframes`
 `
 
 const sizes = {
+	xxxs: {
+		diameter: '8px',
+		border: '2px'
+	},
 	xxs: {
 		diameter: '13px',
 		border: '2px'

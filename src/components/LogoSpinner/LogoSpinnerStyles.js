@@ -10,7 +10,7 @@ const rotate360 = keyframes`
 	}
 `
 
-export const SpinLogo = styled.div`
+export const StyledLogoSpinner = styled.div`
 	float: left;
 	animation: ${rotate360} ${props => props.time || '1s'} linear infinite;
 	&:hover {

@@ -81,7 +81,8 @@ class App extends Component {
 					{this.renderIcons()}
 				</Divider>
 				
-				<Divider>									
+				<Divider>
+					<Loader size='xxxs' velocity='fast' />
 					<Loader size='xxs' velocity='fast' />
 					<Loader size='xs' velocity='superfast' />
 					<Loader size='small' />

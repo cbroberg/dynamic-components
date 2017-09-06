@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledIconCard, StyledIconCardContainer, StyledIconCardHeader, StyledIconCardContent, StyledIconCardIcon } from 'components/IconCard/StyledIconCard'
+import { StyledIconCard, StyledIconCardContainer, StyledIconCardHeader, StyledIconCardContent, StyledIconCardIcon } from 'components/IconCard/IconCardStyles'
 import Icon from 'components/Icon/Icon'
 
 class IconCard extends Component {

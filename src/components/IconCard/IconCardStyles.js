@@ -5,7 +5,7 @@ export const StyledIconCard = styled.div`
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.2s;
 	width: 200px;
-	min-height: 280px;
+	min-height: 285px;
 	margin-right: 9px;
     margin-bottom: 9px;
 	border-radius: 5px;
