@@ -1,0 +1,6 @@
+export { default as CardsPage } from './CardsPage'
+export { default as ColorsPage } from './ColorsPage'
+export { default as IconsPage } from './IconsPage'
+export { default as LoadersPage } from './LoadersPage'
+export { default as PickersPage } from './PickersPage'
+export { default as TagsPage } from './TagsPage'

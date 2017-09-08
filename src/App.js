@@ -1,152 +1,115 @@
 import React, { Component } from 'react'
-import { toast } from 'react-toastify'
-import copy from 'copy-to-clipboard'
-import { Divider, StyledToast } from 'AppStyles'
-import Loader from 'components/Loader/Loader'
-import Card from 'components/Card/Card'
-import Tag from 'components/Tag/Tag'
-
-import IconCard from 'components/IconCard/IconCard'
-import { icons } from 'components/Icon/Icon'
-
-import ColorCard from 'components/ColorCard/ColorCard'
-import { colors } from 'theme/colors'
-
-import ColorPicker from 'components/ColorPicker/ColorPicker'
+import { Divider, StyledToast, Button } from 'AppStyles'
+import { ColorsPage, IconsPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
 
 
-const cardImages = []
-cardImages.push(require('assets/avatar_female.png')) // 0
-cardImages.push(require('assets/avatar_male.png')) // 1
-cardImages.push(require('assets/christian.png')) // 2
-cardImages.push(require('assets/mette.png')) // 3
-cardImages.push(require('assets/mathilde.png')) // 4
-cardImages.push(require('assets/viola.png')) // 5
-cardImages.push(require('assets/frederik.png')) // 6
-
-class App extends Component {
-
-	notify = (message) => toast.success(message)
-
-	copyToClipboard(e, text) {
-		// e.preventDefault()
-		copy(text)
-		this.notify(`"${text}" ... has been copyied to the clipboard`)
+class Pages extends Component {
+	state = {
+		activePage: 0
 	}
 
-	renderIcons() {
-		return Object.entries(icons).map((icon, index) => {
-			return (			
-				<IconCard
+	selectPageIndex(activePage) {
+		this.setState({ activePage })
+	}
+
+	renderPages() {
+		const { pages, disabled } = this.props
+		return pages.map((page, index) => {
+			// const isActive = this.state.activePage === index
+			const isDisabled = disabled.includes(index)
+			return (
+				<Button
 					key={index}
-					icon={icon[1].name}
-					header={icon[1].action}
-					content={icon[1].usage}
-					tags={icon[1].tags}
-					onClick={(e) => this.copyToClipboard(e, icon[1].name)}
-				/>
+					disable={isDisabled}
+					//	className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
+					onClick={isDisabled ? null : () => this.selectPageIndex(index)}
+				>{page.label}
+				</Button>
 			)
 		})
 	}
 
+	renderPageContent() {
+		const { pages } = this.props
+		const { activePage } = this.state
+		return (
+			<div>		
+				<Divider>		
+					{pages[activePage].content}
+				</Divider>
+			</div>
+		)
+
+	}
+
 	render() {
+		const pages = (
+			<div key="pages">
+				{this.renderPages()}
+			</div>
+		)
+		const pagecontent = (
+			<div key="pagecontent">
+				{this.renderPageContent()}
+			</div>
+		)
+
+		return (
+			<div key="PageContents">
+				{[pages, pagecontent]}
+			</div>
+		)
+	}
+}
+
+class App extends Component {
+
+	render() {
+		const pageData = [
+			{
+				label: 'Cards',
+				content: <CardsPage />
+			},
+			{
+				label: 'Colors',
+				content: <ColorsPage />
+			},
+			{
+				label: 'Icons',
+				content: <IconsPage />
+			},
+			{
+				label: 'Loaders',
+				content: <LoadersPage />
+			},
+			{
+				label: 'Pickers',
+				content: <PickersPage />
+			},
+			{
+				label: 'Tags',
+				content: <TagsPage />
+			},
+			{
+				label: 'Disabled',
+				content: <TagsPage />
+			},
+		]
 		return (
 			<div>
-				<Divider>
-					{colors.map((color, index) => (
-						<ColorCard color={color.value} name={color.name} onClick={(e) => this.copyToClipboard(e, color.name + ': ' + color.value)} key={index} />
-					))}
-					<ColorCard />
-				</Divider>
-				
-				<Divider>
-					{this.renderIcons()}
-				</Divider>
-
-				<Divider>
-					{colors.map((color, index) => (
-						<Tag 
-							color={color.value} 
-							label={color.name} 
-							url="http://odeumcode.com" 
-							open={true} 
-							onClick={(e) => this.copyToClipboard(e, color.name)} 
-							key={index} />
-					))}
-				</Divider>
-
-				<Divider>
-					<Card
-						image={cardImages[4]}
-						alt='Mathilde Kronborg'
-						header='Mathilde Kronborg'
-						content='Creative Director'
-						onClick={(e) => this.copyToClipboard(e, 'Mathilde Kronborg')}
-					/>
-
-					<Card
-						image={cardImages[5]}
-						alt='Viola Broberg'
-						header='Viola Broberg'
-						content='Art Director'
-						onClick={(e) => this.copyToClipboard(e, 'Viola Broberg')}
-					/>
-
-					<Card
-						image={cardImages[6]}
-						alt='Frederik Kronborg'
-						header='Frederik Kronborg'
-						content='Innovation'
-						onClick={(e) => this.copyToClipboard(e, 'Frederik Kronborg')}
-					/>
-
-					<Card
-						image={cardImages[2]}
-						alt='Christian Broberg'
-						header='Christian Broberg'
-						content='Product Development'
-						onClick={(e) => this.copyToClipboard(e, 'Christian Broberg')}
-					/>
-
-					<Card
-						image={cardImages[3]}
-						alt='Mette Bugge'
-						header='Mette Bugge'
-						content='Networking'
-						onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')}
-					/>
-
-					<Card />
-				</Divider>
-
-				<Divider>
-					<Loader size='xxxs' velocity='fast' />
-					<Loader size='xxs' velocity='fast' />
-					<Loader size='xs' velocity='superfast' />
-					<Loader size='small' />
-					<Loader velocity='medium' />
-					<Loader size='large' />
-					<Loader size='xl' velocity='slow' />
-				</Divider>
-
-				<Divider>
-					<ColorPicker />
-				</Divider>
-
+				<Pages pages={pageData} disabled={[6]} />
 				<StyledToast
 					position='top-right'
 					type='default'
 					autoClose={3000}
-					hideProgressBar={true}
+					hideProgressBar={false}
 					newestOnTop={false}
 					closeOnClick
 					pauseOnHover
 				/>
-				
 			</div>
 		)
 	}
 }
 
 export default App
-
