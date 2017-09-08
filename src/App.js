@@ -12,13 +12,17 @@ import { icons } from 'components/Icon/Icon'
 import ColorCard from 'components/ColorCard/ColorCard'
 import { colors } from 'theme/colors'
 
+import ColorPicker from 'components/ColorPicker/ColorPicker'
 
 
 const cardImages = []
-cardImages.push(require('assets/avatar_female.png'))
-cardImages.push(require('assets/avatar_male.png'))
-cardImages.push(require('assets/christian.png'))
-cardImages.push(require('assets/mette.png'))
+cardImages.push(require('assets/avatar_female.png')) // 0
+cardImages.push(require('assets/avatar_male.png')) // 1
+cardImages.push(require('assets/christian.png')) // 2
+cardImages.push(require('assets/mette.png')) // 3
+cardImages.push(require('assets/mathilde.png')) // 4
+cardImages.push(require('assets/viola.png')) // 5
+cardImages.push(require('assets/frederik.png')) // 6
 
 class App extends Component {
 
@@ -73,19 +77,27 @@ class App extends Component {
 
 				<Divider>
 					<Card
-						image={cardImages[0]}
-						alt='Avatar'
-						header='Jane Doe'
-						content='JavaScript Developer'
-						onClick={(e) => this.copyToClipboard(e, 'Jane Doe')}
+						image={cardImages[4]}
+						alt='Mathilde Kronborg'
+						header='Mathilde Kronborg'
+						content='Creative Director'
+						onClick={(e) => this.copyToClipboard(e, 'Mathilde Kronborg')}
 					/>
 
 					<Card
-						image={cardImages[1]}
-						alt='Avatar'
-						header='John Doe'
-						content='PHP Developer'
-						onClick={(e) => this.copyToClipboard(e, 'John Doe')}
+						image={cardImages[5]}
+						alt='Viola Broberg'
+						header='Viola Broberg'
+						content='Art Director'
+						onClick={(e) => this.copyToClipboard(e, 'Viola Broberg')}
+					/>
+
+					<Card
+						image={cardImages[6]}
+						alt='Frederik Kronborg'
+						header='Frederik Kronborg'
+						content='Innovation'
+						onClick={(e) => this.copyToClipboard(e, 'Frederik Kronborg')}
 					/>
 
 					<Card
@@ -100,7 +112,7 @@ class App extends Component {
 						image={cardImages[3]}
 						alt='Mette Bugge'
 						header='Mette Bugge'
-						content='The Girlfriend'
+						content='Networking'
 						onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')}
 					/>
 
@@ -116,7 +128,11 @@ class App extends Component {
 					<Loader size='large' />
 					<Loader size='xl' velocity='slow' />
 				</Divider>
-				
+
+				<Divider>
+					<ColorPicker />
+				</Divider>
+
 				<StyledToast
 					position='top-right'
 					type='default'

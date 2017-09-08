@@ -1,27 +1,4 @@
-// HELPER FUNCTIONS
-
 import _ from 'lodash'
-
-export function getColor(colorName) {
-	var colorFinder = _.find(colors, function (color) {
-		return color.name === colorName
-	})
-	return colorFinder.value
-}
-
-export function hexToRgbA(hex) {
-	var c
-	if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
-		c = hex.substring(1).split('')
-		if (c.length === 3) {
-			c = [c[0], c[0], c[1], c[1], c[2], c[2]]
-		}
-		c = '0x' + c.join('')
-		return 'rgba(' + [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(', ') + ', 1)'
-	}
-	throw new Error('Invalid Hex value')
-}
-
 
 // DEFAULT COLORS
 export const HEADER = '#2C3E50'
@@ -107,7 +84,8 @@ export const MODAL_HEADER = PRIMARY_BLUE
 export const MODAL_HEADER_ICON = '#fff'
 export const MODAL_HEADER_TITLE = '#fff'
 
-// https://color.adobe.com/
+
+// COLOR ARRAY
 
 export const colors = [
 	{
@@ -331,3 +309,30 @@ export const colors = [
 		value: '#000'
 	},
 ]
+
+// HELPER FUNCTIONS
+
+const removeDuplicates = (arrArg) => arrArg.filter((elem, pos, arr) => arr.indexOf(elem) === pos)
+
+export const getUniqueColors = (colors) => removeDuplicates(colors.map((color) => color.value))
+
+
+export function getColor(colorName) {
+	var colorFinder = _.find(colors, function (color) {
+		return color.name === colorName
+	})
+	return colorFinder.value
+}
+
+export function hexToRgbA(hex) {
+	var c
+	if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
+		c = hex.substring(1).split('')
+		if (c.length === 3) {
+			c = [c[0], c[0], c[1], c[1], c[2], c[2]]
+		}
+		c = '0x' + c.join('')
+		return 'rgba(' + [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(', ') + ', 1)'
+	}
+	throw new Error('Invalid Hex value')
+}

@@ -6,6 +6,7 @@
     "copy-to-clipboard": "^3.0.8",
     "polished": "^1.4.1",
     "react": "^15.6.1",
+    "react-color": "^2.13.5",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
     "react-scripts": "1.0.10",
