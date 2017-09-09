@@ -55,7 +55,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-	isActive: true,
+	isActive: false,
 	image: require('assets/avatar_female.png'),
 	alt: 'Alt defaultProps',
 	header: 'Header defaultProps',

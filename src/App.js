@@ -3,6 +3,7 @@ import { Divider, StyledToast } from 'AppStyles'
 import { ColorsPage, IconsPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
+import Sound from 'react-sound'
 
 class Pages extends Component {
 	state = {
@@ -11,6 +12,7 @@ class Pages extends Component {
 
 	selectPageIndex(activePage) {
 		this.setState({ activePage })
+
 	}
 
 	renderPages() {
@@ -38,8 +40,13 @@ class Pages extends Component {
 		const { pages } = this.props
 		const { activePage } = this.state
 		return (
-			<div>		
-				<Divider>		
+			<div>
+				<Sound
+					url="https://github.com/scottschiller/SoundManager2/blob/master/demo/_mp3/select.mp3"
+					autoLoad={true}
+					playStatus={Sound.status.PLAYING}
+				/>
+				<Divider>
 					{pages[activePage].content}
 				</Divider>
 			</div>

@@ -31,6 +31,7 @@ class CardsPage extends Component {
 					header='Mathilde Kronborg'
 					content='Creative Director'
 					onClick={(e) => this.copyToClipboard(e, 'Mathilde Kronborg')}
+					{...this.props}
 				/>
 
 				<Card
@@ -39,6 +40,7 @@ class CardsPage extends Component {
 					header='Viola Broberg'
 					content='Art Director'
 					onClick={(e) => this.copyToClipboard(e, 'Viola Broberg')}
+					{...this.props}
 				/>
 
 				<Card
@@ -47,6 +49,7 @@ class CardsPage extends Component {
 					header='Frederik Kronborg'
 					content='Innovation'
 					onClick={(e) => this.copyToClipboard(e, 'Frederik Kronborg')}
+					{...this.props}
 				/>
 
 				<Card
@@ -55,6 +58,7 @@ class CardsPage extends Component {
 					header='Christian Broberg'
 					content='Product Development'
 					onClick={(e) => this.copyToClipboard(e, 'Christian Broberg')}
+					{...this.props}
 				/>
 
 				<Card
@@ -63,11 +67,13 @@ class CardsPage extends Component {
 					header='Mette Bugge'
 					content='Networking'
 					onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')}
+					{...this.props}
 				/>
 
 				<Card 
 					hasImage={true} 
 					isDisabled={true} 
+					{...this.props}
 				/>
 
 			</div>
