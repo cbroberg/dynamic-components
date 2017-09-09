@@ -3,7 +3,6 @@ import { transparentize, darken } from 'polished'
 
 const shadows = ['0 0 2px 1px rgba(0, 140, 186, 0.5)', '0 8px 16px 0 rgba(0, 0, 0, 0.2)', '0 8px 16px 0 rgba(0, 140, 186, 0.5)', '0 8px 16px 0 #D4CD11']
 
-
 export const StyledCard = styled.div`
 	float: left;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -12,14 +11,12 @@ export const StyledCard = styled.div`
 	margin-right: 9px;
     margin-bottom: 9px;
 	border-radius: 5px;
-	/* border: ${(props) => props.isActive ? '1px inset #81C1EA' : ''}; */
-    text-decoration: none;
+	text-decoration: none;
 	user-select: none;
 	opacity: ${(props) => props.isDisabled ? '0.4' : ''};
-	/* background: ${(props) => props.isDisabled ? props.disabledColor : props.bgColor}; */
-	background-color: ${(props) => (props.isDisabled) ? props.disabledColor : (props.isActive) ? darken(0.1, props.bgColor) : props.bgColor}
-	
+	background: ${(props) => (props.isDisabled) ? props.disabledColor : (props.isActive) ? '#E98832' : props.bgColor};
 	cursor: ${(props) => props.isDisabled ? 'not-allowed' : 'pointer'};
+
 	&:hover {
 		box-shadow: ${(props) => props.isDisabled ? '' : shadows[1]};
 	}
@@ -31,9 +28,9 @@ export const StyledCard = styled.div`
     }
 
 	&:active {
-		background: ${(props) => props.isDisabled ? '' : darken(0.1, props.bgColor)};
+		background: ${(props) => props.isDisabled ? '' : darken(0.3, props.bgColor)};
+		opacity: ${(props) => !props.isDisabled ? '0.8' : ''};
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		/* transform: ${(props) => props.isDisabled ? '' : 'translateY(2px)'}; */
 	}
 `
 

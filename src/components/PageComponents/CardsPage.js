@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import copy from 'copy-to-clipboard'
-import { toast } from 'react-toastify'
+import { copyToClipboard } from 'helpers'
 import Card from 'components/Card/Card'
 
 const cardImages = []
@@ -14,14 +13,6 @@ cardImages.push(require('assets/frederik.png')) // 6
 
 class CardsPage extends Component {
 
-	notify = (message) => toast.success(message)
-
-	copyToClipboard(e, text) {
-		// e.preventDefault()
-		copy(text)
-		this.notify(`"${text}" ... has been copyied to the clipboard`)
-	}
-
 	render() {
 		return (
 			<div>
@@ -30,7 +21,7 @@ class CardsPage extends Component {
 					alt='Mathilde Kronborg'
 					header='Mathilde Kronborg'
 					content='Creative Director'
-					onClick={(e) => this.copyToClipboard(e, 'Mathilde Kronborg')}
+					onClick={(e) => copyToClipboard(e, 'Mathilde Kronborg', true)}
 					{...this.props}
 				/>
 
@@ -39,7 +30,7 @@ class CardsPage extends Component {
 					alt='Viola Broberg'
 					header='Viola Broberg'
 					content='Art Director'
-					onClick={(e) => this.copyToClipboard(e, 'Viola Broberg')}
+					onClick={(e) => copyToClipboard(e, 'Viola Broberg', true)}
 					{...this.props}
 				/>
 
@@ -48,7 +39,7 @@ class CardsPage extends Component {
 					alt='Frederik Kronborg'
 					header='Frederik Kronborg'
 					content='Innovation'
-					onClick={(e) => this.copyToClipboard(e, 'Frederik Kronborg')}
+					onClick={(e) => copyToClipboard(e, 'Frederik Kronborg', true)}
 					{...this.props}
 				/>
 
@@ -57,7 +48,7 @@ class CardsPage extends Component {
 					alt='Christian Broberg'
 					header='Christian Broberg'
 					content='Product Development'
-					onClick={(e) => this.copyToClipboard(e, 'Christian Broberg')}
+					onClick={(e) => copyToClipboard(e, 'Christian Broberg', true)}
 					{...this.props}
 				/>
 
@@ -66,7 +57,7 @@ class CardsPage extends Component {
 					alt='Mette Bugge'
 					header='Mette Bugge'
 					content='Networking'
-					onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')}
+					onClick={(e) => copyToClipboard(e, 'Mette Bugge', true)}
 					{...this.props}
 				/>
 

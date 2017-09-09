@@ -1,19 +1,10 @@
 import React, { Component } from 'react'
-import copy from 'copy-to-clipboard'
-import { toast } from 'react-toastify'
+import { copyToClipboard } from 'helpers'
 import ColorCard from 'components/ColorCard/ColorCard'
 import { colors } from 'theme/colors'
 
 
 class ColorsPage extends Component {
-
-	notify = (message) => toast.success(message)
-
-	copyToClipboard(e, text) {
-		// e.preventDefault()
-		copy(text)
-		this.notify(`"${text}" ... has been copyied to the clipboard`)
-	}
 
 	render() {
 		return (
@@ -22,7 +13,7 @@ class ColorsPage extends Component {
 					<ColorCard 
 						color={color.value} 
 						name={color.name} 
-						onClick={(e) => this.copyToClipboard(e, color.name + ': ' + color.value)} 
+						onClick={(e) => copyToClipboard(e, color.name + ': ' + color.value, true)} 
 						key={index} 
 					/>
 				))}
