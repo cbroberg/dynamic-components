@@ -13,26 +13,27 @@ export const StyledCard = styled.div`
     margin-bottom: 9px;
 	border-radius: 5px; 
     text-decoration: none;
-    user-select: none;
-	background: ${(props) => props.style.isDisabled ? (props.style.disabledColor) : props.style.bgColor};
-	cursor: ${(props) => props.style.isDisabled ? 'not-allowed' : 'pointer'};
+	user-select: none;
+	opacity: ${(props) => props.isDisabled ? '0.4' : ''};
+	background: ${(props) => props.isDisabled ? (props.disabledColor) : props.bgColor};
+	cursor: ${(props) => props.isDisabled ? 'not-allowed' : 'pointer'};
 	&:hover {
-		box-shadow: ${(props) => props.style.isDisabled ? '' : shadows[1]};
+		box-shadow: ${(props) => props.isDisabled ? '' : shadows[1]};
 
 	}
 
     &:focus {
-		background: ${(props) => darken(0.1, props.style.bgColor)};
+		background: ${(props) => darken(0.1, props.bgColor)};
 		border-color: #81C1EA;
-        box-shadow: 0 0 0 3px ${(props) => transparentize(0.7, props.style.bgColor)};
+        box-shadow: 0 0 0 3px ${(props) => transparentize(0.7, props.bgColor)};
         outline: none;
     }
 
-	&&:active {
-		background: ${(props) => props.style.isDisabled ? '' : darken(0.1, props.style.bgColor)};
-		border-color: ${(props) => darken(0.8, props.style.bgColor)};
+	&:active {
+		background: ${(props) => props.isDisabled ? '' : darken(0.1, props.bgColor)};
+		border-color: ${(props) => darken(0.8, props.bgColor)};
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        transform: ${(props) => props.style.isDisabled ? '' : 'translateY(2px)'};
+        transform: ${(props) => props.isDisabled ? '' : 'translateY(2px)'};
 	}
 `
 
@@ -49,6 +50,10 @@ export const StyledCardHeader = styled.h4`
 	text-align: center;
 	font-family: 'Source Sans Pro';
 	color: ${(props) => props.isActive ? '#fff' : '#000'};
+	
+	&:div:first-of-type {
+    background: red;
+	}
 `
 
 export const StyledCardContent = styled.p`

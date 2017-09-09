@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import copy from 'copy-to-clipboard'
 import { toast } from 'react-toastify'
 import Tag from 'components/Tag/Tag'
@@ -37,16 +36,6 @@ class TagsPage extends Component {
 			</div>
 		)
 	}
-}
-
-TagsPage.propTypes = {
-	aaa: PropTypes.string,
-	bbb: PropTypes.string
-}
-
-TagsPage.defaultProps = {
-	aaa: '',
-	bbb: ''
 }
 
 export default TagsPage

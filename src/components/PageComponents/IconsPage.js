@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { toast } from 'react-toastify'
 import copy from 'copy-to-clipboard'
 import IconCard from 'components/IconCard/IconCard'
@@ -38,16 +37,6 @@ class IconsPage extends Component {
 			</div>
 		)
 	}
-}
-
-IconsPage.propTypes = {
-	aaa: PropTypes.string,
-	bbb: PropTypes.string
-}
-
-IconsPage.defaultProps = {
-	aaa: '',
-	bbb: ''
 }
 
 export default IconsPage

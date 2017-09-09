@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.min.css'
 
 export const Divider = styled.div`
 	clear: both;
-	margin-top: 25px;
+	padding-top: 25px;
 `
 
 export const StyledToast = styled(ToastContainer) `

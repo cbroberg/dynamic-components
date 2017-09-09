@@ -22,7 +22,10 @@ class Pages extends Component {
 				<Card
 					key={index}
 					isActive={isActive}
-					style={{ hasImage: false, isDisabled: isDisabled, bgColor: '#F8BB31', disabledColor: '#E74C3C' }}
+					hasImage={false} 
+					isDisabled={isDisabled} 
+					bgColor='#F8BB31' 
+					disabledColor='#E74C3C'
 					header={page.label}
 					content={page.description}
 					onClick={isDisabled ? null : () => this.selectPageIndex(index)}

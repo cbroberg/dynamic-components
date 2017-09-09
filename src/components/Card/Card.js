@@ -6,11 +6,11 @@ import { StyledCard, StyledCardImage, StyledCardContainer, StyledCardHeader, Sty
 class Card extends Component {
 
 	renderCard() {
-		const { isActive, image, alt, header, content, style, onClick } = this.props
-		if (style.hasImage) {
+		const { isActive, image, alt, header, content, hasImage, isDisabled, bgColor, disabledColor, onClick } = this.props
+		if (hasImage) {
 			return (
 				<div>
-					<StyledCard isActive={isActive} onClick={onClick} style={style}>
+					<StyledCard isActive={isActive} onClick={onClick} isDisabled={isDisabled} bgColor={bgColor} disabledColor={disabledColor}>
 						<StyledCardImage src={image} alt={alt} />
 						<StyledCardContainer>
 							<StyledCardHeader>{header}</StyledCardHeader>
@@ -22,7 +22,7 @@ class Card extends Component {
 		}
 		return ( 
 			<div>
-				<StyledCard onClick={onClick} style={style}>
+				<StyledCard isActive={isActive} onClick={onClick} isDisabled={isDisabled} bgColor={bgColor} disabledColor={disabledColor}>
 					<StyledCardContainer>
 						<StyledCardHeader>{header}</StyledCardHeader>
 						<StyledCardContent>{content}</StyledCardContent>
@@ -48,26 +48,22 @@ Card.propTypes = {
 	alt: PropTypes.string,
 	header: PropTypes.string,
 	content: PropTypes.string,
-	style: PropTypes.shape({
-		hasImage: PropTypes.bool,
-		isDisabled: PropTypes.bool,
-		bgColor: PropTypes.string,
-		disabledColor: PropTypes.string,
-	}),
+	hasImage: PropTypes.bool,
+	isDisabled: PropTypes.bool,
+	bgColor: PropTypes.string,
+	disabledColor: PropTypes.string,
 }
 
 Card.defaultProps = {
-	isActive: false,
+	isActive: true,
 	image: require('assets/avatar_female.png'),
 	alt: 'Alt defaultProps',
 	header: 'Header defaultProps',
 	content: 'Content defaultProps ...',
-	style: {
-		hasImage: true,
-		isDisabled: false,
-		bgColor: '#ECF0F1',
-		disabledColor: '#BDC2C6',
-	},
+	hasImage: true,
+	isDisabled: false,
+	bgColor: '#ECF0F1',
+	disabledColor: '#BDC2C6',
 }
 
 export default Card

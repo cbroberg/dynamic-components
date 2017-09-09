@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import copy from 'copy-to-clipboard'
 import { toast } from 'react-toastify'
 import Card from 'components/Card/Card'
@@ -66,22 +65,16 @@ class CardsPage extends Component {
 					onClick={(e) => this.copyToClipboard(e, 'Mette Bugge')}
 				/>
 
-				<Card />
+				<Card 
+					hasImage={true} 
+					isDisabled={true} 
+				/>
 
 			</div>
 		)
 	}
 }
 
-CardsPage.propTypes = {
-	aaa: PropTypes.string,
-	bbb: PropTypes.string
-}
-
-CardsPage.defaultProps = {
-	aaa: '',
-	bbb: ''
-}
 
 export default CardsPage
 
