@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Divider, StyledToast, Button } from 'AppStyles'
+import { Divider, StyledToast } from 'AppStyles'
 import { ColorsPage, IconsPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
+import Card from 'components/Card/Card'
 
 
 class Pages extends Component {
@@ -15,16 +16,25 @@ class Pages extends Component {
 	renderPages() {
 		const { pages, disabled } = this.props
 		return pages.map((page, index) => {
-			// const isActive = this.state.activePage === index
+			const isActive = this.state.activePage === index
 			const isDisabled = disabled.includes(index)
 			return (
-				<Button
+				<Card
 					key={index}
-					disable={isDisabled}
-					//	className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
+					isActive={isActive}
+					style={{ hasImage: false, isDisabled: isDisabled, bgColor: '#F8BB31', disabledColor: '#E74C3C' }}
+					header={page.label}
+					content={page.description}
 					onClick={isDisabled ? null : () => this.selectPageIndex(index)}
-				>{page.label}
-				</Button>
+				/>
+
+				// <Button
+				// 	key={index}
+				// 	disable={isDisabled}
+				// 	//	className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
+				// 	onClick={isDisabled ? null : () => this.selectPageIndex(index)}
+				// >{page.label}
+				// </Button>
 			)
 		})
 	}
@@ -68,36 +78,48 @@ class App extends Component {
 		const pageData = [
 			{
 				label: 'Cards',
+				description: 'This is our cards',
 				content: <CardsPage />
 			},
 			{
 				label: 'Colors',
+				description: 'This is our colors',
 				content: <ColorsPage />
 			},
 			{
 				label: 'Icons',
+				description: 'This is our icons',
 				content: <IconsPage />
 			},
 			{
 				label: 'Loaders',
+				description: 'This is our loaders',
 				content: <LoadersPage />
 			},
 			{
 				label: 'Pickers',
+				description: 'This is our pickers',
 				content: <PickersPage />
 			},
 			{
 				label: 'Tags',
+				description: 'This is our tags',
 				content: <TagsPage />
 			},
 			{
+				label: 'Buttons',
+				description: 'This is our buttons',
+				content: null
+			},
+			{
 				label: 'Disabled',
+				description: 'This is disabled',
 				content: <TagsPage />
 			},
 		]
 		return (
 			<div>
-				<Pages pages={pageData} disabled={[6]} />
+				<Pages pages={pageData} disabled={[6, 7]} />
 				<StyledToast
 					position='top-right'
 					type='default'

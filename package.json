@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "copy-to-clipboard": "^3.0.8",
-    "polished": "^1.4.1",
+    "polished": "^1.7.0",
     "react": "^15.6.1",
     "react-color": "^2.13.5",
     "react-dom": "^15.6.1",
