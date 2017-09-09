@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledCard, StyledCardImage, StyledCardContainer, StyledCardHeader, StyledCardContent } from 'components/Card/CardStyles'
+import { StyledCard, StyledCardImage, StyledCardContainer, StyledCardHeader, StyledCardContent } from './CardStyles'
 
 
 class Card extends Component {
