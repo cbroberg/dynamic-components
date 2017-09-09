@@ -30,14 +30,6 @@ class Pages extends Component {
 					content={page.description}
 					onClick={isDisabled ? null : () => this.selectPageIndex(index)}
 				/>
-
-				// <Button
-				// 	key={index}
-				// 	disable={isDisabled}
-				// 	//	className={isDisabled ? 'tab disabled' : isActive ? 'tab active' : 'tab'}
-				// 	onClick={isDisabled ? null : () => this.selectPageIndex(index)}
-				// >{page.label}
-				// </Button>
 			)
 		})
 	}
