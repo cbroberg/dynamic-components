@@ -1,45 +1,53 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import * as Icons from 'react-icons/lib/md'
-import { ICON_DEFAULT_COLOR, ICON_ACTIVE_COLOR } from 'theme/colors'
+import { ICON_DEFAULT_COLOR } from 'theme/colors'
 
 class Icon extends Component {
 
 	setColor(active) {
 		if (active === true) {
-			return (ICON_ACTIVE_COLOR)
+			return (this.props.color)
 		} else {
-			return (this.defaultProps.color)
+			return (this.props.iconColor)
 		}
 	}
 
 	render() {
-		const IconComponent = icons[this.props.icon].component
-		return <IconComponent size={this.props.size} color={this.props.color} style={this.props.style} />
+		const { icon, size, active, style } = this.props
+		const IconComponent = icons[icon].component
+		return <IconComponent size={size} color={this.setColor(active)} style={style} />
 	}
 }
-
-// size = { size || this.defaultProps.size } color= { this.setColor(this.props.active) || this.defaultProps.color } style= { this.props.style || this.defaultProps.style }
 
 export default Icon
 
 Icon.propTypes = {
-	icon: PropTypes.string.isRequired,
+	icon: PropTypes.string,
 	size: PropTypes.number,
 	color: PropTypes.string,
 	active: PropTypes.bool,
+	iconColor: PropTypes.string,
 	style: PropTypes.shape({
-		verticalAlign: PropTypes.string,
-		paddingRight: PropTypes.string
+		marginRight: PropTypes.string
 	})
 }
 
+/* 
+React does not provide default props to a nested array of items of a certain shape. 
+Default props are only shallowly merged. So when Icon is used alone the style needs to be declared here. 
+Button has it's own style when Icon is used in Button  
+*/
+
 Icon.defaultProps = {
-	icon: '', /* menu */
-	size: 50,
+	icon: '',
+	size: 18,
 	color: ICON_DEFAULT_COLOR,
-	active: false,
-	style: {}
+	active: true,
+	iconColor: ICON_DEFAULT_COLOR,
+	style: {
+		marginRight: '8px'
+	}
 }
 
 

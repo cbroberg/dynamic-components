@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { BUTTON_DEFAULT, BUTTON_TEXT } from 'theme/colors'
-import theme from 'theme/theme'
+import { BUTTON_DEFAULT, BUTTON_TEXT, ICON_DEFAULT_COLOR } from 'theme/colors'
+// import theme from 'theme/theme'
 import Icon from 'components/Icon/Icon'
 import StyledButton, { StyledButtonText } from './ButtonStyles'
 
@@ -15,7 +15,7 @@ class Button extends Component {
 	}
 
 	render() {
-		const { id, icon, size, color, disabledColor, isDisabled, onClick } = this.props
+		const { id, icon, size, color, disabledColor, active, iconColor, style, isDisabled, onClick } = this.props
 		let _hasIcon
 		let _hasText = this.props.children
 		let _hasIconAndText
@@ -38,8 +38,9 @@ class Button extends Component {
 							icon={icon} 
 							size={size} 
 							color={BUTTON_TEXT} 
-							active={true} 
-							style={theme.iconButtonStyle} />
+							active={active} 
+							iconColor={iconColor}
+							style={style} />
 							<span>{this.props.children}</span>
 
 					</StyledButton>
@@ -70,26 +71,26 @@ Button.propTypes = {
 	size: PropTypes.number,
 	color: PropTypes.string,
 	active: PropTypes.bool,
+	iconColor: PropTypes.string,
 	isDisabled: PropTypes.bool,
 	disabledColor: PropTypes.string,
 	id: PropTypes.string,
 	onClick: PropTypes.func,
 	style: PropTypes.shape({
-		verticalAlign: PropTypes.string,
-		paddingRight: PropTypes.string
+		marginRight: PropTypes.string
 	})
 }
 
 Button.defaultProps = {
-	name: 'info',
+	name: '',
 	size: 18,
 	color: BUTTON_DEFAULT,
 	disabledColor: '#BDC2C6',
-	active: false,
+	active: true,
+	iconColor: ICON_DEFAULT_COLOR,
 	isDisabled: false,
 	style: {
-		verticalAlign: '-5px',
-		paddingRight: '8px'
+		marginRight: '8px'
 	}
 }
 

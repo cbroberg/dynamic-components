@@ -17,7 +17,6 @@ export const StyledTag = styled.a`
 	position: relative;
 	margin: 0 10px 10px 0;
 	text-decoration: none;
-	-webkit-transition: color 0.2s;
 	
 	&::before {
 		background: #fff;
