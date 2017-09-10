@@ -9,12 +9,12 @@ export const StyledCard = styled.div`
 	transition: 0.2s;
 	width: 200px;
 	margin-right: 9px;
-    margin-bottom: 9px;
+    margin-bottom: 0.7rem;
 	border-radius: 5px;
 	text-decoration: none;
 	user-select: none;
 	opacity: ${(props) => props.isDisabled ? '0.4' : ''};
-	background: ${(props) => (props.isDisabled) ? props.disabledColor : (props.isActive) ? '#E98832' : props.bgColor};
+	background: ${(props) => props.isDisabled ? props.disabledColor : props.isActive ? '#E98832' : props.bgColor};
 	cursor: ${(props) => props.isDisabled ? 'not-allowed' : 'pointer'};
 
 	&:hover {

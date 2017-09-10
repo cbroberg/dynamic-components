@@ -97,6 +97,11 @@ class App extends Component {
 				content: <LoadersPage />
 			},
 			{
+				label: 'Meters',
+				description: 'This is our meters',
+				content: <TagsPage />
+			},
+			{
 				label: 'Pickers',
 				description: 'This is our pickers',
 				content: <PickersPage />
@@ -114,11 +119,11 @@ class App extends Component {
 		]
 		return (
 			<div>
-				<Pages pages={pageData} disabled={[7]} />
+				<Pages pages={pageData} disabled={[5, 8]} />
 				<StyledToast
 					position='top-right'
 					type='default'
-					autoClose={2000}
+					autoClose={1500}
 					hideProgressBar={false}
 					newestOnTop={false}
 					closeOnClick

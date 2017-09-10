@@ -43,6 +43,7 @@ const sizes = {
 
 	}
 }
+
 const velocities = {
 	slow: '3s',
 	medium: '2s',
@@ -51,18 +52,19 @@ const velocities = {
 }
 
 const StyledSmoothLoader = styled.div`
-width: ${({ size }) => sizes[size].diameter};
-height: ${({ size }) => sizes[size].diameter};
-border-style: solid;
-border-color: rgba(0,0,0,0);
-border-top-color: #EEEDED;
-border-width: 2px 0px 0px 0px;
-border-radius: 50%;
-animation: ${spin} 0.5s infinite linear;
+	border-radius: 50%;
+	width: ${({ size }) => sizes[size].diameter};
+	height: ${({ size }) => sizes[size].diameter};
+	border-style: solid;
+	border-color: rgba(0,0,0,0);
+	border-top-color: #EEEDED;
+	border-width: 2px 0px 0px 0px;
+	animation: ${spin} 0.5s infinite linear;
 `
 
 StyledSmoothLoader.defaultProps = {
 	size: 'medium',
 	velocity: 'fast'
 }
+
 export default StyledSmoothLoader

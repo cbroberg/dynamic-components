@@ -2,13 +2,13 @@ import styled, { keyframes } from 'styled-components'
 import PropTypes from 'prop-types'
 
 
-const rotate360 = keyframes`
+const spin = keyframes`
 	from {
 		transform: rotate(0deg);
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(359deg);
 	}
 `
 
@@ -61,7 +61,7 @@ const StyledLoader = styled.div`
 	border-top: ${({ size }) => sizes[size].border} solid #3B97D3;
  	width: ${({ size }) => sizes[size].diameter};
 	height: ${({ size }) => sizes[size].diameter};
-	animation: ${rotate360} ${({ velocity }) => velocities[velocity]} linear infinite;
+	animation: ${spin} ${({ velocity }) => velocities[velocity]} linear infinite;
 `
 
 StyledLoader.propTypes = {

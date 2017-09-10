@@ -35,7 +35,7 @@ Icon.propTypes = {
 }
 
 Icon.defaultProps = {
-	icon: 'menu',
+	icon: '', /* menu */
 	size: 50,
 	color: ICON_DEFAULT_COLOR,
 	active: false,
