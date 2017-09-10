@@ -126,14 +126,26 @@ class ButtonsPage extends Component {
 					icon='visibility'
 					size={18}
 					color={'#000'}
-					isDisabled={true}
-					>Black Betty
+					isDisabled={true}>Black Betty
 				</Button>
 
 				<Button
 					icon='visibility_off'
 					size={18}
 					onClick={(e) => copyToClipboard(e, 'visibility_off', true)}>Default Color
+				</Button>
+
+				<Button
+					size={18}
+					color={'#513085'}
+					isDisabled={true}>Disabled
+				</Button>
+
+				<Button
+					icon='menu'
+					size={18}
+					color={'#5E5E5E'}
+					isDisabled={true}>
 				</Button>
 
 			</div>
