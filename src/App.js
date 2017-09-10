@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ColorsPage, IconsPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, IconsPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
@@ -72,6 +72,11 @@ class App extends Component {
 	render() {
 		const pageData = [
 			{
+				label: 'Buttons',
+				description: 'This is our buttons',
+				content: <ButtonsPage />
+			},
+			{
 				label: 'Cards',
 				description: 'This is our cards',
 				content: <CardsPage />
@@ -102,19 +107,14 @@ class App extends Component {
 				content: <TagsPage />
 			},
 			{
-				label: 'Buttons',
-				description: 'This is our buttons',
-				content: null
-			},
-			{
 				label: 'Disabled',
 				description: 'This is disabled',
-				content: <TagsPage />
+				content: null
 			},
 		]
 		return (
 			<div>
-				<Pages pages={pageData} disabled={[6, 7]} />
+				<Pages pages={pageData} disabled={[7]} />
 				<StyledToast
 					position='top-right'
 					type='default'

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { BUTTON_TEXT, ICON_DEFAULT_COLOR } from 'theme/colors'
-import theme from 'framework/assets/theme'
+import { BUTTON_DEFAULT, BUTTON_TEXT } from 'theme/colors'
+import theme from 'theme/theme'
 import Icon from 'components/Icon/Icon'
 import StyledButton from './ButtonStyles'
 
@@ -15,9 +15,10 @@ class Button extends Component {
 	}
 
 	render() {
+		const { id, icon, size, color, onClick } = this.props
 		return (
-			<StyledButton id={this.props.id} onClick={this.props.onClick}>
-				<Icon icon={this.props.icon} size={this.props.size} color={BUTTON_TEXT} active={true} style={theme.iconButtonStyle} /><span>{this.props.children}</span>
+			<StyledButton id={id} onClick={onClick} color={color}>
+				<Icon icon={icon} size={size} color={BUTTON_TEXT} active={true} style={theme.iconButtonStyle} /><span>{this.props.children}</span>
 			</StyledButton>
 		)
 	}
@@ -39,7 +40,7 @@ Button.propTypes = {
 Button.defaultProps = {
 	name: 'info',
 	size: 75,
-	color: ICON_DEFAULT_COLOR,
+	color: BUTTON_DEFAULT,
 	active: false,
 	style: {
 		verticalAlign: '-5px',

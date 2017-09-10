@@ -13,7 +13,7 @@ class ColorsPage extends Component {
 					<ColorCard 
 						color={color.value} 
 						name={color.name} 
-						onClick={(e) => copyToClipboard(e, color.name + ': ' + color.value, true)} 
+						onClick={(e) => copyToClipboard(e, color.value, true)} // color.name + ': ' + color.value
 						key={index} 
 					/>
 				))}

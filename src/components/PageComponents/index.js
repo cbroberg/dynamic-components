@@ -1,3 +1,4 @@
+export { default as ButtonsPage } from './ButtonsPage'
 export { default as CardsPage } from './CardsPage'
 export { default as ColorsPage } from './ColorsPage'
 export { default as IconsPage } from './IconsPage'
