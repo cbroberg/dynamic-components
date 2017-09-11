@@ -46,12 +46,13 @@ export const StyledCardContainer = styled.div`
 export const StyledCardHeader = styled.h4`
 	text-align: center;
 	font-family: 'Source Sans Pro';
+	font-size: 1.8rem;
 	color: ${(props) => props.isActive ? '#fff' : '#000'};
 `
 
 export const StyledCardContent = styled.p`
 	text-align: center;
 	font-family: 'Source Sans Pro';
-	font-size: 14px;
+	font-size: 1.4rem;
 `
 

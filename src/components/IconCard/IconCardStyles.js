@@ -22,12 +22,13 @@ export const StyledIconCardContainer = styled.div`
 export const StyledIconCardHeader = styled.h4`
 	text-align: center;
 	font-family: 'Source Sans Pro';
+	font-size: 1.8rem;
 `
 
 export const StyledIconCardContent = styled.p`
 	text-align: center;
 	font-family: 'Source Sans Pro';
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: #3B97D3;
 `
 

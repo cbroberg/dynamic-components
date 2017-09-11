@@ -1,6 +1,28 @@
 import styled from 'styled-components'
+import { injectGlobal } from 'styled-components'
+import styledNormalize from 'styled-normalize'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
+
+
+injectGlobal([`
+	${styledNormalize}
+
+   	html {
+	   font-size: 62.5%;
+	}
+	
+	body {
+		margin: 5px;
+	}
+
+   * {
+        outline: none;
+		box-sizing: border-box;
+		font-family: 'Source Sans Pro';
+	}
+	`])
+
 
 export const Divider = styled.div`
 	clear: both;

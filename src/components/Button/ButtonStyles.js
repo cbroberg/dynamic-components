@@ -9,6 +9,7 @@ const StyledButton = styled.button`
     float: left;
     border-radius: 4px;
 	background: ${(props) => props.isDisabled ? props.disabledColor : props.color};
+	padding: 0px;
 	padding: ${(props) => props.hasIconText ? '0 13px 0 15px' : props.hasText ? '0 8px 0 15px' : props.hasIcon ? '0 0 0 10px' : '0 0 0 15px'};
 	height: ${({ size }) => sizes[size].height};
 	margin: 0 0.7rem 0.7rem 0;
@@ -43,7 +44,7 @@ export const StyledButtonIconText = styled.span`
     font-size: ${({ size }) => sizes[size].fontSize};
     font-weight: 300;
 	font-style: normal; 
-	padding-right: 2px;
+	padding-right: 0px;
 `
 // Button with text and no icon
 export const StyledButtonText = styled.span`
@@ -75,7 +76,7 @@ export const sizes = {
 		paddingButtonIconText: '0 13px 0 15px',
 		paddingRightIconText: '2px',
 		paddingRightText: '15px',
-		fontSize: '15px',
+		fontSize: '1.5rem',
 		fontWeight: '300'
 	},
 	medium: {

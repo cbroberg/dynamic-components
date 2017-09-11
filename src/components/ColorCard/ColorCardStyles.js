@@ -32,12 +32,13 @@ export const StyledColorCardContainer = styled.div`
 export const StyledColorCardHeader = styled.h4`
 	text-align: center;
 	font-family: 'Source Sans Pro';
+	font-size: 1.8rem;
 	cursor: pointer;
 `
 
 export const StyledColorCardContent = styled.p`
 	text-align: center;
 	font-family: 'Source Sans Pro';
-    font-size: 14px;
+    font-size: 1.4rem;
 `
 
