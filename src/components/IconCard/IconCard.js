@@ -11,7 +11,7 @@ class IconCard extends Component {
 			<div>
 				<StyledIconCard>
 					<StyledIconCardIcon onClick={this.props.onClick}>
-						<Icon icon={icon} size={100} />
+						<Icon icon={icon} iconSize={100} />
 					</StyledIconCardIcon>
 					<StyledIconCardContainer>
 						<StyledIconCardHeader>{header}</StyledIconCardHeader>

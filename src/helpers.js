@@ -13,12 +13,3 @@ export const copyToClipboard = (e, message, notify) => {
 		notification(message)
 	}
 }
-
-
-/* 
-const copyToClipboard = (e, text) => {
-	copy(text)
-	notify(`"${text}" ... has been copyied to the clipboard`)
-}
-*/
-

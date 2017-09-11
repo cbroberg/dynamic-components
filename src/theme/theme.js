@@ -52,7 +52,8 @@ const theme = {
 			lineHeight: 1.9
 		}
 	},
-	breakpoints: [32, 48, 64, 80] //640,830,1024,1280 px
+
+	breakpoints: [32, 48, 64, 80] // 640, 830, 1024, 1280 px
 }
 
 export default theme

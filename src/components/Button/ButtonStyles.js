@@ -3,6 +3,36 @@ import { transparentize, darken, rgba } from 'polished'
 import { BUTTON_TEXT } from 'theme/colors'
 
 
+const sizes = {
+	xsmall: {
+		height: '38px',
+		margin: '0 0.7rem 0.7rem 0',
+		paddingIcon: '0 0px 0 10px',
+		paddingText: '0 8px 0 15px',
+		paddingIconText: '0 13px 0 15px'
+	},
+	small: {
+		diameter: '50px',
+		border: '10px'
+
+	},
+	medium: {
+		diameter: '80px',
+		border: '12px'
+
+	},
+	large: {
+		diameter: '120px',
+		border: '16px'
+
+	},
+	xlarge: {
+		diameter: '200px',
+		border: '20px'
+
+	}
+}
+
 const StyledButton = styled.button`
     display: flex;
     align-items: center;

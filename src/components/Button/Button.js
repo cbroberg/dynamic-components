@@ -6,6 +6,7 @@ import { BUTTON_DEFAULT, BUTTON_TEXT, ICON_DEFAULT_COLOR } from 'theme/colors'
 import Icon from 'components/Icon/Icon'
 import StyledButton, { StyledButtonText, StyledButtonTextNoIcon } from './ButtonStyles'
 
+
 //TODO: constructor, switch buttonType, sizes, fonts, and colors from theme!!!
 class Button extends Component {
 
@@ -19,7 +20,7 @@ class Button extends Component {
 	}
 
 	render() {
-		const { id, label, icon, size, color, disabledColor, active, iconColor, style, isDisabled, onClick } = this.props
+		const { id, label, icon, iconSize, color, disabledColor, active, iconColor, style, isDisabled, onClick } = this.props
 		let _hasIcon
 		let _hasText = label
 		let _hasIconAndText
@@ -40,14 +41,14 @@ class Button extends Component {
 
 						<Icon 
 							icon={icon} 
-							size={size} 
+							size={iconSize} 
 							color={BUTTON_TEXT} 
 							active={active} 
 							iconColor={iconColor}
-							style={style} />
+							style={style} 
+						/>
 						
 						<StyledButtonText>{label}</StyledButtonText>
-						{/* <span>{label}{this.props.children}</span> */}
 
 					</StyledButton>
 				</div>
@@ -75,7 +76,7 @@ class Button extends Component {
 Button.propTypes = {
 	label: PropTypes.string,
 	icon: PropTypes.string,
-	size: PropTypes.number,
+	iconSize: PropTypes.number,
 	color: PropTypes.string,
 	active: PropTypes.bool,
 	iconColor: PropTypes.string,
@@ -86,13 +87,14 @@ Button.propTypes = {
 	style: PropTypes.shape({
 		marginRight: PropTypes.string
 	}),
-	type: PropTypes.oneOf(['button', 'reset', 'submit'])
+	type: PropTypes.oneOf(['button', 'reset', 'submit']),
+	size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
 }
 
 Button.defaultProps = {
 	label: '',
 	icon: '',
-	size: 18,
+	iconSize: 18,
 	color: BUTTON_DEFAULT,
 	disabledColor: '#BDC2C6',
 	active: true,
@@ -101,7 +103,8 @@ Button.defaultProps = {
 	style: {
 		marginRight: '8px'
 	},
-	type: 'button'
+	type: 'button',
+	size: 'small',
 }
 
 export default Button

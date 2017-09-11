@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
 import Button from 'components/Button/Button'
-// import { colors } from 'theme/colors'
-
 
 class ButtonsPage extends Component {
 
@@ -13,7 +11,7 @@ class ButtonsPage extends Component {
 				<Button 
 					label={'Send Mail'}
 					icon='mail_outline' 
-					size={18} 
+					iconSize={18} 
 					color={'#3B97D3'}
 					onClick={(e) => copyToClipboard(e, 'Mail is now send', true)} 
 				/>
@@ -21,7 +19,7 @@ class ButtonsPage extends Component {
 				<Button 
 					label={'Save'}
 					icon='check_circle' 
-					size={18} 
+					iconSize={18} 
 					color={'#34495D'}
 					onClick={(e) => copyToClipboard(e, 'Your form is saved', true)} 
 				/>
@@ -29,7 +27,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Laptop Settings'}
 					icon='laptop_mac' 
-					size={18} 
+					iconSize={18} 
 					color={'#81C1EA'}
 					onClick={(e) => copyToClipboard(e, 'Laptop settings', true)} 
 				/>
@@ -37,7 +35,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={''}			
 					icon='place'
-					size={18}
+					iconSize={18}
 					color={'#5E5E5E'}
 					onClick={(e) => copyToClipboard(e, 'Map View', true)} 
 				/>
@@ -45,7 +43,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={''}
 					icon='view_list'
-					size={18}
+					iconSize={18}
 					color={'#FF9600'}
 					onClick={(e) => copyToClipboard(e, 'List View', true)} 
 				/>
@@ -53,7 +51,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={''}
 					icon='view_module'
-					size={18}
+					iconSize={18}
 					color={'#764EB9'}
 					onClick={(e) => copyToClipboard(e, 'Card View', true)} 
 				/>
@@ -61,7 +59,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Go to Dashboard'}
 					icon='dashboard'
-					size={18}
+					iconSize={18}
 					color={'#D42027'}
 					onClick={(e) => copyToClipboard(e, 'Go to Dashboard', true)} 
 				/>
@@ -69,7 +67,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Opret nyt tillæg'}
 					icon='add_circle'
-					size={18}
+					iconSize={18}
 					color={'#F8BB31'}
 					onClick={(e) => copyToClipboard(e, 'Adding new appendix', true)} 
 				/>
@@ -77,7 +75,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Upload Data'}
 					icon='cloud_upload'
-					size={18}
+					iconSize={18}
 					color={'#25B89A'}
 					onClick={(e) => copyToClipboard(e, 'Uploading data ...', true)} 
 				/>
@@ -85,7 +83,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Reports'}
 					icon='assignment_turned_in'
-					size={18}
+					iconSize={18}
 					color={'#FF9600'}
 					onClick={(e) => copyToClipboard(e, 'Reports', true)} 
 				/>
@@ -93,7 +91,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Card View'}
 					icon='view_module'
-					size={18}
+					iconSize={18}
 					color={'#764EB9'}
 					onClick={(e) => copyToClipboard(e, 'Card View', true)} 
 				/>
@@ -101,7 +99,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Bug Report'}
 					icon='bug_report'
-					size={18}
+					iconSize={18}
 					color={'#3B97D3'}
 					onClick={(e) => copyToClipboard(e, 'Bug Report filed ...', true)} 
 				/>
@@ -109,7 +107,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Add User'}
 					icon='person_add'
-					size={18}
+					iconSize={18}
 					color={'#E98832'}
 					active={false}
 					inactiveColor={'#006CB2'}
@@ -119,14 +117,14 @@ class ButtonsPage extends Component {
 				<Button
 					label={''}
 					icon='input'
-					size={18}
+					iconSize={18}
 					color={'#2AC639'}
 					onClick={(e) => copyToClipboard(e, 'Form Field', true)} 
 				/>
 				
 				<Button
 					label={'No Icon'}
-					size={18}
+					iconSize={18}
 					color={'#EA228F'}
 					onClick={(e) => copyToClipboard(e, 'Button with no icon', true)} 
 				/>
@@ -134,7 +132,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Select Time'}
 					icon='access_time'
-					size={18}
+					iconSize={18}
 					color={'#D4CD11'}
 					onClick={(e) => copyToClipboard(e, 'Time selected', true)} 
 				/>
@@ -142,7 +140,7 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Disabled'}
 					icon='visibility'
-					size={18}
+					iconSize={18}
 					color={'#000'}
 					isDisabled={true} 
 				/>
@@ -150,14 +148,14 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Default Color'}
 					icon='visibility_off'
-					size={18}
+					iconSize={18}
 					active={false}
 					onClick={(e) => copyToClipboard(e, 'Default Color', true)} 
 				/>
 
 				<Button
 					label={'Disabled'}
-					size={18}
+					iconSize={18}
 					color={'#513085'}
 					isDisabled={true} 
 				/>
@@ -165,14 +163,15 @@ class ButtonsPage extends Component {
 				<Button
 					label={''}
 					icon='menu'
-					size={18}
+					iconSize={18}
 					color={'#5E5E5E'}
 					isDisabled={true} 
 				/>
+				
 				<Button
 					label={'Create new'}
 					icon='add_circle'
-					size={18}
+					iconSize={18}
 					color={'#3B97D3'}
 					onClick={(e) => copyToClipboard(e, 'Creating New Form', true)}
 				/>

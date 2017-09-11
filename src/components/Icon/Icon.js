@@ -14,9 +14,9 @@ class Icon extends Component {
 	}
 
 	render() {
-		const { icon, size, active, style } = this.props
+		const { icon, iconSize, active, style } = this.props
 		const IconComponent = icons[icon].component
-		return <IconComponent size={size} color={this.setColor(active)} style={style} />
+		return <IconComponent size={iconSize} color={this.setColor(active)} style={style} />
 	}
 }
 
@@ -24,7 +24,7 @@ export default Icon
 
 Icon.propTypes = {
 	icon: PropTypes.string,
-	size: PropTypes.number,
+	iconSize: PropTypes.number,
 	color: PropTypes.string,
 	active: PropTypes.bool,
 	iconColor: PropTypes.string,
@@ -41,7 +41,7 @@ Button has it's own defaultProps when Icon is used in Button
 
 Icon.defaultProps = {
 	icon: '',
-	size: 18,
+	iconSize: 18,
 	color: ICON_DEFAULT_COLOR,
 	active: true,
 	iconColor: ICON_DEFAULT_COLOR,
