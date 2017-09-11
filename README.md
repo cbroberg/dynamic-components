@@ -1,2 +1,2 @@
-# Dynamic Components for ODEUM Code component library
+# Dynamic UI Components for ODEUM Code component library.
 
