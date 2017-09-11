@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, DropdownsPage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
@@ -87,6 +87,11 @@ class App extends Component {
 				content: <ColorsPage />
 			},
 			{
+				label: 'Dropdowns',
+				description: 'This is our dropdowns',
+				content: <DropdownsPage />
+			},
+			{
 				label: 'Icons',
 				description: 'This is our icons',
 				content: <IconsPage />
@@ -119,7 +124,7 @@ class App extends Component {
 		]
 		return (
 			<div>
-				<Pages pages={pageData} disabled={[8]} />
+				<Pages pages={pageData} disabled={[pageData.length - 1]} />
 				<StyledToast
 					position='top-right'
 					type='default'

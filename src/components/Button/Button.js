@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { BUTTON_DEFAULT, BUTTON_TEXT, ICON_DEFAULT_COLOR } from 'theme/colors'
 // import theme from 'theme/theme'
 import Icon from 'components/Icon/Icon'
-import StyledButton, { StyledButtonText, StyledButtonTextNoIcon } from './ButtonStyles'
+import StyledButton, { StyledButtonIconText, StyledButtonText } from './ButtonStyles'
 
 
 //TODO: constructor, switch buttonType, sizes, fonts, and colors from theme!!!
@@ -20,13 +20,13 @@ class Button extends Component {
 	}
 
 	render() {
-		const { id, label, icon, iconSize, color, disabledColor, active, iconColor, style, isDisabled, onClick } = this.props
+		const { id, label, icon, iconSize, color, disabledColor, active, iconColor, style, size, isDisabled, onClick } = this.props
 		let _hasIcon
 		let _hasText = label
-		let _hasIconAndText
+		let _hasIconText
 		if (icon) {
 			_hasIcon = true
-			_hasIconAndText = _hasText
+			_hasIconText = _hasText
 			return (
 				<div>
 					<StyledButton 
@@ -37,18 +37,20 @@ class Button extends Component {
 						disabledColor={disabledColor} 
 						hasIcon={_hasIcon} 
 						hasText={_hasText} 
-						hasIconAndText={_hasIconAndText}>
+						hasIconText={_hasIconText} 
+						size={size}>
 
 						<Icon 
 							icon={icon} 
-							size={iconSize} 
+							iconSize={iconSize} 
 							color={BUTTON_TEXT} 
 							active={active} 
 							iconColor={iconColor}
 							style={style} 
+							
 						/>
 						
-						<StyledButtonText>{label}</StyledButtonText>
+						<StyledButtonIconText size={size}>{label}</StyledButtonIconText>
 
 					</StyledButton>
 				</div>
@@ -61,9 +63,10 @@ class Button extends Component {
 					onClick={onClick} 
 					color={color} 
 					isDisabled={isDisabled} 
-					disabledColor={disabledColor}>
+					disabledColor={disabledColor} 
+					size={size}>
 
-					<StyledButtonTextNoIcon>{label}</StyledButtonTextNoIcon>
+					<StyledButtonText size={size}>{label}</StyledButtonText>
 
 				</StyledButton>
 			</div>

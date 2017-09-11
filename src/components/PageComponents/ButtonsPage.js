@@ -171,8 +171,9 @@ class ButtonsPage extends Component {
 				<Button
 					label={'Create new'}
 					icon='add_circle'
-					iconSize={18}
+					iconSize={32}
 					color={'#3B97D3'}
+					size={'large'}
 					onClick={(e) => copyToClipboard(e, 'Creating New Form', true)}
 				/>
 
