@@ -44,7 +44,6 @@ export const StyledButtonIconText = styled.span`
     font-size: ${({ size }) => sizes[size].fontSize};
     font-weight: 300;
 	font-style: normal; 
-	padding-right: 0px;
 `
 // Button with text and no icon
 export const StyledButtonText = styled.span`

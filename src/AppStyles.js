@@ -4,7 +4,6 @@ import styledNormalize from 'styled-normalize'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
-
 injectGlobal([`
 	${styledNormalize}
 
@@ -22,7 +21,6 @@ injectGlobal([`
 		font-family: 'Source Sans Pro';
 	}
 	`])
-
 
 export const Divider = styled.div`
 	clear: both;
