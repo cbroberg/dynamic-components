@@ -4955,7 +4955,7 @@ prop-types@15.5.8:
   dependencies:
     fbjs "^0.8.9"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -5164,14 +5164,6 @@ react-scripts@1.0.10:
   optionalDependencies:
     fsevents "1.1.2"
 
-react-sound@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/react-sound/-/react-sound-0.8.0.tgz#39706a68bdbc1b04cf2fc6f01d8af40f5a30f818"
-  dependencies:
-    prop-types "^15.5.7"
-    react ">=15.3.0 <16.0.0"
-    soundmanager2 "^2.97.20150601-a"
-
 react-toastify@^2.0.0-rc.3:
   version "2.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-2.0.0-rc.3.tgz#872a4ba8269ed0a76b32034b4bdeef6981272396"
@@ -5189,7 +5181,7 @@ react-transition-group@^1.1.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-"react@>=15.3.0 <16.0.0", react@^15.6.1:
+react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:
@@ -5737,10 +5729,6 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
-soundmanager2@^2.97.20150601-a:
-  version "2.97.20170602"
-  resolved "https://registry.yarnpkg.com/soundmanager2/-/soundmanager2-2.97.20170602.tgz#fe3bc731bfc4d54c1364e71980263e6816981879"
-
 source-list-map@^0.1.7:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-0.1.8.tgz#c550b2ab5427f6b3f21f5afead88c4f5587b2106"
@@ -6171,6 +6159,10 @@ type-is@~1.6.15:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typeface-source-sans-pro@^0.0.35:
+  version "0.0.35"
+  resolved "https://registry.yarnpkg.com/typeface-source-sans-pro/-/typeface-source-sans-pro-0.0.35.tgz#ca22e329f05cfaac40a78cc5a20407b87ed02717"
 
 ua-parser-js@^0.7.9:
   version "0.7.14"

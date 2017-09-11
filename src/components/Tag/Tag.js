@@ -11,13 +11,14 @@ class Tag extends Component {
 	}
 
 	render() {
-		const { color, label, url, open } = this.props
+		const { color, label, url, open, onClick } = this.props
 		return (
 			<StyledTag 
 				color={color} 
 				href={url} 
 				target={this.handleOpen(open)}
-				onClick={this.props.onClick}>{label}</StyledTag>
+				onClick={onClick}>{label}
+			</StyledTag>
 		)
 	}
 }

@@ -114,7 +114,7 @@ class ButtonsPage extends Component {
 				<Button
 					size={18}
 					color={'#EA228F'}
-					onClick={(e) => copyToClipboard(e, 'User added', true)}>No Icon
+					onClick={(e) => copyToClipboard(e, 'Button with no icon', true)}>No Icon
 				</Button>
 
 				<Button

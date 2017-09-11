@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { copyToClipboard } from 'helpers'
 import Tag from 'components/Tag/Tag'
 import { colors } from 'theme/colors'
 
@@ -14,7 +13,6 @@ class TagsPage extends Component {
 					label={color.name}
 					url="http://odeumcode.com"
 					open={true}
-					onClick={(e) => copyToClipboard(e, color.name, true)}
 					key={index} />
 			))
 		)
