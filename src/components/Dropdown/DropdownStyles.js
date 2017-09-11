@@ -1,9 +1,4 @@
 import styled from 'styled-components'
-
-export const StyledDropdown = styled.div`
-	text-align: left;
-`
-import styled from 'styled-components'
 import * as colors from 'theme/colors'
 
 export const DropdownContianer = styled.div`
