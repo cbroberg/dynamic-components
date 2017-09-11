@@ -1,2 +1,2 @@
-# Dynamic Components for ODEUM CodeJS component library
+# Dynamic Components for ODEUM Code component library
 
