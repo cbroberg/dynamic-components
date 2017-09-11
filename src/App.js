@@ -123,7 +123,7 @@ class App extends Component {
 				<StyledToast
 					position='top-right'
 					type='default'
-					autoClose={1500}
+					autoClose={2000}
 					hideProgressBar={false}
 					newestOnTop={false}
 					closeOnClick

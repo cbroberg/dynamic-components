@@ -35,8 +35,8 @@ Icon.propTypes = {
 
 /* 
 React does not provide default props to a nested array of items of a certain shape. 
-Default props are only shallowly merged. So when Icon is used alone the style needs to be declared here. 
-Button has it's own style when Icon is used in Button  
+Default props are only shallowly merged. So when Icon is used alone the defaultProps needs to be declared here. 
+Button has it's own defaultProps when Icon is used in Button  
 */
 
 Icon.defaultProps = {
