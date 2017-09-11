@@ -12,7 +12,6 @@ const StyledButton = styled.button`
     font-size: 15px;
     font-weight: 300;
 	font-style: normal; 
-	line-height: 1.9;
     color: ${BUTTON_TEXT};
 	background: ${(props) => props.isDisabled ? props.disabledColor : props.color};
 	padding: ${(props) => props.hasIconAndText ? '0 15px 0 15px' : props.hasText ? '0 8px 0 15px' : props.hasIcon ? '0 2px 0 10px' : '0 0 0 15px'};
