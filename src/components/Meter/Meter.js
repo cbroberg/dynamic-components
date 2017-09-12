@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyledMeter } from 'components/Meter/MeterStyles'
+import CloseOnEscape from './CloseOnEscape'
+
 
 
 class Meter extends Component {
@@ -17,16 +19,23 @@ class Meter extends Component {
 			thresholds:	Array[0],
 			total: 40
 		}
+	}
 
+	escaped() {
+		console.log('Escaped')
 	}
 
 	render() {
 		const { color, label, onClick } = this.props
+		const MyComponent = ({ onEscape }) => <CloseOnEscape onEscape={onEscape}><span>some stuff here</span></CloseOnEscape>
 		return (
-			<StyledMeter 
-				color={color} 
-				onClick={onClick}>{label}
-			</StyledMeter>
+			<div>
+				<StyledMeter 
+					color={color} 
+					onClick={onClick}>{label}
+				</StyledMeter>
+				<MyComponent onEscape={this.escaped} />
+			</div>
 		)
 	}
 }

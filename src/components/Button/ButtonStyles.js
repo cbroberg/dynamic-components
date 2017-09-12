@@ -95,7 +95,7 @@ export const sizes = {
 		paddingButtonIconText: '0 13px 0 15px',
 		paddingRightIconText: '2px',
 		paddingRightText: '15px',
-		fontSize: '24px',
+		fontSize: '2.0rem',
 		fontWeight: '300'
 	},
 	xlarge: {

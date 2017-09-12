@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, DropdownsPage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
 	state = {
-		activePage: 0
+		activePage: 4
 	}
 
 	selectPageIndex(activePage) {
@@ -90,6 +90,11 @@ class App extends Component {
 				label: 'Dropdowns',
 				description: 'This is our dropdowns',
 				content: <DropdownsPage />
+			},
+			{
+				label: 'Dropdown Lite',
+				description: 'This is our dropdowns',
+				content: <DropdownLitePage />
 			},
 			{
 				label: 'Icons',

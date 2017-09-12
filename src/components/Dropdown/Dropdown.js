@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { DropdownContianer, DropdownMenuBtn, DropdownContentContainer, SingleLinkContainer, LinkChildrenContainer, SlIconContainer, NotificationTopContanoiner, NotificationsLbl, MarkAsReadBtn, SettingsLink, SeeAllNotificationsLink, AllLinksContainer } from 'components/Dropdown/DropdownStyles'
+import { DropdownContianer, DropdownMenuBtn, DropdownContentContainer, /* SingleLinkContainer, LinkChildrenContainer, SlIconContainer, */ NotificationTopContanoiner, NotificationsLbl, MarkAsReadBtn, SettingsLink, SeeAllNotificationsLink, AllLinksContainer } from 'components/Dropdown/DropdownStyles'
 import * as colors from 'theme/colors'
 import Icon from 'components/Icon/Icon'
 import theme from 'theme/theme'
