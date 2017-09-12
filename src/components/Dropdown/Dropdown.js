@@ -22,7 +22,7 @@ class Dropdown extends Component {
 	render() {
 		return (
 			<DropdownContianer>
-				<DropdownMenuBtn onClick={this.handleDropDown} theme={this.props.dropDowntheme} color={this.props.color}>
+				<DropdownMenuBtn onMouseEnter={this.handleDropDown} theme={this.props.dropDowntheme} color={this.props.color}>
 					<Icon icon={this.props.icon} size={this.props.size} color={colors.BUTTON_TEXT} active={this.props.active} style={theme.iconButtonStyle} />
 					{this.props.label}
 				</DropdownMenuBtn>

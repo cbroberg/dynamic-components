@@ -15,7 +15,7 @@ class DropdownLite extends Component {
 		console.log('Escaped')
 		return (
 			<div>
-				Shit happens ... 				
+				Shit happens ... NOT!!!
 			</div>
 		)
 	}
