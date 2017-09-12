@@ -79,6 +79,15 @@ export const icons = {
 		tags: ['actions']
 	},
 
+	help_outline: {
+		name: 'help_outline',
+		component: Icons.MdHelpOutline,
+		action: 'Help',
+		usage: 'Use for launching the help system and support',
+		description: '',
+		tags: ['actions']
+	},
+
 	bug_report: {
 		name: 'bug_report',
 		component: Icons.MdBugReport,
@@ -998,4 +1007,33 @@ export const icons = {
 		description: '',
 		tags: ['actions', 'notifications']
 	},
+
+	bookmark: {
+		name: 'bookmark',
+		component: Icons.MdBookmark,
+		action: 'Bookmark',
+		usage: 'Use for bookmarking data/content',
+		description: '',
+		tags: ['actions', 'bookmark']
+	},
+	
+	library_add: {
+		name: 'library_add',
+		component: Icons.MdLibraryAdd,
+		action: 'Pin to Dashboard',
+		usage: 'Use for pinning a view to dashboard',
+		description: '',
+		tags: ['actions', 'dashboard', 'pin']
+	},
+
+	tab: {
+		name: 'tab',
+		component: Icons.MdTab,
+		action: 'Tab',
+		usage: 'Use for tabs in App Builder',
+		description: '',
+		tags: ['actions', 'tab', 'tabs', 'apps', 'builder']
+	},
 }
+
+
