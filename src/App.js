@@ -5,7 +5,7 @@ import Card from 'components/Card/Card'
 
 class Pages extends Component {
 	state = {
-		activePage: 4
+		activePage: 5
 	}
 
 	selectPageIndex(activePage) {
@@ -70,6 +70,7 @@ class Pages extends Component {
 class App extends Component {
 
 	render() {
+		// Add routes to pages so they can be accessed through /buttons, /cards ... 
 		const pageData = [
 			{
 				label: 'Buttons',

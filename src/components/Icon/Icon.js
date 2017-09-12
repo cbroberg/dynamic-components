@@ -101,9 +101,9 @@ export const icons = {
 		name: 'assignment',
 		component: Icons.MdAssignment,
 		action: 'Forms',
-		usage: 'Use for forms menu',
+		usage: 'Use for forms menu/app',
 		description: '',
-		tags: ['actions', 'forms', 'menu']
+		tags: ['actions', 'forms', 'menu', 'app', 'odeum report']
 	},
 
 	assignment_turned_in: {
@@ -112,7 +112,7 @@ export const icons = {
 		action: 'Reports',
 		usage: 'Use for listing reports',
 		description: '',
-		tags: ['menu', 'tabs', 'reports']
+		tags: ['menu', 'tabs', 'reports', 'app', 'odeum report']
 	},
 
 	info: {
@@ -212,7 +212,7 @@ export const icons = {
 		action: 'Person',
 		usage: 'Use for viewing profile information/account',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	person_add: {
@@ -293,7 +293,7 @@ export const icons = {
 		action: 'Download',
 		usage: 'Use for downloading data and assets',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	cloud_upload: {
@@ -795,9 +795,9 @@ export const icons = {
 		name: 'sync',
 		component: Icons.MdSync,
 		action: 'Sync',
-		usage: 'Use for initiate synchronization',
+		usage: 'Use for ODEUM Report synchronization',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	sync_disabled: {
@@ -806,7 +806,7 @@ export const icons = {
 		action: 'Sync disabled',
 		usage: 'Use for disabling synchronization',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	sync_problem: {
@@ -815,7 +815,7 @@ export const icons = {
 		action: 'Sync problem',
 		usage: 'Use for displaying problems with synchronization',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	lock_outline: {
@@ -851,7 +851,7 @@ export const icons = {
 		action: 'Apps',
 		usage: 'Use for access to other apps (app market)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'apps']
 	},
 
 	keyboard_arrow_down: {
@@ -932,7 +932,7 @@ export const icons = {
 		action: 'Add circle',
 		usage: 'Use for adding new stuff (anything)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	add_circle_outline: {
@@ -941,7 +941,7 @@ export const icons = {
 		action: 'Add circle outline',
 		usage: 'Use for adding new stuff (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions', 'app', 'odeum report']
 	},
 
 	delete: {
@@ -1023,7 +1023,7 @@ export const icons = {
 		action: 'Pin to Dashboard',
 		usage: 'Use for pinning a view to dashboard',
 		description: '',
-		tags: ['actions', 'dashboard', 'pin']
+		tags: ['actions', 'dashboard', 'pin', 'odeum report']
 	},
 
 	tab: {
@@ -1033,6 +1033,51 @@ export const icons = {
 		usage: 'Use for tabs in App Builder',
 		description: '',
 		tags: ['actions', 'tab', 'tabs', 'apps', 'builder']
+	},
+
+	info_outline: {
+		name: 'info_outline',
+		component: Icons.MdInfoOutline,
+		action: 'Info',
+		usage: 'Info icon in ODEUM Report App',
+		description: '',
+		tags: ['actions', 'info', 'builder', 'app', 'odeum report']
+	},
+
+	drafts: {
+		name: 'drafts',
+		component: Icons.MdDrafts,
+		action: 'Drafts',
+		usage: 'Drafts icon in App',
+		description: '',
+		tags: ['actions', 'drafts', 'app', 'odeum report']
+	},
+
+	more_horiz: {
+		name: 'more_horiz',
+		component: Icons.MdMoreHoriz,
+		action: 'More',
+		usage: 'More icon in App',
+		description: '',
+		tags: ['actions', 'more', 'app', 'odeum report']
+	},
+
+	more_vert: {
+		name: 'more_vert',
+		component: Icons.MdMoreVert,
+		action: 'More',
+		usage: 'More icon in App',
+		description: '',
+		tags: ['actions', 'more', 'app', 'odeum report']
+	},
+
+	exit_to_app: {
+		name: 'exit_to_app',
+		component: Icons.MdExitToApp,
+		action: 'Outbox',
+		usage: 'Outbox icon in App',
+		description: '',
+		tags: ['actions', 'outbox', 'app', 'odeum report']
 	},
 }
 

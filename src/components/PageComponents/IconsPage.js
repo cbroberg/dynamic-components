@@ -24,6 +24,8 @@ class IconsPage extends Component {
 	render() {
 		return (
 			<div>
+				<a href={'https://material.io/icons/'} target={'_new'}>Missing an icon? Fin it here: https://material.io/icons/</a>
+				<p/>
 				{this.renderIcons()}
 			</div>
 		)
