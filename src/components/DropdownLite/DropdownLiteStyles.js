@@ -5,6 +5,7 @@ export const StyledDropdownLite = styled.div`
 	display: inline-block;
 	border-radius: 4px;
 	width: 150px;
+	/* border-style: solid; */
 `
 
 export const StyledDropdownLiteButton = styled.button`
@@ -13,39 +14,41 @@ export const StyledDropdownLiteButton = styled.button`
 	padding: 12px;
 	font-size: 12px;
 	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	font-style: normal; 
 	border: none;
-	border-radius: 4px 4px 0 0;
+	border-radius: 4px;
 	cursor: pointer;
 	&:hover {
-		background-color: #2C3E50;
+		background-color: #3B97D3;
 	}
 `
 
 export const StyledDropdownLiteContent = styled.div`
-	/* display: none; */
-	
-	&:hover {
-		display: block;
-		overflow: hidden;
+	display: block;
+	overflow: hidden;
 	position: absolute;
+	top: 34px;
 	font-size: 12px;
 	font-family: 'Source Sans Pro';
 	background-color: #2C3E50;
 	border-radius: 0 4px 4px 4px;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	z-index: 1;
-	}
 `
 
-export const StyledDropdownLiteContentLink = styled.a`
-	color: #FFFFFF;
-	padding: 12px 16px;
+export const StyledDropdownLiteContentItem = styled.a`
+	color: white;
+	padding: 12px 12px;
 	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	font-style: normal; 
 	text-decoration: none;
+	text-overflow: ellipsis;
 	display: block;
 	&:hover {
 		background-color: #3B97D3;
-		border-radius: 0 4px 4px 0;
+		border-radius: 0 0px 0px 0;
 	}
 `

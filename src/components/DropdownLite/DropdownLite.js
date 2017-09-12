@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledDropdownLite, StyledDropdownLiteButton, StyledDropdownLiteContent, StyledDropdownLiteContentLink } from 'components/DropdownLite/DropdownLiteStyles'
 import CloseOnEscape from './CloseOnEscape'
+import Hover from './Hover'
 
 export const MyComponent = ({ onEscape }) => 
 	<CloseOnEscape 
@@ -20,40 +20,12 @@ class DropdownLite extends Component {
 		)
 	}
 
-	show() {
-		console.log('Show')
-		return (
-			<div>
-				{<StyledDropdownLiteContent></StyledDropdownLiteContent>}
-			</div>
-		)
-	}
-
 	render() {
 		const { myProp } = this.props		
 		return (
 			<div>
 				<MyComponent onEscape={this.escaped} myProp={myProp} />
-
-				<StyledDropdownLite myProp={myProp} onMouseEnter={this.show}>
-
-					<StyledDropdownLiteButton onMouseOver={this.show}>
-						Dropdown
-					</StyledDropdownLiteButton>
-
-					<StyledDropdownLiteContent>
-
-						<StyledDropdownLiteContentLink href='#'>Link 1
-						</StyledDropdownLiteContentLink>
-						<StyledDropdownLiteContentLink href='#'>Link 2
-						</StyledDropdownLiteContentLink>
-						<StyledDropdownLiteContentLink href='#'>Link 3
-						</StyledDropdownLiteContentLink>
-
-					</StyledDropdownLiteContent>
-				
-				</StyledDropdownLite>
-
+				<Hover /><p/>
 			</div>
 		)
 	}
