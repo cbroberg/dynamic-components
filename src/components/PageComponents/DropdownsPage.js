@@ -33,7 +33,8 @@ class DropdownsPage extends Component {
 					</DropDownLink>
 				))} 
 			</Dropdown>
-			<Dropdown notify={NotifyTheme.notify} theme={NotifyButton.notify} bgColor={NotifyTheme.allContentBackgroundColor}
+
+			{/* <Dropdown notify={NotifyTheme.notify} theme={NotifyButton.notify} bgColor={NotifyTheme.allContentBackgroundColor}
 					  dropDowntheme={NotifyButton} width={'400px'} bordertheme={NotifyTheme.borderTheme} 
 					  subLabel={'Notifikationer'} link={'Indstillinger'} buttontext={'Marker som læst'} seeAllNotifications={'Se alle'}
 					  icon={'info'} active={false} size={18}>
@@ -44,7 +45,7 @@ class DropdownsPage extends Component {
 						<p>{data.label}</p>
 					</DropDownLink>
 				))} 
-			</Dropdown>
+			</Dropdown> */}
 			
 			</div>
 		)

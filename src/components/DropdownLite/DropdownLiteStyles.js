@@ -4,6 +4,7 @@ export const StyledDropdownLite = styled.div`
 	position: relative;
 	display: inline-block;
 	border-radius: 4px;
+	width: 150px;
 `
 
 export const StyledDropdownLiteButton = styled.button`
@@ -21,25 +22,27 @@ export const StyledDropdownLiteButton = styled.button`
 `
 
 export const StyledDropdownLiteContent = styled.div`
-	display: none;
-	position: absolute;
-	font - size: 12px;
-	font - family: 'Source Sans Pro';
-	background - color: #2C3E50;
-	border - radius: 0 4px 4px 4px;
-	min - width: 160px;
-	box - shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z - index: 1;
+	/* display: none; */
+	
 	&:hover {
 		display: block;
+		overflow: hidden;
+	position: absolute;
+	font-size: 12px;
+	font-family: 'Source Sans Pro';
+	background-color: #2C3E50;
+	border-radius: 0 4px 4px 4px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 	}
 `
 
 export const StyledDropdownLiteContentLink = styled.a`
 	color: #FFFFFF;
 	padding: 12px 16px;
-	font - family: 'Source Sans Pro';
-	text - decoration: none;
+	font-family: 'Source Sans Pro';
+	text-decoration: none;
 	display: block;
 	&:hover {
 		background-color: #3B97D3;

@@ -5,7 +5,7 @@ import CloseOnEscape from './CloseOnEscape'
 
 export const MyComponent = ({ onEscape }) => 
 	<CloseOnEscape 
-		onEscape={onEscape}><div style={{ fontSize: '2.0rem' }}>This is just a text in a div element. Press Esc to make things happen!</div>
+		onEscape={onEscape}><div style={{ fontSize: '2.0rem' }}>This is just a text in a div element. Press Esc to make things happen!<p /></div>
 	</CloseOnEscape>
 
 
@@ -20,13 +20,24 @@ class DropdownLite extends Component {
 		)
 	}
 
+	show() {
+		console.log('Show')
+		return (
+			<div>
+				{<StyledDropdownLiteContent></StyledDropdownLiteContent>}
+			</div>
+		)
+	}
+
 	render() {
 		const { myProp } = this.props		
 		return (
 			<div>
-				<StyledDropdownLite myProp={myProp}>
+				<MyComponent onEscape={this.escaped} myProp={myProp} />
 
-					<StyledDropdownLiteButton>
+				<StyledDropdownLite myProp={myProp} onMouseEnter={this.show}>
+
+					<StyledDropdownLiteButton onMouseOver={this.show}>
 						Dropdown
 					</StyledDropdownLiteButton>
 
@@ -39,12 +50,10 @@ class DropdownLite extends Component {
 						<StyledDropdownLiteContentLink href='#'>Link 3
 						</StyledDropdownLiteContentLink>
 
-
 					</StyledDropdownLiteContent>
 				
 				</StyledDropdownLite>
-				
-				{/* <MyComponent onEscape={this.escaped} myProp={myProp} /> */}
+
 			</div>
 		)
 	}
@@ -78,3 +87,10 @@ export const options = [
 		]
 	}
 ]
+
+/*
+<ReactComponent
+    onMouseEnter={this.someHandler}
+    onMouseLeave={this.someOtherHandler}
+/>
+*/
