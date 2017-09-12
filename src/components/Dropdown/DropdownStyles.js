@@ -11,7 +11,7 @@ height: 30px;
 export const DropdownMenuBtn = styled.button`
 background-color:${(props) => props.bgColor || colors.BUTTON_DEFAULT};
 color:${(props) => props.txtColor || 'white'};
-padding:${(props) => props.theme.padding || '5px 0px 6px 0px'}; 
+padding:${(props) => props.theme.padding || '4px 0px 6px 0px'}; 
 width:${(props) => props.theme.width || '100%'};
 border-radius: 4px;
 font-size: 16px;
