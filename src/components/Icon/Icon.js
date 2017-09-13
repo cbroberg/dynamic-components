@@ -125,8 +125,8 @@ export const icons = {
 		usage: 'Use for listing reports',
 		description: '',
 		tags: ['menu', 'tabs', 'reports', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assignment_turned_in_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_assignment_turned_in_48px.svg'
 	},
 
 	info: {
@@ -247,8 +247,8 @@ export const icons = {
 		usage: 'Use for viewing profile information/account',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_person_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/social/svg/production/ic_person_48px.svg'
 	},
 
 	person_add: {
@@ -346,8 +346,8 @@ export const icons = {
 		usage: 'Use for downloading data and assets',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/file/2x_web/ic_cloud_download_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/file/svg/production/ic_cloud_download_48px.svg'
 	},
 
 	cloud_upload: {
@@ -962,8 +962,8 @@ export const icons = {
 		usage: 'Use for ODEUM Report synchronization',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/notification/2x_web/ic_sync_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/notification/svg/production/ic_sync_48px.svg'
 	},
 
 	sync_disabled: {
@@ -973,8 +973,8 @@ export const icons = {
 		usage: 'Use for disabling synchronization',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/notification/2x_web/ic_sync_disabled_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/notification/svg/production/ic_sync_disabled_48px.svg'
 	},
 
 	sync_problem: {
@@ -984,8 +984,8 @@ export const icons = {
 		usage: 'Use for displaying problems with synchronization',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/notification/2x_web/ic_sync_problem_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/notification/svg/production/ic_sync_problem_48px.svg'
 	},
 
 	lock_outline: {
@@ -995,8 +995,8 @@ export const icons = {
 		usage: 'Use for login state logged in',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_lock_outline_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_lock_outline_48px.svg'
 	},
 
 	lock_open: {
@@ -1006,8 +1006,8 @@ export const icons = {
 		usage: 'Use for login state logged out',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_lock_open_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_lock_open_48px.svg'
 	},
 
 	close: {
@@ -1127,8 +1127,8 @@ export const icons = {
 		usage: 'Use for adding new stuff (anything)',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/content/2x_web/ic_add_circle_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/content/svg/production/ic_add_circle_48px.svg'
 	},
 
 	add_circle_outline: {
@@ -1138,8 +1138,8 @@ export const icons = {
 		usage: 'Use for adding new stuff (alternative)',
 		description: '',
 		tags: ['actions', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/content/2x_web/ic_add_circle_outline_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/content/svg/production/ic_add_circle_outline_48px.svg'
 	},
 
 	delete: {
@@ -1238,8 +1238,8 @@ export const icons = {
 		usage: 'Use for pinning a view to dashboard',
 		description: '',
 		tags: ['actions', 'dashboard', 'pin', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_library_add_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_library_add_48px.svg'
 	},
 
 	tab: {
@@ -1260,8 +1260,8 @@ export const icons = {
 		usage: 'Info icon in ODEUM Report App',
 		description: '',
 		tags: ['actions', 'info', 'builder', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_info_outline_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_info_outline_48px.svg'
 	},
 
 	drafts: {
@@ -1271,8 +1271,8 @@ export const icons = {
 		usage: 'Drafts icon in App',
 		description: '',
 		tags: ['actions', 'drafts', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/content/2x_web/ic_drafts_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/content/svg/production/ic_drafts_48px.svg'
 	},
 
 	more_horiz: {
@@ -1282,8 +1282,8 @@ export const icons = {
 		usage: 'More icon in App',
 		description: '',
 		tags: ['actions', 'more', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_more_horiz_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_more_horiz_48px.svg'
 	},
 
 	more_vert: {
@@ -1293,8 +1293,8 @@ export const icons = {
 		usage: 'More icon in App',
 		description: '',
 		tags: ['actions', 'more', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_more_vert_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_more_vert_48px.svg'
 	},
 
 	exit_to_app: {
@@ -1304,8 +1304,8 @@ export const icons = {
 		usage: 'Outbox icon in App',
 		description: '',
 		tags: ['actions', 'outbox', 'app', 'odeum report'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_exit_to_app_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_exit_to_app_48px.svg'
 	},
 }
 
