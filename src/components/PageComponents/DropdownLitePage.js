@@ -1,50 +1,71 @@
 import React, { Component } from 'react'
 import Dropdown from 'components/DropdownLite/Dropdown'
-import CloseOnEscape from 'components/DropdownLite/CloseOnEscape'
 
-const escaped = () => {
-
-}
-
-const Close = ({ onEscape }) => <CloseOnEscape onEscape={escaped}><Dropdown items={items} /></CloseOnEscape>
-
-
-const items = [
-	{
-		label: 'Buttons',
-	},
-	{
-		label: 'Cards',
-	},	
-	{
-		label: 'Dropdowns',
-	},
-	{
-		label: 'Icons',
-	},
-	{
-		label: 'Loaders',
-	},
-	{
-		label: 'Meters',
-	},
-	{
-		label: 'Tags',
-	},
-]
 
 class DropdownLitePage extends Component {
 
 	render() {
 		return (
 			<div>
-				<Close />
+				<Dropdown items={items} />
 			</div>
 		)
 	}
 }
 
 export default DropdownLitePage
+
+const items = [
+	{
+		label: 'Buttons',
+		value: '',
+		href: '',
+		icon: '',
+		active: true
+	},
+	{
+		label: 'Cards',
+		value: '',
+		href: '',
+		icon: '',
+		active: true
+	},
+	{
+		label: 'Dropdowns',
+		value: '',
+		href: '',
+		icon: '',
+		active: true
+	},
+	{
+		label: 'Icons',
+		value: '',
+		href: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assessment_black_48dp.png',
+		icon: '',
+		active: true
+	},
+	{
+		label: 'Loaders',
+		value: '',
+		href: '',
+		icon: '',
+		active: true
+	},
+	{
+		label: 'Meters',
+		value: '',
+		href: '',
+		icon: '',
+		active: true
+	},
+	{
+		label: 'Tags',
+		value: '',
+		href: '',
+		icon: '',
+		active: true
+	}
+]
 
 
 export const groupedItems = [

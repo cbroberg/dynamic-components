@@ -39,6 +39,13 @@ export default CloseOnEscape
 
 const Component = ({ onEscape }) => <CloseOnEscape onEscape={onEscape}><span>some stuff here</span></CloseOnEscape>
 
+const escaped = () => {
+
+}
+
+const Close = ({ onEscape }) => <CloseOnEscape onEscape={escaped}><Dropdown items={items} /></CloseOnEscape>
+
+
 https://github.com/conorhastings/react-close-on-escape
 
 */
