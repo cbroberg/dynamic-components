@@ -10,7 +10,7 @@ export const icons = {
 		description: '',
 		tags: ['search', 'actions'],
 		png: '',
-		svg: ''
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_search_48px.svg'
 	},
 
 	menu: {
@@ -20,8 +20,8 @@ export const icons = {
 		usage: 'Use for menu open/close',
 		description: '',
 		tags: ['actions', 'menu'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_menu_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_menu_48px.svg'
 	},
 
 	help: {
@@ -31,8 +31,8 @@ export const icons = {
 		usage: 'Use for launching the help system and support',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_help_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_help_48px.svg'
 	},
 
 	help_outline: {
@@ -42,8 +42,8 @@ export const icons = {
 		usage: 'Use for launching the help system and support',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_help_outline_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_help_outline_24px.svg'
 	},
 
 	bug_report: {
@@ -53,8 +53,8 @@ export const icons = {
 		usage: 'Use for reporting bugs',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_bug_report_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_bug_report_48px.svg'
 	},
 
 	assignment: {
