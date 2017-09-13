@@ -77,11 +77,13 @@ class Dropdown extends Component {
 Dropdown.propTypes = {
 	items: PropTypes.array.isRequired,
 	type: PropTypes.oneOf(['hover', 'click']).isRequired,
+	snap: PropTypes.oneOf(['left', 'right']),
 	onSearch: PropTypes.func
 }
 
 Dropdown.defaultProps = {
-	type: 'hover'
+	type: 'hover',
+	snap: 'left'
 }
 
 export default Dropdown
