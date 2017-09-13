@@ -58,7 +58,9 @@ export const icons = {
 		action: 'Search',
 		usage: 'Use for search fields',
 		description: '',
-		tags: ['search', 'actions']
+		tags: ['search', 'actions'],
+		png: '',
+		svg: ''
 	},
 
 	menu: {
@@ -67,7 +69,9 @@ export const icons = {
 		action: 'Menu',
 		usage: 'Use for menu open/close',
 		description: '',
-		tags: ['actions', 'menu']
+		tags: ['actions', 'menu'],
+		png: '',
+		svg: ''
 	},
 
 	help: {
@@ -76,7 +80,9 @@ export const icons = {
 		action: 'Help',
 		usage: 'Use for launching the help system and support',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	help_outline: {
@@ -85,7 +91,9 @@ export const icons = {
 		action: 'Help',
 		usage: 'Use for launching the help system and support',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	bug_report: {
@@ -94,7 +102,9 @@ export const icons = {
 		action: 'Bug Report',
 		usage: 'Use for reporting bugs',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	assignment: {
@@ -114,7 +124,9 @@ export const icons = {
 		action: 'Reports',
 		usage: 'Use for listing reports',
 		description: '',
-		tags: ['menu', 'tabs', 'reports', 'app', 'odeum report']
+		tags: ['menu', 'tabs', 'reports', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	info: {
@@ -123,7 +135,9 @@ export const icons = {
 		action: 'Info',
 		usage: 'Use for displaying information',
 		description: '',
-		tags: ['actions', 'info']
+		tags: ['actions', 'info'],
+		png: '',
+		svg: ''
 	},
 
 	dashboard: {
@@ -132,7 +146,9 @@ export const icons = {
 		action: 'Dashboard',
 		usage: 'Use for launching the dashboard',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	home: {
@@ -141,7 +157,9 @@ export const icons = {
 		action: 'Home',
 		usage: 'Use for launching the homepage',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	settings: {
@@ -150,7 +168,9 @@ export const icons = {
 		action: 'Settings',
 		usage: 'Use for displaying settings',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	input: {
@@ -159,7 +179,9 @@ export const icons = {
 		action: 'Input',
 		usage: 'Use for field input',
 		description: '',
-		tags: ['actions', 'fields']
+		tags: ['actions', 'fields'],
+		png: '',
+		svg: ''
 	},
 
 	timeline: {
@@ -168,7 +190,9 @@ export const icons = {
 		action: 'Timeline',
 		usage: 'Use for workflow',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	code: {
@@ -177,7 +201,9 @@ export const icons = {
 		action: 'Code',
 		usage: 'Use for workflow automation scripts',
 		description: '',
-		tags: ['actions', 'tabs']
+		tags: ['actions', 'tabs'],
+		png: '',
+		svg: ''
 	},
 
 	opacity: {
@@ -186,7 +212,9 @@ export const icons = {
 		action: 'Opacity',
 		usage: 'Use for design settings',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 
@@ -196,7 +224,9 @@ export const icons = {
 		action: 'View organisation',
 		usage: 'Use for displaying the organisation network',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	group_add: {
@@ -205,7 +235,9 @@ export const icons = {
 		action: 'Add group',
 		usage: 'Use for adding a group',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	person: {
@@ -214,7 +246,9 @@ export const icons = {
 		action: 'Person',
 		usage: 'Use for viewing profile information/account',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	person_add: {
@@ -223,7 +257,9 @@ export const icons = {
 		action: 'Add person',
 		usage: 'Use for adding a person or a connection',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	mail_outline: {
@@ -232,7 +268,9 @@ export const icons = {
 		action: 'Mail outline',
 		usage: 'Use for sending e-mail or e-mail settings',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	settings_cell: {
@@ -241,7 +279,9 @@ export const icons = {
 		action: 'Settings cell',
 		usage: 'Use for smartphone settings',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	extension: {
@@ -250,7 +290,9 @@ export const icons = {
 		action: 'Extension',
 		usage: 'Use for app modules or extensions',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	arrow_drop_down: {
@@ -259,7 +301,9 @@ export const icons = {
 		action: 'Arrow drop down',
 		usage: 'Use for dropdown (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	arrow_drop_up: {
@@ -268,7 +312,9 @@ export const icons = {
 		action: 'Arrow drop up',
 		usage: 'Use for closing dropdown (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	copyright: {
@@ -277,7 +323,9 @@ export const icons = {
 		action: 'Copyright',
 		usage: 'Use for copyright',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	cloud: {
@@ -286,7 +334,9 @@ export const icons = {
 		action: 'Cloud',
 		usage: 'Use for viewing cloud storage',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	cloud_download: {
@@ -295,7 +345,9 @@ export const icons = {
 		action: 'Download',
 		usage: 'Use for downloading data and assets',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	cloud_upload: {
@@ -304,7 +356,9 @@ export const icons = {
 		action: 'Upload',
 		usage: 'Use for uploading files and assets',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	language: {
@@ -313,7 +367,9 @@ export const icons = {
 		action: 'Language select',
 		usage: 'Use for language selection',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	date_range: {
@@ -322,7 +378,9 @@ export const icons = {
 		action: 'Date range selection',
 		usage: 'Use for selecting a date range',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	mode_edit: {
@@ -331,7 +389,9 @@ export const icons = {
 		action: 'Mode edit',
 		usage: 'Use for edit field/data/asset',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	place: {
@@ -340,7 +400,9 @@ export const icons = {
 		action: 'Place view',
 		usage: 'Use for map view and position/location',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	phone: {
@@ -349,7 +411,9 @@ export const icons = {
 		action: 'Phone',
 		usage: 'Use for calling or user profile phone details',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	visibility: {
@@ -358,7 +422,9 @@ export const icons = {
 		action: 'Visibility',
 		usage: 'Use for allow viewing or selecting fields for a list',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	visibility_off: {
@@ -367,7 +433,9 @@ export const icons = {
 		action: 'Visibility off',
 		usage: 'Use for disallow viewing',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	account_box: {
@@ -376,7 +444,9 @@ export const icons = {
 		action: 'Account box',
 		usage: 'Use for account information',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	insert_drive_file: {
@@ -385,7 +455,9 @@ export const icons = {
 		action: 'Insert drive file',
 		usage: 'Use for managing storage',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	view_headline: {
@@ -394,7 +466,9 @@ export const icons = {
 		action: 'View headline',
 		usage: 'Use for list view (alternative)',
 		description: '',
-		tags: ['actions', 'views']
+		tags: ['actions', 'views'],
+		png: '',
+		svg: ''
 	},
 
 	view_module: {
@@ -403,7 +477,9 @@ export const icons = {
 		action: 'View module',
 		usage: 'Use for selecting card (grid) view',
 		description: '',
-		tags: ['actions', 'views']
+		tags: ['actions', 'views'],
+		png: '',
+		svg: ''
 	},
 
 	view_list: {
@@ -412,7 +488,9 @@ export const icons = {
 		action: 'View list',
 		usage: 'Use for list view',
 		description: '',
-		tags: ['actions', 'views']
+		tags: ['actions', 'views'],
+		png: '',
+		svg: ''
 	},
 
 	share: {
@@ -421,7 +499,9 @@ export const icons = {
 		action: 'Share',
 		usage: 'Use for sharing data or assets',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	favorite: {
@@ -430,7 +510,9 @@ export const icons = {
 		action: 'Favorite',
 		usage: 'Use for favourites or rating field type',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	favorite_border: {
@@ -439,7 +521,9 @@ export const icons = {
 		action: 'Favorite border',
 		usage: 'Use for before and after favourite and rating',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	label: {
@@ -448,7 +532,9 @@ export const icons = {
 		action: 'Label',
 		usage: 'Use for tags',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	label_outline: {
@@ -457,7 +543,9 @@ export const icons = {
 		action: 'Label outline',
 		usage: 'Use for tags',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	star: {
@@ -466,7 +554,9 @@ export const icons = {
 		action: 'Star',
 		usage: 'Use for favourites or rating field type',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	star_border: {
@@ -475,7 +565,9 @@ export const icons = {
 		action: 'Star border',
 		usage: 'Use for before and after favourite and rating',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	stars: {
@@ -484,7 +576,9 @@ export const icons = {
 		action: 'Stars',
 		usage: 'Use for rating',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	today: {
@@ -493,7 +587,9 @@ export const icons = {
 		action: 'Today',
 		usage: 'Use for selecting today in a calendar view',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	play_circle_filled: {
@@ -502,7 +598,9 @@ export const icons = {
 		action: 'Play circle filled',
 		usage: 'Use for publishing a form or a page',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	play_circle_outline: {
@@ -511,7 +609,9 @@ export const icons = {
 		action: 'Play circle outline',
 		usage: 'Use for publishing a form or a page (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	skip_next: {
@@ -520,7 +620,9 @@ export const icons = {
 		action: 'Skip next',
 		usage: 'Use for navigating to the end',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	skip_previous: {
@@ -529,7 +631,9 @@ export const icons = {
 		action: 'Skip previous',
 		usage: 'Use for navigating to the begining',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	pie_chart: {
@@ -538,7 +642,9 @@ export const icons = {
 		action: 'Pie chart',
 		usage: 'Use for charts (dashboards)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	pie_chart_outlined: {
@@ -547,7 +653,9 @@ export const icons = {
 		action: 'Pie chart outlined',
 		usage: 'Use for charts (dashboards)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	show_chart: {
@@ -556,7 +664,9 @@ export const icons = {
 		action: 'Show chart',
 		usage: 'Use for setting up workflow or line chart',
 		description: '',
-		tags: ['actions', 'workflow', 'tabs']
+		tags: ['actions', 'workflow', 'tabs'],
+		png: '',
+		svg: ''
 	},
 
 	insert_chart: {
@@ -565,7 +675,9 @@ export const icons = {
 		action: 'Insert chart',
 		usage: 'Use for charts (dashboards)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	equalizer: {
@@ -574,7 +686,9 @@ export const icons = {
 		action: 'Equalizer',
 		usage: 'Use for charts (dashboards)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	web_asset: {
@@ -583,7 +697,9 @@ export const icons = {
 		action: 'Web asset',
 		usage: 'Use for setting screen size',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	web: {
@@ -592,7 +708,9 @@ export const icons = {
 		action: 'Web',
 		usage: 'Use for web layout settings',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	tablet_mac: {
@@ -601,7 +719,9 @@ export const icons = {
 		action: 'Tablet Mac',
 		usage: 'Use for tablet viewport',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	laptop_mac: {
@@ -610,7 +730,9 @@ export const icons = {
 		action: 'Laptop Mac',
 		usage: 'Use for laptop viewport',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	desktop_mac: {
@@ -619,7 +741,9 @@ export const icons = {
 		action: 'Desktop Mac',
 		usage: 'Use for desktop viewport',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	phone_iphone: {
@@ -628,7 +752,9 @@ export const icons = {
 		action: 'Phone iphone',
 		usage: 'UUse for smartphone viewport',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	photo_camera: {
@@ -637,7 +763,9 @@ export const icons = {
 		action: 'Photo camera',
 		usage: 'Use for taking a picture or uploading a picture',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	short_text: {
@@ -646,7 +774,9 @@ export const icons = {
 		action: 'Short text',
 		usage: 'Short text paragraph',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	event: {
@@ -655,7 +785,9 @@ export const icons = {
 		action: 'Event',
 		usage: 'Use for selecting or viewing events/dates',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	list: {
@@ -664,7 +796,9 @@ export const icons = {
 		action: 'List',
 		usage: 'Use for list view (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	work: {
@@ -673,7 +807,9 @@ export const icons = {
 		action: 'Work',
 		usage: 'Use for business relations or connections',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	access_time: {
@@ -682,7 +818,9 @@ export const icons = {
 		action: 'Access time',
 		usage: 'Use for selecting or setting the time',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	mic: {
@@ -691,7 +829,9 @@ export const icons = {
 		action: 'Mic',
 		usage: 'Use for recording sound',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	videocam: {
@@ -700,7 +840,9 @@ export const icons = {
 		action: 'Videocam',
 		usage: 'Use for recording video',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	call: {
@@ -709,7 +851,9 @@ export const icons = {
 		action: 'Call',
 		usage: 'Use for phone call',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	message: {
@@ -718,7 +862,9 @@ export const icons = {
 		action: 'Message',
 		usage: 'Use for messaging system',
 		description: '',
-		tags: ['actions', 'menu', 'messages']
+		tags: ['actions', 'menu', 'messages'],
+		png: '',
+		svg: ''
 	},
 
 	filter_list: {
@@ -727,7 +873,9 @@ export const icons = {
 		action: 'Filter list',
 		usage: 'Use for filtering views',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	attach_file: {
@@ -736,7 +884,9 @@ export const icons = {
 		action: 'Attach file',
 		usage: 'Use for file attachments',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	directions: {
@@ -745,7 +895,9 @@ export const icons = {
 		action: 'Directions',
 		usage: 'Use for directions',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	mood: {
@@ -754,7 +906,9 @@ export const icons = {
 		action: 'Mood',
 		usage: 'Use for happy situations',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	check_box: {
@@ -763,7 +917,9 @@ export const icons = {
 		action: 'Check box',
 		usage: 'Use for check boxes',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	radio_button_checked: {
@@ -772,7 +928,9 @@ export const icons = {
 		action: 'Radio button check',
 		usage: 'Use for creating new report and radio buttons',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	grid_on: {
@@ -781,7 +939,9 @@ export const icons = {
 		action: 'Grid on',
 		usage: 'Use for grid view (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	layers: {
@@ -790,7 +950,9 @@ export const icons = {
 		action: 'Layers',
 		usage: 'Use for layers (design)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	sync: {
@@ -799,7 +961,9 @@ export const icons = {
 		action: 'Sync',
 		usage: 'Use for ODEUM Report synchronization',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	sync_disabled: {
@@ -808,7 +972,9 @@ export const icons = {
 		action: 'Sync disabled',
 		usage: 'Use for disabling synchronization',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	sync_problem: {
@@ -817,7 +983,9 @@ export const icons = {
 		action: 'Sync problem',
 		usage: 'Use for displaying problems with synchronization',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	lock_outline: {
@@ -826,7 +994,9 @@ export const icons = {
 		action: 'Lock outline',
 		usage: 'Use for login state logged in',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	lock_open: {
@@ -835,7 +1005,9 @@ export const icons = {
 		action: 'Lock open',
 		usage: 'Use for login state logged out',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	close: {
@@ -844,7 +1016,9 @@ export const icons = {
 		action: 'Close',
 		usage: 'Use for close',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	apps: {
@@ -853,7 +1027,9 @@ export const icons = {
 		action: 'Apps',
 		usage: 'Use for access to other apps (app market)',
 		description: '',
-		tags: ['actions', 'apps']
+		tags: ['actions', 'apps'],
+		png: '',
+		svg: ''
 	},
 
 	keyboard_arrow_down: {
@@ -862,7 +1038,9 @@ export const icons = {
 		action: 'Keyboard arrow down',
 		usage: 'Use for dropdown menu',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	keyboard_arrow_up: {
@@ -871,7 +1049,9 @@ export const icons = {
 		action: 'Keyboard arrow up',
 		usage: 'Use to close dropdown menu',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	keyboard_arrow_left: {
@@ -880,7 +1060,9 @@ export const icons = {
 		action: 'Keyboard arrow left',
 		usage: 'Use for page pagination to previous',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	keyboard_arrow_right: {
@@ -889,7 +1071,9 @@ export const icons = {
 		action: 'Keyboard arrow right',
 		usage: 'Use for page pagination to next',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	refresh: {
@@ -898,7 +1082,9 @@ export const icons = {
 		action: 'Refresh',
 		usage: 'Use for refreshing a view',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	check_circle: {
@@ -907,7 +1093,9 @@ export const icons = {
 		action: 'Check circle',
 		usage: 'Use for check or okay in modal views',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	check: {
@@ -916,7 +1104,9 @@ export const icons = {
 		action: 'Check',
 		usage: 'Use for check or okay in modal views (alternative)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	cancel: {
@@ -925,7 +1115,9 @@ export const icons = {
 		action: 'Cancel',
 		usage: 'Use for cancelling or closing a view or a task',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	add_circle: {
@@ -934,7 +1126,9 @@ export const icons = {
 		action: 'Add circle',
 		usage: 'Use for adding new stuff (anything)',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	add_circle_outline: {
@@ -943,7 +1137,9 @@ export const icons = {
 		action: 'Add circle outline',
 		usage: 'Use for adding new stuff (alternative)',
 		description: '',
-		tags: ['actions', 'app', 'odeum report']
+		tags: ['actions', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	delete: {
@@ -952,7 +1148,9 @@ export const icons = {
 		action: 'Delete',
 		usage: 'Use for deleting data',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	delete_forever: {
@@ -961,7 +1159,9 @@ export const icons = {
 		action: 'Delete permanently',
 		usage: 'Use for deleting data permanently (empty trash)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 
@@ -971,7 +1171,9 @@ export const icons = {
 		action: 'Notifications',
 		usage: 'Use for notifications',
 		description: '',
-		tags: ['actions', 'notifications']
+		tags: ['actions', 'notifications'],
+		png: '',
+		svg: ''
 	},
 
 	notifications_active: {
@@ -980,7 +1182,9 @@ export const icons = {
 		action: 'Notifications active',
 		usage: 'Use for new notification',
 		description: '',
-		tags: ['actions', 'notifications']
+		tags: ['actions', 'notifications'],
+		png: '',
+		svg: ''
 	},
 
 	notifications_none: {
@@ -989,7 +1193,9 @@ export const icons = {
 		action: 'Notifications none',
 		usage: 'Use for no notifications',
 		description: '',
-		tags: ['actions', 'notifications']
+		tags: ['actions', 'notifications'],
+		png: '',
+		svg: ''
 	},
 
 	notifications_off: {
@@ -998,7 +1204,9 @@ export const icons = {
 		action: 'Notifications off',
 		usage: 'Use for notifications disabled (silence mode)',
 		description: '',
-		tags: ['actions']
+		tags: ['actions'],
+		png: '',
+		svg: ''
 	},
 
 	content_copy: {
@@ -1007,7 +1215,9 @@ export const icons = {
 		action: 'Content copy',
 		usage: 'Use for copying data/content',
 		description: '',
-		tags: ['actions', 'notifications']
+		tags: ['actions', 'notifications'],
+		png: '',
+		svg: ''
 	},
 
 	bookmark: {
@@ -1016,7 +1226,9 @@ export const icons = {
 		action: 'Bookmark',
 		usage: 'Use for bookmarking data/content',
 		description: '',
-		tags: ['actions', 'bookmark']
+		tags: ['actions', 'bookmark'],
+		png: '',
+		svg: ''
 	},
 	
 	library_add: {
@@ -1025,7 +1237,9 @@ export const icons = {
 		action: 'Pin to Dashboard',
 		usage: 'Use for pinning a view to dashboard',
 		description: '',
-		tags: ['actions', 'dashboard', 'pin', 'odeum report']
+		tags: ['actions', 'dashboard', 'pin', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	tab: {
@@ -1034,7 +1248,9 @@ export const icons = {
 		action: 'Tab',
 		usage: 'Use for tabs in App Builder',
 		description: '',
-		tags: ['actions', 'tab', 'tabs', 'apps', 'builder']
+		tags: ['actions', 'tab', 'tabs', 'apps', 'builder'],
+		png: '',
+		svg: ''
 	},
 
 	info_outline: {
@@ -1043,7 +1259,9 @@ export const icons = {
 		action: 'Info',
 		usage: 'Info icon in ODEUM Report App',
 		description: '',
-		tags: ['actions', 'info', 'builder', 'app', 'odeum report']
+		tags: ['actions', 'info', 'builder', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	drafts: {
@@ -1052,7 +1270,9 @@ export const icons = {
 		action: 'Drafts',
 		usage: 'Drafts icon in App',
 		description: '',
-		tags: ['actions', 'drafts', 'app', 'odeum report']
+		tags: ['actions', 'drafts', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	more_horiz: {
@@ -1061,7 +1281,9 @@ export const icons = {
 		action: 'More',
 		usage: 'More icon in App',
 		description: '',
-		tags: ['actions', 'more', 'app', 'odeum report']
+		tags: ['actions', 'more', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	more_vert: {
@@ -1070,7 +1292,9 @@ export const icons = {
 		action: 'More',
 		usage: 'More icon in App',
 		description: '',
-		tags: ['actions', 'more', 'app', 'odeum report']
+		tags: ['actions', 'more', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 
 	exit_to_app: {
@@ -1079,7 +1303,9 @@ export const icons = {
 		action: 'Outbox',
 		usage: 'Outbox icon in App',
 		description: '',
-		tags: ['actions', 'outbox', 'app', 'odeum report']
+		tags: ['actions', 'outbox', 'app', 'odeum report'],
+		png: '',
+		svg: ''
 	},
 }
 
