@@ -10,7 +10,7 @@ export const icons = {
 		description: '',
 		tags: ['search', 'actions'],
 		png: '',
-		svg: ''
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_search_48px.svg'
 	},
 
 	menu: {
@@ -20,8 +20,8 @@ export const icons = {
 		usage: 'Use for menu open/close',
 		description: '',
 		tags: ['actions', 'menu'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_menu_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_menu_48px.svg'
 	},
 
 	help: {
@@ -31,8 +31,8 @@ export const icons = {
 		usage: 'Use for launching the help system and support',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_help_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_help_48px.svg'
 	},
 
 	help_outline: {
@@ -42,8 +42,8 @@ export const icons = {
 		usage: 'Use for launching the help system and support',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_help_outline_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_help_outline_24px.svg'
 	},
 
 	bug_report: {
@@ -53,8 +53,8 @@ export const icons = {
 		usage: 'Use for reporting bugs',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_bug_report_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_bug_report_48px.svg'
 	},
 
 	assignment: {
@@ -86,8 +86,8 @@ export const icons = {
 		usage: 'Use for displaying information',
 		description: '',
 		tags: ['actions', 'info'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_info_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_info_48px.svg'
 	},
 
 	dashboard: {
@@ -97,8 +97,8 @@ export const icons = {
 		usage: 'Use for launching the dashboard',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_dashboard_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_dashboard_48px.svg'
 	},
 
 	home: {
@@ -108,8 +108,8 @@ export const icons = {
 		usage: 'Use for launching the homepage',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_home_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_home_48px.svg'
 	},
 
 	settings: {
@@ -120,7 +120,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: '',
-		svg: ''
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_settings_48px.svg'
 	},
 
 	input: {
@@ -130,8 +130,8 @@ export const icons = {
 		usage: 'Use for field input',
 		description: '',
 		tags: ['actions', 'fields'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_input_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_input_48px.svg'
 	},
 
 	timeline: {
@@ -142,7 +142,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: '',
-		svg: ''
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_timeline_48px.svg'
 	},
 
 	code: {
@@ -152,8 +152,8 @@ export const icons = {
 		usage: 'Use for workflow automation scripts',
 		description: '',
 		tags: ['actions', 'tabs'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_code_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_code_48px.svg'
 	},
 
 	opacity: {
@@ -163,8 +163,8 @@ export const icons = {
 		usage: 'Use for design settings',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_opacity_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_opacity_48px.svg'
 	},
 
 
@@ -174,9 +174,9 @@ export const icons = {
 		action: 'View organisation',
 		usage: 'Use for displaying the organisation network',
 		description: '',
-		tags: ['actions'],
-		png: '',
-		svg: ''
+		tags: ['actions', 'social'],
+		png: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_people_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/social/svg/production/ic_pages_48px.svg'
 	},
 
 	group_add: {
@@ -186,8 +186,8 @@ export const icons = {
 		usage: 'Use for adding a group',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_group_add_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/social/svg/production/ic_group_add_48px.svg'
 	},
 
 	person: {
@@ -208,8 +208,8 @@ export const icons = {
 		usage: 'Use for adding a person or a connection',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_person_add_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/social/svg/production/ic_person_add_48px.svg'
 	},
 
 	mail_outline: {
@@ -219,8 +219,8 @@ export const icons = {
 		usage: 'Use for sending e-mail or e-mail settings',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/communication/2x_web/ic_mail_outline_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/communication/svg/production/ic_mail_outline_48px.svg'
 	},
 
 	settings_cell: {
@@ -231,7 +231,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: '',
-		svg: ''
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_settings_cell_48px.svg'
 	},
 
 	extension: {
@@ -241,8 +241,8 @@ export const icons = {
 		usage: 'Use for app modules or extensions',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_extension_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_extension_48px.svg'
 	},
 
 	arrow_drop_down: {
@@ -252,8 +252,8 @@ export const icons = {
 		usage: 'Use for dropdown (alternative)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_arrow_drop_down_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_arrow_drop_down_48px.svg'
 	},
 
 	arrow_drop_up: {
@@ -263,8 +263,8 @@ export const icons = {
 		usage: 'Use for closing dropdown (alternative)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_arrow_drop_up_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_arrow_drop_up_48px.svg'
 	},
 
 	copyright: {
@@ -274,8 +274,8 @@ export const icons = {
 		usage: 'Use for copyright',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_copyright_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_copyright_48px.svg'
 	},
 
 	cloud: {
@@ -285,8 +285,8 @@ export const icons = {
 		usage: 'Use for viewing cloud storage',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/file/2x_web/ic_cloud_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/file/svg/production/ic_cloud_48px.svg'
 	},
 
 	cloud_download: {
@@ -307,8 +307,8 @@ export const icons = {
 		usage: 'Use for uploading files and assets',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/file/2x_web/ic_cloud_upload_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/file/svg/production/ic_cloud_upload_48px.svg'
 	},
 
 	language: {
