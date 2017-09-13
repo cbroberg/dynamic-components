@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Dropdown from 'components/Dropdown/Dropdown'
 import DropDownLink from 'components/Dropdown/DropdownLink'
-import * as colors from 'theme/colors'
+// import * as colors from 'theme/colors'
 
 
 class DropdownsPage extends Component {
@@ -52,35 +52,35 @@ class DropdownsPage extends Component {
 	}
 }
 
-const NotifyButton = {
-	width: '25%',
-	padding: '5px 0px 6px 5%',
-	notify: {
-		overflow: 'scroll',
-		height: '500px'
-	}
-}
+// const NotifyButton = {
+// 	width: '25%',
+// 	padding: '5px 0px 6px 5%',
+// 	notify: {
+// 		overflow: 'scroll',
+// 		height: '500px'
+// 	}
+// }
 
 const Center = {
 	padding: '10px 0px 10px 25%',
 }
 
-const NotifyTheme = {
-	notify: true,
-	hoverColor: colors.GAUGE_BACKGROUND,
-	txtColor: colors.BLACK,
-	borderTheme: {
-		borderStyle: 'solid',
-		borderColor: colors.CLOUDY_DARK,
-		borderWidth: '1px'
-	},
-	borderColor2: colors.GAUGE_BACKGROUND,
-	backgroundColor: colors.TAB,
-	allContentBackgroundColor: colors.TAB,
-	active: false,
-	size: 25,
-	padding: '0px 15px 0px 10px' 
-}
+// const NotifyTheme = {
+// 	notify: true,
+// 	hoverColor: colors.GAUGE_BACKGROUND,
+// 	txtColor: colors.BLACK,
+// 	borderTheme: {
+// 		borderStyle: 'solid',
+// 		borderColor: colors.CLOUDY_DARK,
+// 		borderWidth: '1px'
+// 	},
+// 	borderColor2: colors.GAUGE_BACKGROUND,
+// 	backgroundColor: colors.TAB,
+// 	allContentBackgroundColor: colors.TAB,
+// 	active: false,
+// 	size: 25,
+// 	padding: '0px 15px 0px 10px' 
+// }
 
 
 export default DropdownsPage

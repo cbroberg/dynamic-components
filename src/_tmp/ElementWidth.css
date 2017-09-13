@@ -1,0 +1,9 @@
+.column {
+	border: 3px solid #B81B1B;
+	padding: 5px;
+	margin: 5px;
+	display: inline-block;
+	width: 5px;
+	vertical-align: top;
+}
+
