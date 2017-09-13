@@ -10,12 +10,13 @@ class CloseOnEscape extends Component {
 	onEscape({ keyCode }) {
 		if (keyCode === 27) {
 			this.props.onEscape()
+			console.log('Escape pressed ... ')
 		}
 	}
 
 	componentDidMount() {
 		document.addEventListener('keydown', this.onEscape)
-		console.log('Esc mounted')
+		console.log('OnEscape mounted')
 	}
 
 	componentWillUnmount() {
@@ -35,9 +36,9 @@ CloseOnEscape.propTypes = {
 export default CloseOnEscape
 
 /*
-	onEscape = ({ keyCode }) => {
-		if (keyCode === 27) {
-			this.props.onEscape()
-		}
-	}
+
+const Component = ({ onEscape }) => <CloseOnEscape onEscape={onEscape}><span>some stuff here</span></CloseOnEscape>
+
+https://github.com/conorhastings/react-close-on-escape
+
 */

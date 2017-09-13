@@ -1,18 +1,18 @@
 import styled from 'styled-components'
 
-export const StyledDropdownLite = styled.div`
+export const StyledDropdown = styled.div`
 	position: relative;
 	display: inline-block;
 	border-radius: 4px;
-	width: 150px;
+	/* width: 150px; */
 	/* border-style: solid; */
 `
 
-export const StyledDropdownLiteButton = styled.button`
+export const StyledDropdownButton = styled.button`
 	background-color: #3B97D3;
 	color: white;
 	padding: 12px;
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
 	font-style: normal; 
@@ -24,23 +24,23 @@ export const StyledDropdownLiteButton = styled.button`
 	}
 `
 
-export const StyledDropdownLiteContent = styled.div`
+export const StyledDropdownList = styled.div`
 	display: block;
 	overflow: hidden;
 	position: absolute;
-	top: 34px;
-	font-size: 12px;
+	top: ${(props) => props.height ? props.height : '34px'};
+	font-size: 1.2rem;
 	font-family: 'Source Sans Pro';
 	background-color: #2C3E50;
 	border-radius: 0 4px 4px 4px;
-	min-width: 160px;
+	min-width: ${(props) => props.width};
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	z-index: 1;
 `
 
-export const StyledDropdownLiteContentItem = styled.a`
+export const StyledDropdownListItem = styled.a`
 	color: white;
-	padding: 12px 12px;
+	padding: 8px 12px;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
 	font-style: normal; 
@@ -49,6 +49,5 @@ export const StyledDropdownLiteContentItem = styled.a`
 	display: block;
 	&:hover {
 		background-color: #3B97D3;
-		border-radius: 0 0px 0px 0;
 	}
 `

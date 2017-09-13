@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import CloseOnEscape from './CloseOnEscape'
 import Hover from './Hover'
 
-export const MyComponent = ({ onEscape }) => 
-	<CloseOnEscape 
-		onEscape={onEscape}><div style={{ fontSize: '2.0rem' }}>This is just a text in a div element. Press Esc to make things happen!<p /></div>
+export const MyComponent = ({ onEscape }) =>
+	<CloseOnEscape onEscape={onEscape}>
+		<div style={{ fontSize: '2.0rem' }}>This is just a text in a div element. Press Esc to make things happen!<p /></div>
 	</CloseOnEscape>
 
 
@@ -21,11 +21,11 @@ class DropdownLite extends Component {
 	}
 
 	render() {
-		const { myProp } = this.props		
+		const { myProp } = this.props
 		return (
 			<div>
 				<MyComponent onEscape={this.escaped} myProp={myProp} />
-				<Hover /><p/>
+				<Hover />
 			</div>
 		)
 	}
@@ -59,10 +59,3 @@ export const options = [
 		]
 	}
 ]
-
-/*
-<ReactComponent
-    onMouseEnter={this.someHandler}
-    onMouseLeave={this.someOtherHandler}
-/>
-*/

@@ -103,7 +103,9 @@ export const icons = {
 		action: 'Forms',
 		usage: 'Use for forms menu/app',
 		description: '',
-		tags: ['actions', 'forms', 'menu', 'app', 'odeum report']
+		tags: ['actions', 'forms', 'menu', 'app', 'odeum report'],
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assessment_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_assignment_48px.svg'
 	},
 
 	assignment_turned_in: {
