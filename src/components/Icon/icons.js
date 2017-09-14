@@ -791,8 +791,8 @@ export const icons = {
 		usage: 'Use for recording video',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_videocam_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_videocam_48px.svg'
 	},
 
 	call: {
@@ -802,8 +802,8 @@ export const icons = {
 		usage: 'Use for phone call',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/communication/2x_web/ic_call_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/communication/svg/production/ic_call_48px.svg'
 	},
 
 	message: {
@@ -813,8 +813,8 @@ export const icons = {
 		usage: 'Use for messaging system',
 		description: '',
 		tags: ['actions', 'menu', 'messages'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/communication/2x_web/ic_message_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/communication/svg/production/ic_message_48px.svg'
 	},
 
 	filter_list: {
@@ -824,8 +824,8 @@ export const icons = {
 		usage: 'Use for filtering views',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/content/2x_web/ic_filter_list_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/content/svg/production/ic_filter_list_48px.svg'
 	},
 
 	attach_file: {
@@ -835,8 +835,8 @@ export const icons = {
 		usage: 'Use for file attachments',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/editor/2x_web/ic_attach_file_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/editor/svg/production/ic_attach_file_48px.svg'
 	},
 
 	directions: {
@@ -846,8 +846,8 @@ export const icons = {
 		usage: 'Use for directions',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/maps/2x_web/ic_directions_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/maps/svg/production/ic_directions_48px.svg'
 	},
 
 	mood: {
@@ -857,8 +857,8 @@ export const icons = {
 		usage: 'Use for happy situations',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_mood_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/social/svg/production/ic_mood_48px.svg'
 	},
 
 	check_box: {
@@ -868,8 +868,8 @@ export const icons = {
 		usage: 'Use for check boxes',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/toggle/2x_web/ic_check_box_black_24dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/toggle/svg/production/ic_check_box_48px.svg'
 	},
 
 	radio_button_checked: {
@@ -879,8 +879,8 @@ export const icons = {
 		usage: 'Use for creating new report and radio buttons',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/toggle/2x_web/ic_radio_button_checked_black_24dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/toggle/svg/production/ic_radio_button_checked_48px.svg'
 	},
 
 	grid_on: {
@@ -890,8 +890,8 @@ export const icons = {
 		usage: 'Use for grid view (alternative)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/image/2x_web/ic_grid_on_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/image/svg/production/ic_grid_on_48px.svg'
 	},
 
 	layers: {
@@ -901,8 +901,8 @@ export const icons = {
 		usage: 'Use for layers (design)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/maps/2x_web/ic_layers_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/maps/svg/production/ic_layers_48px.svg'
 	},
 
 	sync: {
