@@ -61,10 +61,16 @@ class Dropdown extends Component {
 							onMouseLeave={this.hoverOff}
 						>
 							{items.map((item, index) => (
-								<StyledDropdownListItem key={index} width={_width} href='#'>{item.label}</StyledDropdownListItem>
+								<StyledDropdownListItem 
+									key={index} 
+									width={_width} 
+									href={item.href} 
+									download=''>{item.label}
+								</StyledDropdownListItem>
 							))}
 
-						</StyledDropdownList> : null}
+						</StyledDropdownList> : null
+					}
 
 				</StyledDropdown>
 
@@ -73,12 +79,15 @@ class Dropdown extends Component {
 	}
 }
 
-
 Dropdown.propTypes = {
 	items: PropTypes.array.isRequired,
 	type: PropTypes.oneOf(['hover', 'click']).isRequired,
 	snap: PropTypes.oneOf(['left', 'right']),
-	onSearch: PropTypes.func
+	multiple: PropTypes.bool,
+	onSearch: PropTypes.func,
+	onChange: PropTypes.func, // (value(s))
+	placeHolder: PropTypes.string,
+	searchPlaceHolder: PropTypes.string,
 }
 
 Dropdown.defaultProps = {
@@ -87,3 +96,4 @@ Dropdown.defaultProps = {
 }
 
 export default Dropdown
+

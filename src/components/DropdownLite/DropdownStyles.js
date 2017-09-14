@@ -4,8 +4,6 @@ export const StyledDropdown = styled.div`
 	position: relative;
 	display: inline-block;
 	border-radius: 4px;
-	/* width: 150px; */
-	/* border-style: solid; */
 `
 
 export const StyledDropdownButton = styled.button`
@@ -18,6 +16,7 @@ export const StyledDropdownButton = styled.button`
 	font-style: normal; 
 	border: none;
 	border-radius: 4px;
+	user-select: none;
 	cursor: pointer;
 	&:hover {
 		background-color: #3B97D3;
@@ -26,6 +25,7 @@ export const StyledDropdownButton = styled.button`
 
 export const StyledDropdownList = styled.div`
 	display: block;
+	transition: 2.2s;
 	overflow: hidden;
 	position: absolute;
 	top: ${(props) => props.height ? props.height : '34px'};
@@ -36,6 +36,9 @@ export const StyledDropdownList = styled.div`
 	min-width: ${(props) => props.width};
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	&:hover {
+		transition: 2.2s;
+	}
 `
 
 export const StyledDropdownListItem = styled.a`
@@ -47,6 +50,8 @@ export const StyledDropdownListItem = styled.a`
 	text-decoration: none;
 	text-overflow: ellipsis;
 	display: block;
+	user-select: none;
+	cursor: pointer;
 	&:hover {
 		background-color: #3B97D3;
 	}
