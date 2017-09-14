@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledDropdown, StyledDropdownButton, StyledDropdownList, StyledDropdownListItem } from 'components/DropdownLite/DropdownStyles'
+import { StyledDropdown, StyledDropdownButton, StyledDropdownList, StyledDropdownListItem, Transition } from 'components/DropdownLite/DropdownStyles'
 
 class Dropdown extends Component {
 
@@ -41,6 +41,8 @@ class Dropdown extends Component {
 		let _height = this.state.height
 		return (
 			<div>
+			<Transition />
+
 				<StyledDropdown>
 
 					<StyledDropdownButton 						
@@ -73,7 +75,6 @@ class Dropdown extends Component {
 					}
 
 				</StyledDropdown>
-
 			</div>
 		)
 	}
@@ -96,4 +97,3 @@ Dropdown.defaultProps = {
 }
 
 export default Dropdown
-
