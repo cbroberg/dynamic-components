@@ -12,10 +12,6 @@ class IconsPage extends Component {
 		this.state = {
 			tagName: ''
 		}
-		// this.renderIcons = this.renderIcons.bind(this)
-		// this.renderDropDownTags = this.renderDropDownTags.bind(this)
-		// this.handleChange = this.handleChange.bind(this)
-		// this.filterNewIcons = this.filterNewIcons.bind(this)
 	}
 
 	filterNewIcons = () => {
