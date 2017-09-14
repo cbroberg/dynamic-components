@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
 import IconCard from 'components/IconCard/IconCard'
-import { icons } from 'components/Icon/Icon'
+import { icons } from './../Icon/icons'
 
 const newArray = []
 class IconsPage extends Component {
