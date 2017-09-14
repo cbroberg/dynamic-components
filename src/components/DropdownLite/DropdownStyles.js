@@ -53,16 +53,3 @@ export const StyledDropdownListItem = styled.a`
 		background-color: #3B97D3;
 	}
 `
-
-export const Transition = styled.div`
-	width: 100px;
-	height: 100px;
-	background: #3B97D3;
-	-webkit - transition: width 2s; /* For Safari 3.1 to 6.0 */
-	transition: width 0.4s;
-	transition: height 0.4s;
-	&:hover {
-		width: 300px;
-		height: 300px;
-	}
-`
