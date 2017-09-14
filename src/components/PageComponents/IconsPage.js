@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
 import IconCard from 'components/IconCard/IconCard'
-import { icons } from 'components/Icon/Icon'
+import { icons } from 'components/Icon/icons'
 
 
 class IconsPage extends Component {
@@ -15,6 +15,8 @@ class IconsPage extends Component {
 					header={icon[1].action}
 					content={icon[1].usage}
 					tags={icon[1].tags}
+					png={icon[1].png}
+					svg={icon[1].svg}
 					onClick={(e) => copyToClipboard(e, icon[1].name, true)}
 				/>
 			)
