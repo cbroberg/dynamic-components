@@ -8,17 +8,19 @@ class IconsPage extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			value: ''
+			tagName: ''
 		}
-		this.renderOnClick = this.renderOnClick.bind(this)
+		this.renderIcons = this.renderIcons.bind(this)
 		this.renderDropDownTags = this.renderDropDownTags.bind(this)
 		this.handleChange = this.handleChange.bind(this)
-		this.filter = this.filter.bind(this)
-
+		this.filterNewIcons = this.filterNewIcons.bind(this)
 	}
-	filter(item) {
-		item = this.state.value
-		return newArray.filter(word => word === item)
+
+	filterNewIcons() {
+		var filterArray = []
+		Object.entries(icons).map((icon) =>
+			icon[1].tags.filter(i => i === this.state.tagName ? filterArray.push(icon) : null))
+		return filterArray
 	}
 
 	pushToNewArray() {
@@ -28,30 +30,23 @@ class IconsPage extends Component {
 			))
 		})
 	}
-	renderOnClick(item) {
-		item = this.state.value
-		if (item) {
-			console.log(item)
-			return Object.entries(icons).map((icon, index) => {
-				if (this.filter(icon)) {
-					console.log('hello')
-					return (
-						<IconCard
-							key={index}
-							icon={icon[1].name}
-							header={icon[1].action}
-							content={icon[1].usage}
-							tags={['dsjdhsj']}
-							onClick={(e) => copyToClipboard(e, icon[1].name, true)}
-						/>
-					)
-				 } else {
-					console.log('Error')
-					return null
-					
-				 }
-			
+
+	renderIcons() {
+		var tagName = this.state.tagName
+		if (tagName) {
+			return this.filterNewIcons().map((icon, index) => {
+				return (
+					<IconCard
+						key={index}
+						icon={icon[1].name}
+						header={icon[1].action}
+						content={icon[1].usage}
+						tags={icon[1].tags}
+						onClick={(e) => copyToClipboard(e, icon[1].name, true)}
+					/>
+				)
 			})
+
 		} else {
 			return Object.entries(icons).map((icon, index) => {
 				return (
@@ -66,8 +61,8 @@ class IconsPage extends Component {
 				)
 			})
 		}
-
 	}
+
 	renderDropDownTags() {
 		this.pushToNewArray()
 		var array = [...new Set(newArray)]
@@ -78,9 +73,10 @@ class IconsPage extends Component {
 	}
 
 	handleChange(event) {
-		this.setState({ value: event.target.value })
+		this.setState({ tagName: event.target.value })
 
 	}
+	//Den Gammel Function 
 	// renderIcons() {
 	// 	return Object.entries(icons).map((icon, index) => {
 	// 		return (
@@ -103,7 +99,8 @@ class IconsPage extends Component {
 				</select>
 				<a href={'https://material.io/icons/'} target={'_new'}>Missing an icon? Fin it here: https://material.io/icons/</a>
 				<p />
-				{this.renderOnClick()}
+				{this.renderIcons()}
+
 			</div>
 		)
 	}
