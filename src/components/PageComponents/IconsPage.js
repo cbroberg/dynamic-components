@@ -5,25 +5,27 @@ import { icons } from './../Icon/icons'
 
 const newArray = []
 class IconsPage extends Component {
+
 	constructor(props) {
 		super(props)
+
 		this.state = {
 			tagName: ''
 		}
-		this.renderIcons = this.renderIcons.bind(this)
-		this.renderDropDownTags = this.renderDropDownTags.bind(this)
-		this.handleChange = this.handleChange.bind(this)
-		this.filterNewIcons = this.filterNewIcons.bind(this)
+		// this.renderIcons = this.renderIcons.bind(this)
+		// this.renderDropDownTags = this.renderDropDownTags.bind(this)
+		// this.handleChange = this.handleChange.bind(this)
+		// this.filterNewIcons = this.filterNewIcons.bind(this)
 	}
 
-	filterNewIcons() {
+	filterNewIcons = () => {
 		var filterArray = []
 		Object.entries(icons).map((icon) =>
 			icon[1].tags.filter(i => i === this.state.tagName ? filterArray.push(icon) : null))
 		return filterArray
 	}
 
-	pushToNewArray() {
+	pushToNewArray = () => {
 		Object.entries(icons).map((item, index) => {
 			return item[1].tags.map((tag) => (
 				newArray.push(tag)
@@ -31,7 +33,7 @@ class IconsPage extends Component {
 		})
 	}
 
-	renderIcons() {
+	renderIcons = () => {
 		var tagName = this.state.tagName
 		if (tagName) {
 			return this.filterNewIcons().map((icon, index) => {
@@ -76,25 +78,11 @@ class IconsPage extends Component {
 		})
 	}
 
-	handleChange(event) {
+	handleChange = (event) => {
 		this.setState({ tagName: event.target.value })
 
 	}
-	//Den Gammel Function 
-	// renderIcons() {
-	// 	return Object.entries(icons).map((icon, index) => {
-	// 		return (
-	// 			<IconCard
-	// 				key={index}
-	// 				icon={icon[1].name}
-	// 				header={icon[1].action}
-	// 				content={icon[1].usage}
-	// 				tags={icon[1].tags}
-	// 				onClick={(e) => copyToClipboard(e, icon[1].name, true)}
-	// 			/>
-	// 		)
-	// 	})
-	// }
+	
 	render() {
 		return (
 			<div>

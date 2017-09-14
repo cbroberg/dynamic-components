@@ -80,4 +80,7 @@ export default Meter
 
 /*
 https://github.com/grommet/grommet/blob/master/src/js/components/Meter.js
+
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello from ODEUM Code!!!"}' https://hooks.slack.com/services/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
+
 */
