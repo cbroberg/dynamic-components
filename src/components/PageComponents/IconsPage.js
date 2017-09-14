@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
 import IconCard from 'components/IconCard/IconCard'
-<<<<<<< HEAD
-import { icons } from 'components/Icon/icons'
-
-=======
 import { icons } from './../Icon/icons'
->>>>>>> 05977f5060d4ed92ab99040c7d78dbd537c60d3f
 
 const newArray = []
 class IconsPage extends Component {
@@ -47,6 +42,8 @@ class IconsPage extends Component {
 							header={icon[1].action}
 							content={icon[1].usage}
 							tags={['dsjdhsj']}
+							png={icon[1].png}
+							svg={icon[1].svg}
 							onClick={(e) => copyToClipboard(e, icon[1].name, true)}
 						/>
 					)
@@ -78,21 +75,7 @@ class IconsPage extends Component {
 		var array = [...new Set(newArray)]
 		return array.map((item, index) => {
 			return (
-<<<<<<< HEAD
-				<IconCard
-					key={index}
-					icon={icon[1].name}
-					header={icon[1].action}
-					content={icon[1].usage}
-					tags={icon[1].tags}
-					png={icon[1].png}
-					svg={icon[1].svg}
-					onClick={(e) => copyToClipboard(e, icon[1].name, true)}
-				/>
-			)
-=======
 				<option key={index} value={item}>{item}</option>)
->>>>>>> 05977f5060d4ed92ab99040c7d78dbd537c60d3f
 		})
 	}
 
