@@ -9,7 +9,7 @@ export const icons = {
 		usage: 'Use for search fields',
 		description: '',
 		tags: ['search', 'actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_search_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_search_48px.svg'
 	},
 
@@ -119,7 +119,7 @@ export const icons = {
 		usage: 'Use for displaying settings',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_settings_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_settings_48px.svg'
 	},
 
@@ -141,7 +141,7 @@ export const icons = {
 		usage: 'Use for workflow',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_timeline_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_timeline_48px.svg'
 	},
 
@@ -230,7 +230,7 @@ export const icons = {
 		usage: 'Use for smartphone settings',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_settings_cell_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_settings_cell_48px.svg'
 	},
 
@@ -373,7 +373,7 @@ export const icons = {
 		usage: 'Use for allow viewing or selecting fields for a list',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_visibility_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_visibility_48px.svg'
 	},
 
@@ -384,7 +384,7 @@ export const icons = {
 		usage: 'Use for disallow viewing',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_visibility_off_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_visibility_off_48px.svg'
 	},
 
@@ -417,7 +417,7 @@ export const icons = {
 		usage: 'Use for list view (alternative)',
 		description: '',
 		tags: ['actions', 'views'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_view_headline_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_view_headline_48px.svg'
 	},
 
@@ -428,7 +428,7 @@ export const icons = {
 		usage: 'Use for selecting card (grid) view',
 		description: '',
 		tags: ['actions', 'views'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_view_module_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_view_module_48px.svg'
 	},
 
@@ -439,7 +439,7 @@ export const icons = {
 		usage: 'Use for list view',
 		description: '',
 		tags: ['actions', 'views'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_view_list_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_view_list_48px.svg'
 	},
 
@@ -527,7 +527,7 @@ export const icons = {
 		usage: 'Use for rating',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_stars_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_stars_48px.svg'
 	},
 
@@ -538,7 +538,7 @@ export const icons = {
 		usage: 'Use for selecting today in a calendar view',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_today_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_today_48px.svg'
 	},
 
@@ -572,7 +572,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_skip_next_black_48dp.png',
-		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_skip_next_48px.svg' // px ??
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_skip_next_48px.svg'
 	},
 
 	skip_previous: {
@@ -594,7 +594,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: 'https://github.com/google/material-design-icons/blob/master/editor/2x_web/ic_pie_chart_black_48dp.png',
-		svg: 'https://github.com/google/material-design-icons/blob/master/editor/svg/production/ic_pie_chart_48px.svg' // px
+		svg: 'https://github.com/google/material-design-icons/blob/master/editor/svg/production/ic_pie_chart_48px.svg'
 	},
 
 	pie_chart_outlined: {
@@ -758,7 +758,7 @@ export const icons = {
 		usage: 'Use for business relations or connections',
 		description: '',
 		tags: ['actions'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_work_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_work_48px.svg'
 	},
 
@@ -1056,7 +1056,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: 'https://github.com/google/material-design-icons/blob/master/navigation/2x_web/ic_check_black_48dp.png',
-		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_check_48px.svg' // px ???
+		svg: 'https://github.com/google/material-design-icons/blob/master/navigation/svg/production/ic_check_48px.svg'
 	},
 
 	cancel: {
@@ -1199,7 +1199,7 @@ export const icons = {
 		usage: 'Use for tabs in App Builder',
 		description: '',
 		tags: ['actions', 'tab', 'tabs', 'apps', 'builder'],
-		png: '',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_tab_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_tab_48px.svg'
 	},
 
