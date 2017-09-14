@@ -73,7 +73,6 @@ class Dropdown extends Component {
 					}
 
 				</StyledDropdown>
-
 			</div>
 		)
 	}
@@ -96,4 +95,3 @@ Dropdown.defaultProps = {
 }
 
 export default Dropdown
-

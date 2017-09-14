@@ -20,12 +20,12 @@ export const StyledDropdownButton = styled.button`
 	cursor: pointer;
 	&:hover {
 		background-color: #3B97D3;
+		border-radius: 4px 4px 0 0;
 	}
 `
 
 export const StyledDropdownList = styled.div`
 	display: block;
-	transition: 2.2s;
 	overflow: hidden;
 	position: absolute;
 	top: ${(props) => props.height ? props.height : '34px'};
@@ -35,10 +35,7 @@ export const StyledDropdownList = styled.div`
 	border-radius: 0 4px 4px 4px;
 	min-width: ${(props) => props.width};
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	z-index: 1;
-	&:hover {
-		transition: 2.2s;
-	}
+	z-index: 1;	
 `
 
 export const StyledDropdownListItem = styled.a`

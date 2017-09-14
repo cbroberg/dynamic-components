@@ -42,6 +42,8 @@ class IconsPage extends Component {
 						header={icon[1].action}
 						content={icon[1].usage}
 						tags={icon[1].tags}
+						png={icon[1].png}
+						svg={icon[1].svg}
 						onClick={(e) => copyToClipboard(e, icon[1].name, true)}
 					/>
 				)
@@ -56,6 +58,8 @@ class IconsPage extends Component {
 						header={icon[1].action}
 						content={icon[1].usage}
 						tags={icon[1].tags}
+						png={icon[1].png}
+						svg={icon[1].svg}
 						onClick={(e) => copyToClipboard(e, icon[1].name, true)}
 					/>
 				)

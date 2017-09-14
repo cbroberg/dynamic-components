@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledIconCard, StyledIconCardContainer, StyledIconCardHeader, StyledIconCardContent, StyledIconCardIcon } from 'components/IconCard/IconCardStyles'
+import { StyledIconCard, StyledIconCardContainer, StyledIconCardHeader, StyledIconCardContent, StyledIconCardIcon, StyledIconCardContentLink } from 'components/IconCard/IconCardStyles'
 import Icon from 'components/Icon/Icon'
 
 class IconCard extends Component {
 	
 	renderIconCard() {
-		const { icon, header, content, tags } = this.props
+		const { icon, header, content, tags, png, svg } = this.props
 		return (
 			<div>
 				<StyledIconCard>
@@ -16,7 +16,9 @@ class IconCard extends Component {
 					<StyledIconCardContainer>
 						<StyledIconCardHeader>{header}</StyledIconCardHeader>
 						<StyledIconCardContent>{'Tags: ' + tags.toString().split(',').join(', ')}</StyledIconCardContent>
-						<StyledIconCardContent>{'Usage: ' + content}</StyledIconCardContent>						
+						<StyledIconCardContent>{'Usage: ' + content}</StyledIconCardContent>
+						<div><StyledIconCardContentLink href={svg} target={'_new'} download=''>SVG</StyledIconCardContentLink></div>
+						<div><StyledIconCardContentLink href={png} target={'_new'} download=''>PNG</StyledIconCardContentLink></div>
 					</StyledIconCardContainer>
 				</StyledIconCard>
 			</div>
