@@ -615,8 +615,8 @@ export const icons = {
 		usage: 'Use for setting up workflow or line chart',
 		description: '',
 		tags: ['actions', 'workflow', 'tabs'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/editor/2x_web/ic_show_chart_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/editor/svg/production/ic_show_chart_48px.svg'
 	},
 
 	insert_chart: {
@@ -626,8 +626,8 @@ export const icons = {
 		usage: 'Use for charts (dashboards)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/editor/2x_web/ic_insert_chart_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/editor/svg/production/ic_insert_chart_48px.svg'
 	},
 
 	equalizer: {
@@ -637,8 +637,8 @@ export const icons = {
 		usage: 'Use for charts (dashboards)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_equalizer_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_equalizer_48px.svg'
 	},
 
 	web_asset: {
@@ -648,8 +648,8 @@ export const icons = {
 		usage: 'Use for setting screen size',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_web_asset_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_web_asset_48px.svg'
 	},
 
 	web: {
@@ -659,8 +659,8 @@ export const icons = {
 		usage: 'Use for web layout settings',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_web_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_web_48px.svg'
 	},
 
 	tablet_mac: {
@@ -670,8 +670,8 @@ export const icons = {
 		usage: 'Use for tablet viewport',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/hardware/2x_web/ic_tablet_mac_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/hardware/svg/production/ic_tablet_mac_48px.svg'
 	},
 
 	laptop_mac: {
@@ -681,8 +681,8 @@ export const icons = {
 		usage: 'Use for laptop viewport',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/hardware/2x_web/ic_laptop_mac_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/hardware/svg/production/ic_laptop_mac_48px.svg'
 	},
 
 	desktop_mac: {
@@ -692,8 +692,8 @@ export const icons = {
 		usage: 'Use for desktop viewport',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/hardware/2x_web/ic_desktop_mac_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/hardware/svg/production/ic_desktop_mac_48px.svg'
 	},
 
 	phone_iphone: {
@@ -703,8 +703,8 @@ export const icons = {
 		usage: 'UUse for smartphone viewport',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/hardware/2x_web/ic_phone_iphone_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/hardware/svg/production/ic_phone_iphone_48px.svg'
 	},
 
 	photo_camera: {
@@ -714,8 +714,8 @@ export const icons = {
 		usage: 'Use for taking a picture or uploading a picture',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/image/2x_web/ic_photo_camera_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/image/svg/production/ic_photo_camera_48px.svg'
 	},
 
 	short_text: {
@@ -725,8 +725,8 @@ export const icons = {
 		usage: 'Short text paragraph',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/editor/2x_web/ic_short_text_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/editor/svg/production/ic_short_text_48px.svg'
 	},
 
 	event: {
@@ -736,8 +736,8 @@ export const icons = {
 		usage: 'Use for selecting or viewing events/dates',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_event_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_event_48px.svg'
 	},
 
 	list: {
@@ -747,8 +747,8 @@ export const icons = {
 		usage: 'Use for list view (alternative)',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_list_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_list_48px.svg'
 	},
 
 	work: {
@@ -759,7 +759,7 @@ export const icons = {
 		description: '',
 		tags: ['actions'],
 		png: '',
-		svg: ''
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_work_48px.svg'
 	},
 
 	access_time: {
@@ -769,8 +769,8 @@ export const icons = {
 		usage: 'Use for selecting or setting the time',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/device/2x_web/ic_access_time_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/device/svg/production/ic_access_time_48px.svg'
 	},
 
 	mic: {
@@ -780,8 +780,8 @@ export const icons = {
 		usage: 'Use for recording sound',
 		description: '',
 		tags: ['actions'],
-		png: '',
-		svg: ''
+		png: 'https://github.com/google/material-design-icons/blob/master/av/2x_web/ic_mic_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/av/svg/production/ic_mic_48px.svg'
 	},
 
 	videocam: {
