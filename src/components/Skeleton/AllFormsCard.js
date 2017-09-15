@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { FormBox, AnimatedTop, AnimatedMiddle, AnimatedBottom, SingleLineLoader } from './SkeletonFormStyle'
+import { FormBox, AnimatedTop, AnimatedMiddle, AnimatedBottom, SingleLineLoader } from './styles/AllFormsCardStyle'
 
-class SkeletonForm extends Component {
+class AllFormsCard extends Component {
 
 	render() {
 		return (
@@ -58,4 +58,4 @@ class SkeletonForm extends Component {
 	}                    
 }
 
-export default SkeletonForm
+export default AllFormsCard
