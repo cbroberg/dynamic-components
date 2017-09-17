@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyledDropdown, StyledDropdownButton, StyledDropdownList, StyledDropdownListItem } from 'components/DropdownLite/DropdownStyles'
+// import { version } from './package.json'
+
+// console.log(version)
 
 class Dropdown extends Component {
 
@@ -58,8 +61,7 @@ class Dropdown extends Component {
 							onTouchStart={this.hoverOn}
 							onTouchEnd={this.hoverOff}
 							onMouseEnter={this.hoverOn}
-							onMouseLeave={this.hoverOff}
-						>
+							onMouseLeave={this.hoverOff}>
 							{items.map((item, index) => (
 								<StyledDropdownListItem 
 									key={index} 

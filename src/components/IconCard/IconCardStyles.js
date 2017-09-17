@@ -5,7 +5,7 @@ export const StyledIconCard = styled.div`
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.2s;
 	width: 200px;
-	min-height: 315px;
+	min-height: 310px;
 	margin-right: 9px;
     margin-bottom: 9px;
 	border-radius: 5px;
@@ -16,6 +16,7 @@ export const StyledIconCard = styled.div`
 `
 
 export const StyledIconCardContainer = styled.div`
+	text-align: center;
 	padding: 2px 16px;
 `
 
@@ -39,7 +40,8 @@ export const StyledIconCardIcon = styled.div`
 	cursor: pointer;
 `
 export const StyledIconCardContentLink = styled.a`
-	text-align: center;
+	text-align: '';
+	text-align: right;
 	font-family: 'Source Sans Pro';
 	font-size: 1.4rem;
 	color: #3B97D3;

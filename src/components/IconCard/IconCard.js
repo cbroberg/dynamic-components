@@ -15,10 +15,10 @@ class IconCard extends Component {
 					</StyledIconCardIcon>
 					<StyledIconCardContainer>
 						<StyledIconCardHeader>{header}</StyledIconCardHeader>
-						<StyledIconCardContent>{'Tags: ' + tags.toString().split(',').join(', ')}</StyledIconCardContent>
-						<StyledIconCardContent>{'Usage: ' + content}</StyledIconCardContent>
-						<div><StyledIconCardContentLink href={svg} target={'_new'} download=''>SVG</StyledIconCardContentLink></div>
-						<div><StyledIconCardContentLink href={png} target={'_new'} download=''>PNG</StyledIconCardContentLink></div>
+						<StyledIconCardContent>{tags.toString().split(',').join(', ')}</StyledIconCardContent>
+						<StyledIconCardContent>{content}</StyledIconCardContent>
+						<StyledIconCardContentLink href={svg} target={'_new'} download=''>svg</StyledIconCardContentLink><b> : </b>
+						<StyledIconCardContentLink href={png} target={'_new'} download=''>png</StyledIconCardContentLink>
 					</StyledIconCardContainer>
 				</StyledIconCard>
 			</div>

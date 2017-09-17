@@ -68,6 +68,7 @@ class IconsPage extends Component {
 	renderDropDownTags() {
 		this.pushToNewArray()
 		var array = [...new Set(newArray)]
+		array.sort()
 		return array.map((item, index) => {
 			return (
 				<option key={index} value={item}>{item}</option>)

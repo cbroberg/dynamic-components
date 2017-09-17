@@ -19,21 +19,21 @@ const items = [
 	{
 		label: 'Buttons',
 		value: '',
-		href: '',
+		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Cards',
 		value: '',
-		href: '',
+		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Dropdowns',
 		value: '',
-		href: '',
+		href: null,
 		icon: '',
 		active: true
 	},
@@ -47,21 +47,21 @@ const items = [
 	{
 		label: 'Loaders',
 		value: '',
-		href: '',
+		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Meters',
 		value: '',
-		href: '',
+		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Tags',
 		value: '',
-		href: '',
+		href: null,
 		icon: '',
 		active: true
 	}
