@@ -1,11 +1,22 @@
 import React, { Component } from 'react'
-import SkeletonForm from 'components/Skeleton/SkeletonForm'
+import AllFormsCard from 'components/Skeleton/AllFormsCard'
+import AllFormsListView from 'components/Skeleton/AllFormsListView'
+import OrganisationListView from 'components/Skeleton/OrganisationListView'
 
 class SkeletonPage extends Component {
 
 	render() {
 		return (
-			<SkeletonForm />
+			<div>
+				<h1>All forms - card view:</h1>
+				<AllFormsCard/>
+
+				<h1>All forms - list view:</h1>
+				<AllFormsListView/>
+
+				<h1>Organisation - list view:</h1>
+				<OrganisationListView/>
+			</div>
 		)
 	}
 }
