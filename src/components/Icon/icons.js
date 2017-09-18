@@ -58,7 +58,7 @@ export const icons = {
 		action: 'Forms',
 		usage: 'Use for forms menu/app',
 		tags: ['forms', 'menu', 'app'],
-		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assessment_black_48dp.png',
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assignment_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_assignment_48px.svg'
 	},
 

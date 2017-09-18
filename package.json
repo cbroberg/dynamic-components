@@ -9,6 +9,7 @@
     "react-color": "^2.13.5",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
+    "react-modal": "^2.3.2",
     "react-scripts": "1.0.10",
     "react-toastify": "^2.0.0-rc.3",
     "styled-components": "^2.1.2",
