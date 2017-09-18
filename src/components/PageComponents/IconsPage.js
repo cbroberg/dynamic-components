@@ -31,7 +31,7 @@ class IconsPage extends Component {
 
 	renderIcons = () => {
 		var tagName = this.state.tagName
-		if (tagName) {
+		if (tagName || !tagName === '') {
 			return this.filterNewIcons().map((icon, index) => {
 				return (
 					<IconCard
@@ -71,7 +71,8 @@ class IconsPage extends Component {
 		array.sort()
 		return array.map((item, index) => {
 			return (
-				<option key={index} value={item}>{item}</option>)
+				<option key={index} value={item}>{item}</option>
+			)	
 		})
 	}
 
@@ -83,8 +84,8 @@ class IconsPage extends Component {
 	render() {
 		return (
 			<div>
-			<h1>Test</h1>
 				<select value={this.state.value} onChange={this.handleChange}>
+				<option value={''}>Choose all</option>
 					{this.renderDropDownTags()}
 				</select>
 				<a href={'https://material.io/icons/'} target={'_new'}>Missing an icon? Fin it here: https://material.io/icons/</a>
