@@ -15,7 +15,7 @@ script:
 deploy:
   provider: surge
   project: ./build/
-  domain: yournewapp.odeum-codejs.surge.sh
+  domain: odeumicons.surge.sh
   skip_cleanup: true
   on:
     all_branches: true
