@@ -44,8 +44,8 @@ export const StyledToast = styled(ToastContainer) `
 		.toastify-content--error {
     		background: #CE1D1D; }
 	}
-		.toastify__progress--default {
-			background: linear-gradient(to right, #2C3E50, #2C3E50, #2C3E50, #2C3E50, #2C3E50, #2C3E50); }
+	.toastify__progress--default {
+		background: linear-gradient(to right, #2C3E50, #2C3E50, #2C3E50, #2C3E50, #2C3E50, #2C3E50); }
 	&.toastify-content--error {
     	background: #CE1D1D; }
 `

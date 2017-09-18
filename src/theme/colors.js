@@ -81,8 +81,8 @@ export const GRAPHQL_PINK = '#E33CAA'
 export const BLACK = '#000'
 
 export const MODAL_HEADER = PRIMARY_BLUE
-export const MODAL_HEADER_ICON = '#fff'
-export const MODAL_HEADER_TITLE = '#fff'
+export const MODAL_ICON = '#fff'
+export const MODAL_TITLE = '#fff'
 
 
 // COLOR ARRAY
@@ -313,11 +313,11 @@ export const colors = [
 		value: '#3B97D3'
 	},
 	{
-		name: 'MODAL_HEADER_ICON',
+		name: 'MODAL_ICON',
 		value: '#FFF'
 	},
 	{
-		name: 'MODAL_HEADER_TITLE',
+		name: 'MODAL_TITLE',
 		value: '#FFF'
 	},
 ]

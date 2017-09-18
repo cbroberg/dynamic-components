@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
 	state = {
-		activePage: 5
+		activePage: 8
 	}
 
 	selectPageIndex(activePage) {
@@ -111,6 +111,11 @@ class App extends Component {
 				label: 'Meters',
 				description: 'This is our meters',
 				content: <MetersPage />
+			},
+			{
+				label: 'Modals',
+				description: 'This is our modal windows',
+				content: <ModalPage />
 			},
 			{
 				label: 'Pickers',
