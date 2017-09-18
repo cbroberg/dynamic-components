@@ -49,15 +49,15 @@ export const StyledModalHeader = styled.div`
     height: 60px;
     background-color: ${colors.MODAL_HEADER};
     font-family: 'Source Sans Pro';
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: 300;
     color: ${colors.MODAL_TITLE};
     box-sizing: border-box; 
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     user-select: none;
 `
 
@@ -81,7 +81,7 @@ export const StyledModalContent = styled.div`
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Source Sans Pro';
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
     height: calc(100% - 90px);
 `

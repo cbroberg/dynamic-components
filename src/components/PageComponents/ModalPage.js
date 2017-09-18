@@ -1,17 +1,6 @@
 import React, { Component } from 'react'
 import Modal from 'components/Modal/Modal'
-
-const customStyles = {
-	content: {
-		top: '50%',
-		left: '50%',
-		right: 'auto',
-		bottom: 'auto',
-		marginRight: '-50%',
-		transform: 'translate(-50%, -50%)',
-		fontSize: '150px'
-	}
-}
+import Button from 'components/Button/Button'
 
 class ModalPage extends Component {
 
@@ -19,7 +8,8 @@ class ModalPage extends Component {
 		super(props)
 
 		this.state = {
-			modalIsOpen: false
+			modalIsOpen: false,
+			subtitle: ''
 		}
 	}
 
@@ -30,22 +20,36 @@ class ModalPage extends Component {
 	}
 
 	openModal = () => {
-		this.setState({ modalIsOpen: true })
+		this.setState({ modalIsOpen: true, subtitle: 'Hello' })
 	}
 
+	changeSubtitle = () => {
+		this.setState({ subtitle: 'Hello that worked well ...' })
+	}
 
 	render() {
 		return (
 			<div>
-				<button onClick={this.openModal}>Open Modal Window</button>
-				
+				<Button
+					label={'Open Modal Window'}
+					icon='open_in_new'
+					iconSize={18}
+					color={'#3B97D3'}
+					onClick={this.openModal}
+				/>
+								
 				<Modal 
 					isOpen={this.state.modalIsOpen} 
 					onRequestClose={this.onRequestClose} 
-					content={<Content onRequestClose={this.onRequestClose} firstName={'Christian'} lastName={'Broberg'}/>} 
+					/*content={'This is content'}*/
+					content={<Content 
+								onRequestClose={this.onRequestClose} 
+								changeSubtitle={this.changeSubtitle} 
+								subtitle={this.state.subtitle} 
+								firstName={'Christian'} 
+								lastName={'Broberg'}/>}
 					icon={'star'} 
 					label={'This is a modal window'} 
-					style={customStyles}
 				/>
 
 			</div>
@@ -59,14 +63,32 @@ export default ModalPage
 const Content = (props) => {
 	return (
 		<div>
-			<h1>{props.firstName} {props.lastName}</h1>
+			<h1>Welcome {props.firstName} {props.lastName}</h1>
+			<h2>{props.subtitle}</h2>
 			<div>
 				<p>Here is a list:</p>
 				<ul>
 					<li>Modal Window Item 1</li>
 					<li>Modal Window Item 2</li>
 				</ul>
-				<button onClick={props.onRequestClose}>Close Modal Window</button>
+
+				<Button
+					label={'Close Modal Window'}
+					icon='close'
+					iconSize={18}
+					color={'#E74C3C'}
+					onClick={props.onRequestClose}
+				/>
+
+				<Button
+					label={'Hello World'}
+					icon='language'
+					iconSize={18}
+					color={'#2AC639'}
+					onClick={props.changeSubtitle}
+				/>
+
+
 			</div>
 		</div>
 	)
