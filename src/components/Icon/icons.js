@@ -1143,5 +1143,15 @@ export const icons = {
 		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_exit_to_app_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_exit_to_app_48px.svg'
 	},
+
+	open_in_new: {
+		name: 'open_in_new',
+		component: Icons.MdOpenInNew,
+		action: 'Open window',
+		usage: 'Open modal window',
+		tags: [],
+		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_open_in_new_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_open_in_new_48px.svg'
+	},
 }
 
