@@ -308,7 +308,20 @@ export const colors = [
 		name: 'BLACK',
 		value: '#000'
 	},
+	{
+		name: 'MODAL_HEADER',
+		value: '#3B97D3'
+	},
+	{
+		name: 'MODAL_HEADER_ICON',
+		value: '#FFF'
+	},
+	{
+		name: 'MODAL_HEADER_TITLE',
+		value: '#FFF'
+	},
 ]
+
 
 // HELPER FUNCTIONS
 
