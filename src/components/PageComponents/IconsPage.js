@@ -83,6 +83,7 @@ class IconsPage extends Component {
 	render() {
 		return (
 			<div>
+			<h1>Test</h1>
 				<select value={this.state.value} onChange={this.handleChange}>
 					{this.renderDropDownTags()}
 				</select>
