@@ -49,6 +49,7 @@ class ModalPage extends Component {
 								lastName={'Broberg'}/>}
 					icon={'star'} 
 					label={'This is a modal window'} 
+					overlayScroll={true}
 				/>
 
 			</div>

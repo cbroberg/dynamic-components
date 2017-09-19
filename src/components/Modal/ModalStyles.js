@@ -30,21 +30,22 @@ export const StyledModal = styled(Modal) `
 	${(props) => props.overlayScroll === false ? injectOverlayScroll() : null};
     border-radius: 4px;
     border: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: auto;
-    bottom: auto;
     margin-right: -50%;
     width: 30%;
     height: calc(100% - 200px);
     min-height: 500px;
-    max-height: 700px;
+	max-height: 700px;
+    position: absolute; /* absolute */
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
     transform: translate(-50%, -50%);
     animation: ${fadeModal} 1s ease-in-out;
     background-color: white;
     outline: none;
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);	
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 	overflow-y: auto;
 `
 
