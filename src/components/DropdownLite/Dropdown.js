@@ -18,7 +18,7 @@ class Dropdown extends Component {
 	}
 
 	componentDidMount() {
-		console.log('Component mounted')
+		
 	}
 
 	hoverOn = () => {
