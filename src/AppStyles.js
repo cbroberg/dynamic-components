@@ -14,7 +14,7 @@ injectGlobal([`
 	body {
 		margin: 5px;
 	}
-
+	
    * {
         outline: none;
 		box-sizing: border-box;

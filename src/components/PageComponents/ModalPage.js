@@ -40,8 +40,7 @@ class ModalPage extends Component {
 								
 				<Modal 
 					isOpen={this.state.modalIsOpen} 
-					onRequestClose={this.onRequestClose} 
-					/*content={'This is content'}*/
+					onRequestClose={this.onRequestClose} 					
 					content={<Content 
 								onRequestClose={this.onRequestClose} 
 								changeSubtitle={this.changeSubtitle} 

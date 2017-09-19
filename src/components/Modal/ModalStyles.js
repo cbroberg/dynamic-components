@@ -1,7 +1,15 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes, injectGlobal } from 'styled-components'
 import Modal from 'react-modal'
 import * as colors from 'theme/colors'
 
+const injectOverlayScroll = () => {
+	injectGlobal([`
+	.ReactModal__Body--open {
+		overflow: hidden;
+	}
+	`])
+
+}
 
 const fadeModal = keyframes`
 @keyframes  {
@@ -19,6 +27,7 @@ const fadeModal = keyframes`
 `
 
 export const StyledModal = styled(Modal) `
+	${(props) => props.overlayScroll === false ? injectOverlayScroll() : null};
     border-radius: 4px;
     border: none;
     position: absolute;
@@ -35,11 +44,8 @@ export const StyledModal = styled(Modal) `
     animation: ${fadeModal} 1s ease-in-out;
     background-color: white;
     outline: none;
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);	
 	overflow-y: auto;
-	.ReactModal__Body--open {
-    	overflow: hidden;
-	}
 `
 
 export const StyledModalHeader = styled.div`
