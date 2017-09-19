@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Wrapper = styled.div`
     width: ${(props) => props.width || '325px'};
     height: 343px;
-    float: ${(props) => props.float || ''};
-    margin-right: ${(props) => props.marginRight || ''};
+    float: ${(props) => props.float || 'initial'};
+    margin-right: ${(props) => props.marginRight || '0px'};
 `
 
 export const ContentContainer = styled.div`
@@ -40,32 +40,43 @@ export const SkeletonContainer = styled.div`
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 4px;
     display: inline-flex;
-    width: -webkit-fill-available;
+    width: 100%;
     height: 26px;
     margin-bottom: ${(props) => props.marginBottom || '1.5px'};
-    float: ${(props) => props.float || ''};
+    float: ${(props) => props.float || 'initial'};
+`
+
+const progress = keyframes`
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 300px 0;
+    }
 `
 
 export const SingleLineLoader = styled.div`
-    @keyframes progress {
-        0% {
-            background-position: -200px 0;
-        }
-        100% {
-            background-position: calc(200px + 100%) 0;
-        }
-    }
+    animation-name: ${progress};
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 
-    animation: progress 1.2s ease-in-out infinite;
+    -webkit-animation-name: ${progress};
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
     background-color: #B5B5B5;
     background-image: linear-gradient(90deg, #B5B5B5, #DBDBDB, #B5B5B5);
     background-size: 200px 100%;
     background-repeat: no-repeat;
     border-radius: ${(props) => props.borderRadius || '4px'};
-    margin-left: ${(props) => props.marginLeft || ''};
-    margin-bottom: ${(props) => props.marginBottom || ''};
-    margin-right: ${(props) => props.marginRight || ''};
-    margin-top: ${(props) => props.marginTop || ''};
+    margin-left: ${(props) => props.marginLeft || '0px'};
+    margin-bottom: ${(props) => props.marginBottom || '0px'};
+    margin-right: ${(props) => props.marginRight || '0px'};
+    margin-top: ${(props) => props.marginTop || '0px'};
     display: inline-block;
     line-height: 1;
     width: ${(props) => props.width || '45%'};

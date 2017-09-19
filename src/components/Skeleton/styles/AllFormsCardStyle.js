@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const FormBox = styled.div`
     background: #fff;
@@ -13,17 +13,28 @@ export const FormBox = styled.div`
     /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 `
 
-export const AnimatedTop = styled.div`
-    @keyframes progress {
-        0% {
-            background-position: -200px 0;
-        }
-        100% {
-            background-position: calc(200px + 100%) 0;
-        }
+const progress = keyframes`
+    0% {
+        background-position: -200px 0;
     }
+    100% {
+        background-position: 300px 0;
+    }
+`
 
-    animation: progress 1.2s ease-in-out infinite;
+export const AnimatedTop = styled.div`
+    animation-name: ${progress};
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    -webkit-animation-name: ${progress};
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
     background-color: #B5B5B5;
     background-image: linear-gradient(90deg, #B5B5B5, #DBDBDB, #B5B5B5);
     background-size: 200px 100%;
@@ -34,31 +45,24 @@ export const AnimatedTop = styled.div`
 `
 
 export const AnimatedMiddle = styled.div`
-    @keyframes progress {
-        0% {
-            background-position: -200px 0;
-        }
-        100% {
-            background-position: calc(200px + 100%) 0;
-        }
-    }
-
     display: block;
     width: 100%;
     height: 45.79%;
 `
 
 export const AnimatedBottom = styled.div`
-    @keyframes progress {
-        0% {
-            background-position: -200px 0;
-        }
-        100% {
-            background-position: calc(200px + 100%) 0;
-        }
-    }
+    animation-name: ${progress};
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 
-    animation: progress 1.2s ease-in-out infinite;
+    -webkit-animation-name: ${progress};
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
     background-color: #B5B5B5;
     background-image: linear-gradient(90deg, #B5B5B5, #DBDBDB, #B5B5B5);
     background-size: 200px 100%;
@@ -69,25 +73,27 @@ export const AnimatedBottom = styled.div`
 `
 
 export const SingleLineLoader = styled.div`
-    @keyframes progress {
-        0% {
-            background-position: -200px 0;
-        }
-        100% {
-            background-position: calc(200px + 100%) 0;
-        }
-    }
+    animation-name: ${progress};
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 
-    animation: progress 1.2s ease-in-out infinite;
+    -webkit-animation-name: ${progress};
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
     background-color: #B5B5B5;
     background-image: linear-gradient(90deg, #B5B5B5, #DBDBDB, #B5B5B5);
     background-size: 200px 100%;
     background-repeat: no-repeat;
     border-radius: ${(props ) => props.borderRadius || '4px'};
-    margin-left: ${(props ) => props.marginLeft || ''};
-    margin-bottom: ${(props ) => props.marginBottom || ''};
-    margin-right: ${(props ) => props.marginRight || ''};
-    margin-top: ${(props ) => props.marginTop || ''};
+    margin-left: ${(props ) => props.marginLeft || '0px'};
+    margin-bottom: ${(props ) => props.marginBottom || '0px'};
+    margin-right: ${(props ) => props.marginRight || '0px'};
+    margin-top: ${(props ) => props.marginTop || '0px'};
     display: inline-block;
     line-height: 1;
     width: ${(props ) => props.width || '45%'};
