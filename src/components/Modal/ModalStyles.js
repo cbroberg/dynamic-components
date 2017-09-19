@@ -62,9 +62,7 @@ export const StyledModal = styled(Modal) `
 	    width: 20px;
 		height: 20px;
 		z-index: -1; 
-		backface-visibility: hidden;
-		-webkit-backface-visibility: hidden;
-		 
+
 	}
 `
 
