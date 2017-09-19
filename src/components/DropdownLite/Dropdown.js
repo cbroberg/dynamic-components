@@ -14,6 +14,7 @@ class Dropdown extends Component {
 			hover: false,
 			width: null,
 			height: null,
+			value: null
 		}
 	}
 
@@ -36,6 +37,13 @@ class Dropdown extends Component {
 				height: (node.offsetHeight - 4) + 'px'
 			})
 		}
+	}
+
+	onClickItem = (itemValue) => {
+		// e.preventDefault()
+		this.setState({ value: itemValue })
+		this.props.selectedValue(itemValue)
+		this.hoverOff()
 	}
 
 	render() {
@@ -67,6 +75,7 @@ class Dropdown extends Component {
 									key={index} 
 									width={_width} 
 									href={item.href} 
+									onClick={() => this.onClickItem(item.value)} 
 									download=''>{item.label}
 								</StyledDropdownListItem>
 							))}

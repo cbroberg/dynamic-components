@@ -4,6 +4,7 @@ import IconCard from 'components/IconCard/IconCard'
 import { icons } from './../Icon/icons'
 
 const newArray = []
+
 class IconsPage extends Component {
 
 	constructor(props) {

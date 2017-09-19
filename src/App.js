@@ -5,7 +5,7 @@ import Card from 'components/Card/Card'
 
 class Pages extends Component {
 	state = {
-		activePage: 8
+		activePage: 4
 	}
 
 	selectPageIndex(activePage) {
