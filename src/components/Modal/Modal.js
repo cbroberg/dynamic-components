@@ -41,7 +41,7 @@ class Modal extends Component {
 					<StyledModalContent>
 						{content ? content : this.defaultProps.content}
 					</StyledModalContent>
-				
+					
 				</StyledModal>
 			</div>
 		)

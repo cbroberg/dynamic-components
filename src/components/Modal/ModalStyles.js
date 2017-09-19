@@ -2,7 +2,7 @@ import styled, { keyframes, injectGlobal } from 'styled-components'
 import Modal from 'react-modal'
 import * as colors from 'theme/colors'
 
-const injectOverlayScroll = () => {
+const hideOverlayScroll = () => {
 	injectGlobal([`
 	.ReactModal__Body--open {
 		overflow: hidden;
@@ -27,15 +27,15 @@ const fadeModal = keyframes`
 `
 
 export const StyledModal = styled(Modal) `
-	${(props) => props.overlayScroll === false ? injectOverlayScroll() : null};
+	${(props) => props.overlayScroll === false ? hideOverlayScroll() : null};
     border-radius: 4px;
     border: none;
     margin-right: -50%;
     width: 30%;
     height: calc(100% - 200px);
-    min-height: 500px;
+    min-height: 300px;
 	max-height: 700px;
-    position: absolute; /* absolute */
+    position: absolute; /* fixed */
     top: 50%;
     left: 50%;
     right: auto;
@@ -45,8 +45,41 @@ export const StyledModal = styled(Modal) `
     background-color: white;
     outline: none;
 	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 	overflow-y: auto;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+ 
+	&:after {
+		background: red;
+	    border-radius: 0 0 5px 0;
+    	transform: translate(-50%, 50%) rotate(45deg);
+    	transform-origin: center;
+		content: '';
+		position: absolute;
+		right: 0;
+		left: 50%;
+		bottom: 0;
+	    width: 20px;
+		height: 20px;
+		z-index: -1; 
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		 
+	}
+`
+
+export const StyledModalAfter = styled.div`
+	background: red;
+	border-radius: 0 0 5px 0;
+	transform: translate(-50%, 50%) rotate(45deg);
+	transform-origin: center;
+	content: '';
+	position: absolute;
+	right: 0;
+	left: 50%;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
 `
 
 export const StyledModalHeader = styled.div`
@@ -83,37 +116,14 @@ export const StyledModalHeaderClose = styled.div`
 `
 
 export const StyledModalContent = styled.div`
+	/* border: solid 1px red; */
     clear: both;
-    box-sizing: border-box; 
+	box-sizing: border-box; 
+	padding: 0;
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Source Sans Pro';
     font-size: 1.6rem;
     font-weight: 300;
     height: calc(100% - 90px);
-`
-
-export const StyledModalButtonPanel = styled.div`
-    /*position: relative;
-    left: 0;
-    bottom: 0;*/
-    width: 100%;
-    height: 60px;
-    margin-top: 20px;
-`
-
-export const ImageBrowserModalWindow = StyledModal.extend`
-    width: 50%;
-    height: 50%;
-`
-
-export const ImageBrowserPath = styled.div`
-    height: 37px;
-    line-height: 37px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-family: 'Source Sans Pro';
-    font-size: 16px;
-    font-weight: 400;
 `
