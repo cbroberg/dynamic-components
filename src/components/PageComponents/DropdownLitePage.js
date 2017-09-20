@@ -27,7 +27,7 @@ class DropdownLitePage extends Component {
 		return (
 			<div>
 				<Heading>Select {this.state.value} demo</Heading>
-				<Text>{this.state.value === '' ? 'Selected value goes here ...' : this.state.value}</Text>
+				<Text>{this.state.value === '' ? 'Selected value goes here ...' : 'You selected ' + this.state.value}</Text>
 				{this.state.value === '' ? value : value}
 			</div>
 		)
