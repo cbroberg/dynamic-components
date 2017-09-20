@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Dropdown from 'components/DropdownLite/Dropdown'
-
+import { Heading, Text } from 'odeum-primitives'
 
 class DropdownLitePage extends Component {
 
@@ -8,22 +8,27 @@ class DropdownLitePage extends Component {
 		super(props)
 
 		this.state = {
-			selectedValue: 'Select Value here ...'
+			value: ''
 		}
 	}
 
-	onSelectValue = (value) => {
-		this.setState({
-			selectedValue: value
-		})
+	onSelectItem = (value) => {
+		this.setState({ value })
 	}
 
+	getDropdownValue = () => {
+		return (
+			<Dropdown items={items} label={'Components'} selectedValue={this.onSelectItem} />
+		)
+	}
 
 	render() {
+		let value = this.getDropdownValue()
 		return (
 			<div>
-				<p>{this.state.selectedValue}</p>
-				<Dropdown items={items} selectedValue={this.onSelectValue} />				
+				<Heading>Select {this.state.value} demo</Heading>
+				<Text>{this.state.value === '' ? 'Selected value goes here ...' : this.state.value}</Text>
+				{this.state.value === '' ? value : value}
 			</div>
 		)
 	}

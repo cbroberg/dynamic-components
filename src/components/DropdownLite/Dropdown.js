@@ -39,15 +39,14 @@ class Dropdown extends Component {
 		}
 	}
 
-	onClickItem = (itemValue) => {
-		// e.preventDefault()
+	onSelectItem = (itemValue) => {
 		this.setState({ value: itemValue })
 		this.props.selectedValue(itemValue)
 		this.hoverOff()
 	}
 
 	render() {
-		const { items } = this.props
+		const { items, label } = this.props
 		let _width = this.state.width
 		let _height = this.state.height
 		return (
@@ -59,7 +58,7 @@ class Dropdown extends Component {
 						onTouchStart={this.hoverOn}
 						onTouchEnd={this.hoverOff}
 						onMouseEnter={this.hoverOn}
-						onMouseLeave={this.hoverOff}>Components
+						onMouseLeave={this.hoverOff}>{label}
 					</StyledDropdownButton>
 
 					{this.state.hover ?
@@ -75,7 +74,8 @@ class Dropdown extends Component {
 									key={index} 
 									width={_width} 
 									href={item.href} 
-									onClick={() => this.onClickItem(item.value)} 
+									onClick={() => this.onSelectItem(item.value)} 
+									onTouchEnd={() => this.onSelectItem(item.value)}
 									download=''>{item.label}
 								</StyledDropdownListItem>
 							))}
@@ -91,16 +91,18 @@ class Dropdown extends Component {
 
 Dropdown.propTypes = {
 	items: PropTypes.array.isRequired,
+	label: PropTypes.string.isRequired,
 	type: PropTypes.oneOf(['hover', 'click']).isRequired,
 	snap: PropTypes.oneOf(['left', 'right']),
 	multiple: PropTypes.bool,
 	onSearch: PropTypes.func,
-	onChange: PropTypes.func, // (value(s))
+	onChange: PropTypes.func, // value(s)
 	placeHolder: PropTypes.string,
 	searchPlaceHolder: PropTypes.string,
 }
 
 Dropdown.defaultProps = {
+	label: 'Select',
 	type: 'hover',
 	snap: 'left'
 }

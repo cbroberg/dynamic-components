@@ -13,6 +13,7 @@ injectGlobal([`
 	
 	body {
 		margin: 5px;
+		font-size: 1.8rem;
 	}
 	
    * {

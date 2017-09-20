@@ -10,7 +10,7 @@ export const StyledDropdownButton = styled.button`
 	background-color: #3B97D3;
 	color: white;
 	padding: 12px;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
 	font-style: normal; 
@@ -29,7 +29,7 @@ export const StyledDropdownList = styled.div`
 	overflow: hidden;
 	position: absolute;
 	top: ${(props) => props.height ? props.height : '34px'};
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-family: 'Source Sans Pro';
 	background-color: #2C3E50;
 	border-radius: 0 4px 4px 4px;
