@@ -61,7 +61,7 @@ const items = [
 	{
 		label: 'Icons',
 		value: 'icons',
-		href: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assessment_black_48dp.png',
+		href: null,
 		icon: '',
 		active: true
 	},
@@ -85,6 +85,13 @@ const items = [
 		href: null,
 		icon: '',
 		active: true
+	},
+	{
+		label: 'Modals',
+		value: 'modals',
+		href: null,
+		icon: '',
+		active: false
 	}
 ]
 

@@ -39,7 +39,7 @@ export const StyledDropdownList = styled.div`
 `
 
 export const StyledDropdownListItem = styled.a`
-	color: white;
+	color: ${(props) => props.active ? 'white' : '#BDC2C6'};
 	padding: 8px 12px;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
@@ -48,8 +48,8 @@ export const StyledDropdownListItem = styled.a`
 	text-overflow: ellipsis;
 	display: block;
 	user-select: none;
-	cursor: pointer;
 	&:hover {
 		background-color: #3B97D3;
+		cursor: ${(props) => props.active ? 'pointer' : 'not-allowed'};
 	}
 `

@@ -52,7 +52,6 @@ class Dropdown extends Component {
 		return (
 			<div>
 				<StyledDropdown>
-
 					<StyledDropdownButton 						
 						innerRef={(node) => this.getElementSizes(node)}
 						onTouchStart={this.hoverOn}
@@ -74,15 +73,14 @@ class Dropdown extends Component {
 									key={index} 
 									width={_width} 
 									href={item.href} 
-									onClick={() => this.onSelectItem(item.value)} 
-									onTouchEnd={() => this.onSelectItem(item.value)}
+									active={item.active} 
+									onClick={item.active ? () => this.onSelectItem(item.value) : null} 
+									onTouchEnd={item.active ? () => this.onSelectItem(item.value) : null}
 									download=''>{item.label}
 								</StyledDropdownListItem>
 							))}
-
 						</StyledDropdownList> : null
 					}
-
 				</StyledDropdown>
 			</div>
 		)
