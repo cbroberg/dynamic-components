@@ -5145,6 +5145,10 @@ react-modal@^2.3.2:
     prop-types "^15.5.10"
     react-dom-factories "^1.0.0"
 
+react-onclickoutside@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.5.0.tgz#c45b39fe0d7f087817a9f5edab8c12349856b640"
+
 react-scripts@1.0.10:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.0.10.tgz#876035594742220f40ffb865a4c7e8dc0fa7ae23"
