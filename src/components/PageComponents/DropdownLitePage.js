@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Dropdown from 'components/DropdownLite/Dropdown'
 import { Heading, Text } from 'odeum-primitives'
 
+
 class DropdownLitePage extends Component {
 
 	constructor(props) {
@@ -18,7 +19,12 @@ class DropdownLitePage extends Component {
 
 	getDropdownValue = () => {
 		return (
-			<Dropdown items={items} label={'Components'} selectedValue={this.onSelectItem} />
+			<Dropdown 
+				type={'click'} 
+				items={items} 
+				label={'Components'} 
+				selectedValue={this.onSelectItem} 
+			/>
 		)
 	}
 
@@ -29,7 +35,9 @@ class DropdownLitePage extends Component {
 				<Heading>Select {this.state.value} demo</Heading>
 				<Text>{this.state.value === '' ? 'Selected value goes here ...' : 'You selected ' + this.state.value}</Text>
 				{this.state.value === '' ? value : value}
+				{/* <HandleKeys /> */}
 			</div>
+			
 		)
 	}
 }
@@ -95,7 +103,7 @@ const items = [
 	}
 ]
 
-
+// ARRAY FOR NEXT STEPS
 export const groupedItems = [
 	{ value: 'one', label: 'One' },
 	{ value: 'two', label: 'Two' },
