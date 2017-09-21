@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage, SourcePointerPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage, SourcePointerPage, DynamicSkeletonPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
@@ -103,6 +103,11 @@ class App extends Component {
 				content: <SourcePointerPage />
 			},
 			{
+				label: 'Dynamic Skeleton',
+				description: 'This is a dynamic skeleton',
+				content: < DynamicSkeletonPage />
+			},
+			{
 				label: 'Icons',
 				description: 'This is our icons',
 				content: <IconsPage />
@@ -145,16 +150,23 @@ class App extends Component {
 		]
 		return (
 			<div>
-				<Pages pages={pageData} disabled={[pageData.length - 1]} />
-				<StyledToast
-					position='top-right'
-					type='default'
-					autoClose={2000}
-					hideProgressBar={false}
-					newestOnTop={false}
-					closeOnClick
-					pauseOnHover
-				/>
+				{this.props.version === 1 ? 
+					<div>
+						<Pages pages={pageData} disabled={[pageData.length - 1]} />
+						<StyledToast
+							position='top-right'
+							type='default'
+							autoClose={2000}
+							hideProgressBar={false}
+							newestOnTop={false}
+							closeOnClick
+							pauseOnHover
+						/>
+					</div> : 
+					<div>
+						<DropdownLitePage />
+					</div> 
+				}
 			</div>
 		)
 	}

@@ -2,15 +2,30 @@ import React, { Component } from 'react'
 import Dropdown from 'components/DropdownLite/Dropdown'
 import { Heading, Text } from 'odeum-primitives'
 
+
 class DropdownLitePage extends Component {
 
 	constructor(props) {
 		super(props)
 
 		this.state = {
-			value: ''
+			value: '',
+			onTouch: false
 		}
 	}
+
+	componentDidMount() {
+		document.addEventListener('touchstart', this.onFirstTouch, false)
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener('touchstart', this.onFirstTouch, false)
+	}
+
+	onFirstTouch = () => {
+		this.setState({ onTouch: true })
+	}
+
 
 	onSelectItem = (value) => {
 		this.setState({ value })
@@ -18,7 +33,12 @@ class DropdownLitePage extends Component {
 
 	getDropdownValue = () => {
 		return (
-			<Dropdown items={items} label={'Components'} selectedValue={this.onSelectItem} />
+			<Dropdown 
+				type={this.state.onTouch ? 'touch' : 'click'} 
+				items={items} 
+				label={'Components'} 
+				selectedValue={this.onSelectItem} 
+			/>
 		)
 	}
 
@@ -26,10 +46,11 @@ class DropdownLitePage extends Component {
 		let value = this.getDropdownValue()
 		return (
 			<div>
-				<Heading>Select {this.state.value} demo</Heading>
-				<Text>{this.state.value === '' ? 'Selected value goes here ...' : 'You selected ' + this.state.value}</Text>
 				{this.state.value === '' ? value : value}
+				<Heading>Demo {this.state.value}</Heading>
+				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>}				
 			</div>
+			
 		)
 	}
 }
@@ -95,7 +116,7 @@ const items = [
 	}
 ]
 
-
+// ARRAY FOR NEXT STEPS
 export const groupedItems = [
 	{ value: 'one', label: 'One' },
 	{ value: 'two', label: 'Two' },

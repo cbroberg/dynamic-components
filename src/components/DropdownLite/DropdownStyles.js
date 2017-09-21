@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const StyledDropdownContainer = styled.div`
+	display: inline-block;
+`
+
 export const StyledDropdown = styled.div`
 	position: relative;
 	display: inline-block;
@@ -7,6 +11,7 @@ export const StyledDropdown = styled.div`
 `
 
 export const StyledDropdownButton = styled.button`
+	display: inline-block;
 	background-color: #3B97D3;
 	color: white;
 	padding: 12px;
@@ -22,6 +27,7 @@ export const StyledDropdownButton = styled.button`
 		background-color: #3B97D3;
 		border-radius: 4px 4px 0 0;
 	}
+
 `
 
 export const StyledDropdownList = styled.div`
@@ -52,4 +58,13 @@ export const StyledDropdownListItem = styled.a`
 		background-color: #3B97D3;
 		cursor: ${(props) => props.active ? 'pointer' : 'not-allowed'};
 	}
+`
+
+export const StyledDropdownListHairline = styled.hr`
+	position: relative;
+	bottom: 0;
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `
