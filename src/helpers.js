@@ -13,3 +13,7 @@ export const copyToClipboard = (e, message, notify) => {
 		notification(message)
 	}
 }
+
+export const numCharsInLongestStringInArray = (array) => {
+	return array.reduce((a, b) => { return a.length > b.length ? a : b }).length
+}

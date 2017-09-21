@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Dropdown from 'components/DropdownLite/Dropdown'
 import { Heading, Text } from 'odeum-primitives'
+import { numCharsInLongestStringInArray } from '../../helpers'
 
 
 class DropdownLitePage extends Component {
@@ -42,13 +43,21 @@ class DropdownLitePage extends Component {
 		)
 	}
 
+	numChars = (array) => {
+		let arr = []
+		array.map((item, index) => {
+			return arr[index] = item.label
+		})
+		return numCharsInLongestStringInArray(arr)
+	}
+
 	render() {
 		let value = this.getDropdownValue()
 		return (
 			<div>
-				{this.state.value === '' ? value : value}
+				{this.state.value === '' ? value : value}				
 				<Heading>Demo {this.state.value}</Heading>
-				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>}				
+				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>} {this.numChars(items)}		
 			</div>
 			
 		)

@@ -15,7 +15,7 @@ export const StyledDropdownButton = styled.button`
 	background-color: #3B97D3;
 	color: white;
 	padding: 12px;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
 	font-style: normal; 

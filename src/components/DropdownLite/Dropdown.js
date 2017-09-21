@@ -227,6 +227,7 @@ Dropdown.propTypes = {
 	label: PropTypes.string.isRequired,
 	type: PropTypes.oneOf(['hover', 'click', 'touch']).isRequired,
 	snap: PropTypes.oneOf(['left', 'right']),
+	sourcepointer: PropTypes.bool,
 	multiple: PropTypes.bool,
 	onSearch: PropTypes.func,
 	onChange: PropTypes.func, // value(s)
@@ -237,7 +238,8 @@ Dropdown.propTypes = {
 Dropdown.defaultProps = {
 	label: 'Select an item',
 	type: 'click',
-	snap: 'left'
+	snap: 'left',
+	sourcepointer: false,
 }
 
 export default onClickOutside(Dropdown)
