@@ -9,9 +9,23 @@ class DropdownLitePage extends Component {
 		super(props)
 
 		this.state = {
-			value: ''
+			value: '',
+			onTouch: false
 		}
 	}
+
+	componentDidMount() {
+		document.addEventListener('touchstart', this.onFirstTouch, false)
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener('touchstart', this.onFirstTouch, false)
+	}
+
+	onFirstTouch = () => {
+		this.setState({ onTouch: true })
+	}
+
 
 	onSelectItem = (value) => {
 		this.setState({ value })
@@ -20,7 +34,7 @@ class DropdownLitePage extends Component {
 	getDropdownValue = () => {
 		return (
 			<Dropdown 
-				type={'click'} 
+				type={this.state.onTouch ? 'touch' : 'click'} 
 				items={items} 
 				label={'Components'} 
 				selectedValue={this.onSelectItem} 
@@ -33,6 +47,7 @@ class DropdownLitePage extends Component {
 		return (
 			<div>
 				<Heading>Select {this.state.value} demo</Heading>
+				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>}				
 				<Text>{this.state.value === '' ? 'Selected value goes here ...' : 'You selected ' + this.state.value}</Text>
 				{this.state.value === '' ? value : value}
 				{/* <HandleKeys /> */}

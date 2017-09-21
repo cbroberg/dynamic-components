@@ -67,7 +67,10 @@ class Dropdown extends Component {
 	}
 
 	handleClickOutside = () => {
-		this.setState({ hover: false })
+		const { type } = this.props
+		if (type !== 'touch') {
+			this.setState({ hover: false })
+		}
 	}
 
 	getElementSizes = (node) => {
@@ -85,82 +88,145 @@ class Dropdown extends Component {
 		this.setState({ hover: false, mouse: false })
 	}
 
-	render() {
-		const { items, label, type } = this.props
-		let _width = this.state.width
-		let _height = this.state.height
+	renderTouch = () => {
+		const { items, label } = this.props
+		const { width, height } = this.state
 		return (
-			<StyledDropdownContainer>
-				{type === 'hover' ?
-					<StyledDropdown>
-						<StyledDropdownButton
-							innerRef={(node) => this.getElementSizes(node)}
-							onTouchStart={this.hoverOn}
-							onTouchEnd={this.hoverOff}
-							onMouseEnter={this.hoverOn}
-							onMouseLeave={this.hoverOff}>{label}
-						</StyledDropdownButton>
+			<StyledDropdown>
+				<StyledDropdownButton
+					innerRef={(node) => this.getElementSizes(node)}
+					onClick={this.state.hover ? this.hoverOff : this.hoverOn}>{label}
+				</StyledDropdownButton>
 
-						{this.state.hover ?
-							<StyledDropdownList
-								width={_width}
-								height={_height}
-								onTouchStart={this.hoverOn}
-								onTouchEnd={this.hoverOff}
-								onMouseEnter={this.hoverOn}
-								onMouseLeave={this.hoverOff}>
-								{items.map((item, index) => (
-									<StyledDropdownListItem
-										key={index}
-										width={_width}
-										href={item.href}
-										active={item.active}
-										onClick={item.active ? () => this.onSelectItem(item.value) : null}
-										onTouchEnd={item.active ? () => this.onSelectItem(item.value) : null}
-										download={''}>{item.label}
-									</StyledDropdownListItem>
-								))}
-							</StyledDropdownList> : null
-						}
-					</StyledDropdown> :
-					<StyledDropdown>
-						<StyledDropdownButton
-							innerRef={(node) => this.getElementSizes(node)}
-							onClick={this.state.hover ? this.hoverOff : this.hoverOn}>{label}
-						</StyledDropdownButton>
+				{this.state.hover ?
+					<StyledDropdownList
+						width={width}
+						height={height}>
 
-						{this.state.hover ?
-							<StyledDropdownList
-								width={_width}
-								height={_height}>
+						{items.map((item, index) => (
+							<StyledDropdownListItem
+								key={index}
+								width={width}
+								href={item.href}
+								active={item.active}
+								onClick={item.active ? () => this.onSelectItem(item.value) : null}
+								onMouseEnter={item.active ? () => this.onMouseEnter(item.value) : null}								
+								download={''}
+							>{item.label}
+							</StyledDropdownListItem>
+						))}
 
-								{items.map((item, index) => (
-									<StyledDropdownListItem
-										key={index}
-										width={_width}
-										href={item.href}
-										active={item.active}
-										onClick={item.active ? () => this.onSelectItem(item.value) : null}
-										onMouseEnter={item.active ? () => this.onMouseEnter(item.value) : null}
-										onMouseLeave={this.onMouseLeave}
-										download={''}
-									>{item.label}
-									</StyledDropdownListItem>
-								))}
-
-							</StyledDropdownList> : null
-						}
-					</StyledDropdown>
+					</StyledDropdownList> : null
 				}
-			</StyledDropdownContainer>
+			</StyledDropdown>
 		)
+	}
+
+	renderHover = () => {
+		const { items, label } = this.props
+		const { width, height } = this.state
+		return (
+			<StyledDropdown>
+				<StyledDropdownButton
+					innerRef={(node) => this.getElementSizes(node)}
+					onTouchStart={this.hoverOn}
+					onTouchEnd={this.hoverOff}
+					onMouseEnter={this.hoverOn}
+					onMouseLeave={this.hoverOff}>{label}
+				</StyledDropdownButton>
+
+				{this.state.hover ?
+					<StyledDropdownList
+						width={width}
+						height={height}
+						onTouchStart={this.hoverOn}
+						onTouchEnd={this.hoverOff}
+						onMouseEnter={this.hoverOn}
+						onMouseLeave={this.hoverOff}>
+						{items.map((item, index) => (
+							<StyledDropdownListItem
+								key={index}
+								width={width}
+								href={item.href}
+								active={item.active}
+								onClick={item.active ? () => this.onSelectItem(item.value) : null}
+								onTouchEnd={item.active ? () => this.onSelectItem(item.value) : null}
+								download={''}>{item.label}
+							</StyledDropdownListItem>
+						))}
+					</StyledDropdownList> : null
+				}
+			</StyledDropdown>
+		)
+	}
+
+	renderClick = () => {
+		const { items, label } = this.props
+		const { width, height } = this.state
+		return (
+			<StyledDropdown>
+				<StyledDropdownButton
+					innerRef={(node) => this.getElementSizes(node)}
+					onClick={this.state.hover ? this.hoverOff : this.hoverOn}>{label}
+				</StyledDropdownButton>
+
+				{this.state.hover ?
+					<StyledDropdownList
+						width={width}
+						height={height}>
+
+						{items.map((item, index) => (
+							<StyledDropdownListItem
+								key={index}
+								width={width}
+								href={item.href}
+								active={item.active}
+								onClick={item.active ? () => this.onSelectItem(item.value) : null}
+								onMouseEnter={item.active ? () => this.onMouseEnter(item.value) : null}
+								onMouseLeave={this.onMouseLeave}
+								download={''}
+							>{item.label}
+							</StyledDropdownListItem>
+						))}
+
+					</StyledDropdownList> : null
+				}
+			</StyledDropdown>
+		)
+	}
+
+	render() {
+		const { type } = this.props
+		switch (type) {
+			case 'touch':
+				return (
+					<StyledDropdownContainer>
+						{this.renderTouch()}
+					</StyledDropdownContainer>
+					
+				)
+			case 'hover':
+				return (
+					<StyledDropdownContainer>
+						{this.renderHover()}
+					</StyledDropdownContainer>
+				)
+			case 'click':
+				return (
+					<StyledDropdownContainer>
+						{this.renderClick()}
+					</StyledDropdownContainer>
+				)
+			default:
+				break
+		}
 	}
 }
 
 Dropdown.propTypes = {
 	items: PropTypes.array.isRequired,
 	label: PropTypes.string.isRequired,
-	type: PropTypes.oneOf(['hover', 'click']).isRequired,
+	type: PropTypes.oneOf(['hover', 'click', 'touch']).isRequired,
 	snap: PropTypes.oneOf(['left', 'right']),
 	multiple: PropTypes.bool,
 	onSearch: PropTypes.func,
