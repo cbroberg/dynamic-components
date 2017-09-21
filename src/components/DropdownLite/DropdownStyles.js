@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const StyledDropdownContainer = styled.div`
+	display: inline-block;
+`
+
 export const StyledDropdown = styled.div`
 	position: relative;
 	display: inline-block;
@@ -7,10 +11,11 @@ export const StyledDropdown = styled.div`
 `
 
 export const StyledDropdownButton = styled.button`
+	display: inline-block;
 	background-color: #3B97D3;
 	color: white;
 	padding: 12px;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
 	font-style: normal; 
@@ -22,6 +27,7 @@ export const StyledDropdownButton = styled.button`
 		background-color: #3B97D3;
 		border-radius: 4px 4px 0 0;
 	}
+
 `
 
 export const StyledDropdownList = styled.div`
@@ -29,7 +35,7 @@ export const StyledDropdownList = styled.div`
 	overflow: hidden;
 	position: absolute;
 	top: ${(props) => props.height ? props.height : '34px'};
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-family: 'Source Sans Pro';
 	background-color: #2C3E50;
 	border-radius: 0 4px 4px 4px;
@@ -39,7 +45,7 @@ export const StyledDropdownList = styled.div`
 `
 
 export const StyledDropdownListItem = styled.a`
-	color: white;
+	color: ${(props) => props.active ? 'white' : '#BDC2C6'};
 	padding: 8px 12px;
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
@@ -48,8 +54,17 @@ export const StyledDropdownListItem = styled.a`
 	text-overflow: ellipsis;
 	display: block;
 	user-select: none;
-	cursor: pointer;
 	&:hover {
 		background-color: #3B97D3;
+		cursor: ${(props) => props.active ? 'pointer' : 'not-allowed'};
 	}
+`
+
+export const StyledDropdownListHairline = styled.hr`
+	position: relative;
+	bottom: 0;
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `

@@ -5,7 +5,7 @@ import Card from 'components/Card/Card'
 
 class Pages extends Component {
 	state = {
-		activePage: 8
+		activePage: 4
 	}
 
 	selectPageIndex(activePage) {
@@ -145,16 +145,23 @@ class App extends Component {
 		]
 		return (
 			<div>
-				<Pages pages={pageData} disabled={[pageData.length - 1]} />
-				<StyledToast
-					position='top-right'
-					type='default'
-					autoClose={2000}
-					hideProgressBar={false}
-					newestOnTop={false}
-					closeOnClick
-					pauseOnHover
-				/>
+				{this.props.version === 1 ? 
+					<div>
+						<Pages pages={pageData} disabled={[pageData.length - 1]} />
+						<StyledToast
+							position='top-right'
+							type='default'
+							autoClose={2000}
+							hideProgressBar={false}
+							newestOnTop={false}
+							closeOnClick
+							pauseOnHover
+						/>
+					</div> : 
+					<div>
+						<DropdownLitePage />
+					</div> 
+				}
 			</div>
 		)
 	}

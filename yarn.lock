@@ -4349,6 +4349,14 @@ obuf@^1.0.0, obuf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
+odeum-primitives@^0.1.23:
+  version "0.1.23"
+  resolved "https://registry.yarnpkg.com/odeum-primitives/-/odeum-primitives-0.1.23.tgz#785fc611abfae854ff5d95fb307f2dbfbab0a678"
+  dependencies:
+    react "^15.6.1"
+    react-dom "^15.6.1"
+    styled-components "^2.1.2"
+
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
@@ -5136,6 +5144,10 @@ react-modal@^2.3.2:
     exenv "^1.2.0"
     prop-types "^15.5.10"
     react-dom-factories "^1.0.0"
+
+react-onclickoutside@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.5.0.tgz#c45b39fe0d7f087817a9f5edab8c12349856b640"
 
 react-scripts@1.0.10:
   version "1.0.10"

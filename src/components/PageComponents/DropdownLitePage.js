@@ -1,14 +1,56 @@
 import React, { Component } from 'react'
 import Dropdown from 'components/DropdownLite/Dropdown'
+import { Heading, Text } from 'odeum-primitives'
 
 
 class DropdownLitePage extends Component {
 
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			value: '',
+			onTouch: false
+		}
+	}
+
+	componentDidMount() {
+		document.addEventListener('touchstart', this.onFirstTouch, false)
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener('touchstart', this.onFirstTouch, false)
+	}
+
+	onFirstTouch = () => {
+		this.setState({ onTouch: true })
+	}
+
+
+	onSelectItem = (value) => {
+		this.setState({ value })
+	}
+
+	getDropdownValue = () => {
+		return (
+			<Dropdown 
+				type={this.state.onTouch ? 'touch' : 'click'} 
+				items={items} 
+				label={'Components'} 
+				selectedValue={this.onSelectItem} 
+			/>
+		)
+	}
+
 	render() {
+		let value = this.getDropdownValue()
 		return (
 			<div>
-				<Dropdown items={items} />
+				{this.state.value === '' ? value : value}
+				<Heading>Demo {this.state.value}</Heading>
+				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>}				
 			</div>
+			
 		)
 	}
 }
@@ -18,56 +60,63 @@ export default DropdownLitePage
 const items = [
 	{
 		label: 'Buttons',
-		value: '',
+		value: 'buttons',
 		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Cards',
-		value: '',
+		value: 'cards',
 		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Dropdowns',
-		value: '',
+		value: 'dropdowns',
 		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Icons',
-		value: '',
-		href: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_assessment_black_48dp.png',
+		value: 'icons',
+		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Loaders',
-		value: '',
+		value: 'loaders',
 		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Meters',
-		value: '',
+		value: 'meters',
 		href: null,
 		icon: '',
 		active: true
 	},
 	{
 		label: 'Tags',
-		value: '',
+		value: 'tags',
 		href: null,
 		icon: '',
 		active: true
+	},
+	{
+		label: 'Modals',
+		value: 'modals',
+		href: null,
+		icon: '',
+		active: false
 	}
 ]
 
-
+// ARRAY FOR NEXT STEPS
 export const groupedItems = [
 	{ value: 'one', label: 'One' },
 	{ value: 'two', label: 'Two' },
