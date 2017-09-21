@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { SkeletonContainer, SingleLineLoader } from './styles/AllFormsListViewStyle'
+import { SkeletonContainer, SingleLineLoader, Wrapper } from './styles/AllFormsListViewStyle'
 
 class AllFormsListView extends Component {
 
@@ -24,8 +24,10 @@ class AllFormsListView extends Component {
 	render() {
 		return (
 			<div>
-				<SkeletonContainer backgroundColor="#2C3E50"/>
-				{this.renderLoaders()}
+				<Wrapper>
+					<SkeletonContainer backgroundColor="#2C3E50"/>
+					{this.renderLoaders()}
+				</Wrapper>
 			</div>
 		)
 	}

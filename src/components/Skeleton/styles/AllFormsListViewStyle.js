@@ -1,12 +1,17 @@
 import styled, { keyframes } from 'styled-components'
 
+export const Wrapper = styled.div`
+    width: 836px;
+    height: 267px;
+`
+
 export const SkeletonContainer = styled.div`
     background: ${(props) => props.backgroundColor || '#fff'};
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 4px;
     display: inline-flex;
-    width: 836px;
+    width: 100%;
     height: 26px;
     margin-bottom: 1.5px;
 `
