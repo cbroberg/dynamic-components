@@ -21,8 +21,8 @@ class Dropdown extends Component {
 
 	render() {
 		return (
-			<DropdownContianer>
-				<DropdownMenuBtn onMouseEnter={this.handleDropDown} theme={this.props.dropDowntheme} color={this.props.color}>
+			<DropdownContianer onMouseEnter={this.handleDropDown} onMouseLeave={this.handleDropDown}>
+				<DropdownMenuBtn theme={this.props.dropDowntheme} color={this.props.color}>
 					<Icon icon={this.props.icon} size={this.props.size} color={colors.BUTTON_TEXT} active={this.props.active} style={theme.iconButtonStyle} />
 					{this.props.label}
 				</DropdownMenuBtn>
