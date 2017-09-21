@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, DynamicSkeletonPage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
@@ -96,6 +96,11 @@ class App extends Component {
 				label: 'Dropdown Lite',
 				description: 'This is our dropdowns',
 				content: <DropdownLitePage />
+			},
+			{
+				label:'Dynamic Skeleton',
+				description:'This is a dynamic skeleton',
+				content: <DynamicSkeletonPage />
 			},
 			{
 				label: 'Icons',
