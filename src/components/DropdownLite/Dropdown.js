@@ -109,8 +109,7 @@ class Dropdown extends Component {
 								width={width}
 								href={item.href}
 								active={item.active}
-								onClick={item.active ? () => this.onSelectItem(item.value) : null}
-								onMouseEnter={item.active ? () => this.onMouseEnter(item.value) : null}								
+								onClick={item.active ? () => this.onSelectItem(item.value) : null}								
 								download={''}
 							>{item.label}
 							</StyledDropdownListItem>

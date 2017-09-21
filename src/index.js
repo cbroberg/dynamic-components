@@ -4,4 +4,4 @@ import App from './App'
 
 require('typeface-source-sans-pro')
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App version={1} />, document.getElementById('root'))
