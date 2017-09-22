@@ -32,7 +32,7 @@ class IconsPage extends Component {
 
 	renderIcons = () => {
 		var tagName = this.state.tagName
-		if (tagName || !tagName === '') {
+		if (tagName) {
 			return this.filterNewIcons().map((icon, index) => {
 				return (
 					<IconCard
