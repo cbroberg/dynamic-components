@@ -3,6 +3,7 @@ import AllFormsCard from 'components/Skeleton/AllFormsCard'
 import AllFormsListView from 'components/Skeleton/AllFormsListView'
 import OrganisationListView from 'components/Skeleton/OrganisationListView'
 import OrganisationCardView from 'components/Skeleton/OrganisationCardView'
+import OrganisationGroupUsers from 'components/Skeleton/OrganisationGroupUsers'
 
 class SkeletonPage extends Component {
 
@@ -10,16 +11,19 @@ class SkeletonPage extends Component {
 		return (
 			<div>
 				<h1>Organisation - card view:</h1>
-				<OrganisationCardView/>
+				<OrganisationCardView />
 
 				<h1>All forms - card view:</h1>
-				<AllFormsCard/>
+				<AllFormsCard />
 
 				<h1>All forms - list view:</h1>
-				<AllFormsListView/>
+				<AllFormsListView />
+
+				<h1>Organisation - group users:</h1>
+				<OrganisationGroupUsers />
 
 				<h1>Organisation - list view:</h1>
-				<OrganisationListView/>
+				<OrganisationListView />
 			</div>
 		)
 	}
