@@ -10,6 +10,8 @@ export const Wrapper = styled.div`
     width: ${(props) => props.width || '325px'};
     height: 343px;
     margin-right: ${(props) => props.marginRight || '0px'};
+    display: flex;
+    flex-direction: column;
 `
 
 export const ContentContainer = styled.div`

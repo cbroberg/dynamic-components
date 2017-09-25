@@ -3,6 +3,8 @@ import styled, { keyframes } from 'styled-components'
 export const Wrapper = styled.div`
     height: 380px;
     width: 894px;
+    display: flex;
+    flex-wrap: wrap;
 `
 
 export const TopContainer = styled.div`
