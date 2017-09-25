@@ -41,11 +41,11 @@ class OrganisationGroupActivity extends Component {
                     </TopContainer>
 
                     <TabsContainer>
-                        <Tabs width="114px" height="100%" marginRight="1px">
+                        <Tabs width="114px" height="100%" marginRight="1px" backgroundColor="#3B97D3">
                             <TabIconContainer>
-                                <Icon icon={'mood'} size={18} active={true} color={'#5E5E5E'}/>
+                                <Icon icon={'mood'} size={18} active={true} color={'#fff'}/>
                             </TabIconContainer>
-                            <TabLabelContainer>
+                            <TabLabelContainer textColor="#fff">
                                 Activities
                             </TabLabelContainer>
                         </Tabs>
@@ -68,11 +68,11 @@ class OrganisationGroupActivity extends Component {
                             </TabLabelContainer>
                         </Tabs>
 
-                        <Tabs width="82px" height="100%" marginRight="1px" backgroundColor="#3B97D3">
+                        <Tabs width="82px" height="100%" marginRight="1px">
                             <TabIconContainer>
                                 <Icon icon={'mood'} size={18} active={true} color={'#5E5E5E'}/>
                             </TabIconContainer>
-                            <TabLabelContainer textColor="#fff">
+                            <TabLabelContainer>
                                 User
                             </TabLabelContainer>
                         </Tabs>

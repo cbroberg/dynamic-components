@@ -71,7 +71,7 @@ class OrganisationGroupUsers extends Component {
 
                         <Tabs width="82px" height="100%" marginRight="1px" backgroundColor="#3B97D3">
                             <TabIconContainer>
-                                <Icon icon={'mood'} size={18} active={true} color={'#5E5E5E'}/>
+                                <Icon icon={'mood'} size={18} active={true} color={'#fff'}/>
                             </TabIconContainer>
                             <TabLabelContainer textColor="#fff">
                                 User
