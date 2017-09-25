@@ -4,6 +4,7 @@ import AllFormsListView from 'components/Skeleton/AllFormsListView'
 import OrganisationListView from 'components/Skeleton/OrganisationListView'
 import OrganisationCardView from 'components/Skeleton/OrganisationCardView'
 import OrganisationGroupUsers from 'components/Skeleton/OrganisationGroupUsers'
+import OrganisationGroupActivity from 'components/Skeleton/OrganisationGroupActivity'
 
 class SkeletonPage extends Component {
 
@@ -24,6 +25,9 @@ class SkeletonPage extends Component {
 
 				<h1>Organisation - list view:</h1>
 				<OrganisationListView />
+
+				<h1>Organisation - group activity:</h1>
+				<OrganisationGroupActivity />
 			</div>
 		)
 	}
