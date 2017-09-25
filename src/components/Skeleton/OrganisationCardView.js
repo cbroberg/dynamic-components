@@ -9,7 +9,7 @@ class OrganisationCardView extends Component {
 		var arr = []
 		for (i = 0; i < 18; i++) {
 			arr.push(
-                    <CardContainer>
+                    <CardContainer key={i}>
                         <AnimatedTop/>
                         <AnimatedBottom>
                             <SingleLineLoader height="7px" width="82px" marginLeft="10px" marginTop="9px"/>

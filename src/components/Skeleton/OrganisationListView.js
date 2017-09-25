@@ -10,7 +10,7 @@ class OrganisationListView extends Component {
 		var arr = []
 		for (i = 0; i < 9; i++) {
 			arr.push(
-				<SkeletonContainer>
+				<SkeletonContainer key={i}>
 					<SingleLineLoader height="12px" width="12px" marginTop="7px" marginLeft="18px" marginRight="23px" borderRadius="50px" />
 					<SingleLineLoader height="8.65px" width="119px" marginTop="8px" borderRadius="4px" />
 				</SkeletonContainer>)
@@ -24,7 +24,7 @@ class OrganisationListView extends Component {
 		var arr = []
 		for (i = 0; i < 9; i++) {
 			arr.push(
-				<SkeletonContainer>
+				<SkeletonContainer key={i}>
 					<SingleLineLoader height="12px" width="12px" marginTop="7px" marginLeft="18px" marginRight="23px" borderRadius="50px" />
 					<SingleLineLoader height="8.65px" width="220px" marginTop="8px" borderRadius="4px" />
 				</SkeletonContainer>)
@@ -33,8 +33,6 @@ class OrganisationListView extends Component {
 	}
 
 	render() {
-		const { users } = this.props
-		console.log(users)
 		return (
 			<div>
 				<MainWrapper>

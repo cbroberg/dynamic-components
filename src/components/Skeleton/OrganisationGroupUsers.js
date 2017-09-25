@@ -9,7 +9,7 @@ class OrganisationGroupUsers extends Component {
 		var arr = []
 		for (i = 0; i < 9; i++) {
 			arr.push(
-                <SingleItemContainer>
+                <SingleItemContainer key={i}>
                     <SingleLineLoader height="21px" width="23px" marginTop="2px" marginBottom="2px" marginLeft="32px" marginRight="36px" borderRadius="100px"/>
                     <SingleLineLoader height="9px" width="69px" marginTop="8px" marginRight="80px" borderRadius="4px"/>
                     <SingleLineLoader height="9px" width="34px" marginTop="8px" marginRight="59px" borderRadius="4px" animationDelay="0.15s" WKanimationDelay="0.15s"/>

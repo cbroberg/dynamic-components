@@ -9,7 +9,7 @@ class OrganisationGroupActivity extends Component {
 		var arr = []
 		for (i = 0; i < 12; i++) {
 			arr.push(
-                <SingleItemContainer>
+                <SingleItemContainer key={i}>
                     <IconContainer>
                         <Icon icon={'mood'} size={15} active={true} color={'#5E5E5E'}/>
                     </IconContainer>
