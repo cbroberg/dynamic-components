@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Wrapper, ContentContainer, SkeletonContainer, SingleLineLoader, SearchBarButtonDiv, SearchBarDiv, SearchBarInput, SearchBarInputWrapper } from './styles/OrganisationListViewStyle'
+import { MainWrapper, Wrapper, ContentContainer, SkeletonContainer, SingleLineLoader, SearchBarButtonDiv, SearchBarDiv, SearchBarInput, SearchBarInputWrapper } from './styles/OrganisationListViewStyle'
 import Icon from 'components/Icon/Icon'
 
 class OrganisationListView extends Component {
@@ -36,45 +36,47 @@ class OrganisationListView extends Component {
 		const { users } = this.props
 		console.log(users)
 		return (
-            <div>
-                {/* Small wrapper */}
-				<Wrapper float="left" marginRight="43px">
-					<SkeletonContainer backgroundColor="#2C3E50" />
+			<div>
+				<MainWrapper>
+					{/* Small wrapper */}
+					<Wrapper marginRight="43px">
+						<SkeletonContainer backgroundColor="#2C3E50" />
 
-					<SearchBarDiv>
-						<form>
-							<SearchBarInputWrapper>
-								<SearchBarInput placeholder="Søg" />
-							</SearchBarInputWrapper>
-						</form>
-						<SearchBarButtonDiv>
-							<Icon icon={'search'} size={18} active={true} />
-						</SearchBarButtonDiv>
-					</SearchBarDiv>
-					<ContentContainer>
-						{this.renderLoaders1()}
-					</ContentContainer>
-				</Wrapper>
+						<SearchBarDiv>
+							<form>
+								<SearchBarInputWrapper>
+									<SearchBarInput placeholder="Søg" />
+								</SearchBarInputWrapper>
+							</form>
+							<SearchBarButtonDiv>
+								<Icon icon={'search'} size={18} active={true} />
+							</SearchBarButtonDiv>
+						</SearchBarDiv>
+						<ContentContainer>
+							{this.renderLoaders1()}
+						</ContentContainer>
+					</Wrapper>
 
-				{/* Large wrapper */}
-				<Wrapper width="543px" float="left">
-					<SkeletonContainer width="543px" backgroundColor="#2C3E50" />
+					{/* Large wrapper */}
+					<Wrapper width="543px">
+						<SkeletonContainer width="543px" backgroundColor="#2C3E50" />
 
-					<SearchBarDiv>
-						<form>
-							<SearchBarInputWrapper width="511px">
-								<SearchBarInput placeholder="Søg" width="501px" />
-							</SearchBarInputWrapper>
-						</form>
-						<SearchBarButtonDiv>
-							<Icon icon={'search'} size={18} active={true} />
-						</SearchBarButtonDiv>
-					</SearchBarDiv>
+						<SearchBarDiv>
+							<form>
+								<SearchBarInputWrapper width="511px">
+									<SearchBarInput placeholder="Søg" width="501px" />
+								</SearchBarInputWrapper>
+							</form>
+							<SearchBarButtonDiv>
+								<Icon icon={'search'} size={18} active={true} />
+							</SearchBarButtonDiv>
+						</SearchBarDiv>
 
-					<ContentContainer>
-						{this.renderLoaders2()}
-					</ContentContainer>
-				</Wrapper>
+						<ContentContainer>
+							{this.renderLoaders2()}
+						</ContentContainer>
+					</Wrapper>
+				</MainWrapper>
 			</div>
 		)
 	}

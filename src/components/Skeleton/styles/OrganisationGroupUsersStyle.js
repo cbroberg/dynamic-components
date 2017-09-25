@@ -3,6 +3,8 @@ import styled, { keyframes } from 'styled-components'
 export const Wrapper = styled.div`
     height: 449px;
     width: 693px;
+    display: flex;
+    flex-direction: column;
 `
 
 export const TopContainer = styled.div`
@@ -15,12 +17,14 @@ export const TopContainer = styled.div`
 export const TopImgContainer = styled.div`
     height: 120px;
     width: 120px;
-    float: left;
+    display: flex;
+    justify-content: flex-start;
     margin-right: 26px;
 `
 
 export const TopTextContainer = styled.div`
-    float: right;
+    display: flex;
+    flex-direction: column;
 `
 
 export const TabsContainer = styled.div`
@@ -42,7 +46,6 @@ export const Tabs = styled.div`
 export const TabIconContainer = styled.div`
     padding-top: 4px;
     padding-left: 13px;
-    //padding-right: 4px;
 `
 
 export const TabLabelContainer = styled.div`
@@ -56,6 +59,8 @@ export const TabLabelContainer = styled.div`
 export const ItemListContainer = styled.div`
     height: 269px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 `
 
 export const SingleItemContainer = styled.div`

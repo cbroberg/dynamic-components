@@ -1,9 +1,14 @@
 import styled, { keyframes } from 'styled-components'
 
+export const MainWrapper = styled.div`
+    width: 915px;
+    height: 343px;
+    display: flex;
+`
+
 export const Wrapper = styled.div`
     width: ${(props) => props.width || '325px'};
     height: 343px;
-    float: ${(props) => props.float || 'initial'};
     margin-right: ${(props) => props.marginRight || '0px'};
 `
 
@@ -92,6 +97,7 @@ export const SearchBarDiv = styled.div`
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 4px;
+    display: flex;
 `
 
 export const SearchBarInputWrapper = styled.div`
