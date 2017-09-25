@@ -15,7 +15,7 @@ class App extends Component {
 			{
 				body: 'Some Content Some Content Some Content'
 			}
-    ), 1000)
+    ), 10000)
 	}
   
 
