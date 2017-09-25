@@ -26,7 +26,7 @@ class OrganisationCardView extends Component {
                 <Wrapper>
                     <TopContainer>
                         <IconContainer>
-                            <Icon icon={'search'} size={20} active={true} color={'white'}/>
+                            <Icon icon={'search'} size={22} active={true} color={'white'}/>
                         </IconContainer>
                     </TopContainer>
                     {this.renderLoaders()}

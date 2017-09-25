@@ -10,7 +10,8 @@ export const TopContainer = styled.div`
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 4px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: flex-end;
     width: 100%;
     height: 28px;
     margin-bottom: 14px;
@@ -19,11 +20,10 @@ export const TopContainer = styled.div`
 export const IconContainer = styled.div`
     background: #2C3E50;
     border-radius: 4px;
-    display: inline-block;
-    padding-top: 1px;
+    display: inline-flex;
+    padding-top: 4px;
     width: 24px;
-    height: 10%;
-    float: right;
+    height: 100%;
 `
 
 export const CardContainer = styled.div`
@@ -31,7 +31,8 @@ export const CardContainer = styled.div`
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
     border-radius: 4px;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     width: 141px;
     height: 107px;
     margin-right: 8px;
