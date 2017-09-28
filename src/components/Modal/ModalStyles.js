@@ -46,24 +46,6 @@ export const StyledModal = styled(Modal) `
     outline: none;
 	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
 	overflow-y: auto;
-	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
- 
-	&:after {
-		background: red;
-	    border-radius: 0 0 5px 0;
-    	transform: translate(-50%, 50%) rotate(45deg);
-    	transform-origin: center;
-		content: '';
-		position: absolute;
-		right: 0;
-		left: 50%;
-		bottom: 0;
-	    width: 20px;
-		height: 20px;
-		z-index: -1; 
-
-	}
 `
 
 export const StyledModalAfter = styled.div`
