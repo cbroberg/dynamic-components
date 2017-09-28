@@ -22,7 +22,7 @@ class App extends Component {
 	render() {
 		return (
       <div>
-       <Skeleton><Label1>{this.state.body}</Label1><Label2>{this.state.body}</Label2><Label3>{this.state.body}</Label3></Skeleton>
+       <Skeleton><Label1>{this.state.body}</Label1><label>hej</label><Label2>{this.state.body}</Label2><Label3>{this.state.body}</Label3></Skeleton>
       </div>
 		)
 	}

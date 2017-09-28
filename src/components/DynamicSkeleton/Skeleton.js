@@ -29,9 +29,11 @@ class Skeleton extends Component {
 		}, this)
 		var css = ""
 		React.Children.map(this.props.children, child => {
-			css += child.type.componentStyle.rules[0].toString() + skeletonLoaderStyles.toString()
-			temp1.push(css)
-			css = ""
+			if (typeof(child.type) !== 'string') {
+				css += child.type.componentStyle.rules[0].toString() + skeletonLoaderStyles.toString()
+				temp1.push(css)
+				css = ""
+			}
 		})
 		return temp1.map((properties, index) =>  < SkeletonDiv key={index} innerRef={(skeletonDivRef) => {return skeletonDivRef !== null ? skeletonDivRef.style = properties : null}} />)
 	}
