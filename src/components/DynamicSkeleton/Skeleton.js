@@ -25,7 +25,7 @@ class Skeleton extends Component {
 	cssProps(rules) {
 		var regex = /([\w-]*)\s*:\s*([^;]*)/g
 		var match, properties = {}
-		while (match === regex.exec(rules)) properties[this.inLine(match[1])] = match[2].trim() 
+		while (match = regex.exec(rules))  properties[this.inLine(match[1])] = match[2].trim() 
 		return properties
 	}
 
@@ -60,9 +60,6 @@ class Skeleton extends Component {
 		temp1.forEach(function(element) {
 			console.log(element)
 			if (typeof(element.type) !== 'string') {
-				if (element.type.p ) {
-
-				} 
 				temp2.unshift(element.type.componentStyle.rules[0].toString())
 				var properties = this.cssProps(temp2)
 				temp3.push(properties)

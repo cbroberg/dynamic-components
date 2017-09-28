@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage, SourcePointerPage, DynamicSkeletonPage } from 'components/PageComponents'
+import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage, ModalLoginPage, SourcePointerPage, DynamicSkeletonPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
 
 class Pages extends Component {
@@ -126,6 +126,11 @@ class App extends Component {
 				label: 'Modals',
 				description: 'This is our modal windows',
 				content: <ModalPage />
+			},
+			{
+				label: 'ModalLogin',
+				description: 'This is our modal for a Login',
+				content: <ModalLoginPage />
 			},
 			{
 				label: 'Pickers',

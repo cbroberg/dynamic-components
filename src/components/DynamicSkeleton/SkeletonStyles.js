@@ -27,8 +27,6 @@ export const SkeletonLoader = styled.div`
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
 
-    width: 100%;
-    height: 100%;
     background-color: #dbdbdb;
     background-image: linear-gradient(90deg, #dbdbdb, #e9e9e9, #dbdbdb);
     background-repeat: no-repeat;
