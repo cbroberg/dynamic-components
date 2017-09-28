@@ -17,14 +17,23 @@ class Pages extends Component {
 		const { pages, disabled } = this.props
 		return pages.map((page, index) => {
 			const isActive = this.state.activePage === index
+			//TODO: Use Polyfill to support Internet Explorer and Opera - Andrei
+			/* 
+			 if (!String.prototype.includes) {
+     			String.prototype.includes = function() {
+        			'use strict';
+        			return String.prototype.indexOf.apply(this, arguments) !== -1;
+   			  };
+ 			}
+			*/
 			const isDisabled = disabled.includes(index)
 			return (
 				<Card
 					key={index}
 					isActive={isActive}
-					hasImage={false} 
-					isDisabled={isDisabled} 
-					bgColor='#F8BB31' 
+					hasImage={false}
+					isDisabled={isDisabled}
+					bgColor='#F8BB31'
 					disabledColor='#E74C3C'
 					header={page.label}
 					content={page.description}
@@ -150,7 +159,7 @@ class App extends Component {
 		]
 		return (
 			<div>
-				{this.props.version === 1 ? 
+				{this.props.version === 1 ?
 					<div>
 						<Pages pages={pageData} disabled={[pageData.length - 1]} />
 						<StyledToast
@@ -162,10 +171,10 @@ class App extends Component {
 							closeOnClick
 							pauseOnHover
 						/>
-					</div> : 
+					</div> :
 					<div>
 						<DropdownLitePage />
-					</div> 
+					</div>
 				}
 			</div>
 		)

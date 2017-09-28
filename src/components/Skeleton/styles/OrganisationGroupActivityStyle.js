@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components'
 
 export const Wrapper = styled.div`
-    height: 449px;
-    width: 693px;
+    height: 488px;
+    width: 949px;
     display: flex;
     flex-direction: column;
 `
@@ -31,7 +31,6 @@ export const TabsContainer = styled.div`
     height: 30px;
     width: 501px;
     display: inline-flex;
-    margin-bottom: 13px;
 `
 
 export const Tabs = styled.div`
@@ -57,8 +56,9 @@ export const TabLabelContainer = styled.div`
 `
 
 export const ItemListContainer = styled.div`
-    height: 269px;
+    height: 320px;
     width: 100%;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
 `
@@ -67,11 +67,14 @@ export const SingleItemContainer = styled.div`
     background: ${(props) => props.backgroundColor || '#fff'};
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-    border-radius: 4px;
     display: inline-flex;
     width: 100%;
     height: 27px;
-    margin-bottom: 3px;
+`
+
+export const IconContainer = styled.div`
+    margin-left: 16px;
+    margin-right: 5px;
 `
 
 const progress = keyframes`
@@ -111,10 +114,4 @@ export const SingleLineLoader = styled.div`
     line-height: 1;
     width: ${(props ) => props.width || '45%'};
     height: ${(props ) => props.height || '15px'};
-`
-
-export const CheckboxContainer = styled.div`
-    padding-top: 4px;
-    padding-left: 17px;
-    padding-right: 19px;
 `

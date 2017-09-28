@@ -1,25 +1,24 @@
 import React, { Component } from 'react'
-import { Wrapper, TopContainer, TopImgContainer, TopTextContainer, TabsContainer, Tabs, TabIconContainer, TabLabelContainer, ItemListContainer, SingleItemContainer, SingleLineLoader, CheckboxContainer } from './styles/OrganisationGroupUsersStyle'
+import { Wrapper, TopContainer, TopImgContainer, TopTextContainer, TabsContainer, Tabs, TabIconContainer, TabLabelContainer, ItemListContainer, SingleItemContainer, IconContainer, SingleLineLoader } from './styles/OrganisationGroupActivityStyle'
 import Icon from 'components/Icon/Icon'
 
-class OrganisationGroupUsers extends Component {
+class OrganisationGroupActivity extends Component {
 
 	renderItemList = () => {
 		var i
 		var arr = []
-		for (i = 0; i < 9; i++) {
+		for (i = 0; i < 12; i++) {
 			arr.push(
                 <SingleItemContainer key={i}>
-                    <SingleLineLoader height="21px" width="23px" marginTop="2px" marginBottom="2px" marginLeft="32px" marginRight="36px" borderRadius="100px"/>
-                    <SingleLineLoader height="9px" width="69px" marginTop="8px" marginRight="80px" borderRadius="4px"/>
-                    <SingleLineLoader height="9px" width="34px" marginTop="8px" marginRight="59px" borderRadius="4px" animationDelay="0.15s" WKanimationDelay="0.15s"/>
-                    <SingleLineLoader height="9px" width="66px" marginTop="8px" marginRight="233px" borderRadius="4px" animationDelay="0.25s" WKanimationDelay="0.25s"/>
-                    <div>
-                        <Icon icon={'more_horiz'} size={20} active={true} color={'#5E5E5E'}/>
-                    </div>
-                    <CheckboxContainer>
-                        <input type="checkbox"/>
-                    </CheckboxContainer>
+                    <IconContainer>
+                        <Icon icon={'mood'} size={15} active={true} color={'#5E5E5E'}/>
+                    </IconContainer>
+                    <SingleLineLoader height="9px" width="123px" marginTop="8px" marginRight="60px"/>
+                    <SingleLineLoader height="9px" width="210px" marginTop="8px" marginRight="77px" animationDelay="0.25s" WKanimationDelay="0.25s"/>
+                    <SingleLineLoader height="15px" width="15px" marginTop="5px" marginRight="7px" borderRadius="100px" animationDelay="0.6s" WKanimationDelay="0.6s"/>
+                    <SingleLineLoader height="9px" width="98px" marginTop="8px" marginRight="106px" animationDelay="0.6s" WKanimationDelay="0.6s"/>
+                    <SingleLineLoader height="9px" width="73px" marginTop="8px" marginRight="108px" animationDelay="0.8s" WKanimationDelay="0.8s"/>
+                    <SingleLineLoader height="6px" width="6px" marginTop="9px" animationDelay="0.85s" WKanimationDelay="0.85s"/>
                 </SingleItemContainer>
             )
 		}
@@ -42,11 +41,11 @@ class OrganisationGroupUsers extends Component {
                     </TopContainer>
 
                     <TabsContainer>
-                        <Tabs width="114px" height="100%" marginRight="1px">
+                        <Tabs width="114px" height="100%" marginRight="1px" backgroundColor="#3B97D3">
                             <TabIconContainer>
-                                <Icon icon={'mood'} size={18} active={true} color={'#5E5E5E'}/>
+                                <Icon icon={'mood'} size={18} active={true} color={'#fff'}/>
                             </TabIconContainer>
-                            <TabLabelContainer>
+                            <TabLabelContainer textColor="#fff">
                                 Activities
                             </TabLabelContainer>
                         </Tabs>
@@ -69,11 +68,11 @@ class OrganisationGroupUsers extends Component {
                             </TabLabelContainer>
                         </Tabs>
 
-                        <Tabs width="82px" height="100%" marginRight="1px" backgroundColor="#3B97D3">
+                        <Tabs width="82px" height="100%" marginRight="1px">
                             <TabIconContainer>
-                                <Icon icon={'mood'} size={18} active={true} color={'#fff'}/>
+                                <Icon icon={'mood'} size={18} active={true} color={'#5E5E5E'}/>
                             </TabIconContainer>
-                            <TabLabelContainer textColor="#fff">
+                            <TabLabelContainer>
                                 User
                             </TabLabelContainer>
                         </Tabs>
@@ -98,4 +97,4 @@ class OrganisationGroupUsers extends Component {
 }
     
 
-export default OrganisationGroupUsers
+export default OrganisationGroupActivity
