@@ -13,6 +13,14 @@ class Skeleton extends Component {
 		this.renderChild = this.renderChild.bind(this)
 	}
     
+	componentDidUpdate() {
+		if (this.state.isLoading) {
+			this.setState({
+				isLoading: false
+			})
+		}
+	}
+
 	renderChild() {
 		var temp1 = []
 		skeletonLoaderStyles = ""
