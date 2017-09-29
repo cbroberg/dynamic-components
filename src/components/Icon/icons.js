@@ -1153,5 +1153,24 @@ export const icons = {
 		png: 'https://github.com/google/material-design-icons/blob/master/action/2x_web/ic_open_in_new_black_48dp.png',
 		svg: 'https://github.com/google/material-design-icons/blob/master/action/svg/production/ic_open_in_new_48px.svg'
 	},
-}
 
+	wifi: {
+		name: 'wifi',
+		component: Icons.MdWifi,
+		action: 'Online',
+		usage: 'Show online network state',
+		tags: ['network'],
+		png: 'https://github.com/google/material-design-icons/blob/master/notification/2x_web/ic_wifi_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/notification/svg/production/ic_wifi_48px.svg'
+	},
+
+	wifi_off: {
+		name: 'wifi_off',
+		component: Icons.MdSignalWifiOff,
+		action: 'Offline',
+		usage: 'Show offline network state',
+		tags: ['network'],
+		png: 'https://github.com/google/material-design-icons/blob/master/device/2x_web/ic_signal_wifi_off_black_48dp.png',
+		svg: 'https://github.com/google/material-design-icons/blob/master/device/svg/production/ic_signal_wifi_off_48px.svg'
+	},	
+}

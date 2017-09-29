@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { SkeletonLoader } from 'components/DynamicSkeleton/SkeletonStyles'
+import { SkeletonLoader, SkeletonDiv } from 'components/DynamicSkeleton/SkeletonStyles'
 
-var skeletonLoaderStyles
+
+var skeletonLoaderStyles = ""
 
 class Skeleton extends Component {
 	constructor(props) {
@@ -10,65 +11,23 @@ class Skeleton extends Component {
 			isLoading: true,
 		}
 		this.renderChild = this.renderChild.bind(this)
-		this.cssProps = this.cssProps.bind(this)
-		this.inLine = this.inLine.bind(this)
 	}
     
-	componentDidUpdate() {
-		if (this.state.isLoading) {
-			this.setState({
-				isLoading: false
-			})
-		}
-	}
-
-	cssProps(rules) {
-		var regex = /([\w-]*)\s*:\s*([^;]*)/g
-		var match, properties = {}
-		while (match = regex.exec(rules))  properties[this.inLine(match[1])] = match[2].trim() 
-		return properties
-	}
-
-	inLine(cssTemp1) {
-		var css = ""
-		var i = 0
-		var cssTemp = cssTemp1
-		var stringTemp = cssTemp.split("-")
-		css = stringTemp[0]
-		while (stringTemp.length > i ) {
-			if (i > 0) {
-				css += stringTemp[i].replace(stringTemp[i].charAt(0), stringTemp[i].charAt(0).toUpperCase())
-			}
-			i++
-		}
-		return css
-	}
-
 	renderChild() {
 		var temp1 = []
-		var temp2 = []
-		var temp3 = []
-		React.Children.map(this.props.children, child => { 
-			temp1.push(child)
-		})
+		skeletonLoaderStyles = ""
 		SkeletonLoader.componentStyle.rules.forEach(function(element) {
 			skeletonLoaderStyles += element.toString()
 		}, this)
-
-		temp2.push(skeletonLoaderStyles)
-		console.log(temp1)
-		temp1.forEach(function(element) {
-			console.log(element)
-			if (typeof(element.type) !== 'string') {
-				temp2.unshift(element.type.componentStyle.rules[0].toString())
-				var properties = this.cssProps(temp2)
-				temp3.push(properties)
-				temp2.shift()
-			} else if (typeof(element.type) === "string") {
-				temp3.push(element.props.className)
+		var css = ""
+		React.Children.map(this.props.children, child => {
+			if (typeof(child.type) !== 'string') {
+				css += child.type.componentStyle.rules[0].toString() + skeletonLoaderStyles.toString()
+				temp1.push(css)
+				css = ""
 			}
-		}, this)
-		return temp3.map((properties, index) =>  <div key={index}>{typeof(properties) !== 'string' ? <div style={properties}/> : <div className={properties} style={this.cssProps(skeletonLoaderStyles)}/>}</div>)
+		})
+		return temp1.map((properties, index) =>  < SkeletonDiv key={index} innerRef={(skeletonDivRef) => {return skeletonDivRef !== null ? skeletonDivRef.style = properties : null}} />)
 	}
         
 	render() {

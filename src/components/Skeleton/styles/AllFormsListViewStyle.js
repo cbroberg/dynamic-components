@@ -3,6 +3,8 @@ import styled, { keyframes } from 'styled-components'
 export const Wrapper = styled.div`
     width: 836px;
     height: 267px;
+    display: flex;
+    flex-direction: column;
 `
 
 export const SkeletonContainer = styled.div`
