@@ -5,39 +5,40 @@ import HeaderImg from './img/logo01.svg'
 
 export const TopContainer = styled.div`
 background: #3B97D3; 
-height: 60px; 
+height: 55px; 
 width: 100%;
 display: inline-flex;
-flex-direction: row;
+align-content: flex-start;
+
 `
 export const TopHeader = styled.div` 
 color: #fff;
 font-family: 'sans-serif';
 font-size: 18px;
-margin-top: 5%;
+flex-grow: 9;
+align-self: center;
 `
 export const IconContainer = styled.div`
-margin-top: 5%;
-margin-left: 5px;
 border: none;
 width: 30px;
+align-self: center;
 `
 
 export const CloseButton = styled.div`
 height: 20px; 
 width: 20px;
-margin-left: 270px;
-margin-top: 5%;
 cursor: pointer;
+flex: 1;
+align-self: center;
 `
 
 export const LoginWrapper = {
 	content: {
 		background: 'white',
-		height: '500px',
-		width: '390px',
+		height: '572px',
+		width: '460px',
 		margin: 'auto',
-		'box-shadow': '2px 2px 5px #888888',
+		'boxShadow': '2px 2px 5px #888888',
 		padding: 'none',
 		overflow: 'hidden'
 
@@ -58,8 +59,8 @@ cursor: pointer;
 
 export const LoginContent = styled.div`
 height: 90%; 
-padding-left: 30px;
-padding-right: 30px;
+padding-left: 45px;
+padding-right: 45px;
 padding-bottom: 10px;
 padding-top: 10px;
 font-family: 'Source Sans Pro';
@@ -76,12 +77,12 @@ background-position: 50% 50%;
 
 export const HeaderImgStyled = styled.div` 
 background-image: url(${HeaderImg});
-height: 35px; 
+height: 26px; 
 background-repeat: no-repeat;
-margin-top: 25px;
+margin-top: 46px;
 margin-left: auto;
 margin-right: auto; 
-width: 175px; 
+width: 225px;
 padding: 18px;
 `
 
@@ -105,20 +106,20 @@ outline: none;
 
 `
 export const ChooseRegion = InputFields.extend`
-height: 10%; 
+height: 9%; 
 width: 100%;
-margin-top: 20px;
+margin-top: 46px;
 `
 
 export const LoginUserName = InputFields.extend`
 height: 10%; 
 width: 100%;
-margin-top: 20px; 
+margin-top: 28px; 
 `
 export const LoginPassword = InputFields.extend`
 height: 10%; 
 width: 100%;
-margin-top: 20px;
+margin-top: 28px;
 `
 export const RememberMeText = styled.div`
 font-family: 'Source Sans Pro';
