@@ -28,7 +28,14 @@
         "space-infix-ops": "error",
         "space-before-blocks": "error",
         "arrow-spacing": "error",
-        "react/display-name": 0
+		"react/display-name": 0,
+		"react/jsx-no-bind": [2,
+			{
+				"ignoreRefs": true,
+				"allowArrowFunctions": true,
+				"allowBind": false
+			}
+		]
     },
        "extends": [
         "react-app"

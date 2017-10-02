@@ -57,7 +57,7 @@ class DropdownLitePage extends Component {
 			<div>
 				{this.state.value === '' ? value : value}				
 				<Heading>Demo {this.state.value}</Heading>
-				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>} {this.numChars(items)}		
+				{this.state.onTouch ? <Text>You are using a touch device</Text> : <Text>You are NOT using a touch device</Text>} {this.numChars(items)}	
 			</div>
 			
 		)
