@@ -86,23 +86,39 @@ width: 225px;
 padding: 18px;
 `
 
-export const InputFields = styled.input`
-background-color: #E3E5E5;
-border-radius: 4px;
-font-family: 'Source Sans Pro';
-decoration: none;
-font-size: 16px;
-border: none;
--webkit-transition: all 0.30s ease-in-out;
--moz-transition: all 0.30s ease-in-out;
--ms-transition: all 0.30s ease-in-out;
--o-transition: all 0.30s ease-in-out;
-outline: none;
-&:focus {
-    box-shadow: 0 0 5px #81C1EA;
-    border: 2px solid #81C1EA;
-  } 
+export const FormField = styled.input `
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    background-color: #ecf0f1;
+    color: #5e5e5e;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 
+    &:hover {
+        box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+    }
+`
+
+export const InputFields = styled.input`
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: #2C3E50;
+    background: #ECF0F1;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+        box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+    }
 
 `
 export const ChooseRegion = InputFields.extend`
