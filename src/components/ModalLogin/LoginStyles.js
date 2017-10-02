@@ -114,7 +114,8 @@ export const InputFields = styled.input`
     color: #2C3E50;
     background: #ECF0F1;
     border: none;
-    border-radius: 4px;
+	border-radius: 4px;
+	outline: 1px;
 
     &:hover {
         box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
