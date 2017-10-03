@@ -11,6 +11,7 @@ display: inline-flex;
 align-content: flex-start;
 
 `
+
 export const TopHeader = styled.div` 
 color: #fff;
 font-family: 'sans-serif';
@@ -18,6 +19,7 @@ font-size: 18px;
 flex-grow: 9;
 align-self: center;
 `
+
 export const IconContainer = styled.div`
 border: none;
 margin-left: 8px;
@@ -45,6 +47,7 @@ export const LoginWrapper = {
 
 	}
 }
+
 export const LoginButton = styled.button` 
 height: 10%; 
 width: 100%;  
@@ -79,12 +82,17 @@ background-position: 50% 50%;
 
 export const HeaderImgStyled = styled.div` 
 background-image: url(${HeaderImg});
-height: 26px; 
+    display: block;
+    margin: auto;
+    width: 40%;
+
+
+height: 60px; 
 background-repeat: no-repeat;
 margin-top: 46px;
 margin-left: auto;
 margin-right: auto; 
-width: 225px;
+width: 350px;
 padding: 18px;
 `
 
@@ -112,7 +120,7 @@ export const InputFields = styled.input`
     font-family: 'Source Sans Pro';
     font-size: 1.6rem;
     padding: 1rem;
-    margin: 1rem;
+/*     margin: 1rem; */
     color: #2C3E50;
     background: #ECF0F1;
     border: none;
@@ -124,6 +132,7 @@ export const InputFields = styled.input`
     }
 
 `
+
 export const ChooseRegion = InputFields.extend`
 height: 9%; 
 width: 100%;
@@ -135,11 +144,13 @@ height: 10%;
 width: 100%;
 margin-top: 28px; 
 `
+
 export const LoginPassword = InputFields.extend`
 height: 10%; 
 width: 100%;
 margin-top: 28px;
 `
+
 export const RememberMeText = styled.div`
 font-family: 'Source Sans Pro';
 font-size: 14px;
@@ -157,6 +168,7 @@ width: 20px;
 margin-top: -2px;
 margin-left: 8px;
 `
+
 export const ForgotPasswordText = styled.div`
 font-family: 'Source Sans Pro';
 font-size: 16px;

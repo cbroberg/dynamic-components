@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import Modal from 'components/Modal/Modal'
+import ModalLogin from 'components/ModalLogin/LoginModal'
 import Button from 'components/Button/Button'
-import { RememberMeText, LoginUserName, ChooseRegion, HeaderImgStyled, LoginPassword, RegiText, RegiComit, ForgotPasswordText, CheckBox } from './../ModalLogin/LoginStyles'
+import { LoginWrapper, RememberMeText, LoginUserName, ChooseRegion, HeaderImgStyled, LoginPassword, RegiText, RegiComit, ForgotPasswordText, CheckBox } from './../ModalLogin/LoginStyles'
 
 /* Todo: filenames */
 class ModalLoginPage extends Component {
 	constructor(props) {
 		super(props)
-
 		this.state = {
 			modalIsOpen: true,
 			commune: '',
@@ -22,12 +21,12 @@ class ModalLoginPage extends Component {
 	}
 
 
-	onRequestClose = () => {
+	closeModal = () => {
 		this.setState({ modalIsOpen: false })
 	}
 
 	handleLogin = (event) => {
-		window.alert('Du er nu logget ind')
+		alert('Commune:')
 	}
 
 	render() {
@@ -40,22 +39,26 @@ class ModalLoginPage extends Component {
 					color={'#3B97D3'}
 					onClick={this.openModal}
 				/>
-
-				<Modal
+				<ModalLogin
 					isOpen={this.state.modalIsOpen}
-					onRequestClose={this.onRequestClose}
-					icon={'lock_open'}
+					onRequestClose={this.closeModal}
+					handleLogin={this.handleLogin}
+					style={LoginWrapper}
 					label={'Login'}
-					overlayScroll={false}
+					icon={'lock_open'}
+					iconSize={26}
+					iconClose={'close'}
+					iconCloseSize={26}
 					content={
 						<Content
-							onRequestClose={this.onRequestClose}
-							handleLogin={this.handleLogin}
-							subtitle={this.state.subtitle}
-							firstName={'Mr.'}
-							lastName={'Modal'} 
-						/>}
+							commune= 'Skriv din kommune'
+							userName='Brugernavn'
+							password= 'Kodeord'
+						/>
+					}
+
 				/>
+
 			</div>
 		)
 	}
@@ -63,18 +66,18 @@ class ModalLoginPage extends Component {
 
 export default ModalLoginPage
 
-const Content = (props) => {
-	const { rememberText, forgotPassword, regiText, sign } = props
+const Content = ({ userName, password, rememberText, forgotPassword, labelButton, regiText, commune, sign }) => {
 	return (
 		<div>
 			<HeaderImgStyled />
-			<ChooseRegion placeholder='Indtast dit kundenummer'
+			<ChooseRegion
+				placeholder={commune}
 			// value={value} 
 			/* onChange={this.handleChange}  */
 			/>
 
-			<LoginUserName placeholder='Brugernavn' />
-			<LoginPassword placeholder='Password' type='password' />
+			<LoginUserName placeholder={userName} />
+			<LoginPassword placeholder={password} />
 
 			<RememberMeText>
 				{rememberText}
@@ -84,25 +87,12 @@ const Content = (props) => {
 				</ForgotPasswordText>
 			</RememberMeText>
 
-			<div style={{ align: 'center' }}>
-				<div style={{ align: 'left' }}>
-					<Button
-						icon={'lock_open'}
-						onClick={this.handleLogin}
-						label={'Cancel'}
-						color={'#E74C3C'}
-					/>				
-				</div>
-
-				<div style={{ align: 'right' }}>
-					<Button
-						icon={'lock_open'}
-						onClick={this.handleLogin}
-						label={'Login'}
-						color={'#25B89A'}
-					/>
-				</div>
-			</div>
+			<Button
+				style={{ width: "100%" }}
+				onClick={this.handleLogin}
+				label={labelButton}
+				color={'#3B97D3'}
+			/>
 
 			<RegiText>
 				{regiText}
@@ -116,6 +106,9 @@ const Content = (props) => {
 
 Content.defaultProps = {
 	isOpen: false,
+	commune: 'Skriv din kommune',
+	userName: 'Brugernavn',
+	password: 'Kodeord',
 	rememberText: 'Husk mig',
 	forgotPassword: 'Glemt Kodeord',
 	regiText: 'Brug for en konto?',

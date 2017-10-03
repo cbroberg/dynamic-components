@@ -5,7 +5,7 @@ import Card from 'components/Card/Card'
 
 class Pages extends Component {
 	state = {
-		activePage: 3
+		activePage: 8
 	}
 
 	selectPageIndex(activePage) {
@@ -83,78 +83,78 @@ class App extends Component {
 		const pageData = [
 			{
 				label: 'Buttons',
-				description: 'This is our buttons',
+				description: 'Buttons (0)',
 				content: <ButtonsPage />
 			},
 			{
 				label: 'Cards',
-				description: 'This is our cards',
+				description: 'Cards (1)',
 				content: <CardsPage />
 			},
 			{
 				label: 'Colors',
-				description: 'This is our colors',
+				description: 'Colors (2)',
 				content: <ColorsPage />
 			},
 			{
-				label: 'Dropdowns',
-				description: 'This is our dropdowns',
+				label: 'Dropdown',
+				description: 'Dropdown (3)',
 				content: <DropdownsPage />
 			},
 			{
 				label: 'Dropdown Lite',
-				description: 'This is our dropdowns',
+				description: 'Dropdown Lite (4)',
 				content: <DropdownLitePage />
 			},
 			{
-				label: 'SourcePointer',
-				description: 'This is our SourcePointer',
-				content: <SourcePointerPage />
-			},
-			{
 				label: 'Dynamic Skeleton',
-				description: 'This is a dynamic skeleton',
+				description: 'Dynamic Skeletons (5)',
 				content: < DynamicSkeletonPage />
 			},
 			{
 				label: 'Icons',
-				description: 'This is our icons',
+				description: 'Icons (6)',
 				content: <IconsPage />
 			},
 			{
 				label: 'Loaders',
-				description: 'This is our loaders',
+				description: 'Loaders (7)',
 				content: <LoadersPage />
 			},
 			{
-				label: 'Meters',
-				description: 'This is our meters',
-				content: <MetersPage />
-			},
-			{
-				label: 'Modals',
-				description: 'This is our modal windows',
-				content: <ModalPage />
-			},
-			{
 				label: 'Loginmodal',
-				description: 'This is our modal for a Login',
+				description: 'Login Modal (8)',
 				content: <LoginModalPage />
 			},
 			{
+				label: 'Meters',
+				description: 'Meters (9)',
+				content: <MetersPage />
+			},
+			{
+				label: 'Modal',
+				description: 'Modal (10)',
+				content: <ModalPage />
+			},
+			{
 				label: 'Pickers',
-				description: 'This is our pickers',
+				description: 'Pickers (11)',
 				content: <PickersPage />
 			},
 			{
-				label: 'Tags',
-				description: 'This is our tags',
-				content: <TagsPage />
+				label: 'Skeletons',
+				description: 'Skeletons (12)',
+				content: <SkeletonPage />
 			},
 			{
-				label: 'Skeletons',
-				description: 'This is our skeletons',
-				content: <SkeletonPage />
+				label: 'SourcePointer',
+				description: 'SourcePointer (13)',
+				content: <SourcePointerPage />
+			},
+			{
+				label: 'Tags',
+				description: 'Tags (14)',
+				content: <TagsPage />
 			},
 			{
 				label: 'Disabled',
