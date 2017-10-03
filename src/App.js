@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
-import { ButtonsPage, ColorsPage, DropdownsPage, DropdownLitePage, IconsPage, MetersPage, TagsPage, LoadersPage, CardsPage, PickersPage, SkeletonPage, ModalPage, LoginModalPage, SourcePointerPage, DynamicSkeletonPage } from 'components/PageComponents'
 import Card from 'components/Card/Card'
+import * as Page from 'components/PageComponents'
+	
 
 class Pages extends Component {
 	state = {
@@ -84,77 +85,82 @@ class App extends Component {
 			{
 				label: 'Buttons',
 				description: 'Buttons (0)',
-				content: <ButtonsPage />
+				content: <Page.ButtonsPage />
 			},
 			{
 				label: 'Cards',
 				description: 'Cards (1)',
-				content: <CardsPage />
+				content: <Page.CardsPage />
 			},
 			{
 				label: 'Colors',
 				description: 'Colors (2)',
-				content: <ColorsPage />
+				content: <Page.ColorsPage />
 			},
 			{
 				label: 'Dropdown',
 				description: 'Dropdown (3)',
-				content: <DropdownsPage />
+				content: <Page.DropdownsPage />
 			},
 			{
 				label: 'Dropdown Lite',
 				description: 'Dropdown Lite (4)',
-				content: <DropdownLitePage />
+				content: <Page.DropdownLitePage />
 			},
 			{
 				label: 'Dynamic Skeleton',
 				description: 'Dynamic Skeletons (5)',
-				content: < DynamicSkeletonPage />
+				content: <Page.DynamicSkeletonPage />
 			},
 			{
 				label: 'Icons',
 				description: 'Icons (6)',
-				content: <IconsPage />
+				content: <Page.IconsPage />
 			},
 			{
 				label: 'Loaders',
 				description: 'Loaders (7)',
-				content: <LoadersPage />
+				content: <Page.LoadersPage />
 			},
 			{
 				label: 'Loginmodal',
 				description: 'Login Modal (8)',
-				content: <LoginModalPage />
+				content: <Page.LoginModalPage />
 			},
 			{
 				label: 'Meters',
 				description: 'Meters (9)',
-				content: <MetersPage />
+				content: <Page.MetersPage />
 			},
 			{
 				label: 'Modal',
 				description: 'Modal (10)',
-				content: <ModalPage />
+				content: <Page.ModalPage />
 			},
 			{
 				label: 'Pickers',
 				description: 'Pickers (11)',
-				content: <PickersPage />
+				content: <Page.PickersPage />
 			},
 			{
 				label: 'Skeletons',
 				description: 'Skeletons (12)',
-				content: <SkeletonPage />
+				content: <Page.SkeletonPage />
 			},
 			{
 				label: 'SourcePointer',
 				description: 'SourcePointer (13)',
-				content: <SourcePointerPage />
+				content: <Page.SourcePointerPage />
 			},
 			{
 				label: 'Tags',
 				description: 'Tags (14)',
-				content: <TagsPage />
+				content: <Page.TagsPage />
+			},
+			{
+				label: 'Toggle Switch',
+				description: 'Toggle Switch (15)',
+				content: <Page.ToggleSwitchPage />
 			},
 			{
 				label: 'Disabled',
@@ -178,7 +184,7 @@ class App extends Component {
 						/>
 					</div> :
 					<div>
-						<DropdownLitePage />
+						<Page.DropdownLitePage />
 					</div>
 				}
 			</div>
