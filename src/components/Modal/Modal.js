@@ -10,7 +10,7 @@ class Modal extends Component {
 
 	render() {
 
-		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, content, overlayScroll, icon, label, shouldCloseOnOverlayClick } = this.props
+		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, content, overlayScroll, width, icon, label, shouldCloseOnOverlayClick } = this.props
 
 		return (
 			<div>
@@ -22,6 +22,7 @@ class Modal extends Component {
 					contentLabel={label}
 					style={style}
 					overlayScroll={overlayScroll}
+					width={width}
 					shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
 					
 					<StyledModalHeader>
@@ -58,6 +59,7 @@ Modal.propTypes = {
 		content: PropTypes.object
 	}),
 	overlayScroll: PropTypes.bool,
+	width: PropTypes.string,
 	content: PropTypes.any,
 	icon: PropTypes.string,
 	label: PropTypes.string.isRequired,
@@ -68,6 +70,7 @@ Modal.defaultProps = {
 	isOpen: false,
 	label: '',
 	overlayScroll: false,
+	width: '500px',
 	content: 'You forgot to put some content here ...'
 }
 

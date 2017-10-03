@@ -103,7 +103,7 @@ export const FormField = styled.input `
     background-color: #ecf0f1;
     color: #5e5e5e;
     font-family: 'Source Sans Pro';
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 300;
     border-radius: 3px;
     border: none;
@@ -118,9 +118,9 @@ export const FormField = styled.input `
 
 export const InputFields = styled.input`
     font-family: 'Source Sans Pro';
-    font-size: 1.6rem;
+	font-size: 1.8rem;
+	font-weight: 300;
     padding: 1rem;
-/*     margin: 1rem; */
     color: #2C3E50;
     background: #ECF0F1;
     border: none;

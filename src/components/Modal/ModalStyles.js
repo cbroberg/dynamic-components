@@ -29,9 +29,10 @@ export const StyledModal = styled(Modal)`
     border-radius: 4px;
     border: none;
     margin-right: -50%;
-    width: 30%;
+	width: ${(props) => props.width};
+	/* max-width: 320px; */
     height: calc(100% - 200px);
-    min-height: 300px;
+    min-height: 480px;
 	max-height: 700px;
     position: absolute; /* fixed */
     top: 50%;
