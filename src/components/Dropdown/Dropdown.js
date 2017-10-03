@@ -7,16 +7,14 @@ import Icon from 'components/Icon/Icon'
 class Dropdown extends Component {
 	constructor(props) {
 		super(props)
+
 		this.state = {
 			listVisible: false,
 			data: ''
 		}
-		this.handleDropDown = this.handleDropDown.bind(this)
-		this.renderChild = this.renderChild.bind(this)
-		this.renderNotifyHeader = this.renderNotifyHeader.bind(this)
 	}
 
-	handleDropDown() {
+	handleDropDown = () => {
 		this.state.listVisible ? this.setState({ listVisible: false }) : this.setState({ listVisible: true })
 	}
 
@@ -24,7 +22,7 @@ class Dropdown extends Component {
 		this.setState({ data: this.props.data })
 	}
 
-	renderNotifyHeader() {
+	renderNotifyHeader = () => {
 		return (
             <NotificationTopContanoiner>
                 <NotificationsLbl><b>{this.props.subLabel}</b></NotificationsLbl>
@@ -34,7 +32,7 @@ class Dropdown extends Component {
 		)
 	}
 
-	renderChild(child, data) {
+	renderChild = (child, data) => {
 		if (this.state.data[child.key] !== undefined) {
 			return (
 			<SingleLinkContainer href={data[child.key].href}>
@@ -47,23 +45,50 @@ class Dropdown extends Component {
 
 	render() {
 		return (
-            <DropdownContianer onMouseEnter={this.handleDropDown} onMouseLeave={this.handleDropDown}>
-                    <Icon icon={this.props.icon} iconSize={this.props.iconSize} color={colors.BUTTON_TEXT} active={this.props.active}/>
+            <DropdownContianer 
+				onMouseEnter={this.handleDropDown} 
+				onMouseLeave={this.handleDropDown}>
+
+					<Icon 
+						icon={this.props.icon} 
+						iconSize={this.props.iconSize} 
+						color={colors.BUTTON_TEXT} 
+						active={this.props.active}
+					/>
+
                 {this.state.listVisible ? 
+
                     <DropdownContentContainer width={this.props.width}>
+
 						<NotificationTopContanoiner>
-							<NotificationsLbl><b>{this.props.subLabel}</b></NotificationsLbl>
-							<SettingsLink href='#'>{this.props.settingslink}</SettingsLink>
-							<MarkAsReadBtn>{this.props.buttontext}</MarkAsReadBtn>
-           				 </NotificationTopContanoiner>
-                        <AllLinksContainer height={this.props.height}>
+
+							<NotificationsLbl>
+								<b>{this.props.subLabel}</b>
+							</NotificationsLbl>
+
+							<SettingsLink 
+								href='#'>{this.props.settingslink}
+							</SettingsLink>
+
+							<MarkAsReadBtn>
+								{this.props.buttontext}
+							</MarkAsReadBtn>
+
+           				</NotificationTopContanoiner>
+                        
+						<AllLinksContainer height={this.props.height}>
 							{ React.Children.map(this.props.children, child => {
 								return this.renderChild(child, this.state.data)
 							})
 							}
                         </AllLinksContainer>
-                        <SeeAllNotificationsLink href={'#'}>{this.props.seeAllNotifications}</SeeAllNotificationsLink>
+                        <SeeAllNotificationsLink 
+							href={'#'}>
+							{this.props.seeAllNotifications}
+						</SeeAllNotificationsLink>
+
                     </DropdownContentContainer> : null }
+
             </DropdownContianer>
 		)
 	}
