@@ -20,6 +20,7 @@ align-self: center;
 `
 export const IconContainer = styled.div`
 border: none;
+margin-left: 8px;
 width: 30px;
 align-self: center;
 `
@@ -64,6 +65,7 @@ padding-right: 45px;
 padding-bottom: 10px;
 padding-top: 10px;
 font-family: 'Source Sans Pro';
+display: flex;
 `
 
 export const BagrundPiture = styled.div`
@@ -172,6 +174,7 @@ font-size: 16px;
 text-align: center;
 margin-top: 20px;
 color: #5E5E5E;
+
 `
 
 export const RegiComit = styled.a`
@@ -181,9 +184,5 @@ font-size: 16px;
 color: #3B97D3;
 text-decoration: underline;
 margin-top: 20px;
-`
-export const SelectMenubar = styled.select` 
-width: 100%;  
-height: 12%;
 `
 
