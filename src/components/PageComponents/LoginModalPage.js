@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Modal from 'components/Modal/Modal'
 import Button from 'components/Button/Button'
-import { RememberMeText, LoginUserName, ChooseRegion, HeaderImgStyled, LoginPassword, RegiText, RegiComit, ForgotPasswordText, CheckBox } from './../ModalLogin/LoginStyles'
+import { RememberMeText, LoginUserName, ChooseRegion, HeaderImage, LoginPassword, RegiText, RegiComit, ForgotPasswordText, CheckBox } from './../ModalLogin/LoginStyles'
 
 /* Todo: filenames */
 class ModalLoginPage extends Component {
@@ -67,7 +67,7 @@ const Content = (props) => {
 	const { rememberText, forgotPassword, regiText, sign } = props
 	return (
 		<div>
-			<HeaderImgStyled />
+			<HeaderImage />
 			<ChooseRegion placeholder='Indtast dit kundenummer'
 			// value={value} 
 			/* onChange={this.handleChange}  */
@@ -78,7 +78,9 @@ const Content = (props) => {
 
 			<RememberMeText>
 				{rememberText}
-				<CheckBox type="checkbox" />
+				
+				<CheckBox type="checkbox" defaultChecked />
+		
 				<ForgotPasswordText>
 					{forgotPassword}
 				</ForgotPasswordText>
@@ -87,7 +89,7 @@ const Content = (props) => {
 			<div style={{ align: 'center' }}>
 				<div style={{ align: 'left' }}>
 					<Button
-						icon={'lock_open'}
+						icon={'cancel'}
 						onClick={this.handleLogin}
 						label={'Cancel'}
 						color={'#E74C3C'}
