@@ -8,10 +8,9 @@ const hideOverlayScroll = () => {
 		overflow: hidden;
 	}
 	`])
-
 }
 
-const fadeModal = keyframes`
+const fadeInModal = keyframes`
     0% {
         opacity: 0;
         top: 0%;
@@ -29,35 +28,22 @@ export const StyledModal = styled(Modal)`
     border-radius: 4px;
     border: none;
     margin-right: -50%;
-    width: 30%;
-    height: calc(100% - 200px);
-    min-height: 300px;
-	max-height: 700px;
+	width: ${(props) => props.width};
+	/* max-width: 320px; */
+    /* height: calc(100% - 600px); */
+    min-height: 480px;
+	/* max-height: 900px; */
     position: absolute; /* fixed */
     top: 50%;
     left: 50%;
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-    animation: 0.3s ${fadeModal} cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    animation: 0.3s ${fadeInModal} cubic-bezier(0.18, 0.89, 0.32, 1.28);
     background-color: white;
     outline: none;
 	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
 	overflow-y: auto;
-`
-
-export const StyledModalAfter = styled.div`
-	background: red;
-	border-radius: 0 0 5px 0;
-	transform: translate(-50%, 50%) rotate(45deg);
-	transform-origin: center;
-	content: '';
-	position: absolute;
-	right: 0;
-	left: 50%;
-	bottom: 0;
-	width: 20px;
-	height: 20px;
 `
 
 export const StyledModalHeader = styled.div`
@@ -94,14 +80,14 @@ export const StyledModalHeaderClose = styled.div`
 `
 
 export const StyledModalContent = styled.div`
-	/* border: solid 1px red; */
     clear: both;
 	box-sizing: border-box; 
 	padding: 0;
     padding-left: 20px;
-    padding-right: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
     font-family: 'Source Sans Pro';
     font-size: 1.6rem;
     font-weight: 300;
-    height: calc(100% - 90px);
+    /* height: calc(100% - 90px); */
 `

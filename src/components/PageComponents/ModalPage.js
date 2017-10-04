@@ -66,7 +66,8 @@ class ModalPage extends Component {
 							changeSubtitle={this.changeSubtitle} 
 							subtitle={this.state.subtitle} 
 							firstName={'Mr.'} 
-							lastName={'Modal'}/>}
+							lastName={'Modal'}
+						/>}
 				/>
 
 			</div>
