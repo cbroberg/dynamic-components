@@ -2,14 +2,16 @@
 <html>
 <head>
 <style>
-.switch {
+.label {
   position: relative;
   display: inline-block;
   width: 90px;
   height: 34px;
 }
 
-.switch input {display:none;}
+.label input {
+	display: none;
+}
 
 .slider {
   position: absolute;
@@ -21,6 +23,7 @@
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 4px;
 }
 
 .slider:before {
@@ -33,6 +36,7 @@
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
+  border-radius: 4px;
 }
 
 input:checked + .slider {
@@ -44,8 +48,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(52px);
-  -ms-transform: translateX(52px);
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
   transform: translateX(56px);
 }
 
@@ -61,26 +65,31 @@ input:checked + .slider:before {
 </head>
 <body>
 
-<h2>Toggle Switch</h2>
+<h2>Toggle switch</h2>
 
-<label class="switch">
+<label class="label">
   <input type="checkbox">
   <span class="slider"></span>
 </label>
 
-<label class="switch">
+<label class="label">
   <input type="checkbox" checked>
   <span class="slider"></span>
 </label><br><br>
 
-<label class="switch">
+<label class="label">
   <input type="checkbox">
   <span class="slider round"></span>
 </label>
 
-<label class="switch">
+<label class="label">
   <input type="checkbox" checked>
   <span class="slider round"></span>
+</label><br><br>
+
+<label class="label">
+  <input type="checkbox">
+  <span class="slider"></span>
 </label>
 
 </body>

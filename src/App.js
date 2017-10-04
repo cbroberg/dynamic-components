@@ -6,7 +6,7 @@ import * as Page from 'components/PageComponents'
 
 class Pages extends Component {
 	state = {
-		activePage: 8
+		activePage: 15
 	}
 
 	selectPageIndex(activePage) {

@@ -1,15 +1,26 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledToggleSwitch } from 'components/ToggleSwitch/ToggleSwitchStyles'
+import { StyledToggleSwitch, Toggle, Slider } from 'components/ToggleSwitch/ToggleSwitchStyles'
 
 
 class ToggleSwitch extends Component {
 
 	render() {
-		const { myProp } = this.props
+		
 		return (
-			<StyledToggleSwitch myProp={myProp}>{this.props.children}
-			</StyledToggleSwitch>
+			<div>
+				<StyledToggleSwitch>
+					<Slider>{this.props.children}
+					</Slider>
+				</StyledToggleSwitch>
+				
+				<div><p/><br/></div>
+				
+				<Toggle>{this.props.children}
+				</Toggle>
+
+
+			</div>
 		)
 	}
 }
