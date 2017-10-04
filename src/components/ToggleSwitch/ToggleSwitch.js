@@ -1,36 +1,54 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledToggleSwitch, Toggle, Slider } from 'components/ToggleSwitch/ToggleSwitchStyles'
+import { StyledToggleSwitch } from 'components/ToggleSwitch/ToggleSwitchStyles'
 
 
 class ToggleSwitch extends Component {
 
-	render() {
-		
+	constructor(props) {
+		super(props)
+		this.state = {
+			isChecked: props.checked
+		}
+	}
+	
+	toggleCheckboxChange = () => {
+		this.setState(({ isChecked }) => (
+			{
+				isChecked: !isChecked,
+			}
+		))
+	}
+
+	render() {		
+		const { label, type, /* checked */  } = this.props
 		return (
-			<div>
-				<StyledToggleSwitch>
-					<Slider>{this.props.children}
-					</Slider>
-				</StyledToggleSwitch>
-				
-				<div><p/><br/></div>
-				
-				<Toggle>{this.props.children}
-				</Toggle>
+			<StyledToggleSwitch>
 
+				<input 
+					type="checkbox" 
+					value={label}
+					id={type === "square" ? "input" : "inputround"} 
+					checked={this.state.isChecked} 
+					onChange={this.toggleCheckboxChange} />
 
-			</div>
+				<span className={type === "square" ? "slider" : "slider round"}></span>
+			
+			</StyledToggleSwitch>
 		)
 	}
 }
 
 ToggleSwitch.propTypes = {
-	myProp: PropTypes.string
+	label: PropTypes.string.isRequired,
+	type: PropTypes.oneOf(['square', 'round']),
+	checked: PropTypes.bool
 }
 
 ToggleSwitch.defaultProps = {
-	myProp: ''
+	label: '',
+	type: 'square',
+	checked: false
 }
 
 export default ToggleSwitch

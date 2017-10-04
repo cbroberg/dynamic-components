@@ -1,90 +1,57 @@
 import styled from 'styled-components'
 
-export const StyledToggleSwitch = styled.div`
-	position: relative;
-	display: inline-block;
-	width: 90px;
-	height: 34px;
-	> input + label { 
-		opacity: 0; 
-		
-	}
-`
 
-export const Slider = styled.span`
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
+export const StyledToggleSwitch = styled.label`
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
 
-	&:before {
-		position: absolute;
-		content: "";
-		height: 26px;
-		width: 26px;
-		left: 4px;
-		bottom: 4px;
-		background-color: white;
-		-webkit-transition: .4s;
-		transition: .4s;
-	}
+  > input {
+    display: none;
+  }
 
-	> input:checked {
-		background-color: #3B97D3;
-	}
+  >.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 4px;
+  }
 
-	> input:focus {
-		box-shadow: 0 0 1px #3B97D3;
-	}
+  >.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 4px;
+  }
 
-	> input:checked + &:before {
-		-webkit-transform: translateX(52px);
-		-ms-transform: translateX(52px);
-		transform: translateX(56px);
-	}
+  > input:checked + .slider {
+    background-color: #3B97D3;
+  }
 
-	/* Rounded sliders */
-/* 	.slider.round {
-		border-radius: 34px;
-	}
+  > input:focus + .slider {
+    box-shadow: 0 0 1px #3B97D3;
+  }
 
-	.slider.round:before {
-		border-radius: 50%;
-	}
- */
-`
+  > input:checked + .slider:before {
+    transform: translateX(56px);
+  }
 
-export const Toggle = styled.div`
-	> input { opacity: 0; }
-	> input + label { position: relative; }
-	> input + label:before {
-	height: 30px;
-	width: 90px;
-	background: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
-	right: -50px;
-	content: '';
-	position: absolute;
-	}
+  > .slider.round {
+    border-radius: 34px;
+  }
 
-	> input + label:after {
-	height: 26px;
-	width: 26px;
-	background: #3B97D3;
-	left: 4px;
-	top: 2px;
-	content: '';
-	position: absolute;
-	}
-
-	> input:checked + label:after {
-	right: -48px;
-	left: auto;
-	}
+  > .slider.round:before {
+    border-radius: 50%;
+  }
 `
