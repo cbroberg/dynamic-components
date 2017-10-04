@@ -32,7 +32,7 @@ class ToggleSwitch extends Component {
 					checked={this.state.isChecked} 
 					onChange={this.toggleCheckboxChange} />
 
-				<span className={type === "square" ? "slider" : "slider round"}></span>
+				<span className={type === "square" ? "slider" : "slider round"} />
 			
 			</StyledToggleSwitch>
 		)
@@ -43,7 +43,7 @@ ToggleSwitch.propTypes = {
 	label: PropTypes.string.isRequired,
 	type: PropTypes.oneOf(['square', 'round']),
 	checked: PropTypes.bool,
-	size: PropTypes.oneOf(['small', 'large']),
+	size: PropTypes.oneOf(['small', 'medium', 'large']),
 }
 
 ToggleSwitch.defaultProps = {

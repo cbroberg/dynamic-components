@@ -4,8 +4,9 @@ import styled from 'styled-components'
 export const StyledToggleSwitch = styled.label`
 	position: relative;
 	display: inline-block;
-	width: 90px;
-	height: 34px;
+	width: ${({ size }) => sizes[size].width};
+	height: ${({ size }) => sizes[size].height};
+	user-select: none;
 
 	> input {
 		display: none;
@@ -18,7 +19,7 @@ export const StyledToggleSwitch = styled.label`
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #ccc;
+		background-color: #D5D5D5;
 		transition: .4s;
 		border-radius: 4px;
 	}
@@ -31,7 +32,7 @@ export const StyledToggleSwitch = styled.label`
 		left: 4px;
 		bottom: 4px;
 		background-color: white;
-		transition: .4s;
+		transition: .3s;
 		border-radius: 4px;
 	}
 
@@ -44,7 +45,7 @@ export const StyledToggleSwitch = styled.label`
 	}
 
 	> input:checked + .slider:before {
-		transform: translateX(56px);
+		transform: translateX(${({ size }) => sizes[size].transform});
 	}
 
 	> .slider.round {
@@ -55,3 +56,21 @@ export const StyledToggleSwitch = styled.label`
 		border-radius: 50%;
 	}
 `
+
+const sizes = {	
+	small: {
+		width: '40px',
+		height: '18px',
+		transform: '20px'
+	},
+	medium: {
+		width: '61px',
+		height: '34px',
+		transform: '27px'
+	},
+	large: {
+		width: '90px',
+		height: '34px',
+		transform: '56px'
+	}
+}

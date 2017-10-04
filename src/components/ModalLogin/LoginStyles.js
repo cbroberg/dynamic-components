@@ -33,68 +33,34 @@ export const InputFields = styled.input`
 
 `
 
-export const ChooseRegion = InputFields.extend`
+export const Account = InputFields.extend`
 	height: 9%; 
 	width: 100%;
 	margin-top: 40px;
 `
 
-export const LoginUserName = InputFields.extend`
+export const Username = InputFields.extend`
 	height: 10%; 
 	width: 100%;
 	margin-top: 20px; 
 `
 
-export const LoginPassword = InputFields.extend`
+export const Password = InputFields.extend`
 	height: 10%; 
 	width: 100%;
 	margin-top: 20px; 
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 `
 
-export const RememberMeText = styled.div`
-	font-family: 'Source Sans Pro';
-	font-size: 14px;
-	width: 100%;
+export const Remember = styled.p`
+    font-family: 'Source Sans Pro';
+	font-size: 1.8rem;
+	font-weight: 300;
 	text-align: left;
-	margin-top: 20px;
-	display: inline-flex;
-	flex-direction: row;
-	color: #5E5E5E;
-`
-
-export const CheckBox = styled.input`
-	height: 20px;
-	width: 20px;
-	margin-top: -2px;
-	margin-left: 8px;
-`
-
-export const ForgotPasswordText = styled.div`
-	font-family: 'Source Sans Pro';
-	font-size: 16px;
-	color: #5E5E5E;
-	text-decoration: underline;
-	align: right;
-	margin-left: 130px;
-	cursor: pointer;
-`
-
-export const RegiText = styled.div` 
-	margin: auto;
-	font-family: 'Source Sans Pro';
-	font-size: 16px;
-	text-align: center;
-	margin-top: 20px;
-	color: #5E5E5E;
-`
-
-export const RegiComit = styled.a`
-	margin: auto;
-	font-family: 'Source Sans Pro';
-	font-size: 16px;
-	color: #3B97D3;
-	text-decoration: underline;
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	/* display: inline-flex; */
+	/* flex-direction: row; */
+	color: #2C3E50;
 `
 

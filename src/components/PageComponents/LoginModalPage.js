@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Modal from 'components/Modal/Modal'
 import Button from 'components/Button/Button'
-import { RememberMeText, LoginUserName, ChooseRegion, HeaderImage, LoginPassword, RegiText, RegiComit, ForgotPasswordText, CheckBox } from './../ModalLogin/LoginStyles'
+import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
+import { Account, Username, Password, HeaderImage, Remember } from './../ModalLogin/LoginStyles'
 
 /* Todo: filenames */
 class ModalLoginPage extends Component {
@@ -9,11 +10,7 @@ class ModalLoginPage extends Component {
 		super(props)
 
 		this.state = {
-			modalIsOpen: true,
-			commune: '',
-			username: '',
-			password: ''
-
+			modalIsOpen: true
 		}
 	}
 
@@ -28,6 +25,7 @@ class ModalLoginPage extends Component {
 
 	handleLogin = (event) => {
 		window.alert('Du er nu logget ind')
+		this.setState({ modalIsOpen: false })
 	}
 
 	render() {
@@ -47,6 +45,7 @@ class ModalLoginPage extends Component {
 					icon={'lock_open'}
 					label={'Login'}
 					overlayScroll={false}
+					width={'555px'}
 					content={
 						<Content
 							onRequestClose={this.onRequestClose}
@@ -64,64 +63,52 @@ class ModalLoginPage extends Component {
 export default ModalLoginPage
 
 const Content = (props) => {
-	const { rememberText, forgotPassword, regiText, sign } = props
+	const { onRequestClose, handleLogin } = props
 	return (
 		<div>
 			<HeaderImage />
-			<ChooseRegion placeholder='Indtast dit kundenummer'
-			// value={value} 
-			/* onChange={this.handleChange}  */
+
+			<Account placeholder='Indtast dit kundenummer' />
+			<Username placeholder='Brugernavn' />
+			<Password placeholder='Password' type='password' />
+
+			<Remember>Husk mig</Remember>
+
+			<ToggleSwitch checked={true} size="medium" />
+
+			<br /><br />
+
+			<Button
+				icon={'cancel'}
+				onClick={onRequestClose}
+				label={'Cancel'}
+				color={'#E74C3C'}
+			/>			
+
+			<Button
+				icon={'help_outline'}				
+				label={'Glemt password?'}
+				color={'#81C1EA'}
 			/>
 
-			<LoginUserName placeholder='Brugernavn' />
-			<LoginPassword placeholder='Password' type='password' />
+			<Button
+				icon={'mode_edit'}
+				label={'Opret konto'}
+				color={'#81C1EA'}
+			/>
 
-			<RememberMeText>
-				{rememberText}
-				
-				<CheckBox type="checkbox" defaultChecked />
-		
-				<ForgotPasswordText>
-					{forgotPassword}
-				</ForgotPasswordText>
-			</RememberMeText>
+			<Button
+				icon={'lock_open'}
+				onClick={handleLogin}
+				label={'Login'}
+				color={'#25B89A'}
+			/>
 
-			<div style={{ align: 'center' }}>
-				<div style={{ align: 'left' }}>
-					<Button
-						icon={'cancel'}
-						onClick={this.handleLogin}
-						label={'Cancel'}
-						color={'#E74C3C'}
-					/>				
-				</div>
-
-				<div style={{ align: 'right' }}>
-					<Button
-						icon={'lock_open'}
-						onClick={this.handleLogin}
-						label={'Login'}
-						color={'#25B89A'}
-					/>
-				</div>
-			</div>
-
-			<RegiText>
-				{regiText}
-				<RegiComit>
-					{sign}
-				</RegiComit>
-			</RegiText>
+			<br/><br/>
 		</div>
 	)
 }
 
 Content.defaultProps = {
-	isOpen: false,
-	rememberText: 'Husk mig',
-	forgotPassword: 'Glemt Kodeord',
-	regiText: 'Brug for en konto?',
-	sign: 'Tilmeld',
-	labelButton: 'Login',
-
+	isOpen: false
 }

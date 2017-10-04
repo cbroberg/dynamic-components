@@ -6,7 +6,7 @@ import * as Page from 'components/PageComponents'
 
 class Pages extends Component {
 	state = {
-		activePage: 15
+		activePage: 8
 	}
 
 	selectPageIndex(activePage) {
@@ -18,15 +18,6 @@ class Pages extends Component {
 		const { pages, disabled } = this.props
 		return pages.map((page, index) => {
 			const isActive = this.state.activePage === index
-			//TODO: Use Polyfill to support Internet Explorer and Opera - Andrei
-			/* 
-			 if (!String.prototype.includes) {
-     			String.prototype.includes = function() {
-        			'use strict';
-        			return String.prototype.indexOf.apply(this, arguments) !== -1;
-   			  };
- 			}
-			*/
 			const isDisabled = disabled.includes(index)
 			return (
 				<Card
@@ -80,7 +71,7 @@ class Pages extends Component {
 class App extends Component {
 
 	render() {
-		// Add routes to pages so they can be accessed through /buttons, /cards ... 
+		// TODO: Add routes to pages so they can be accessed through /buttons, /cards ... 
 		const pageData = [
 			{
 				label: 'Buttons',
