@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
-import { Tog, Tog2, Tog3 } from 'components/ToggleSwitch/new'
-
+// import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
+import {  Tog3 } from 'components/ToggleSwitch/new'
+//Tog, Tog2,
 class ToggleSwitchPage extends Component {
 
 	state = {
