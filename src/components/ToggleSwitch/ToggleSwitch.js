@@ -21,9 +21,9 @@ class ToggleSwitch extends Component {
 	}
 
 	render() {		
-		const { label, type, /* checked */  } = this.props
+		const { label, type, size /* checked */  } = this.props
 		return (
-			<StyledToggleSwitch>
+			<StyledToggleSwitch size={size}>
 
 				<input 
 					type="checkbox" 
@@ -42,13 +42,15 @@ class ToggleSwitch extends Component {
 ToggleSwitch.propTypes = {
 	label: PropTypes.string.isRequired,
 	type: PropTypes.oneOf(['square', 'round']),
-	checked: PropTypes.bool
+	checked: PropTypes.bool,
+	size: PropTypes.oneOf(['small', 'large']),
 }
 
 ToggleSwitch.defaultProps = {
 	label: '',
 	type: 'square',
-	checked: false
+	checked: false,
+	size: 'large'
 }
 
 export default ToggleSwitch

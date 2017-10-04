@@ -5,13 +5,25 @@ import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
 class ToggleSwitchPage extends Component {
 
 	state = {
-		isChecked: true
+		isChecked: false
 	}
 	
+	toggleswitches = [
+		{ component: <ToggleSwitch checked={true} /> },
+		{ component: <ToggleSwitch label="Rounded" type={"round"} checked={false} /> },
+		{ component: <ToggleSwitch /> }
+	]
+
+	toggles = () => (
+		<div>
+			{this.toggleswitches.map((toggle, index) => (
+				<div key={index}>{toggle.component}</div>
+			))}
+		</div>
+	)
 
 	render() {
-		const { isChecked } = this.state
-		console.log('ToggleSwitch render: ', isChecked)
+		const { isChecked } = this.state		
 		return (
 			<div>
 				<div>
@@ -20,6 +32,7 @@ class ToggleSwitchPage extends Component {
 				<div>
 					<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />
 				</div>
+				{this.toggles()}
 			</div>
 		)
 	}
