@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
-// import {  Tog3 } from 'components/ToggleSwitch/new'
-//Tog, Tog2,
+
 
 class ToggleSwitchPage extends Component {
 
@@ -9,15 +8,6 @@ class ToggleSwitchPage extends Component {
 		isChecked: true
 	}
 	
-	
-	// toggleCheckboxChange = () => {
-	// 	console.log('Toggling ...')
-	// 	this.setState(({ isChecked }) => (
-	// 		{
-	// 			isChecked: !isChecked,
-	// 		}
-	// 	))
-	// }
 
 	render() {
 		const { isChecked } = this.state
@@ -36,4 +26,3 @@ class ToggleSwitchPage extends Component {
 }
 
 export default ToggleSwitchPage
-
