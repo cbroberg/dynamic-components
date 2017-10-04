@@ -36,13 +36,13 @@ class ToggleSwitchPage extends Component {
           		</Tog> */}
 
 				<div>
-					<Tog3 class="label">
+					<Tog3>
 						<input type="checkbox" id="input" checked={isChecked} onChange={this.toggleCheckboxChange} />
 						<span className="slider"></span>
 					</Tog3>
 				</div>
 				<div>
-					<Tog3 class="label">
+					<Tog3>
 						<input type="checkbox" id="inputround" checked={isChecked} onChange={this.toggleCheckboxChange} />
 						<span className="slider round"></span>
 					</Tog3>
