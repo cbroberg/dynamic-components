@@ -9,7 +9,7 @@ class ToggleSwitchPage extends Component {
 	}
 	
 	toggleswitches = [
-		{ component: <ToggleSwitch checked={true} /> },
+		{ component: <ToggleSwitch checked={true} size={"medium"} /> },
 		{ component: <ToggleSwitch label="Rounded" type={"round"} checked={false} /> },
 		{ component: <ToggleSwitch /> }
 	]
@@ -27,7 +27,7 @@ class ToggleSwitchPage extends Component {
 		return (
 			<div>
 				<div>
-					<ToggleSwitch /* label="Squared" type={"square"} */ checked={isChecked} />
+					<ToggleSwitch size={"medium"} /* label="Squared" type={"square"} */ checked={isChecked} />
 				</div>
 				<div>
 					<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />
