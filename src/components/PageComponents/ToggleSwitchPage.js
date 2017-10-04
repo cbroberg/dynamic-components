@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
-import { Tog } from 'components/ToggleSwitch/new'
+import { Tog, Tog2 } from 'components/ToggleSwitch/new'
 
 class ToggleSwitchPage extends Component {
 
@@ -25,15 +25,20 @@ class ToggleSwitchPage extends Component {
 		const { isChecked } = this.state
 		return (
 			<div>
-				<ToggleSwitch>
+				{/* <ToggleSwitch>
 					<input type="checkbox" id="input" checked={isChecked} onChange={this.toggleCheckboxChange}/>
 					<label htmlFor="input"> Toggle </label>
-				</ToggleSwitch>
+				</ToggleSwitch> */}
 
 				<Tog class="switch">
 					<input type="checkbox" id="input" checked={isChecked} onChange={this.toggleCheckboxChange} />
 						<label htmlFor="input"></label>
           		</Tog>
+
+				<Tog2 class="switch">
+					<input type="checkbox" id="input" checked={isChecked} onChange={this.toggleCheckboxChange} />
+					<label htmlFor="input"></label>
+				</Tog2>
 
 			</div>
 		)
