@@ -1,16 +1,44 @@
 import React, { Component } from 'react'
-import Icon from './../Icon/Icon'
-import { LinkChildrenContainer, SlIconContainer, SingleLinkContainer } from 'components/Dropdown/DropdownStyles'
+import PropTypes from 'prop-types'
+import { Photo, TimeInfo, SingleLinkContainer, LinkChildrenContainer, SingleLinkIconContainer } from 'components/Dropdown/DropdownStyles'
 
 class DropDownLink extends Component {
+
 	render() {
+		const { link, photo, label, time, isReaded } = this.props
+
 		return (
-			<SingleLinkContainer padding={this.props.padding} bgColor={this.props.color} hoverColor={this.props.hoverColor} borderColor={this.props.borderColor} href={this.props.href}>
-				<SlIconContainer iconPadding={this.props.iconPadding}><Icon icon={this.props.icon} active={this.props.active} size={this.props.size}/></SlIconContainer>
-				<LinkChildrenContainer txtColor={this.props.txtColor}> {this.props.children }</LinkChildrenContainer>
+			<SingleLinkContainer 
+				isReaded={isReaded}
+				href={link}>
+
+				<SingleLinkIconContainer>
+					<Photo src={photo}/>
+				</SingleLinkIconContainer>
+
+				<LinkChildrenContainer>
+					<label>{label}</label>
+					<TimeInfo>{time}</TimeInfo>
+				</LinkChildrenContainer>
+				
 			</SingleLinkContainer>
 		)
 	}
+}
+
+DropDownLink.propTypes = {
+	link: PropTypes.string,
+	photo: PropTypes.string,
+	time: PropTypes.string,
+	label: PropTypes.string,
+	isReaded: PropTypes.bool
+}
+
+DropDownLink.defaultProps = {
+	link: '#',
+	photo: '#',
+	time: 'place how long time ago something happened',
+	label: 'this i the header of the notifikations'
 }
 
 export default DropDownLink
