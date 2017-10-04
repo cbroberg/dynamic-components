@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import * as colors from 'theme/colors'
 
-export const DropdownContianer = styled.div`
+export const DropdownContainer = styled.div`
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -9,7 +9,7 @@ export const DropdownContianer = styled.div`
     height: fit-content;
     width: fit-content;
 `
-export const DropdownMenuBtn = styled.button`
+export const DropdownMenuButton = styled.button`
     background-color:${colors.BUTTON_DEFAULT};
     padding: 5px 0px 6px 0px; 
     width: 0%;
@@ -35,7 +35,7 @@ export const DropdownContentContainer = styled.div`
 }`
 
 export const SingleLinkContainer = styled.a`
-    background-color: white; 
+    background-color: ${props => props.isReaded ? '#fff' : '#bababa'};
     border-color: ${colors.GAUGE_BACKGROUND};
     padding: 10px 0px 10px 5px;
     display:flex;
@@ -59,7 +59,7 @@ export const LinkChildrenContainer = styled.div`
     width: 85%;
     word-wrap: break-word;
 `
-export const SlIconContainer = styled.div`
+export const SingleLinkIconContainer = styled.div`
     padding:;
     align-content: center;
     display: inline-grid;
@@ -77,18 +77,19 @@ export const TimeInfo = styled.label`
     font-size: 12px;
     display: -webkit-box;
 `
-export const NotificationTopContanoiner = styled.div`
+export const NotificationTopContainer = styled.div`
     background-color: white;
     border-bottom: solid 1px ${colors.GAUGE_BACKGROUND};    
     height: 45px;
 `
-export const NotificationsLbl = styled.label`
+export const NotificationsLabel = styled.label`
     float:left;
     padding:10px;
     font-family:'Source Sans Pro';
     font-size: 15px
+    font-weight: bold;
 `
-export const MarkAsReadBtn = styled.button`
+export const MarkAsReadButton = styled.button`
     border: none;
     background: none;
     padding:11px;
