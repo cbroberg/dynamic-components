@@ -28,7 +28,7 @@ class ToggleSwitchPage extends Component {
 		return (
 			<div>
 				<div>
-					<ToggleSwitch size={"medium"} /* label="Squared" type={"square"} */ checked={isChecked} />
+					<ToggleSwitch size={"medium"} checked={isChecked} />
 				</div>
 				<div>
 					<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />

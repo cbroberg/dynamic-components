@@ -92,7 +92,7 @@ const Content = (props) => {
 			/>
 
 			<Button
-				icon={'mode_edit'}
+				icon={'add_circle_outline'}
 				label={'Opret konto'}
 				color={'#81C1EA'}
 			/>

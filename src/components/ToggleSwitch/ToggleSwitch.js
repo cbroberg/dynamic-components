@@ -21,7 +21,7 @@ class ToggleSwitch extends Component {
 	}
 
 	render() {		
-		const { label, type, size /* checked */  } = this.props
+		const { label, type, size } = this.props
 		return (
 			<StyledToggleSwitch size={size}>
 

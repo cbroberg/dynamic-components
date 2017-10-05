@@ -57,7 +57,7 @@ class ModalPage extends Component {
 				<Modal 
 					isOpen={this.state.modalIsOpen} 
 					onRequestClose={this.onRequestClose} 					
-					icon={'star'} 
+					icon={'web_asset'} 
 					label={'This is a modal window'} 
 					overlayScroll={false}
 					content={
