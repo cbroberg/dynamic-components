@@ -52,7 +52,7 @@ class ModalLoginPage extends Component {
 							handleLogin={this.handleLogin}
 							subtitle={this.state.subtitle}
 							firstName={'Mr.'}
-							lastName={'Modal'} 
+							lastName={'Modal'}
 						/>}
 				/>
 			</div>
@@ -68,25 +68,25 @@ const Content = (props) => {
 		<div>
 			<HeaderImage />
 
-			<Account placeholder='Indtast dit kundenummer' />
+			<Account placeholder='Kundenummer' />
 			<Username placeholder='Brugernavn' />
-			<Password placeholder='Password' type='password' />
+			<Password placeholder='Adgangskode' type='password' />
 
-			<Remember>Husk mig</Remember>
+			<ToggleSwitch checked={true} size="small" />
 
-			<ToggleSwitch checked={true} size="medium" />
+			<Remember>Husk min adgangskode</Remember>
 
-			<br /><br />
+			<br /><br /><br />
 
 			<Button
 				icon={'cancel'}
 				onClick={onRequestClose}
 				label={'Cancel'}
 				color={'#E74C3C'}
-			/>			
+			/>
 
 			<Button
-				icon={'help_outline'}				
+				icon={'help_outline'}
 				label={'Glemt password?'}
 				color={'#81C1EA'}
 			/>
@@ -104,11 +104,41 @@ const Content = (props) => {
 				color={'#25B89A'}
 			/>
 
-			<br/><br/>
+			<br /><br />
+			<NameForm />
 		</div>
 	)
 }
 
 Content.defaultProps = {
 	isOpen: false
+}
+
+class NameForm extends React.Component {
+
+	constructor(props) {
+		super(props)
+		this.state = { value: '' }
+	}
+
+	handleChange = (event) => {
+		this.setState({ value: event.target.value })
+	}
+
+	handleSubmit = (event) => {
+		alert('A name was submitted: ' + this.state.value)
+		event.preventDefault()
+	}
+
+	render() {
+		return (
+			<form onSubmit={this.handleSubmit}>
+				<label>
+					Name:
+         			<input placeholder={"Type your name"} type="text" value={this.state.value} onChange={this.handleChange} />
+				</label>
+				<input type="submit" value="Submit" />
+			</form>
+		)
+	}
 }
