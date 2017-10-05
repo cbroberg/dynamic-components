@@ -50,7 +50,7 @@ ToggleSwitch.defaultProps = {
 	label: '',
 	type: 'square',
 	checked: false,
-	size: 'large'
+	size: 'medium'
 }
 
 export default ToggleSwitch

@@ -9,9 +9,10 @@ class ToggleSwitchPage extends Component {
 	}
 	
 	toggleswitches = [
-		{ component: <ToggleSwitch checked={true} size={"medium"} /> },
+		{ component: <ToggleSwitch checked={true} size={"large"} /> },
 		{ component: <ToggleSwitch label="Rounded" type={"round"} checked={false} /> },
-		{ component: <ToggleSwitch /> }
+		{ component: <ToggleSwitch /> },
+		{ component: <ToggleSwitch type={"round"} size={"large"} checked={true}/> }
 	]
 
 	toggles = () => (
