@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledModal, StyledModalHeader, StyledModalContent, StyledModalHeaderIcon, StyledModalHeaderTitle, StyledModalHeaderClose } from 'components/Modal/ModalStyles'
+import { StyledModalContainer, StyledModal, StyledModalHeader, StyledModalContent, StyledModalHeaderIcon, StyledModalHeaderTitle, StyledModalHeaderClose } from 'components/Modal/ModalStyles'
 import Icon from 'components/Icon/Icon'
 import * as colors from 'theme/colors'
 
@@ -14,6 +14,7 @@ class Modal extends Component {
 
 		return (
 			<div>
+				<StyledModalContainer>
 				<StyledModal 
 					isOpen={isOpen} 
 					onAfterOpen={onAfterOpen} 
@@ -44,6 +45,7 @@ class Modal extends Component {
 					</StyledModalContent>
 					
 				</StyledModal>
+				</StyledModalContainer>
 			</div>
 		)
 	}

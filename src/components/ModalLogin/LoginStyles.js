@@ -42,25 +42,23 @@ export const Account = InputFields.extend`
 export const Username = InputFields.extend`
 	height: 10%; 
 	width: 100%;
-	margin-top: 20px; 
+	margin-top: 15px; 
 `
 
 export const Password = InputFields.extend`
 	height: 10%; 
 	width: 100%;
-	margin-top: 20px; 
-	margin-bottom: 20px;
+	margin-top: 15px; 
+	margin-bottom: 15px;
 `
 
-export const Remember = styled.p`
-    font-family: 'Source Sans Pro';
+export const Remember = styled.label`
+	display: block;
+	float: right;
+	font-family: 'Source Sans Pro';
 	font-size: 1.8rem;
 	font-weight: 300;
 	text-align: left;
-	margin-top: 0px;
-	margin-bottom: 10px;
-	/* display: inline-flex; */
-	/* flex-direction: row; */
-	color: #2C3E50;
+	margin-top: 2px;
+	width: calc(100% - 60px);
 `
-

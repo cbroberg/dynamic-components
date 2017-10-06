@@ -27,8 +27,8 @@ export const StyledToggleSwitch = styled.label`
 	>.slider:before {
 		position: absolute;
 		content: "";
-		height: 26px;
-		width: 26px;
+		width: ${({ size }) => sizes[size].sliderWidth};
+		height: ${({ size }) => sizes[size].sliderHeight};
 		left: 4px;
 		bottom: 4px;
 		background-color: white;
@@ -59,18 +59,24 @@ export const StyledToggleSwitch = styled.label`
 
 const sizes = {	
 	small: {
-		width: '40px',
-		height: '18px',
-		transform: '20px'
+		width: '51px',
+		height: '26px',
+		sliderWidth: '18px',
+		sliderHeight: '18px',		
+		transform: '25px' // Goes up when other values goes down
 	},
 	medium: {
 		width: '61px',
 		height: '34px',
+		sliderWidth: '26px',
+		sliderHeight: '26px',		
 		transform: '27px'
 	},
 	large: {
 		width: '90px',
 		height: '34px',
+		sliderWidth: '26px',
+		sliderHeight: '26px',		
 		transform: '56px'
 	}
 }

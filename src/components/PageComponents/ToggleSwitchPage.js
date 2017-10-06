@@ -5,14 +5,26 @@ import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
 class ToggleSwitchPage extends Component {
 
 	state = {
-		isChecked: false
+		isChecked: false,
+		valueCheck: null
 	}
-	
+
+	handleChange = () => {
+		this.setState(({ valueCheck }) => (
+			{
+				valueCheck: !valueCheck,
+			}
+		))
+		console.log('Callback executed ... state.valueCheck = ', this.state.valueCheck)
+	}
+
 	toggleswitches = [
+		{ component: <ToggleSwitch type={"square"} size={"small"} checked={false} onChange={this.handleChange} /> },
+		{ component: <ToggleSwitch type={"round"} size={"small"} checked={true} /> },
 		{ component: <ToggleSwitch checked={true} size={"large"} /> },
 		{ component: <ToggleSwitch label="Rounded" type={"round"} checked={false} /> },
 		{ component: <ToggleSwitch /> },
-		{ component: <ToggleSwitch type={"round"} size={"large"} checked={true}/> }
+		{ component: <ToggleSwitch type={"round"} size={"large"} checked={true}/> },
 	]
 
 	toggles = () => (
@@ -24,17 +36,14 @@ class ToggleSwitchPage extends Component {
 	)
 
 	render() {
+		console.log('state.valueCheck = ', this.state.valueCheck)
 		const { isChecked } = this.state		
 		return (
 			<div>
-				<div>
-					<ToggleSwitch size={"medium"} /* label="Squared" type={"square"} */ checked={isChecked} />
-				</div>
-				<div>
-					<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />
-				</div>
 				{this.toggles()}
-			</div>
+				<ToggleSwitch size={"medium"} checked={isChecked} />
+				<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />
+			</div>		
 		)
 	}
 }
