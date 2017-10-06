@@ -18,21 +18,21 @@ class ButtonsPage extends Component {
 				<Div flex={'column nowrap'} >
 					<ButtonPanel justify='left' debug={true} Content={[
 						<Button
-							label='Button 1'
+							label='Button 1 with a long name'
 							icon='mail_outline'
 							iconSize={18}
 							color={'#3B97D3'}
 							onClick={(e) => copyToClipboard(e, 'Mail is now send', true)}
 						/>,
 						<Button
-							label='Button 2'
+							label='Button 2 with a long name'
 							icon='settings'
 							iconSize={18}
 							color={'#3B97D3'}
 							onClick={(e) => copyToClipboard(e, 'Mail is now send', true)}
 						/>,
 						<Button
-							label='Button 3'
+							label='Button 3 with a long name'
 							icon='menu'
 							iconSize={18}
 							color={'#3B97D3'}

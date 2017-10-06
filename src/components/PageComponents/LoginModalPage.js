@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Modal from 'components/Modal/Modal'
 import Button from 'components/Button/Button'
+import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
 import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
 import { Account, Username, Password, HeaderImage, Remember } from './../ModalLogin/LoginStyles'
 
@@ -45,7 +46,7 @@ class ModalLoginPage extends Component {
 					icon={'lock_open'}
 					label={'Login'}
 					overlayScroll={false}
-					width={'555px'}
+					width={'590px'}
 					content={
 						<Content
 							onRequestClose={this.onRequestClose}
@@ -90,31 +91,33 @@ class Content extends Component {
 
 				<br /><br /><br />
 
-				<Button
-					icon={'cancel'}
-					onClick={onRequestClose}
-					label={'Cancel'}
-					color={'#E74C3C'}
-				/>
+				<ButtonPanel>
+					<Button
+						icon={'cancel'}
+						onClick={onRequestClose}
+						label={'Cancel'}
+						color={'#E74C3C'}
+					/>
 
-				<Button
-					icon={'help_outline'}
-					label={'Glemt password?'}
-					color={'#81C1EA'}
-				/>
+					<Button
+						icon={'help_outline'}
+						label={'Glemt password?'}
+						color={'#81C1EA'}
+					/>
 
-				<Button
-					icon={'add_circle_outline'}
-					label={'Opret konto'}
-					color={'#81C1EA'}
-				/>
+					<Button
+						icon={'add_circle_outline'}
+						label={'Opret konto'}
+						color={'#81C1EA'}
+					/>
 
-				<Button
-					icon={'lock_open'}
-					onClick={handleLogin}
-					label={'Login'}
-					color={'#25B89A'}
-				/>
+					<Button
+						icon={'lock_open'}
+						onClick={handleLogin}
+						label={'Login'}
+						color={'#25B89A'}
+					/>
+				</ButtonPanel>
 
 				<br /><br />
 			</div>
