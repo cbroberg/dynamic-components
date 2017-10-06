@@ -23,6 +23,14 @@ class ToggleSwitch extends Component {
 		}
 	}
 
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.checked !== this.props.checked) {
+			this.setState({ isChecked: nextProps.checked })	
+		}
+		this.setState({ isChecked: nextProps.checked })
+	}
+	
+
 	render() {		
 		const { label, type, size } = this.props
 		return (
