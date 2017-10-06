@@ -72,7 +72,6 @@ class Content extends Component {
 				isChecked: !isChecked,
 			}
 		))
-		console.log(this.state.isChecked)
 	}
 
 	render() {

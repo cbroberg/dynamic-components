@@ -15,7 +15,6 @@ class ToggleSwitchPage extends Component {
 				valueCheck: !valueCheck,
 			}
 		))
-		console.log('Callback executed ... state.valueCheck = ', this.state.valueCheck)
 	}
 
 	toggleswitches = [
