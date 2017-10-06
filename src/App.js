@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 
 class Pages extends Component {
 	state = {
-		activePage: 16
+		activePage: 8
 	}
 
 	selectPageIndex(activePage) {
@@ -155,9 +155,9 @@ class App extends Component {
 				content: <Page.ToggleSwitchPage />
 			},
 			{
-				label: 'Buttons Panel',
+				label: 'Button Panel',
 				description: "Buttons Containoiner (16)",
-				content: <Page.ButtonsPanelPage/>
+				content: <Page.ButtonPanelPage/>
 			},
 			{
 				label: 'Disabled',

@@ -8,7 +8,7 @@ const Div = styled.div`
 	display:flex;
 	flex-flow: ${(props) => props.flex}
 `
-class ButtonsPage extends Component {
+class ButtonPanelPage extends Component {
 
 	render() {
 		return (
@@ -296,4 +296,4 @@ class ButtonsPage extends Component {
 	}
 }
 
-export default ButtonsPage
+export default ButtonPanelPage
