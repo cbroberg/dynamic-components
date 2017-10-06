@@ -50,9 +50,6 @@ class ModalLoginPage extends Component {
 						<Content
 							onRequestClose={this.onRequestClose}
 							handleLogin={this.handleLogin}
-							subtitle={this.state.subtitle}
-							firstName={'Mr.'}
-							lastName={'Modal'}
 						/>}
 				/>
 			</div>
@@ -62,53 +59,70 @@ class ModalLoginPage extends Component {
 
 export default ModalLoginPage
 
-const Content = (props) => {
-	const { onRequestClose, handleLogin } = props
-	return (
-		<div>
-			<HeaderImage />
+class Content extends Component {
 
-			<Account placeholder='Kundenummer' />
-			<Username placeholder='Brugernavn' />
-			<Password placeholder='Adgangskode' type='password' />
+	state = {
+		isChecked: true
+	}
 
-			<ToggleSwitch checked={true} size="small" />
+	handleChange = () => {
+		this.setState(({ isChecked }) => (
+			{
+				isChecked: !isChecked,
+			}
+		))
+		console.log(this.state.isChecked)
+	}
 
-			<Remember>Husk min adgangskode</Remember>
+	render() {
+		const { onRequestClose, handleLogin } = this.props
+		return (
+			<div>
+				<HeaderImage />
 
-			<br /><br /><br />
+				<Account placeholder='Kundenummer' />
+				<Username placeholder='Brugernavn' />
+				<Password placeholder='Adgangskode' type='password' />
 
-			<Button
-				icon={'cancel'}
-				onClick={onRequestClose}
-				label={'Cancel'}
-				color={'#E74C3C'}
-			/>
+				<ToggleSwitch checked={this.state.isChecked} size="small" onChange={this.handleChange} />
 
-			<Button
-				icon={'help_outline'}
-				label={'Glemt password?'}
-				color={'#81C1EA'}
-			/>
+				<Remember onClick={this.handleChange}>Husk min adgangskode</Remember>
 
-			<Button
-				icon={'add_circle_outline'}
-				label={'Opret konto'}
-				color={'#81C1EA'}
-			/>
+				<br /><br /><br />
 
-			<Button
-				icon={'lock_open'}
-				onClick={handleLogin}
-				label={'Login'}
-				color={'#25B89A'}
-			/>
+				<Button
+					icon={'cancel'}
+					onClick={onRequestClose}
+					label={'Cancel'}
+					color={'#E74C3C'}
+				/>
 
-			<br /><br />
-		</div>
-	)
+				<Button
+					icon={'help_outline'}
+					label={'Glemt password?'}
+					color={'#81C1EA'}
+				/>
+
+				<Button
+					icon={'add_circle_outline'}
+					label={'Opret konto'}
+					color={'#81C1EA'}
+				/>
+
+				<Button
+					icon={'lock_open'}
+					onClick={handleLogin}
+					label={'Login'}
+					color={'#25B89A'}
+				/>
+
+				<br /><br />
+			</div>
+		)
+	}
 }
 
-Content.defaultProps = {
-	isOpen: false
-}
+
+// Content.defaultProps = {
+// 	isOpen: false
+// }

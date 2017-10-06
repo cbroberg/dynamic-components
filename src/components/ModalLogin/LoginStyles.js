@@ -55,6 +55,8 @@ export const Password = InputFields.extend`
 export const Remember = styled.label`
 	display: block;
 	float: right;
+	cursor: pointer;
+	user-select: none;
 	font-family: 'Source Sans Pro';
 	font-size: 1.8rem;
 	font-weight: 300;
