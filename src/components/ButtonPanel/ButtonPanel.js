@@ -4,10 +4,10 @@ import StyledButtonPanel from './ButtonPanelStyles'
 
 export default class ButtonPanel extends Component {
 	render() {
-		const { Content, children, ...styles } = this.props
+		const { content, children, ...styles } = this.props
 		return (
 			<StyledButtonPanel {...styles}>
-				{Content ? Content.map((Button, index) => React.cloneElement(Button, { key: index })) :
+				{content ? content.map((button, index) => React.cloneElement(button, { key: index })) :
 					children ? children : null
 				}
 			</StyledButtonPanel>

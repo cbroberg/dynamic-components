@@ -6,17 +6,17 @@ import styled from 'styled-components'
 
 //This is used just for demo purposes
 const Div = styled.div`
-display:flex;
-flex-flow: ${(props) => props.flex}
+	display:flex;
+	flex-flow: ${(props) => props.flex}
 `
 class ButtonsPage extends Component {
 
 	render() {
 		return (
 			<div>
-				Panel Row(default) With Content, default props
+				Panel (direction row default props) with content, default props
 				<Div flex={'column nowrap'} >
-					<ButtonPanel justify='left' debug={true} Content={[
+					<ButtonPanel justify='left' debug={true} content={[
 						<Button
 							label='Button 1 with a long name'
 							icon='mail_outline'
@@ -39,7 +39,7 @@ class ButtonsPage extends Component {
 							onClick={(e) => copyToClipboard(e, 'Mail is now send', true)}
 						/>]
 					} />
-					<ButtonPanel justify='right' debug={true} Content={[
+					<ButtonPanel justify='right' debug={true} content={[
 						<Button
 							label='Button 1'
 							icon='mail_outline'
@@ -166,10 +166,10 @@ class ButtonsPage extends Component {
 					</Div>
 				</div>
 				<div>
-					Panel Column with Content
+					Panel Column with content
 					<Div flex='row nowrap'>
 						<ButtonPanel direction='column'
-							Content={[
+							content={[
 								<Button
 									label='Button 1'
 									icon='mail_outline'
@@ -192,7 +192,7 @@ class ButtonsPage extends Component {
 									onClick={(e) => copyToClipboard(e, 'Mail is now send', true)}
 								/>]
 							} />
-						<ButtonPanel direction='column' justify='left' debug={true} Content={[
+						<ButtonPanel direction='column' justify='left' debug={true} content={[
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -271,10 +271,10 @@ class ButtonsPage extends Component {
 					</Div>
 				</div>
 				<div>
-					Panel Column with Content
+					Panel Column with content
 					<Div flex='row nowrap'>
 						<ButtonPanel direction='row' justify={'spaceBetween'} width={'100%'}
-							Content={[
+							content={[
 								<Button
 									label='Button 1'
 									icon='mail_outline'
@@ -298,7 +298,7 @@ class ButtonsPage extends Component {
 								/>]
 							} />
 						<ButtonPanel direction='row' debug={true} justify={'spaceBetween'} width={'100%'}
-						 Content={[
+						 content={[
 							<Button
 								label='Button 1'
 								icon='mail_outline'
