@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import { transparentize, darken, rgba } from 'polished'
 import { BUTTON_TEXT } from 'theme/colors'
 
+export const Div = styled.div`
+	height:${({ size }) => sizes[size].height};
+	margin: 0.3rem 0.7rem 0.3rem 0.7rem;
+`
 
 const StyledButton = styled.button`
     display: flex;
@@ -12,7 +16,7 @@ const StyledButton = styled.button`
 	padding: 0px;
 	padding: ${(props) => props.hasIconText ? '0 13px 0 15px' : props.hasText ? '0 8px 0 15px' : props.hasIcon ? '0 0 0 10px' : '0 0 0 15px'};
 	height: ${({ size }) => sizes[size].height};
-	margin: 0 0.7rem 0.7rem 0;
+	/* margin: 0.3rem 0.7rem 0.7rem 0; */
 	border: none;
     text-decoration: none;
 	cursor: ${(props) => props.isDisabled ? 'not-allowed' : 'pointer'};

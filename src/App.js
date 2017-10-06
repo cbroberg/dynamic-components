@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
 import Card from 'components/Card/Card'
 import * as Page from 'components/PageComponents'
-	
+
 
 class Pages extends Component {
 	state = {
-		activePage: 8
+		activePage: 16
 	}
 
 	selectPageIndex(activePage) {
@@ -152,6 +152,11 @@ class App extends Component {
 				label: 'Toggle Switch',
 				description: 'Toggle Switch (15)',
 				content: <Page.ToggleSwitchPage />
+			},
+			{
+				label: 'Buttons Panel',
+				description: "Andrei's amazing containoiner(16?)",
+				content: <Page.ButtonsPanelPage/>
 			},
 			{
 				label: 'Disabled',
