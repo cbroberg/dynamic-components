@@ -16,7 +16,7 @@ class ButtonsPage extends Component {
 			<div>
 				Panel Row(default) With Content, default props
 				<Div flex={'column nowrap'} >
-					<ButtonPanel Content={[
+					<ButtonPanel justify='left' debug={true} Content={[
 						<Button
 							label='Button 1'
 							icon='mail_outline'
@@ -39,7 +39,7 @@ class ButtonsPage extends Component {
 							onClick={(e) => copyToClipboard(e, 'Mail is now send', true)}
 						/>]
 					} />
-					<ButtonPanel debug={true} Content={[
+					<ButtonPanel justify='right' debug={true} Content={[
 						<Button
 							label='Button 1'
 							icon='mail_outline'
