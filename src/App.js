@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import { Divider, StyledToast } from 'AppStyles'
 import Card from 'components/Card/Card'
 import * as Page from 'components/PageComponents'
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 
 class Pages extends Component {
 	state = {
-		activePage: 8
+		activePage: 16
 	}
 
 	selectPageIndex(activePage) {
@@ -165,25 +166,44 @@ class App extends Component {
 			},
 		]
 		return (
-			<div>
-				{this.props.version === 1 ?
-					<div>
-						<Pages pages={pageData} disabled={[pageData.length - 1]} />
-						<StyledToast
-							position='top-right'
-							type='default'
-							autoClose={2000}
-							hideProgressBar={false}
-							newestOnTop={false}
-							closeOnClick
-							pauseOnHover
-						/>
-					</div> :
-					<div>
-						<Page.DropdownLitePage />
-					</div>
-				}
-			</div>
+			<Router>
+				<div>
+					{this.props.version === 1 ?
+						<div>
+							<Pages pages={pageData} disabled={[pageData.length - 1]} />
+
+							<Route path="/buttons" component={Page.ButtonsPage} />
+							<Route path="/cards" component={Page.CardsPage} />
+							<Route path="/toggle" component={Page.ToggleSwitchPage} />
+
+
+							<StyledToast
+								position='top-right'
+								type='default'
+								autoClose={2000}
+								hideProgressBar={false}
+								newestOnTop={false}
+								closeOnClick
+								pauseOnHover
+							/>
+						</div> :
+						<div>
+							<Route path="/buttons" component={Page.ButtonsPage} />
+							<Route path="/cards" component={Page.CardsPage} />
+							<Route path="/toggle" component={Page.ToggleSwitchPage} />
+							<StyledToast
+								position='top-right'
+								type='default'
+								autoClose={2000}
+								hideProgressBar={false}
+								newestOnTop={false}
+								closeOnClick
+								pauseOnHover
+							/>
+						</div>
+					}
+				</div>
+			</Router>
 		)
 	}
 }
