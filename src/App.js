@@ -155,7 +155,7 @@ class App extends Component {
 			},
 			{
 				label: 'Buttons Panel',
-				description: "Andrei's amazing containoiner(16?)",
+				description: "Buttons Containoiner (16)",
 				content: <Page.ButtonsPanelPage/>
 			},
 			{
