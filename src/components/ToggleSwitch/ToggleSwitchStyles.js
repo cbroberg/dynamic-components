@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const StyledToggleSwitch = styled.label`
 	position: relative;
 	display: inline-block;
+	border-radius: 4px;
 	width: ${({ size }) => sizes[size].width};
 	height: ${({ size }) => sizes[size].height};
 	user-select: none;
