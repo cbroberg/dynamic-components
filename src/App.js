@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 
 class Pages extends Component {
 	state = {
-		activePage: 8
+		activePage: 15
 	}
 
 	selectPageIndex(activePage) {
@@ -171,11 +171,6 @@ class App extends Component {
 					{this.props.version === 1 ?
 						<div>
 							<Pages pages={pageData} disabled={[pageData.length - 1]} />
-
-							<Route path="/buttons" component={Page.ButtonsPage} />
-							<Route path="/cards" component={Page.CardsPage} />
-							<Route path="/toggle" component={Page.ToggleSwitchPage} />
-
 
 							<StyledToast
 								position='top-right'
