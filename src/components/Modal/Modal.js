@@ -4,9 +4,14 @@ import { StyledModalContainer, StyledModal, StyledModalHeader, StyledModalConten
 import Icon from 'components/Icon/Icon'
 import * as colors from 'theme/colors'
 
+/* 
+TODO: Refactor the content prop to become a real render prop. 
+Rename "content" to "render" and create a PropType.func.isRequired to 
+ensure passing a function that returns a component with the content 
+that needs to be rendered in <StyledModalContent>
+ */
 
 class Modal extends Component {
-
 
 	render() {
 

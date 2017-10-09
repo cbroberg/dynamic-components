@@ -29,7 +29,7 @@ class ModalPage extends Component {
 		}
 	}
 
-	onRequestClose = () => {
+	handleRequestClose = () => {
 		this.setState({
 			modalIsOpen: false
 		})
@@ -56,13 +56,13 @@ class ModalPage extends Component {
 								
 				<Modal 
 					isOpen={this.state.modalIsOpen} 
-					onRequestClose={this.onRequestClose} 					
+					onRequestClose={this.handleRequestClose} 					
 					icon={'web_asset'} 
 					label={'This is a modal window'} 
 					overlayScroll={false}
 					content={
 						<Content 
-							onRequestClose={this.onRequestClose} 
+							onRequestClose={this.handleRequestClose} 
 							changeSubtitle={this.changeSubtitle} 
 							subtitle={this.state.subtitle} 
 							firstName={'Mr.'} 
@@ -100,7 +100,7 @@ const Content = (props) => {
 				/>
 
 				<Button
-					label={'Hello World'}
+					label={'Change subtitel'}
 					icon='language'
 					iconSize={18}
 					color={'#2AC639'}
