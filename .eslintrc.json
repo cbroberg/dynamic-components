@@ -32,7 +32,7 @@
 		"react/jsx-no-bind": [2,
 			{
 				"ignoreRefs": true,
-				"allowArrowFunctions": true,
+				"allowArrowFunctions": false,
 				"allowBind": false
 			}
 		]
