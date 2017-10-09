@@ -4,18 +4,12 @@ import { StyledModalContainer, StyledModal, StyledModalHeader, StyledModalConten
 import Icon from 'components/Icon/Icon'
 import * as colors from 'theme/colors'
 
-/* 
-TODO: Refactor the content prop to become a real render prop. 
-Rename "content" to "render" and create a PropType.func.isRequired to 
-ensure passing a function that returns a component with the content 
-that needs to be rendered in <StyledModalContent>
- */
 
 class Modal extends Component {
 
 	render() {
 
-		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, content, overlayScroll, width, icon, label, shouldCloseOnOverlayClick } = this.props
+		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, render, overlayScroll, width, icon, label, shouldCloseOnOverlayClick } = this.props
 
 		return (
 			<div>
@@ -46,7 +40,8 @@ class Modal extends Component {
 					</StyledModalHeader>
 					
 					<StyledModalContent>
-						{content ? content : this.defaultProps.content}
+						{/* render() executes the render prop passed down to Modal */}
+						{render()}						
 					</StyledModalContent>
 					
 				</StyledModal>
@@ -67,7 +62,7 @@ Modal.propTypes = {
 	}),
 	overlayScroll: PropTypes.bool,
 	width: PropTypes.string,
-	content: PropTypes.any,
+	render: PropTypes.func.isRequired,
 	icon: PropTypes.string,
 	label: PropTypes.string.isRequired,
 	shouldCloseOnOverlayClick: PropTypes.bool
@@ -78,7 +73,6 @@ Modal.defaultProps = {
 	label: '',
 	overlayScroll: false,
 	width: '500px',
-	content: 'You forgot to put some content here ...'
 }
 
 export default Modal

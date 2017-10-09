@@ -29,6 +29,15 @@ class ModalLoginPage extends Component {
 		this.setState({ modalIsOpen: false })
 	}
 
+	handleRender = () => {
+		return (
+			<Content
+				onRequestClose={this.onRequestClose}
+				handleLogin={this.handleLogin}
+			/>		
+		)
+	}
+
 	render() {
 		return (
 			<div>
@@ -47,11 +56,7 @@ class ModalLoginPage extends Component {
 					label={'Login'}
 					overlayScroll={false}
 					width={'590px'}
-					content={
-						<Content
-							onRequestClose={this.onRequestClose}
-							handleLogin={this.handleLogin}
-						/>}
+					render={this.handleRender}
 				/>
 			</div>
 		)

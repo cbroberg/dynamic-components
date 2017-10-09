@@ -43,6 +43,39 @@ class ModalPage extends Component {
 		this.setState({ subtitle: getRandomMessage() })
 	}
 
+	renderModal = () => {
+		return (
+			<div>
+				<h1>Mr. Modal</h1>
+				<h3>{this.state.subtitle}</h3>
+				<div>
+					<p>Here is a list:</p>
+					<ul>
+						<li>Modal Window Item 1</li>
+						<li>Modal Window Item 2</li>
+						<li>{this.state.subtitle}</li>
+					</ul>
+
+					<Button
+						label={'Close Modal'}
+						icon='close'
+						iconSize={18}
+						color={'#E74C3C'}
+						onClick={this.handleRequestClose}
+					/>
+
+					<Button
+						label={'Change subtitel'}
+						icon='language'
+						iconSize={18}
+						color={'#2AC639'}
+						onClick={this.changeSubtitle}
+					/>
+				</div>
+			</div>
+		)
+	}
+
 	render() {
 		return (
 			<div>
@@ -60,55 +93,11 @@ class ModalPage extends Component {
 					icon={'web_asset'} 
 					label={'This is a modal window'} 
 					overlayScroll={false}
-					content={
-						<Content 
-							onRequestClose={this.handleRequestClose} 
-							changeSubtitle={this.changeSubtitle} 
-							subtitle={this.state.subtitle} 
-							firstName={'Mr.'} 
-							lastName={'Modal'}
-						/>}
+					render={this.renderModal}
 				/>
-
 			</div>
 		)
 	}
 }
 
 export default ModalPage
-
-
-const Content = (props) => {
-	return (
-		<div>
-			<h1>{props.firstName} {props.lastName}</h1>
-			<h3>{props.subtitle}</h3>
-			<div>
-				<p>Here is a list:</p>
-				<ul>
-					<li>Modal Window Item 1</li>
-					<li>Modal Window Item 2</li>
-					<li>{props.subtitle}</li>
-				</ul>
-
-				<Button
-					label={'Close Modal'}
-					icon='close'
-					iconSize={18}
-					color={'#E74C3C'}
-					onClick={props.onRequestClose}
-				/>
-
-				<Button
-					label={'Change subtitel'}
-					icon='language'
-					iconSize={18}
-					color={'#2AC639'}
-					onClick={props.changeSubtitle}
-				/>
-
-
-			</div>
-		</div>
-	)
-}
