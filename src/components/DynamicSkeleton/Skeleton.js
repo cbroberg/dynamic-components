@@ -35,17 +35,17 @@ class Skeleton extends Component {
 				css = ""
 			}
 		})
-		return temp1.map((properties, index) =>  < SkeletonDiv key={index} innerRef={(skeletonDivRef) => {return skeletonDivRef !== null ? skeletonDivRef.style = properties : null}} />)
+		return temp1.map((properties, index) =>  < SkeletonDiv key={index} innerRef={ (skeletonDivRef) => { return skeletonDivRef !== null ? skeletonDivRef.style = properties : null } } />)
 	}
         
 	render() {
 		return (
-            <div>
-                {this.state.isLoading ?
-            <div>
-                {this.renderChild()}</div> :
-                <div>{this.props.children}</div>}
-           </div>
+			<div>
+				{this.state.isLoading ?
+					<div>
+						{this.renderChild()}</div> :
+					<div>{this.props.children}</div>}
+			</div>
 		)
 	}
 }
