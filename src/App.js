@@ -73,88 +73,93 @@ class App extends Component {
 		// TODO: Add routes to pages so they can be accessed through /buttons, /cards ... 
 		const pageData = [
 			{
+				label: 'AllFormCard',
+				description: 'AllFormCard (0)',
+				content: < Page.AllFormCardPage />
+			},
+			{
 				label: 'Buttons',
-				description: 'Buttons (0)',
+				description: 'Buttons (1)',
 				content: <Page.ButtonsPage />
 			},
 			{
 				label: 'Cards',
-				description: 'Cards (1)',
+				description: 'Cards (2)',
 				content: <Page.CardsPage />
 			},
 			{
 				label: 'Colors',
-				description: 'Colors (2)',
+				description: 'Colors (3)',
 				content: <Page.ColorsPage />
 			},
 			{
 				label: 'Dropdown',
-				description: 'Dropdown (3)',
+				description: 'Dropdown (4)',
 				content: <Page.DropdownsPage />
 			},
 			{
 				label: 'Dropdown Lite',
-				description: 'Dropdown Lite (4)',
+				description: 'Dropdown Lite (5)',
 				content: <Page.DropdownLitePage />
 			},
 			{
 				label: 'Dynamic Skeleton',
-				description: 'Dynamic Skeletons (5)',
+				description: 'Dynamic Skeletons (6)',
 				content: <Page.DynamicSkeletonPage />
 			},
 			{
 				label: 'Icons',
-				description: 'Icons (6)',
+				description: 'Icons (7)',
 				content: <Page.IconsPage />
 			},
 			{
 				label: 'Loaders',
-				description: 'Loaders (7)',
+				description: 'Loaders (8)',
 				content: <Page.LoadersPage />
 			},
 			{
 				label: 'Loginmodal',
-				description: 'Login Modal (8)',
+				description: 'Login Modal (9)',
 				content: <Page.LoginModalPage />
 			},
 			{
 				label: 'Meters',
-				description: 'Meters (9)',
+				description: 'Meters (10)',
 				content: <Page.MetersPage />
 			},
 			{
 				label: 'Modal',
-				description: 'Modal (10)',
+				description: 'Modal (11)',
 				content: <Page.ModalPage />
 			},
 			{
 				label: 'Pickers',
-				description: 'Pickers (11)',
+				description: 'Pickers (12)',
 				content: <Page.PickersPage />
 			},
 			{
 				label: 'Skeletons',
-				description: 'Skeletons (12)',
+				description: 'Skeletons (13)',
 				content: <Page.SkeletonPage />
 			},
 			{
 				label: 'SourcePointer',
-				description: 'SourcePointer (13)',
+				description: 'SourcePointer (14)',
 				content: <Page.SourcePointerPage />
 			},
 			{
 				label: 'Tags',
-				description: 'Tags (14)',
+				description: 'Tags (15)',
 				content: <Page.TagsPage />
 			},
 			{
 				label: 'Toggle Switch',
-				description: 'Toggle Switch (15)',
+				description: 'Toggle Switch (16)',
 				content: <Page.ToggleSwitchPage />
 			},
 			{
 				label: 'Button Panel',
-				description: "Buttons Containoiner (16)",
+				description: "Buttons Containoiner (17)",
 				content: <Page.ButtonPanelPage/>
 			},
 			{
