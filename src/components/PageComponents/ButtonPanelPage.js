@@ -52,7 +52,7 @@ class ButtonPanelPage extends Component {
 				</Div>
 				<div>
 					ButtonPanel (direction row default) with children, default props
-				<Div flex={'column nowrap'}>
+					<Div flex={'column nowrap'}>
 						<ButtonPanel debug={true}>
 							<Button
 								label='Button 1'
@@ -232,22 +232,22 @@ class ButtonPanelPage extends Component {
 							} />
 						<ButtonPanel direction='row' justify={'spaceBetween'} width={'100%'} debug={true} 
 						 content={[
-							<Button
-								label='Button 1'
-								icon='mail_outline'
-								color={'#3B97D3'}
-							/>,
-							<Button
-								label='Button 2'
-								icon='settings'
-								color={'#3B97D3'}
-							/>,
-							<Button
-								label='Button 3'
-								icon='menu'
-								color={'#3B97D3'}
-							/>]
-						}>
+								<Button
+									label='Button 1'
+									icon='mail_outline'
+									color={'#3B97D3'}
+								/>,
+								<Button
+									label='Button 2'
+									icon='settings'
+									color={'#3B97D3'}
+								/>,
+								<Button
+									label='Button 3'
+									icon='menu'
+									color={'#3B97D3'}
+								/>]
+							}>
 
 						</ButtonPanel>
 					</Div>
