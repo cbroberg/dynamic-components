@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import Modal from 'components/Modal/Modal'
 import { Button, Modal } from 'odeum-ui'
 
 var messages = [
