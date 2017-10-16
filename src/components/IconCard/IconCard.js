@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyledIconCard, StyledIconCardContainer, StyledIconCardHeader, StyledIconCardContent, StyledIconCardIcon, StyledIconCardContentLink } from 'components/IconCard/IconCardStyles'
-import Icon from 'components/Icon/Icon'
+import { Icon } from 'odeum-ui'
 
 class IconCard extends Component {
 	

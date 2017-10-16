@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import FormCard from 'components/AllFormCard/AllFormCard'
-import Icon from 'components/Icon/Icon'
+import { Icon } from 'odeum-ui'
 import { Container, ContentContainer, LabelHeader, Header, IconDiv, Label, Contentdiv, Paragraf, ProgressContent, Progress, ProgressDiv, ProgressMeter } from 'components/AllFormCard/AllFormCardStyles'
 
 class AllFormCardPage extends Component {
