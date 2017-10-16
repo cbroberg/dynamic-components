@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyledModalContainer, StyledModal, StyledModalHeader, StyledModalContent, StyledModalHeaderIcon, StyledModalHeaderTitle, StyledModalHeaderClose } from 'components/Modal/ModalStyles'
-import Icon from 'components/Icon/Icon'
+import { StyledModal, StyledModalHeader, StyledModalContent, StyledModalHeaderIcon, StyledModalHeaderTitle, StyledModalHeaderClose } from 'components/Modal/ModalStyles'
+import { Icon } from 'odeum-ui'
 import * as colors from 'theme/colors'
 
 
@@ -11,42 +11,38 @@ class Modal extends Component {
 
 		const { isOpen, onAfterOpen, onRequestClose, closeTimeoutMS, style, render, overlayScroll, width, icon, label, shouldCloseOnOverlayClick } = this.props
 
-		return (
-			<div>
-				<StyledModalContainer>
-				<StyledModal 
-					isOpen={isOpen} 
-					onAfterOpen={onAfterOpen} 
-					closeTimeoutMS={closeTimeoutMS} 
-					onRequestClose={onRequestClose} 
-					contentLabel={label}
-					style={style}
-					overlayScroll={overlayScroll}
-					width={width}
-					shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
+		return (			
+			<StyledModal 
+				isOpen={isOpen} 
+				onAfterOpen={onAfterOpen} 
+				closeTimeoutMS={closeTimeoutMS} 
+				onRequestClose={onRequestClose} 
+				contentLabel={label}
+				style={style}
+				overlayScroll={overlayScroll}
+				width={width}
+				shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}>
 					
-					<StyledModalHeader>
+				<StyledModalHeader>
 				
-						<StyledModalHeaderIcon>
-							<Icon icon={icon} iconSize={30} color={colors.MODAL_ICON} active={true} />
-						</StyledModalHeaderIcon>
+					<StyledModalHeaderIcon>
+						<Icon icon={icon} iconSize={30} color={colors.MODAL_ICON} active={true} />
+					</StyledModalHeaderIcon>
 				
-						<StyledModalHeaderTitle>{label}</StyledModalHeaderTitle>
+					<StyledModalHeaderTitle>{label}</StyledModalHeaderTitle>
 				
-						<StyledModalHeaderClose onClick={onRequestClose}>
-							<Icon icon={'close'} iconSize={30} color={colors.MODAL_ICON} active={true} />
-						</StyledModalHeaderClose>
+					<StyledModalHeaderClose onClick={onRequestClose}>
+						<Icon icon={'close'} iconSize={30} color={colors.MODAL_ICON} active={true} />
+					</StyledModalHeaderClose>
 				
-					</StyledModalHeader>
+				</StyledModalHeader>
 					
-					<StyledModalContent>
-						{/* render() executes the render prop passed down to Modal */}
-						{render()}						
-					</StyledModalContent>
+				<StyledModalContent>
+					{/* render() executes the render prop passed down to Modal */}
+					{render()}						
+				</StyledModalContent>
 					
-				</StyledModal>
-				</StyledModalContainer>
-			</div>
+			</StyledModal>
 		)
 	}
 }

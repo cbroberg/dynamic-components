@@ -1,7 +1,7 @@
 import styled, { keyframes, injectGlobal } from 'styled-components'
 import Modal from 'react-modal'
 import * as colors from 'theme/colors'
-import image from 'assets/logo_slack-2x.png'
+
 
 const hideOverlayScroll = () => {
 	injectGlobal([`
@@ -22,14 +22,6 @@ const fadeInModal = keyframes`
         /* top: 50%;
         left: 50%; */
 	}
-`
-
-export const StyledModalContainer = styled.div`
-	background-image: url(${image});
-	background-size: 600px 600px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	/* opacity: 1.6; */
 `
 
 export const StyledModal = styled(Modal)`
