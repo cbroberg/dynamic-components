@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
-// import Button from 'components/Button/Button'
 import { Button } from 'odeum-ui'
 import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
+
+
 class ButtonsPage extends Component {
 
 	render() {

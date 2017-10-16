@@ -48,7 +48,7 @@ export const StyledModal = styled(Modal)`
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-    animation: 0.3s ${fadeInModal} ease-in-out; /* cubic-bezier(0.18, 0.89, 0.32, 1.28) */
+    animation: 0.2s ${fadeInModal} ease-in-out; /* cubic-bezier(0.18, 0.89, 0.32, 1.28) */
     background-color: white;
     outline: none;
 	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
