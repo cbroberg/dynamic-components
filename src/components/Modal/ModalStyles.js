@@ -14,13 +14,13 @@ const hideOverlayScroll = () => {
 const fadeInModal = keyframes`
     0% {
         opacity: 0;
-        top: 0%;
-        left: 50%;
+        /* top: 50%;
+        left: 50%; */
     }
     100% {
         opacity: 1;
-        top: 50%;
-        left: 50%;
+        /* top: 50%;
+        left: 50%; */
 	}
 `
 
@@ -48,7 +48,7 @@ export const StyledModal = styled(Modal)`
     right: auto;
     bottom: auto;
     transform: translate(-50%, -50%);
-    animation: 0.3s ${fadeInModal} cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    animation: 0.3s ${fadeInModal} ease-in-out; /* cubic-bezier(0.18, 0.89, 0.32, 1.28) */
     background-color: white;
     outline: none;
 	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
