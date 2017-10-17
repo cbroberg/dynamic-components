@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const alignment = {
 	center: 'center',
@@ -21,12 +21,31 @@ const StyledButtonPanel = styled.div`
 	width: ${(props) => props.width};
 	height: ${props => props.height};
 	border: ${props => props.debug ? '1px solid black' : ''};
-	&:first-child div {
-		margin-left:${props => (props.direction === 'row' && props.justify === 'left') ? "0px" : ""};
-	}
-	&:last-child div {
-		margin-right:${props => (props.direction === 'row' && props.justify === 'right') ? "0px" : ""};
-	}
+	${props => props.direction === 'row' && props.justify === 'spaceBetween' && css`
+		& > div {
+			&:first-of-type{
+				margin-left:0px;
+			}
+			&:last-of-type{
+				margin-right:0px;
+			}
+		}
+	`}
+	${props => props.direction === 'row' && props.justify === 'left' && css`
+		& > div {
+			&:first-of-type{
+				margin-left:0px;
+				}
+		}`
+	};
+
+	${props => props.direction === 'row' && props.justify === 'right' && css`
+		& > div {
+			&:last-of-type{
+				margin-right:0px;
+			}
+		}`
+	};
 `
 
 export default StyledButtonPanel
