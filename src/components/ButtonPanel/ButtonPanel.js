@@ -16,7 +16,7 @@ export default class ButtonPanel extends Component {
 }
 ButtonPanel.defaultProps = {
 	align: 'center',
-	direction: 'row',
+	direction: 'horizontal',
 	wrap: 'nowrap',
 	justify: 'center',
 	width: 'auto',

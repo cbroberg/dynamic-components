@@ -13,7 +13,7 @@ class ButtonPanelPage extends Component {
 	render() {
 		return (
 			<div>
-				ButtonPanel (direction row default props) with content component array, default props
+				ButtonPanel (direction horizontal default props) with content component array, default props
 				<Div flex={'column nowrap'} >
 					<ButtonPanel justify='left' debug={true} content={[
 						<Button
@@ -51,8 +51,8 @@ class ButtonPanelPage extends Component {
 					} />
 				</Div>
 				<div>
-					ButtonPanel (direction row default) with children, default props
-					<Div flex={'column nowrap'}>
+					ButtonPanel (direction horizontal default) with children, default props
+					<Div flex={'column nowrap'} >
 						<ButtonPanel debug={true}>
 							<Button
 								label='Button 1'
@@ -90,9 +90,9 @@ class ButtonPanelPage extends Component {
 					</Div>
 				</div>
 				<div>
-					ButtonPanel (direction column) with children, default props
-					<Div flex='row nowrap'>
-						<ButtonPanel direction='column' height='auto' width='auto' debug={true}>
+					ButtonPanel (direction vertical) with children, default props
+					<Div flex='horizontal nowrap'>
+						<ButtonPanel direction='vertical' height='auto' width='auto' debug={true}>
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -109,7 +109,7 @@ class ButtonPanelPage extends Component {
 								color={'#3B97D3'}
 							/>
 						</ButtonPanel>
-						<ButtonPanel direction='column' height='auto' width='auto' debug={true}>
+						<ButtonPanel direction='vertical' height='auto' width='auto' debug={true}>
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -129,9 +129,9 @@ class ButtonPanelPage extends Component {
 					</Div>
 				</div>
 				<div>
-					ButtonPanel (direction column) with content component array
-					<Div flex='row nowrap'>
-						<ButtonPanel direction='column' debug={true}
+					ButtonPanel (direction vertical) with content component array
+					<Div flex='horizontal nowrap'>
+						<ButtonPanel direction='vertical' debug={true}
 							content={[
 								<Button
 									label='Button 1'
@@ -149,7 +149,7 @@ class ButtonPanelPage extends Component {
 									color={'#3B97D3'}	
 								/>]
 							} />
-						<ButtonPanel direction='column' justify='left' debug={true} content={[
+						<ButtonPanel direction='vertical' justify='left' debug={true} content={[
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -171,9 +171,9 @@ class ButtonPanelPage extends Component {
 					</Div>
 				</div>
 				<div>
-					ButtonPanel (direction row) with children, justify space-between
-					<Div flex='row nowrap' style={{ width: '100%' }}>
-						<ButtonPanel direction='row' width={'100%'} justify='spaceBetween' debug={true}>
+					ButtonPanel (direction horizontal) with children, justify space-between
+					<Div flex='horizontal nowrap' style={{ width: '100%' }}>
+						<ButtonPanel direction='horizontal' width={'100%'} justify='spaceBetween' debug={true}>
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -190,7 +190,7 @@ class ButtonPanelPage extends Component {
 								color={'#3B97D3'}
 							/>
 						</ButtonPanel>
-						<ButtonPanel direction='row' justify={'spaceBetween'} width={'100%'} debug={true}>
+						<ButtonPanel direction='horizontal' justify={'spaceBetween'} width={'100%'} debug={true}>
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -210,9 +210,9 @@ class ButtonPanelPage extends Component {
 					</Div>
 				</div>
 				<div>
-					ButtonPanel (direction column) with content component array
-					<Div flex='row nowrap'>
-						<ButtonPanel direction='row' justify={'spaceBetween'} width={'100%'} debug={true}
+					ButtonPanel (direction vertical) with content component array
+					<Div flex='horizontal nowrap'>
+						<ButtonPanel direction='horizontal' justify={'spaceBetween'} width={'100%'} debug={true}
 							content={[
 								<Button
 									label='Button 1'
@@ -230,7 +230,7 @@ class ButtonPanelPage extends Component {
 									color={'#3B97D3'}	
 								/>]
 							} />
-						<ButtonPanel direction='row' justify={'spaceBetween'} width={'100%'} debug={true} 
+						<ButtonPanel direction='horizontal' justify={'spaceBetween'} width={'100%'} debug={true} 
 						 content={[
 								<Button
 									label='Button 1'
@@ -253,9 +253,9 @@ class ButtonPanelPage extends Component {
 					</Div>
 				</div>
 				<div>
-					ButtonPanel (direction row) with children, justify right
-					<Div flex='row nowrap' style={{ width: '100%' }}>
-						<ButtonPanel direction='row' width={'100%'} justify='right' debug={true}>
+					ButtonPanel (direction horizontal) with children, justify right
+					<Div flex='horizontal nowrap' style={{ width: '100%' }}>
+						<ButtonPanel direction='horizontal' width={'100%'} justify='right' debug={true}>
 							<Button
 								label='Button 1'
 								icon='mail_outline'
@@ -272,7 +272,7 @@ class ButtonPanelPage extends Component {
 								color={'#3B97D3'}
 							/>
 						</ButtonPanel>
-						<ButtonPanel direction='row' justify={'right'} width={'100%'} debug={true}>
+						<ButtonPanel direction='horizontal' justify={'right'} width={'100%'} debug={true}>
 							<Button
 								label='Button 1'
 								icon='mail_outline'
