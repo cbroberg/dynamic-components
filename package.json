@@ -5,7 +5,7 @@
   "dependencies": {
     "copy-to-clipboard": "^3.0.8",
     "odeum-primitives": "^0.1.23",
-    "odeum-ui": "^0.1.15",
+    "odeum-ui": "^0.1.16",
     "polished": "^1.8.0",
     "react": "^15.6.1",
     "react-color": "^2.13.8",

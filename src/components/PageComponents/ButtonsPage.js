@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
-import { Button } from 'odeum-ui'
-import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
+import { Button, ButtonPanel } from 'odeum-ui'
 
 
 class ButtonsPage extends Component {
