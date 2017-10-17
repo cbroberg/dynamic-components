@@ -21,37 +21,40 @@ const StyledButtonPanel = styled.div`
 	width: ${(props) => props.width};
 	height: ${props => props.height};
 	border: ${props => props.debug ? '1px solid black' : ''};
+
 	${props => props.direction === 'horizontal' && props.justify === 'spaceBetween' && css`
 		& > div {
-			&:first-of-type{
-				margin-left:0px;
+			&:first-of-type {
+				margin-left: 3px;
 			}
-			&:last-of-type{
-				margin-right:0px;
+			&:last-of-type {
+				margin-right: 3px;
 			}
 		}
-	`}
+	`};
+
 	${props => props.direction === 'horizontal' && props.justify === 'left' && css`
 		& > div {
-			&:first-of-type{
-				margin-left:0px;
+			&:first-of-type {
+				margin-left: 3px;
 				}
-		}`
-};
+		}
+	`};
 
 	${props => props.direction === 'horizontal' && props.justify === 'right' && css`
 		& > div {
-			&:last-of-type{
-				margin-right:0px;
+			&:last-of-type {
+				margin-right: 3px;
 			}
-		}`
-};
+		}
+	`};
+
 	${props => props.direction === 'vertical' && css`
-	 & > div{
-		 margin-left:0px;
-		 margin-right:0px;
-	 }
-	`}
+	 & > div {
+		 margin-left: 3px;
+		 margin-right: 	3px;
+	 	}
+	`};
 `
 
 export default StyledButtonPanel

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 //This is used just for demo purposes
 const Div = styled.div`
-	display:flex;
+	display: flex;
 	flex-flow: ${(props) => props.flex}
 `
 class ButtonPanelPage extends Component {
