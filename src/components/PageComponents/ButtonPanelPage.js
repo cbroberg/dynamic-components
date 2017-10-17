@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import Button from 'components/Button/Button'
-import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
+import { Button, ButtonPanel } from 'odeum-ui'
 import styled from 'styled-components'
 
 //This is used just for demo purposes
 const Div = styled.div`
-	display:flex;
+	display: flex;
 	flex-flow: ${(props) => props.flex}
 `
 class ButtonPanelPage extends Component {

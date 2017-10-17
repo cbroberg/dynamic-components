@@ -104,7 +104,7 @@ Button.defaultProps = {
 	iconColor: ICON_DEFAULT_COLOR,
 	isDisabled: false,
 	style: {
-		marginRight: '10px'
+		marginRight: '5px'
 	},
 	type: 'button',
 	size: 'small',
