@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Button, ButtonPanel } from 'odeum-ui'
+import Button from 'components/Button/Button'
+import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
 import styled from 'styled-components'
 
 //This is used just for demo purposes

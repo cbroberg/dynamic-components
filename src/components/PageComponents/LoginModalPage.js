@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Button, Modal } from 'odeum-ui'
+import Button from 'components/Button/Button'
+import Modal from 'components/Modal/Modal'
 import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
 import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
 import { Account, Username, Password, HeaderImage, Remember } from './../ModalLogin/LoginStyles'

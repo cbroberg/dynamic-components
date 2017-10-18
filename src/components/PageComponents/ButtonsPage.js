@@ -1,21 +1,35 @@
 import React, { Component } from 'react'
 import { copyToClipboard } from 'helpers'
-import { Button, ButtonPanel } from 'odeum-ui'
+import Button from 'components/Button/Button'
+import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
+
 
 
 class ButtonsPage extends Component {
+
+	handleClick = (message) => (e) => {
+		e.preventDefault()
+		copyToClipboard(e, message, true)
+	}
+
+	// Now without preventDefault which is already included in copyToClipboard
+	handleClick2 = (message) => {
+		return (e) => {
+			copyToClipboard(e, message, true)
+		}
+	}
 
 	render() {
 		return (
 			<div>
 				
-				<ButtonPanel justify='left' align='center' direction='row' wrap='wrap' height='auto'>
+				<ButtonPanel justify='left' align='center' direction='horizontal' wrap='wrap' height='auto'>
 					<Button
 						label={'Send Mail'}
 						icon='mail_outline'
 						iconSize={18}
 						color={'#3B97D3'}
-						onClick={(e) => copyToClipboard(e, 'Mail is now send', true)}
+						onClick={this.handleClick2('Your e-mail has been send!')}
 					/>
 
 					<Button
@@ -23,7 +37,7 @@ class ButtonsPage extends Component {
 						icon='check_circle'
 						iconSize={18}
 						color={'#34495D'}
-						onClick={(e) => copyToClipboard(e, 'Your form is saved', true)}
+						onClick={this.handleClick('Your document has been saved!')}
 					/>
 
 					<Button
@@ -31,7 +45,7 @@ class ButtonsPage extends Component {
 						icon='laptop_mac'
 						iconSize={18}
 						color={'#81C1EA'}
-						onClick={(e) => copyToClipboard(e, 'Laptop settings', true)}
+						onClick={this.handleClick('Laptop settings')}
 					/>
 
 					<Button
@@ -39,7 +53,7 @@ class ButtonsPage extends Component {
 						icon='place'
 						iconSize={18}
 						color={'#5E5E5E'}
-						onClick={(e) => copyToClipboard(e, 'Map View', true)}
+						onClick={this.handleClick('Map View')}
 					/>
 
 					<Button
@@ -47,7 +61,7 @@ class ButtonsPage extends Component {
 						icon='view_list'
 						iconSize={18}
 						color={'#FF9600'}
-						onClick={(e) => copyToClipboard(e, 'List View', true)}
+						onClick={this.handleClick('List View')}
 					/>
 
 					<Button
@@ -55,7 +69,7 @@ class ButtonsPage extends Component {
 						icon='view_module'
 						iconSize={18}
 						color={'#764EB9'}
-						onClick={(e) => copyToClipboard(e, 'Card View', true)}
+						onClick={this.handleClick('Card View')}
 					/>
 
 					<Button
@@ -63,7 +77,7 @@ class ButtonsPage extends Component {
 						icon='dashboard'
 						iconSize={18}
 						color={'#D42027'}
-						onClick={(e) => copyToClipboard(e, 'Go to Dashboard', true)}
+						onClick={this.handleClick('Go to Dashboard')}
 					/>
 
 					<Button
@@ -71,7 +85,7 @@ class ButtonsPage extends Component {
 						icon='add_circle'
 						iconSize={18}
 						color={'#F8BB31'}
-						onClick={(e) => copyToClipboard(e, 'Adding new appendix', true)}
+						onClick={this.handleClick('Adding new appendix')}
 					/>
 
 					<Button
@@ -79,7 +93,7 @@ class ButtonsPage extends Component {
 						icon='cloud_upload'
 						iconSize={18}
 						color={'#25B89A'}
-						onClick={(e) => copyToClipboard(e, 'Uploading data ...', true)}
+						onClick={this.handleClick('Uploading data ...')}
 					/>
 
 					<Button
@@ -87,7 +101,7 @@ class ButtonsPage extends Component {
 						icon='assignment_turned_in'
 						iconSize={18}
 						color={'#FF9600'}
-						onClick={(e) => copyToClipboard(e, 'Reports', true)}
+						onClick={this.handleClick('Reports')}
 					/>
 
 					<Button
@@ -95,7 +109,7 @@ class ButtonsPage extends Component {
 						icon='view_module'
 						iconSize={18}
 						color={'#764EB9'}
-						onClick={(e) => copyToClipboard(e, 'Card View', true)}
+						onClick={this.handleClick('Card View')}
 					/>
 
 					<Button
@@ -103,7 +117,7 @@ class ButtonsPage extends Component {
 						icon='bug_report'
 						iconSize={18}
 						color={'#3B97D3'}
-						onClick={(e) => copyToClipboard(e, 'Bug Report filed ...', true)}
+						onClick={this.handleClick('Bug Report filed ...')}
 					/>
 
 					<Button
@@ -113,7 +127,7 @@ class ButtonsPage extends Component {
 						color={'#E98832'}
 						active={false}
 						inactiveColor={'#006CB2'}
-						onClick={(e) => copyToClipboard(e, 'User added', true)}
+						onClick={this.handleClick('User added')}
 					/>
 
 					<Button
@@ -121,14 +135,14 @@ class ButtonsPage extends Component {
 						icon='input'
 						iconSize={18}
 						color={'#2AC639'}
-						onClick={(e) => copyToClipboard(e, 'Form Field', true)}
+						onClick={this.handleClick('Form Field')}
 					/>
 
 					<Button
 						label={'No Icon'}
 						iconSize={18}
 						color={'#EA228F'}
-						onClick={(e) => copyToClipboard(e, 'Button with no icon', true)}
+						onClick={this.handleClick('Button with no icon')}
 					/>
 
 					<Button
@@ -136,7 +150,7 @@ class ButtonsPage extends Component {
 						icon='access_time'
 						iconSize={18}
 						color={'#D4CD11'}
-						onClick={(e) => copyToClipboard(e, 'Time selected', true)}
+						onClick={this.handleClick('Time selected')}
 					/>
 
 					<Button
@@ -152,7 +166,7 @@ class ButtonsPage extends Component {
 						icon='visibility_off'
 						iconSize={18}
 						active={false}
-						onClick={(e) => copyToClipboard(e, 'Default Color', true)}
+						onClick={this.handleClick('Default Color')}
 					/>
 
 					<Button
@@ -176,7 +190,7 @@ class ButtonsPage extends Component {
 						iconSize={32}
 						color={'#3B97D3'}
 						size={'large'}
-						onClick={(e) => copyToClipboard(e, 'Creating New Form', true)}
+						onClick={this.handleClick('Creating New Form')}
 					/>
 				</ButtonPanel>
 			</div>

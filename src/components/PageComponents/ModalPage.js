@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Button, Modal } from 'odeum-ui'
+// import { Button, Modal } from 'odeum-ui'
+import Button from 'components/Button/Button'
+import Modal from 'components/Modal/Modal'
 
 var messages = [
 	'Good job, that is just perfect!', 
