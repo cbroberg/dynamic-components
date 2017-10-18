@@ -4,7 +4,6 @@ import Button from 'components/Button/Button'
 import ButtonPanel from 'components/ButtonPanel/ButtonPanel'
 
 
-
 class ButtonsPage extends Component {
 
 	handleClick = (message) => (e) => {
