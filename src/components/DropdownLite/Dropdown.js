@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyledDropdownContainer, StyledDropdown, StyledDropdownButton, StyledDropdownList, StyledDropdownListItem } from 'components/DropdownLite/DropdownStyles'
 import onClickOutside from 'react-onclickoutside'
+// TODO: Check https://stackoverflow.com/questions/32553158/detect-click-outside-react-component 
 
 // import { version } from './package.json'
 // console.log(version)
