@@ -50,7 +50,7 @@ class Button extends Component {
 							
 						/>
 						
-						<StyledButtonIconText size={size}>{label}</StyledButtonIconText>
+						<StyledButtonIconText size={size} hasIconText={_hasIconText}>{label}</StyledButtonIconText>
 
 					</StyledButton>
 				</StyledButtonContainer>
@@ -104,7 +104,7 @@ Button.defaultProps = {
 	iconColor: ICON_DEFAULT_COLOR,
 	isDisabled: false,
 	style: {
-		marginRight: '5px'
+		marginRight: '0px'
 	},
 	type: 'button',
 	size: 'small',

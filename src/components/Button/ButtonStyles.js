@@ -10,11 +10,10 @@ export const StyledButtonContainer = styled.div`
 const StyledButton = styled.button`
     display: flex;
     align-items: center;
-    float: left;
     border-radius: 4px;
 	background: ${(props) => props.isDisabled ? props.disabledColor : props.color};
 	padding: 0px;
-	padding: ${(props) => props.hasIconText ? '0 13px 0 15px' : props.hasText ? '0 8px 0 15px' : props.hasIcon ? '0 0 0 10px' : '0 0 0 15px'};
+	padding: ${(props) => props.hasIconText ? '0 13px 0 15px' : props.hasText ? '0 8px 0 15px' : props.hasIcon ? '0 10px' : '0 0 0 15px'};
 	height: ${({ size }) => sizes[size].height};
 	/* margin: 0.3rem 0.7rem 0.7rem 0; */
 	border: none;
@@ -22,7 +21,6 @@ const StyledButton = styled.button`
 	cursor: ${(props) => props.isDisabled ? 'not-allowed' : 'pointer'};
 	user-select: none;
 	outline: none;
-
     &:focus {
         border-color: ${(props) => props.isDisabled ? props.disabledColor : transparentize(0.7, props.color)};		 
 		box-shadow: ${(props) => props.isDisabled ? null : `0 0 0 3px ${transparentize(0.7, props.color)}`};
@@ -49,6 +47,7 @@ export const StyledButtonIconText = styled.span`
     font-weight: 300;
 	font-style: normal; 
 	padding-right: 2px;
+	margin-left: ${(props) => props.hasIconText ? '5px' : null};
 `
 // Button with text and no icon
 export const StyledButtonText = styled.span`
