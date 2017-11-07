@@ -28,7 +28,7 @@ export const Divider = styled.div`
 	padding-top: 25px;
 `
 
-export const StyledToast = styled(ToastContainer) `
+export const StyledToast = styled(ToastContainer)`
 	&.toastify { 
 		.toastify-content {
 			border-radius: 4px;
