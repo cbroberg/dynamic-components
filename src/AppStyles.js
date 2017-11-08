@@ -19,7 +19,7 @@ injectGlobal([`
    * {
         outline: none;
 		box-sizing: border-box;
-		font-family: 'Source Sans Pro', 'Sans Serif', Arial, Helvetica;
+		font-family: Helvetica, 'Sans Serif', Arial;
 	}
 	`])
 
