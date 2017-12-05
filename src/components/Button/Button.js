@@ -38,8 +38,10 @@ class Button extends Component {
 						hasIcon={_hasIcon} 
 						hasText={_hasText} 
 						hasIconText={_hasIconText} 
-						size={size}>
-
+						size={size}
+						{...this.props}
+					>
+						
 						<Icon 
 							icon={icon} 
 							iconSize={iconSize} 

@@ -189,6 +189,7 @@ class ButtonsPage extends Component {
 						iconSize={32}
 						color={'#3B97D3'}
 						size={'large'}
+						type={'submit'}
 						onClick={this.handleClick('Creating New Form')}
 					/>
 				</ButtonPanel>
