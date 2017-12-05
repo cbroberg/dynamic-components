@@ -1174,23 +1174,23 @@ export const icons = {
 		svg: 'https://github.com/google/material-design-icons/blob/master/device/svg/production/ic_signal_wifi_off_48px.svg'
 	},	
 
-	thumb_up: {
-		name: 'thumb_up',
-		component: Icons.MdThumbUp,
-		action: 'Thumbs Up',
-		usage: 'Show thumbs up',
-		tags: ['field'],
-		png: '',
-		svg: ''
-	},	
+	// thumb_up: {
+	// 	name: 'thumb_up',
+	// 	component: Icons.MdThumbUp,
+	// 	action: 'Thumbs Up',
+	// 	usage: 'Show thumbs up',
+	// 	tags: ['field'],
+	// 	png: 'http://odeumcode.com',
+	// 	svg: 'http://odeumcode.com'
+	// },	
 
-	thumb_down: {
-		name: 'thumb_down',
-		component: Icons.MdThumbDown,
-		action: 'Thumbs Down',
-		usage: 'Show thumbs down',
-		tags: ['field'],
-		png: '',
-		svg: ''
-	},	
+	// thumb_down: {
+	// 	name: 'thumb_down',
+	// 	component: Icons.MdThumbDown,
+	// 	action: 'Thumbs Down',
+	// 	usage: 'Show thumbs down',
+	// 	tags: ['field'],
+	// 	png: 'http://odeumcode.com',
+	// 	svg: 'http://odeumcode.com'
+	// },	
 }

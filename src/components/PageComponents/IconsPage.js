@@ -86,7 +86,7 @@ class IconsPage extends Component {
 		return (
 			<div>
 				<select value={this.state.value} onChange={this.handleChange}>
-				<option value={''}>Choose all</option>
+					<option value={''}>Choose all</option>
 					{this.renderDropDownTags()}
 				</select>
 				<a href={'https://material.io/icons/'} target={'_new'}>Missing an icon? Fin it here: https://material.io/icons/</a>
