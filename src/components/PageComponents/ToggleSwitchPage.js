@@ -6,7 +6,7 @@ import Checkbox from 'components/Checkbox/Checkbox'
 class ToggleSwitchPage extends Component {
 
 	state = {
-		isChecked: false,
+		isChecked: true,
 		valueCheck: null
 	}
 
@@ -44,7 +44,11 @@ class ToggleSwitchPage extends Component {
 				{this.toggles()}
 				<ToggleSwitch size={"medium"} checked={isChecked} />
 				<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />
+				
 				<Checkbox checked={isChecked} onChange={this.handleChange} />
+				<Checkbox checked={isChecked} onChange={this.handleChange} />
+				<Checkbox size={'medium'} checked={isChecked} onChange={this.handleChange} />
+				{/* <Checkbox size={'large'} checked={isChecked} onChange={this.handleChange} /> */}
 			</div>		
 		)
 	}

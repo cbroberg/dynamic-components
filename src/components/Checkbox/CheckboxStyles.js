@@ -4,23 +4,24 @@ export const StyledCheckbox = styled.label`
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
     cursor: pointer;
     font-size: 22px;
     user-select: none;
 
 	> input {
-		/* display: none; */
-		position: absolute;
-    	opacity: 0;
+		display: none;
+		/* position: absolute; */
+    	/* opacity: 0; */
 	}
 
 	> .checkmark {
     	position: absolute;
     	top: 0;
     	left: 0;
-    	height: 25px; // 25px default size
-    	width: 25px;
+		margin-bottom: 60px;
+		width: ${({ size }) => sizes[size].width};
+		height: ${({ size }) => sizes[size].height};
     	background-color: #D5D5D5;
     	border-radius: 4px;
 	}
@@ -46,8 +47,8 @@ export const StyledCheckbox = styled.label`
 	> input + .checkmark:after {
     	left: 9px;
 		top: 5px;
-		width: 5px;
-		height: 10px;
+		width: ${({ size }) => sizes[size].checkmarkWidth};
+		height: ${({ size }) => sizes[size].checkmarkHeight};
 		border: solid white;
 		border-width: 0 3px 3px 0;
 		transform: rotate(45deg);
@@ -57,21 +58,21 @@ export const StyledCheckbox = styled.label`
 
 const sizes = {	
 	small: {
-		width: '51px',
-		height: '26px',
-		checkmarkWidth: '18px',
-		checkmarkHeight: '18px',		
+		width: '25px',
+		height: '25px',
+		checkmarkWidth: '5px',
+		checkmarkHeight: '10px',
 	},
 	medium: {
-		width: '61px',
-		height: '34px',
-		checkmarkWidth: '26px',
-		checkmarkHeight: '26px',		
+		width: '30px',
+		height: '30px',
+		checkmarkWidth: '8px', // +3
+		checkmarkHeight: '13px', // 			
 	},
 	large: {
-		width: '90px',
-		height: '34px',
-		checkmarkWidth: '26px',
-		checkmarkHeight: '26px',		
+		width: '35px',
+		height: '35px',
+		checkmarkWidth: '11px', // +3
+		checkmarkHeight: '16px', // 		
 	}
 }

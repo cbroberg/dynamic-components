@@ -55,7 +55,7 @@ Checkbox.propTypes = {
 
 Checkbox.defaultProps = {
 	checked: false,
-	size: 'medium'
+	size: 'small'
 }
 
 export default Checkbox
