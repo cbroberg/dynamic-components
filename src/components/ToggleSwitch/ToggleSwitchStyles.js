@@ -13,7 +13,7 @@ export const StyledToggleSwitch = styled.label`
 		display: none;
 	}
 
-	>.slider {
+	> .slider {
 		position: absolute;
 		cursor: pointer;
 		top: 0;
@@ -25,7 +25,7 @@ export const StyledToggleSwitch = styled.label`
 		border-radius: 4px;
 	}
 
-	>.slider:before {
+	> .slider:before {
 		position: absolute;
 		content: "";
 		width: ${({ size }) => sizes[size].sliderWidth};
@@ -35,6 +35,10 @@ export const StyledToggleSwitch = styled.label`
 		background-color: white;
 		transition: .3s;
 		border-radius: 4px;
+	}
+
+	> .slider:hover {
+    	background-color: #979898;
 	}
 
 	> input:checked + .slider {
