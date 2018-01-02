@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ToggleSwitch from 'components/ToggleSwitch/ToggleSwitch'
+import Checkbox from 'components/Checkbox/Checkbox'
 
 
 class ToggleSwitchPage extends Component {
@@ -10,15 +11,16 @@ class ToggleSwitchPage extends Component {
 	}
 
 	handleChange = () => {
-		this.setState(({ valueCheck }) => (
+		this.setState(({ isChecked, valueCheck }) => (
 			{
 				valueCheck: !valueCheck,
+				isChecked: !isChecked,
 			}
 		))
 	}
 
 	toggleswitches = [
-		{ component: <ToggleSwitch type={"square"} size={"small"} checked={false} onChange={this.handleChange} /> },
+		{ component: <ToggleSwitch type={"square"} size={"small"} checked={this.state.isChecked} onChange={this.handleChange} /> },
 		{ component: <ToggleSwitch type={"round"} size={"small"} checked={true} /> },
 		{ component: <ToggleSwitch checked={true} size={"large"} /> },
 		{ component: <ToggleSwitch label="Rounded" type={"round"} checked={false} /> },
@@ -42,6 +44,7 @@ class ToggleSwitchPage extends Component {
 				{this.toggles()}
 				<ToggleSwitch size={"medium"} checked={isChecked} />
 				<ToggleSwitch label="Rounded" type={"round"} checked={isChecked} />
+				<Checkbox checked={isChecked} onChange={this.handleChange} />
 			</div>		
 		)
 	}

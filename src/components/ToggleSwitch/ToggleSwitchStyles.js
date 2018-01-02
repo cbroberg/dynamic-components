@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const StyledToggleSwitch = styled.label`
 	position: relative;
 	display: inline-block;
